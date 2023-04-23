@@ -79,7 +79,7 @@ function parcelamento() {
   var calculo = calculo.toFixed(2).replace('.', ',');
   var calculo = ('COL$ ' + calculo);
   
-  $('.parcelamento').html('<span>en hasta 12x de <b>' + calculo + '</b></span>');
+  $('.parcelamento').html('<span>en hasta 12 cuotas de <b>' + calculo + '</b></span>');
 }
 
 $(".block-swatch__radio, .variant-swatch__radio, .block-swatch__item-text, .block-swatch__item, .variant-swatch--disabled, .block-swatch-list, .block-swatch, .product-form__price-info, .block-swatch__item-text").change(function () {
