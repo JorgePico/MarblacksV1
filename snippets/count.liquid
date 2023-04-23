@@ -1,0 +1,89 @@
+<!-- Aqui vai a tag do produto -->
+<script>
+  function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+      minutes = parseInt(timer / 60, 10)
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = "00" + " : " + minutes + " : " + seconds;
+
+      if (--timer < 0) {
+        timer = duration;
+      }
+    }, 1000);
+  }
+
+  window.onload = function () {
+    var fiveMinutes = 80 * 29.5,                  /* Aqui vai o tempo em minutos */
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+  };
+</script>
+    
+<div class="countdown">
+<p class="text"><span style="color:white;"> OFERTA TERMINA EM: </span><i><svg focusable="false" class="icon icon--timer " viewBox="0 0 20 20" role="presentation">
+      <g stroke="currentColor" fill="none" fill-rule="evenodd">
+        <circle cx="10" cy="10" r="9"></circle>
+        <path stroke-linecap="square" d="M10 6.02856445V10l3.0130615 2.0200195"></path>
+      </g>
+    </svg></i> <span id="time" class="timer"></span></p> <!-- Aqui vai a imagem e o texto -->
+</div>
+    
+<style>
+
+@media screen and (max-width: 641px) {
+.countdown {
+    color: #fff;
+    font-size: 16px;
+    background: #000000;
+    overflow: hidden;
+    margin-top: 7px;
+    margin-left: -25px;
+    margin-right: -25px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+}
+@media screen and (min-width: 641px) {  
+.countdown {
+    color: #fff;    
+    background: #000000;
+    overflow: hidden;
+    margin-top: -16px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+}
+.timer {
+    background: #ff8000;
+    padding: 18px 6px 18px 6px;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 20px;
+    color: #ffffff;
+    vertical-align: baseline;
+}
+
+.countdown p > span{
+  	color: #fff;
+	font-weight:600; 
+}
+
+.countdown p > i > svg {
+    width: 30px;
+    height: 30px;
+    bottom: 2px;
+    position: relative;
+}
+
+.countdown > p.text
+{
+    text-align: center;
+    font-weight: 600;
+} 
+</style>
+
+<!-- Final contador -->

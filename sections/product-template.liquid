@@ -1,0 +1,1553 @@
+{%- capture section_settings -%}
+{
+  "showShippingEstimator": {% if template == 'product.quick-view' or product.available == false %}false{% else %}{{ section.settings.show_shipping_estimator | json }}{% endif %},
+  "showQuantitySelector": {{ section.settings.show_quantity_selector | json }},
+  "showPaymentButton": {{ section.settings.show_payment_button | json }},
+  "showInventoryQuantity": {% if product.template_suffix != 'pre-order' %}{{ section.settings.show_inventory_quantity | json }}{% else %}false{% endif %},
+  "lowInventoryThreshold": {{ section.settings.low_inventory_threshold | json }},
+  "galleryTransitionEffect": {{ section.settings.carousel_effect | json }},
+  "enableImageZoom": {% if template == 'product.quick-view' %}false{% else %}{{ section.settings.enable_image_zoom | json }}{% endif %},
+  "zoomEffect": {{ section.settings.zoom_effect | json }},
+  "enableVideoLooping": {{ section.settings.enable_video_looping | json }},
+  "productOptions": {{ product.options | json | escape }},
+  "enableHistoryState": {% if template == 'product.quick-view' %}false{% else %}true{% endif %},
+  "infoOverflowScroll": {% if template == 'product.quick-view' %}false{% else %}true{% endif %},
+  "isQuickView": {% if template == 'product.quick-view' %}true{% else %}false{% endif %}
+}
+{%- endcapture -%}
+
+<section data-section-id="{{ section.id }}" data-section-type="product" data-section-settings='{{ section_settings }}'>
+  {%- if template != 'product.quick-view' -%}
+    <div class="container container--flush">
+      
+   
+    
+        
+      <div class="page__sub-header">
+        <nav aria-label="{{ 'general.breadcrumb.title' | t }}" class="breadcrumb">
+          <ol class="breadcrumb__list">
+            <li class="breadcrumb__item">
+              <a class="breadcrumb__link link" href="{{ routes.root_url }}">{{ 'general.breadcrumb.home' | t }}</a> {%- render 'icon', icon: 'arrow-right' -%}
+            </li>
+
+            <li class="breadcrumb__item">
+              {%- if collection -%}
+                <a class="breadcrumb__link link" href="{{ collection.url }}">{{ collection.title }}</a> {%- render 'icon', icon: 'arrow-right' -%}
+              {%- else -%}
+                <a class="breadcrumb__link link" href="{{ routes.all_products_collection_url }}">{{- 'collection.general.all_products' | t -}}</a> {%- render 'icon', icon: 'arrow-right' -%}
+              {%- endif -%}
+            </li>
+
+            <li class="breadcrumb__item">
+              <span class="breadcrumb__link" aria-current="page">{{ product.title | truncate: 40 }}</span>
+            </li>
+          </ol>
+        </nav>
+
+        {%- if collection.previous_product or collection.next_product -%}
+          <div class="page__navigation">
+            {%- if collection.previous_product -%}
+              <span class="page__navigation-item page__navigation-item--prev">
+                <a href="{{ collection.previous_product.url }}" class="link" rel="prev">{%- render 'icon', icon: 'arrow-left' -%} {{- 'product.general.previous_product' | t -}}</a>
+              </span>
+            {%- endif -%}
+
+            {%- if collection.next_product -%}
+              <span class="page__navigation-item page__navigation-item--next">
+                <a href="{{ collection.next_product.url }}" class="link" rel="next">{{- 'product.general.next_product' | t -}} {%- render 'icon', icon: 'arrow-right' -%}</a>
+              </span>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+      </div>
+
+      <div class="product-block-list product-block-list--{{ section.settings.image_size }}">
+        <div class="product-block-list__wrapper">
+          {%- if product.media.size > 0 -%}
+            <div class="product-block-list__item product-block-list__item--gallery">
+              {% render 'product-gallery' %}
+            </div>
+          {%- endif -%}
+
+          <div class="product-block-list__item product-block-list__item--info">
+            {% render 'product-info' %}
+          </div>
+
+          {%- if product.description != blank -%}
+            <div class="product-block-list__item product-block-list__item--description">
+              <div class="card">
+                {%- if section.settings.content_display_mode == 'collapse_all' -%}
+                  <button class="card__collapsible-button" data-action="toggle-collapsible" aria-expanded="false" aria-controls="product-description">
+                    <span class="card__title heading h3">{{ 'product.general.description' | t }}</span>
+                    <span class="plus-button plus-button--large"></span>
+                  </button>
+
+                  <div id="product-description" class="card__collapsible">
+                    <div class="card__collapsible-content">
+                      <div class="rte text--pull">
+                        {{ product.description | remove: 'data-section-type="product"' }}
+                      </div>
+                    </div>
+                  </div>
+                {%- else -%}
+                  <div class="card__header">
+                    <h2 class="card__title heading h3">{{ 'product.general.description' | t }}</h2>
+                  </div>
+
+                  {%- if section.settings.content_display_mode == 'show_all_and_expand_description' -%}
+                    <div class="card__section">
+                      <div class="rte text--pull">
+                        {{ product.description | remove: 'data-section-type="product"' }}
+                      </div>
+                    </div>
+                  {%- else -%}
+                    <div class="card__section expandable-content" aria-expanded="false">
+                      <div class="rte text--pull">
+                        {{ product.description | remove: 'data-section-type="product"' }}
+                      </div>
+
+                      <button class="expandable-content__toggle">
+                        <span class="expandable-content__toggle-icon"></span>
+                        <span class="expandable-content__toggle-text" data-view-more="{{ 'product.general.view_more' | t | escape }}" data-view-less="{{ 'product.general.view_less' | t | escape }}">{{- 'product.general.view_more' | t -}}</span>
+                      </button>
+                    </div>
+                  {%- endif -%}
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- comment -%}
+          --------------------------------------------------------------------------------------
+          TABS
+          --------------------------------------------------------------------------------------
+          {%- endcomment -%}
+
+          {%- for i in (1..5) -%}
+            {%- assign unique_tab_title = '' -%}
+            {%- assign unique_tab_content = '' -%}
+
+            {%- comment -%}First check for metafields{%- endcomment -%}
+
+            {%- assign metafield_tab_title_option = 'tab_' | append: i | append: '_title' -%}
+            {%- assign metafield_tab_content_option = 'tab_' | append: i | append: '_content' -%}
+
+            {%- if product.metafields.sf_product_tabs[metafield_tab_title_option] != blank and product.metafields.sf_product_tabs[metafield_tab_content_option] != blank -%}
+              {%- assign unique_tab_title = product.metafields.sf_product_tabs[metafield_tab_title_option] -%}
+              {%- assign unique_tab_content = product.metafields.sf_product_tabs[metafield_tab_content_option] -%}
+            {%- else -%}
+              {%- assign tab_to_look = '__tab' | append: i | append: ':' -%}
+
+              {%- for tag in product.tags -%}
+                {%- if tag contains tab_to_look -%}
+                  {%- assign unique_tab_handle = tag | split: tab_to_look | last -%}
+                  {%- assign unique_tab_page = pages[unique_tab_handle] -%}
+
+                  {%- unless unique_tab_page.empty? -%}
+                    {%- assign unique_tab_title = unique_tab_page.title -%}
+                    {%- assign unique_tab_content = unique_tab_page.content -%}
+                    {%- break -%}
+                  {%- endunless -%}
+                {%- endif -%}
+              {%- endfor -%}
+            {%- endif -%}
+
+            {%- if unique_tab_title != blank and unique_tab_content != blank -%}
+              <div class="product-block-list__item product-block-list__item--content">
+                <div class="card">
+                  {%- if section.settings.content_display_mode == 'collapse_all_except_description' or section.settings.content_display_mode == 'collapse_all' -%}
+                    <button class="card__collapsible-button" data-action="toggle-collapsible" aria-expanded="false" aria-controls="unique-tab-{{ i }}">
+                      <span class="card__title heading h3">{{ unique_tab_title }}</span>
+                      <span class="plus-button plus-button--large"></span>
+                    </button>
+
+                    <div id="unique-tab-{{ i }}" class="card__collapsible">
+                      <div class="card__collapsible-content">
+                        <div class="rte text--pull">
+                          {{ unique_tab_content }}
+                        </div>
+                      </div>
+                    </div>
+                  {%- else -%}
+                    <div class="card__header">
+                      <h2 class="card__title heading h3">{{ unique_tab_title }}</h2>
+                    </div>
+
+                    <div class="card__section expandable-content" aria-expanded="false">
+                      <div class="rte text--pull">
+                        {{ unique_tab_content }}
+                      </div>
+
+                      <button class="expandable-content__toggle">
+                        <span class="expandable-content__toggle-icon"></span>
+                        <span class="expandable-content__toggle-text" data-view-more="{{ 'product.general.view_more' | t | escape }}" data-view-less="{{ 'product.general.view_less' | t | escape }}">{{- 'product.general.view_more' | t -}}</span>
+                      </button>
+                    </div>
+                  {%- endif -%}
+                </div>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+
+          {%- for i in (1..3) -%}
+            {%- assign global_tab_option = 'tab_page_' | append: i | append: '_handle' -%}
+            {%- assign global_tab_page = pages[section.settings[global_tab_option]] -%}
+
+            {%- unless global_tab_page.empty? -%}
+              <div class="product-block-list__item product-block-list__item--content">
+                <div class="card">
+                  {%- if section.settings.content_display_mode == 'collapse_all_except_description' or section.settings.content_display_mode == 'collapse_all' -%}
+                    <button class="card__collapsible-button" data-action="toggle-collapsible" aria-expanded="false" aria-controls="global-tab-{{ i }}">
+                      <span class="card__title heading h3">{{ global_tab_page.title }}</span>
+                      <span class="plus-button plus-button--large"></span>
+                    </button>
+
+                    <div id="global-tab-{{ i }}" class="card__collapsible">
+                      <div class="card__collapsible-content">
+                        <div class="rte text--pull">
+                          {{ global_tab_page.content }}
+                        </div>
+                      </div>
+                    </div>
+                  {%- else -%}
+                    <div class="card__header">
+                      <h2 class="card__title heading h3">{{ global_tab_page.title }}</h2>
+                    </div>
+
+                    <div class="card__section expandable-content" aria-expanded="false">
+                      <div class="rte text--pull">
+                        {{ global_tab_page.content }}
+                      </div>
+
+                      <button class="expandable-content__toggle">
+                        <span class="expandable-content__toggle-icon"></span>
+                        <span class="expandable-content__toggle-text" data-view-more="{{ 'product.general.view_more' | t | escape }}" data-view-less="{{ 'product.general.view_less' | t | escape }}">{{- 'product.general.view_more' | t -}}</span>
+                      </button>
+                    </div>
+                  {%- endif -%}
+                </div>
+              </div>
+            {%- endunless -%}
+          {%- endfor -%}
+
+          {%- comment -%}
+          --------------------------------------------------------------------------------------
+          REVIEWS
+          --------------------------------------------------------------------------------------
+          {%- endcomment -%}
+
+          {%- if section.settings.enable_reviews -%}
+            <div class="product-block-list__item product-block-list__item--reviews">
+              <span id="product-reviews" class="anchor"></span>
+
+              <div class="card">
+                <div class="card__section">
+                  {%- assign reviews_count = product.metafields.spr.reviews | split: '<meta itemprop="reviewCount" content="' | last | split: '">' | first | times: 1 -%}
+                  <div id="shopify-product-reviews" class="spr-reviews {% if reviews_count > 0 %}spr-reviews--has-reviews{% endif %}" data-id="{{ product.id }}">{{ product.metafields.spr.reviews }}</div>
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+
+          {%- comment -%}
+          --------------------------------------------------------------------------------------
+          SECURITY BADGES
+          --------------------------------------------------------------------------------------
+          --------------------------------------------------------------------------------------
+          ESTIMATE SHIPPING
+          --------------------------------------------------------------------------------------
+          {%- endcomment -%}
+
+          {%- if section.settings.show_shipping_estimator and product.available -%}
+            <div class="product-block-list__item product-block-list__item--shipping">
+              <div class="card">
+                <div class="card__header">
+                  <h2 class="card__title heading h3">{{ 'product.general.estimate_shipping' | t }}</h2>
+                </div>
+
+                <div class="card__section">
+                  <div class="shipping-estimator form">
+                    <div class="form__input-row">
+                      <div class="form__input-wrapper">
+                        <label for="shipping-estimator-country" class="form__label">{{ 'cart.shipping_estimator.country' | t }}</label>
+
+                        <div class="select-wrapper select-wrapper--primary">
+                          {%- render 'icon', icon: 'arrow-bottom' -%}
+
+                          <select name="country" id="shipping-estimator-country" data-default="{{ customer.default_address.country | default: section.settings.shipping_estimator_default_country }}" required>
+                            {{- country_option_tags -}}
+                          </select>
+                        </div>
+                      </div>
+
+                      <div class="form__input-wrapper" style="display: none">
+                        <label for="shipping-estimator-province" class="form__label">{{ 'cart.shipping_estimator.province' | t }}</label>
+
+                        <div class="select-wrapper select-wrapper--primary">
+                          {%- render 'icon', icon: 'arrow-bottom' -%}
+
+                          <select name="province" id="shipping-estimator-province" data-default="{{ customer.default_address.province }}"></select>
+                        </div>
+                      </div>
+
+                      <div class="form__input-wrapper" style="max-width: 155px">
+                        <label for="shipping-estimator-zip" class="form__label">{{ 'cart.shipping_estimator.zip_code' | t }}</label>
+                        <input type="text" name="zip" id="shipping-estimator-zip" class="form__field form__field--text" value="{{ customer.default.address.zip }}" required>
+                      </div>
+                    </div>
+
+                    <button type="button" class="form__submit button button--primary" data-action="estimate-shipping">{{ 'cart.shipping_estimator.estimate' | t }}</button>
+
+                    <div class="shipping-estimator__results rte" style="display: none;"></div>
+                  </div>
+                </div>
+
+                {%- if section.settings.show_refunds_policy and shop.refund_policy != blank -%}
+                  <div class="card__section card__section--tight">
+                    <button class="product__refund-policy-link link link--accented" data-action="open-modal" aria-controls="modal-refunds-policy">{{ 'product.general.refund_policy' | t }} {%- render 'icon', icon: 'arrow-right' -%}</button>
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+      {% if section.settings.show_sticky_button %}
+      <div class="botaoflutuante">        
+        <span class="button button--primary" id="clicar" data-action="add-to-cart">{{ 'product.form.add_to_cart' | t }}</span>
+
+        <script>
+          $("#clicar").on("click", function() {
+            $(".product-form__add-button").trigger("click");
+          });
+        </script>
+      </div>
+      {% endif %}
+    </div>
+
+    {%- if section.settings.show_refunds_policy and shop.refund_policy != blank -%}
+      <div id="modal-refunds-policy" class="modal" aria-hidden="true">
+        <div class="modal__dialog" role="dialog">
+          <header class="modal__header">
+            <h3 class="modal__title heading h2">{{ 'product.general.refund_policy' | t }}</h3>
+            <button class="modal__close link" data-action="close-modal">{%- render 'icon', icon: 'close' -%}</button>
+          </header>
+
+          <div class="modal__content">
+            <div class="rte">
+              {{ shop.refund_policy }}
+            </div>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+  {%- else -%}
+    {%- comment -%}We display the quick view within the product template so we can re-use the same settings{%- endcomment -%}
+    <div class="featured-product">
+      {%- render 'product-gallery' -%}
+      {%- render 'product-info' -%}
+      
+    </div>
+  {%- endif -%}
+</section>
+
+{% schema %}
+{
+  "name": "Página de Produtos",
+  "settings": [
+    {
+
+    "type": "header",
+    "content": "Contador"
+
+    },
+    {
+
+    "type": "header",
+    "content": "Contagem de vendidos",
+    "info": "Selo na pagina de produtos."
+
+     },
+     {
+
+    "type": "checkbox",
+    "id": "novo_vendidos",
+    "label": "Habilitar Contagem de vendidos acima do titulo",
+    "default": false
+          
+     },
+     {
+
+    "type": "text",
+    "id": "vendidos_2",
+    "label": " Espaço da contagem de vendidos acima do titulo ",
+    "info": "colocar px na frente do tamanho",
+    "default": "25px"
+
+      },
+      {
+
+    "type": "checkbox",
+    "id": "vendidos",
+    "label": "Habilitar Contagem de vendidos",
+    "info": "Os dados são capturados do estoque do produto*",
+    "default": true
+
+      },
+      {
+
+     "type": "checkbox",
+     "id": "espaco_top1",
+     "label": "Colocar Espaço superior de contagem de vendidos",
+     "info": "Espaço acima do script",
+     "default": true
+
+       },
+       {
+
+      "type": "text",
+      "id": "vendidos_texto",
+      "label": "Texto + Vendidos",
+      "default": "unidades vendidas"
+        
+        },
+        {
+
+      "type": "checkbox",
+      "id": "mostrar_clientes_online",
+      "label": "Habilitar Clientes online",
+      "info": "Mostra clientes online no site(simulação)",
+      "default": true
+
+        },
+        {
+
+      "type": "text",
+      "id": "max_clientes",
+      "label": "Maximo de clientes online",
+      "default": "30"
+
+        },
+        {
+
+      "type": "text",
+      "id": "min_clientes",
+      "label": "Minimo de clientes online",
+      "default": "10"
+
+        },
+        {
+
+      "type": "color",
+      "id": "vendidos_cor",
+      "label": "Cor do icone ",
+      "default": "#e22120"
+
+        },
+        {
+
+      "type": "header",
+      "content": "Alterar o Tamanho do titulo",
+      "info": "Somente a pagina de produtos."
+
+        },
+        {
+
+      "type": "text",
+      "id": "titulo_tamanho_desktop",
+      "label": " Alterar tamanho da fonte para (desktop) ",
+      "info": "colocar px na frente do tamanho",
+      "default": "25px"
+
+        },
+        {
+
+      "type": "text",
+      "id": "titulo_peso_desktop",
+      "label": " Mudar o peso da fonte do titulo do produto (desktop) ",
+      "info": "utilize o valor de 300 a 700",
+      "default": "600"
+
+         },
+         {
+
+      "type": "text",
+      "id": "titulo_tamanho_mobile",
+      "label": " Mudar tamanho do titulo para Mobile ",
+      "info": "colocar px na frente do tamanho",
+      "default": "20px"
+
+         },
+         {
+
+      "type": "text",
+      "id": "titulo_peso_mobile",
+      "label": " Mudar o peso da fonte do titulo do produto (mobile)",
+      "info": "utilize o valor de 300 a 700",
+      "default": "600"
+
+         },
+         {
+
+      "type": "text",
+      "id": "espaco_titulo",
+      "label": " Alterar o espaço abaixo do titulo",
+      "info": "utilize o valor em px",
+      "default": "5px"
+
+         },
+         {
+
+      "type": "header",
+      "content": "Habilitar Selo de Verificação",
+      "info": "Somente a pagina de produtos."
+
+        },
+        {
+
+      "type": "checkbox",
+      "id": "selo_verificacao",
+      "label": "Habilitar",
+      "info": "Habilite ou desabilite o selo de verificação",
+      "default": true
+
+        },
+        {
+
+      "type": "color",
+      "id": "cor_selo",
+      "label": "Alterar a Cor do Selo ",           
+      "default": "#2C7DCA"
+
+        },
+        {
+
+      "type": "header",
+      "content": "Mudar espaço superior da tag promoção",
+      "info": "Ajuste um valor de 1px à 17px."
+
+        },
+        {
+
+      "type": "text",
+      "id": "superior_tag_espaco_promocao",
+      "label": "Espaço da tag promoção superior ",
+      "info": "Exemplo 17px'",
+      "default": "13px"
+
+         },
+         {
+
+      "type": "text",
+      "id": "inferior_tag_espaco_promocao",
+      "label": "Espaço da tag promoção inferior ",
+      "info": "Exemplo 17px'",
+      "default": "13px"
+
+        },
+        {
+
+      "type": "header",
+      "content": "Alterar o tamanho da fonte do preço",
+      "info": "Alterar cor do preço e peso da fonte (somente para página do produto )."
+
+        },
+        {
+
+      "type": "text",
+      "id": "peso_price_text",
+      "label": "Peso da fonte preço ",
+      "info": "Escolha entre'400 para fonte light' '700 para fonte negrito'",
+      "default": "300"
+
+        },
+        {
+
+      "type": "text",
+      "id": "preco_tamanho_desktop",
+      "label": "Tamanho da fonte de preço no desktop",
+      "default": "55px"
+
+        },
+        {
+
+      "type": "text",
+      "id": "preco_tamanho_mobile",
+      "label": "Tamanho da fonte de preço no mobile",
+      "default": "25px"
+
+        },
+        {
+
+      "type": "checkbox",
+      "id": "mostrar_codigo",
+      "label": "Código do item + disponível em estoque",
+      "default": true
+
+        },
+        {
+    
+      "type": "color",
+      "id": "estoque_dis",
+      "label": "Cor do texto estoque",
+      "default": "#0086ff"
+
+        },
+        {
+
+      "type": "checkbox",
+      "id": "show_vendor1",
+      "label": "Mostrar vendedor",
+      "default": true
+
+        },
+        {
+    
+      "type": "text",
+      "id": "texto_vendedor",
+      "label": "Texto da tag vendedor",
+      "default": "Vendido por:"
+          
+        },
+        {
+    
+      "type": "color",
+      "id": "cor_texto_vendedor",
+      "label": "Cor do texto da tag vendedor",
+      "default": "#0086ff"
+
+        },
+        {
+    
+    
+      "type": "color",
+      "id": "cor_fundo_vendedor",
+      "label": "Cor da borda da tag vendedor",
+      "default": "#f0f8ff"
+
+        },
+        {
+
+      "type": "color",
+      "id": "cor_borda_vendedor",
+      "label": "Cor de fundo da tag vendedor",
+      "default": "#f0f8ff"
+
+        },
+        {
+    
+      "type": "checkbox",
+      "id": "show_sku",
+      "label": "Show SKU",
+      "default": false
+
+        },
+        {
+
+      "type": "checkbox",
+      "id": "show_share_buttons",
+      "label": "Show share buttons",
+      "default": true
+
+        },
+        {
+
+      "type": "checkbox",
+      "id": "show_taxes_included",
+      "label": "Show price taxes notice",
+      "default": false
+
+        },
+        {
+
+      "type": "checkbox",
+      "id": "mostrar_economize",
+      "label": "Mostrar a tag economize abaixo do preço",
+      "default": true
+
+        },
+        {
+
+      "type": "checkbox",
+      "id": "tag_pix",
+      "label": "Mostrar barra PIX",
+      "default": true
+
+        },
+        {
+
+      "type": "text",
+      "id": "pix_desconto",
+      "label": "Porcentagem do desconto no pix",
+      "default": "10"
+
+        },
+        {   
+
+     "type": "color",
+      "id": "pix_cor_icone",
+      "label": "Cor do icone da tag pix",
+      "default": "#ffffff"
+
+        },
+        {   
+
+      "type": "color",
+      "id": "pix_cor_fundo",
+      "label": "Cor de fundo da tag pix",
+      "default": "#0086ff"
+
+        },
+        {
+
+     "type": "color",
+      "id": "pix_cor_borda",
+      "label": "Cor da borda da tag pix",
+      "default": "#0086ff"
+
+        },
+        { 
+
+      "type": "color",
+      "id": "pix_cor_texto",
+      "label": "Cor da fonte da tag pix",
+      "default": "#ffffff"
+
+        },
+        {  
+        "type": "header",
+        "content": "Estilo de variantes",
+        "info": "Personalize as variantes."
+       },
+       { 
+      "type": "select",
+      "id": "selector_mode",
+      "label": "Tipo de seletor",
+      "options": [
+        {
+          "value": "block",
+          "label": "Blocos"
+        },
+        {
+          "value": "dropdown",
+          "label": "Menu suspenso"
+        }
+      ],
+      "default": "block"
+    },
+    {
+      "type": "select",
+      "id": "color_mode",
+      "label": "Modelo das variantes",
+      "info": "O modo de cores da variante requer que todas as variantes tenham uma imagem associada.[Saber mais](https://help.shopify.com/en/manual/products/product-variant-images#add-images-to-existing-variants)",
+      "options": [
+        {
+          "value": "block",
+          "label": "Blocos"
+        },
+        {
+          "value": "dropdown",
+          "label": "Menu suspenso"
+        },
+        {
+          "value": "color",
+          "label": "Cores"
+        },
+        {
+          "value": "variant_image",
+          "label": "Imagem miniatura"
+        }
+      ],
+      "default": "color"
+
+     },
+     {
+            "type": "header",
+            "content": "Efeitos nas variantes",
+            "info": "Habilite para adicionar o efeito de sombra nas variantes."
+       },
+       {                    
+            "type": "checkbox",
+            "id": "variante_redonda",
+            "label": "Variantes arredondas",
+            "default": false    
+       },
+       {
+            "type": "checkbox",
+            "id": "variante_sombra",
+            "label": "Habilitar sombra nas variantes",
+            "default": false    
+       },
+       {
+            "type": "range",
+            "id": "margin_superior_variante",
+            "min": 0,
+            "max": 30,
+            "step": 3,
+            "unit": "px",
+            "label": "Diminuir margem superior das variantes",
+            "default": 0
+        },
+        {
+            "type": "header",
+            "content": "Entrega estimada",
+            "info": "Informe seus clientes quando eles devem esperar a chegada de seu pedido."
+        },
+        {
+            "type": "checkbox",
+            "id": "delivery_time",
+            "label": "Habilitar tempo de entrega",
+            "info": "Acesse sua loja fora do editor para visualizar as alterações feitas.",
+            "default": true
+        },
+        {
+            "type": "checkbox",
+            "id": "relogio_entrega",
+            "label": "Mostrar relógio de entrega",
+            "info": "Mostra o tempo que o cliente tem para comprar com frete grátis.",
+            "default": true
+        },
+        {
+
+            "type": "color",
+            "id": "cor_relogio",
+            "label": "Alterar a Cor do texto do relógio ",           
+            "default": "#0086ff"
+
+        },
+        {
+          
+            "type": "checkbox",
+            "id": "delivery_time1",
+            "label": "Mostrar o prazo de entrega",
+            "info": "Caso desabilite essa função, não aparecerá o prazo de entrega.",
+            "default": true
+
+        },
+        {
+            "type": "text",
+            "id": "textofrete",
+            "label": "Texto frete",
+            "default": "Frete Grátis"
+        },
+        {
+            "type": "text",
+            "id": "delivery_time_text",
+            "label": "Texto prazo",
+            "default": "Receba entre:"
+        },
+        {
+
+            "type": "color",
+            "id": "entrega_estimada_cor",
+            "label": "Cor do texto entrega estimada",
+            "default": "#B75E56"
+        },
+        {
+
+
+
+            "type": "checkbox",
+            "id": "enable_garantia",
+            "label": "Habilitar garantia",
+            "default": true
+        },
+        {
+            "type": "text",
+            "id": "garantia_text",
+            "label": "Texto garantia",
+            "default": "30 Dias de Garantia"
+
+        },
+        {
+            "type": "color",
+            "id": "cor_text_garantia",
+            "label": "Cor do texo garantia",
+            "default": "#531297"
+       
+        
+        },
+        {
+            "type": "checkbox",
+            "id": "enable_troca",
+            "label": "Habilitar troca",
+            "default": true
+
+        },
+        {
+            "type": "text",
+            "id": "troca_text",
+            "label": "Texto troca",
+            "default": "7 dias para trocas e devoluções"
+
+
+        },
+        {
+            "type": "color",
+            "id": "cor_text_troca",
+            "label": "Cor do texo trocas",
+            "default": "#531297"
+
+
+
+       
+        },
+        {
+
+            
+            "type": "text",
+            "id": "size_text_frete",
+            "label": "Tamanho do texto",
+            "default": "14px",
+            "info": "Insira o tamanho em px."
+        },
+        {
+            "type": "range",
+            "id": "delivery_time_min_days",
+            "min": 1,
+            "max": 60,
+            "step": 1,
+            "label": "Tempo mínimo (Dias)",
+            "default": 3
+        },
+        {
+       
+            "type": "range",
+            "id": "delivery_time_max_days",
+            "min": 2,
+            "max": 60,
+            "step": 1,
+            "label": "Tempo máximo (Dias)",
+            "default": 7
+        },
+        {
+
+         "type": "header",
+            "content": "Função entrega estimada versão 2",
+            "info": "Habilita Função entrega estimada versão 2."
+        },
+        {
+
+            "type": "checkbox",
+            "id": "box_Fretedrop",
+            "label": "Habilitar entrega estimada versão 2",
+            "info": "Habilitar.",
+            "default": false
+        },
+        {
+
+        "type": "header",
+            "content": "Função box dos correios",
+            "info": "Habilita o box dos correios."
+        },
+        {
+
+        
+
+         "type": "checkbox",
+            "id": "box_correios",
+            "label": "Habilitar box dos correios",
+            "info": "Habilita as informações devolução grátis, compra garantida.",
+            "default": false
+        },
+        {
+           
+
+
+            "type": "header",
+            "content": "Função cep",
+            "info": "Habilite a função cep."
+        },
+        {
+            "type": "checkbox",
+            "id": "delivery_cep",
+            "label": "Habilitar consuta de cep",
+            "info": "Para que essa função funcione corretamente é neceesario desabilitar a função entrega estimada.",
+            "default": false
+        },
+        {
+
+            "type": "range",
+            "id": "caixa_cep",
+            "min": 65,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "label": "Tamanho do cep no desktop",
+            "default": 65
+         },
+         {
+
+            
+            "type": "range",
+            "id": "caixa_cep_mobile",
+            "min": 75,
+            "max": 100,
+            "step": 5,
+            "unit": "px",
+            "label": "Tamanho do cep no mobile",
+            "default": 80
+         },
+         {  
+            "type": "color",
+            "id": "cor_borda_cep",
+            "label": "Borda do campo cep",
+            "default": "#000000"
+
+          },
+          {
+
+
+
+            "type": "color",
+            "id": "cor_background_cep",
+            "label": "Fundo do campo cep",
+            "default": "#000000"
+
+          },
+          {
+
+
+            "type": "color",
+            "id": "cor_botao_cep",
+            "label": "Fundo do botão cep",
+            "default": "#000000"
+
+          },
+          {
+
+
+            "type": "header",
+            "content": "Habilitar box de parcelamento",
+            "info": "Habilite a função de box de parcelamento abaixo."
+        },
+        {
+            "type": "checkbox",
+            "id": "box_parcelamento",
+            "label": "Habilitar box de parcelamento agora",
+            "info": "Caso habilite essa função entre em contato com o suporte, para cadastrar as taxas de juros.",
+            "default": false
+        },
+        {
+
+            "type": "color",
+            "id": "fundo_box",
+            "label": "Fundo do box de parcelamento",
+            "default": "#f6f6f8"
+
+          },
+          {
+
+            "type": "color",
+            "id": "borda_box",
+            "label": "borda do box de parcelamento",
+            "default": "#f6f6f8"
+
+          },
+          {  
+
+            "type": "header",
+            "content": "CONTADOR",
+            "info": "Habilite ou Desabilite"
+
+
+        },
+        {
+
+
+
+         "type": "checkbox",
+            "id": "cor_contador",
+            "label": "Habilitar contador",
+
+            "default": true
+         
+         },
+         {
+
+            
+            "type": "text",
+            "id": "contador_2",
+            "label": "Tempo do contador",
+            "default": "10",
+            "info": "em minutos"
+
+          },
+          {           
+            "type": "color",
+            "id": "cor_texto_contador",
+            "label": "Cor do texto contador",
+            "default": "#ffffff"
+
+
+
+        },
+        {
+
+           "type": "color",
+            "id": "cor_relogio_contador",
+            "label": "Cor do rélogio",
+            "default": "#05d976"
+
+
+
+        },
+        { 
+
+
+            "type": "color",
+            "id": "cor_contador_cor",
+            "label": "Cor de fundo do contador",
+            "default": "#000000"
+
+          },
+          {
+
+
+
+
+
+          "type": "color",
+            "id": "cor_contador_cor1",
+            "label": "Cor de fundo do contador2",
+            "default": "#000000"
+
+          },
+          {
+
+
+        
+
+
+            "type": "header",
+            "content": "Habilitar seletor de quantidade",
+            "info": "Habilite ou Desabilite"
+
+
+
+        },
+        {
+
+    
+      "type": "checkbox",
+      "id": "show_quantity_selector",
+      "label": "Mostrar seletor de quantidade",
+      "default": true
+    },
+    {
+
+
+
+
+
+     "type": "checkbox",       
+     "id": "show_payment_button",       
+     "label": "Show dynamic checkout button",      
+     "info": "Each customer will see their preferred payment method from those available on your store, such as PayPal or Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",       
+     "default": true     
+},     
+{
+
+
+     
+
+
+            "type": "header",
+            "content": "Personalizar botão Comprar Agora",
+            "info": "Alterar cores, estilos e tamanhos"
+
+     },
+     {
+
+
+            "type": "color",
+            "id": "button_cor_color",
+            "label": "Cor do botão adicionar ao carrinho",
+            "default": "#23a454"
+
+        },
+        {
+
+
+            "type": "text",
+            "id": "texto_botao_text",
+            "label": "Texto do botão adicionar ao carrinho",
+            "default": "Adicionar ao carrinho"
+    },
+    {
+
+
+            "type": "text",
+            "id": "tamanho_fonte_botao",
+            "label": "Tamanho da fonte do botão",
+            "default": "24"
+    },
+    {
+
+
+
+
+            "type": "text",
+            "id": "button_tamanho",
+            "label": "Largura do botão de compra agora",
+            "default": "65"
+    },
+    {
+
+
+
+             "type": "checkbox",
+             "id": "botao_animado",
+             "label": "Botão animado",
+             "default": true
+
+    },
+    {
+
+
+             "type": "checkbox",
+             "id": "estilo_botao",
+             "label": "Alterar o estilo do botão",
+             "default": true
+
+    },
+    {
+
+
+
+            "type": "text",
+            "id": "borda_inferior_botao",
+            "label": "Tamanho da borda inferior do botão",
+            "default": "6"
+
+    },
+    {
+
+
+
+            "type": "text",
+            "id": "botao_redondo_cormprar",
+            "label": "Escolha um valor de 1 à 30px para arredodar somente o botão Comprar",
+            "default": "7"
+
+
+    },
+    {
+
+
+
+
+             "type": "text",
+             "id": "botao_redondo",
+             "label": "Escolha  de 1 à 30px p/ arredodar todos o botões da página de produtos",
+             "default": "30px"
+  
+  
+      
+        
+
+
+
+       
+    },
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "paragraph",
+      "content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)"
+    },
+    {
+      "type": "select",
+      "id": "image_size",
+      "label": "Size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "small"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_image_zoom",
+      "label": "Enable image zoom",
+      "info": "Only applicable on desktop screens",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_video_looping",
+      "label": "Enable video looping",
+      "default": false
+    },
+    {
+      "type": "select",
+      "id": "zoom_effect",
+      "label": "Zoom effect",
+      "options": [
+        {
+          "value": "inside",
+          "label": "Inside"
+        },
+        {
+          "value": "outside",
+          "label": "Outside"
+        }
+      ],
+      "default": "outside"
+    },
+    {
+      "type": "select",
+      "id": "carousel_effect",
+      "label": "Transition effect",
+      "options": [
+        {
+          "value": "fade",
+          "label": "Fade"
+        },
+        {
+          "value": "slide",
+          "label": "Slide"
+        }
+      ],
+      "default": "fade"
+    },
+    {
+      "type": "header",
+      "content": "Inventory"
+    },
+    {
+      "type": "paragraph",
+      "content": "You can also add a stock countdown. [Learn more](https://support.maestrooo.com/article/177-product-show-an-stock-countdown-bar)."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_inventory_quantity",
+      "label": "Show inventory quantity",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "low_inventory_threshold",
+      "label": "Low inventory threshold",
+      "info": "Use low stock color when quantity is below the threshold. Choose 0 to always show in stock.",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "paragraph",
+      "content": "You can also add per-product tabs. [Learn more](http://support.maestrooo.com/article/83-product-adding-different-tabs-per-product)."
+    },
+    {
+      "type": "select",
+      "id": "content_display_mode",
+      "label": "Display mode",
+      "options": [
+        {
+          "value": "show_all",
+          "label": "Show all"
+        },
+        {
+          "value": "show_all_and_expand_description",
+          "label": "Show all and expand description"
+        },
+        {
+          "value": "collapse_all",
+          "label": "Collapse all"
+        },
+        {
+          "value": "collapse_all_except_description",
+          "label": "Collapse all except description"
+        }
+      ],
+      "default": "show_all_and_expand_description"
+    },
+    {
+      "type": "page",
+      "id": "tab_page_1_handle",
+      "label": "First page"
+    },
+    {
+      "type": "page",
+      "id": "tab_page_2_handle",
+      "label": "Second page"
+    },
+    {
+      "type": "page",
+      "id": "tab_page_3_handle",
+      "label": "Third page"
+    },
+    {
+      "type": "header",
+      "content": "Reviews"
+    },
+    {
+      "type": "paragraph",
+      "content": "You need to install [Shopify's free Product Reviews](https://apps.shopify.com/product-reviews) app before enabling those options."
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_reviews",
+      "label": "Enable",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_reviews_badge",
+      "label": "Show badge",
+      "default": false
+    },
+    {
+
+
+
+
+
+            "type": "header",
+            "content": "Habilitar Termômetro Mercado livre",
+            "info": "Somente a página de produtos."
+
+
+
+        },
+        {
+            "type": "checkbox",
+            "id": "termometro_ml",
+            "label": "Habilitar",
+            "info": "Habilite ou desabilite o termômetro",
+            "default": false
+
+
+
+        },
+        {
+
+
+
+
+
+
+
+      "type": "header",
+      "content": "Imagem (Badge de Cartão)"
+  
+   
+
+    },
+    {
+
+
+      "type": "checkbox",
+      "id": "badge_01",
+      "label": "habilitar badge cartão padrão",
+      "default":  true
+
+    },
+    {
+
+     "type": "checkbox",
+      "id": "badge_02",
+      "label": "habilitar personalizada",
+      "default":  false
+
+    },
+    {
+
+
+
+      "type": "image_picker",
+      "id": "custom_security_badge",
+      "label": "Selecione uma imagem personalizada",
+      "info": "800 x 200px .jpg recommended"
+
+    },
+    {
+
+
+
+     
+      "type": "header",
+      "content": "Selos de segurança"
+
+
+
+    },
+    {
+
+
+      "type": "checkbox",
+      "id": "badge_03",
+      "label": "habilitar selos de segurança padrão abaixo do botão comprar",
+      "default":  true
+
+
+     },
+    {
+
+ "type": "checkbox",
+      "id": "badge_04",
+      "label": "habilitar selos de segurança customizado abaixo do botão comprar",
+      "default":  true
+
+
+
+
+        },
+        {
+
+    "type": "image_picker",
+            "id": "badgebotao",
+            "info": "Sugestão (480x480)",
+            "label": "Selo de segurança customizado "
+       
+
+
+        
+
+      
+    },
+    {
+      "type": "header",
+      "content": "Shipping estimator"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shipping_estimator",
+      "label": "Show shipping estimator",
+      "info": "Only show if product is available.",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "shipping_estimator_default_country",
+      "label": "Default country",
+      "info": "If the customer is logged in, the country of their shipping address will be used.",
+      "default": "United States"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_refunds_policy",
+      "label": "Show refunds policy",
+      "info": "Refund policy must be added into your store policies. [Learn more](https://help.shopify.com/manual/sell-online/checkout-settings/refund-privacy-tos).",
+      "default": true
+    }
+  ]
+}
+{% endschema %}

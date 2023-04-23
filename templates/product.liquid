@@ -1,0 +1,58 @@
+{%- comment -%}
+If the product contains the special __gift tag, we prevent it to be completely accessible by redirecting to the home page
+{%- endcomment -%}
+ 
+{%- if product.tags contains '__gift' -%}
+  <script>
+    window.location.href = '/';
+  </script>
+
+{%- else -%}
+
+  {% section 'product-template' %}
+{% render 'a2reviews-widget' product:product %}
+  <div id="shopify-ali-review" product-id="{{ product.id }}"> {{ shop.metafields.review_collector.review_code }} </div> 
+          <div class= "container">
+            <div class="card" id='Areviewsapp' class='page-full'>{%  render 'aliexpress_reviews' , product: product %}</div></div>
+  {% section 'product-recommendations' %}
+  {% section 'static-promotion-list' %}
+  {% section 'static-recently-viewed-products' %}
+
+<style>
+    
+.write_review_container {
+    
+padding: 1px 23px;
+font-size: 16px;
+text-transform: none;
+color: #fff;
+border: 1px solid transparent;
+background: #00d132;
+-webkit-box-shadow: 0 2px 4px #ccc, inset 0 20px hsl(0deg 0% 100% / 20%);
+border-radius: 8px;  
+font-weight: bold;   
+    
+} 
+  
+.az_reviews .button {
+-webkit-box-shadow: 0 2px 4px #ccc, inset 0 20px hsl(0deg 0% 100% / 20%);  
+font-weight: bold;
+border-radius: 8px; 
+  
+}
+  
+#az_reviews .areviews_file_label {
+border-radius:  8px;
+-webkit-box-shadow: 0 2px 4px #ccc, inset 0 13px hsl(0deg 0% 100% / 20%);  
+ 
+}  
+
+   
+  </style> 
+
+
+  <script>
+    window.ShopifyXR=window.ShopifyXR||function(){(ShopifyXR.q=ShopifyXR.q||[]).push(arguments)};
+    ShopifyXR('addModels', {{ product.media | where: 'media_type', 'model' | json }});
+  </script>
+{%- endif -%} 

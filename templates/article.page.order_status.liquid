@@ -1,0 +1,278 @@
+
+<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m text-center" >
+    <h2 class=" t-center">
+        {{ page.title}}
+    </h2>
+    <div class="row d-flex justify-content-center text-left" style="margin: 25px;">
+        <div class="col-md-8">{{ page.content}}</div>
+    </div>
+  </section>
+  <!-- content page -->
+  <section class="bgwhite p-b-60">
+    <div class="container">
+        <div class="row d-flex p-4 justify-content-center">
+            <div class="col-md-8" id="order-status-column">
+                <span class="d-flex text-danger find_order_error justify-content-center"></span>
+                <div class="row">
+                    <form class="col-md-6" action="/order_status" method="POST" id= "order_status">
+                        <input type="hidden" value="{{ csrf_token }}" name="_token">
+                        <input type="hidden" value="{{ custom_page.id }}" name="page_id">
+                        <div class="row">
+                            <div class="col-md-12 pr-4">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">{{ 'customer.orders.purchase_email' | t }}</label>
+                                    <input type="email" class="form-control " id="email" placeholder="{{ 'customer.orders.purchase_email' | t }}" 
+                                        name="email" required/>
+                                        <span class="text-danger error-text" style="display: none;">{{ 'customer.orders.wrong_email' | t }}</span>
+                                        <span class="text-danger error-text-email" style="display: none;">{{ 'customer.orders.fill_email' | t }}</span>
+                                </div>
+                                <span class="span-1">
+                                    <hr class="hr-1">
+                                    <span class="span-2">E</span>
+                                    <hr class="hr-2">
+                                </span>
+                                <br>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">{{ 'customer.orders.order_number' | t }}</label>
+                                    <input type="text" class="form-control" id="order_number" placeholder="{{ 'customer.orders.order_number' | t }}"
+                                        name="order_number">
+                                </div>
+                                <input type="hidden" value="" name="order_id" id ="order_id">
+                                <button type="submit" class="btn btn-primary order-status">{{ 'customer.orders.search' | t }}</button>
+                            </div>
+                        </div>
+                    </form>
+                    <span class="order-status-span span-3">
+                        <hr class="hr-3">
+                        <span class="span-4">Ou</span>
+                        <hr class="hr-4">
+                    </span>
+                    <span class="span-5">
+                        <br>
+                        <hr class="hr-5">
+                        <span class="span-6">Ou</span>
+                        <hr class="hr-6">
+                        <br>
+                    </span>
+                    <form class="col-md-6" action="/ordertracking" method="POST">
+                        <input type="hidden" value="{{ csrf_token }}" name="_token">
+                        <input type="hidden" value="{{ custom_page.id }}" name="page_id">
+                        <div class="row">
+                            <div class="col-md-12 pl-4">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">{{ 'customer.orders.tracking_code' | t }}</label>
+                                    <input type="text" class="form-control" id="tracking_number" placeholder="{{ 'customer.orders.tracking_code' | t }}"
+                                        name="tracking_number" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary">{{ 'customer.orders.search' | t }}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal order_modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="top:30vh;">                
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center pb-2 pt-2">{{ 'customer.orders.select_order' | t }}</h5> 
+                        <Select class ="form-control" id ="order_select">                      
+                        </Select>
+                    </div>
+                    <div class="pb-2 text-center" style="padding-bottom: 10px">
+                        <button type="button" class="btn btn-primary submit-order">{{ 'customer.orders.search' | t }}</button>
+                        <button type="button" class="btn btn-secondary close-modal" data-dismiss="modal">{{ 'customer.orders.close' | t }}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<style>
+
+#order-status-column{
+   margin-bottom:65px;
+}
+
+#order-status-column>.row{
+    display: flex;
+}
+
+.order-status-span{
+   margin-left:20px;
+   margin-right:20px;
+   position: relative;
+}
+
+hr.hr-1 {
+    border: 1px dashed #e5e5e5;
+    position: absolute;
+    width: 43%;
+}
+hr.hr-2 {
+    border: 1px dashed #e5e5e5;
+    position: absolute;
+    width:48%;
+    left: 51%;
+}
+hr.hr-3 {
+    border: 1px dashed #e5e5e5;
+    position: absolute;
+    height: 25%;
+    left: 50%;
+    /* top: 20%;*/
+}
+hr.hr-4 {
+    border: 1px dashed #e5e5e5;
+    position: absolute;
+    height: 29%;
+    left: 50%;
+    top: 35%;
+}
+hr.hr-5 {
+    border: 1px dashed #e5e5e5;
+    position: absolute;
+    width: 43%;
+}
+hr.hr-6 {
+    border: 1px dashed #e5e5e5;
+    position: absolute;
+    width:43%;
+    left: 55%;
+}
+span.span-1 {
+    position: relative;
+    width: 100%;
+    display: flow-root;
+    padding-bottom:10px;
+    margin-top:-10px;
+}
+span.span-2 {
+    position: absolute;
+    left: 46%;
+    top: 100%;
+    color: #e5e5e5;
+    font-size: 18px;
+}
+span.span-3 {
+    
+}
+span.span-4 {
+    position: absolute;
+    left: 49.3%;
+    top: 35%;
+    color: #e5e5e5;
+    font-size: 17px;
+    transform: translateX(-50%);
+}
+span.span-5 {
+    display: none !important;
+    position: relative;
+    width: 100%;
+    display: flow-root;
+    padding-bottom: 20px;
+    margin-top: -20px;
+}
+span.span-6 {
+    position: absolute;
+    left: 46%;
+    top: 50%;
+    color: #e5e5e5;
+    font-size: 18px;
+}
+.find_order_error{
+    margin-bottom: 16px;
+}
+@media (max-width: 767px){
+    span.span-3 {
+        display: none !important;
+    }
+    span.span-5 {
+        display: block !important;
+    }
+    #order-status-column>.row{
+        flex-direction: column;
+        padding: 0 16px;
+    }
+}
+.text-danger {
+    color: #dc3545!important;
+}
+  </style> 
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+        var find_order_error = getCookie("find_order_error");
+        if(find_order_error!=""){
+            document.cookie = 'find_order_error=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+            $(".find_order_error").html('Pedido não encontrado');
+        }
+      
+      $('.order-status').click(function(e){
+        $('.error-text-email').hide();
+        e.preventDefault();
+        var order_id = $('#order_id').val();
+        var email_id = $('#email').val();
+        if(email_id == ""){
+            $('.error-text-email').show();
+        }
+        if(order_id != ""){
+        $('#order_status').submit();
+        }else if($('#order_number').val() != "" && $('#email').val() != "" ){
+            $.ajax({
+                headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") },
+                url: '/getOrders',
+                type:"POST",
+                data: {
+                    order_number: $('#order_number').val(), email: $('#email').val()
+                },
+                success: function(res) {
+                    $('#order_id').val(res.id)
+                    $('#order_status').submit();
+
+                },
+                error: function(res) {
+
+                }
+            });
+        }else if($('#email').val() != "" && $('#order_number').val() == ""){
+            $.ajax({
+                headers: { "X-CSRF-TOKEN": $('meta[name="csrf-token"]').attr("content") },
+                url: '/getOrders',
+                type:"POST",
+                data: {
+                    email: $('#email').val()
+                },
+                success: function(res) {
+                    if(res.length >=1){
+                        $('.error-text').hide();
+                        var html ="<option value='' disabled selected>Número do pedido</option>";
+                        res.forEach(element => {
+                            html += "<option value='"+element.id+"'>#"+element.order_number+"</option>";                            
+                        });
+                        $('#order_select').html("");
+                        $('#order_select').html(html);
+                        $('.order_modal').show();
+                    }else{
+                        $('.error-text').show();
+                    }
+                },
+                error: function(res) {
+                   
+                }
+            });
+        }
+      })
+      $('.submit-order').click(function(){
+          if($('#order_select').val() != ""){
+            $('#order_id').val($('#order_select').val())
+            $('#order_status').submit();
+            $('.order_modal').hide();
+          }
+      })
+      $('.close-modal').click(function(){
+        $('.order_modal').hide();
+      })
+    });
+  </script>

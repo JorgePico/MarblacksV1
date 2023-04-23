@@ -1,0 +1,19 @@
+{% if collection.sort_by == 'best-selling' %}
+  <script>
+      window.location.href='/collections/all';
+  </script>
+  <br>
+  <br>
+  <br>
+  <h1 style="text-align: center;">Ordenação Indisponível<h1>
+  <br>
+  <br>
+  <h4 style="text-align: center;"><a href="/collections/all">Acesse nossa lista completa de produtos clicando aqui</a></h4>
+  <br>
+  <br>
+  <br>  
+{% else %}
+  {% section 'collection-template' %}
+  {% section 'static-promotion-list' %}
+  {% section 'static-recently-viewed-products' %}
+{% endif %}

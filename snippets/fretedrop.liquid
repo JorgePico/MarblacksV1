@@ -1,0 +1,90 @@
+
+
+<!--- ABRE CODIGO - SCRIPTPRAZO -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+          <script>
+                    function convertDate(e) {
+                        var t, o = new Date(e);
+                        return [(t = o.getDate(), t < 10 ? "0" + t : t)].join("/")
+                    }
+                    function getMesExtenso(e) {
+                        var t = new Array(12);
+                        return t[0] = "janeiro", t[1] = "fevereiro", t[2] = "março", t[3] = "abril", t[4] = "maio", t[5] = "junho", t[6] = "julho", t[7] = "agosto", t[8] = "setembro", t[9] = "outubro", t[10] = "novembro", t[11] = "dezembro", t[e]
+                    }
+                    jQuery(document).ready(function (e) {
+                                const todayUseMin = new Date();
+                                const todayUseMax = new Date();
+
+                                const deliveryMin = new Date(todayUseMin.setDate(todayUseMin.getDate() + {{ section.settings.delivery_time_min_days }}));
+                                const deliveryMax = new Date(todayUseMax.setDate(todayUseMax.getDate() + {{ section.settings.delivery_time_max_days }}));
+
+                                const mesDeliveryMin = getMesExtenso(deliveryMin.getMonth());
+                                const mesDeliveryMax = getMesExtenso(deliveryMax.getMonth());
+
+                                let textDelivery
+                                if (mesDeliveryMax === mesDeliveryMin) {
+                                    textDelivery = "<strong>" + convertDate(deliveryMin) + "</strong> e <strong>" + convertDate(deliveryMax) + " de " + mesDeliveryMax + "</strong>";
+                                } else {
+                                    textDelivery = "<strong>" + convertDate(deliveryMin) + " de " + mesDeliveryMin + "</strong> e <strong>" + convertDate(deliveryMax) + " de " + mesDeliveryMax + "</strong>"
+                                }
+                        
+                        e.getJSON("https://wtfismyip.com/json", function(t) {
+                            var o = (t = t.YourFuckingLocation).replace(", Colombia", "");
+                            e(".custom-address").html("<span class='text-shipping'>ENVÍO GRATIS A" + o + "</font></strong>");
+                            e(".shipping-preview-loading").hide();
+                            e("#deliverygarante").html("Estimada entre " + a + "."), e(".shipping-preview-loading").hide();
+                        })
+                        
+                        $(".shipping-preview-line1").click(function () {
+          
+              
+            $("#content-collapse").toggle( "slow", function() {
+              // Animation complete.
+            
+            
+            var arrow_mode = $("#arrow--delivery").attr("data-open");
+          
+              if($("#arrow--delivery").attr("data-open") == "false") {
+                
+              $("#arrow--delivery").attr("data-open", "true");
+          
+              $("#arrow--delivery").html('<i class="fas fa-angle-down"></i>');
+            
+              }else if($("#arrow--delivery").attr("data-open") == "true") {
+              $("#arrow--delivery").attr("data-open", "false");
+              $("#arrow--delivery").html('<i class="fas fa-angle-right"></i>');
+              }
+          
+                
+            
+            console.log("Animation completed");
+            });
+          });
+                    });
+          
+          
+          </script>
+
+          <div class="shipping-preview-line1" style="">
+              <div class="icon-shipping"><i class="fas fa-solid fa-location-dot"></i></div>
+              <p class="shipping-preview-loading text-shipping">Cargando por favor espere...</p>
+            
+              <p class="custom-address"></p>
+            
+      
+          
+            <span data-open="false" id="arrow--delivery"><i class="fas fa-angle-right"></i></span>
+        
+            </div>
+
+            <div id="content-collapse">
+              <div class="d-flex">
+             <div class="icon-shipping-fast"> <i class="fas fa-solid fa-truck-fast"></i> </div>
+              <div class="title--delivery"> <div id="deliverygarante"></div> <span class="delivery-g">Entrega garantizada</span></div>
+              <div class="shipping-free">Plazo de entrega 2 a 7 días Habiles</div></div>
+              
+
+            
+<div class="text-shipping-note"> Los tiempos de entrega comienzan desde la confirmación del pago y pueden variar para más de una unidad del mismo producto.</div>
+           </div><div class="security-g d-flex">
+</div>

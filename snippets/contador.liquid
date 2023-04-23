@@ -1,0 +1,124 @@
+
+<!-- Início contador -->
+{% assign productTags = product.tags %}  
+{% if productTags contains 'contador' %} <!-- Aqui vai a tag do produto -->
+
+<div class= "textotimer"></div>
+<script>
+  function startTimer(duration, display) {
+    var timer = duration, minutes, seconds;
+    setInterval(function () {
+      minutes = parseInt(timer / 60, 10)
+      seconds = parseInt(timer % 60, 10);
+
+      minutes = minutes < 10 ? "0" + minutes : minutes;
+      seconds = seconds < 10 ? "0" + seconds : seconds;
+
+      display.textContent = "00" + ":" + minutes + ":" + seconds;
+
+      if (--timer < 0) {
+        timer = duration;
+      }
+    }, 1000);
+  }
+
+  window.onload = function () {
+    var fiveMinutes = 60 * {{ section.settings.contador_2}}.5,                  /* Aqui vai o tempo em minutos */
+        display = document.querySelector('#time');
+    startTimer(fiveMinutes, display);
+  };
+</script>
+  
+<div class="countdown">
+<p class="text"><svg style="margin: 0px 6px -8px 9px;" line-height="1.48" width="36" height="34" viewBox="0 0 22 24" xmlns="https://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.30852 1.94579H13.8024C13.9049 1.94579 13.9888 1.8663 13.9888 1.76913V0.176913C13.9888 0.0797498 13.9049 0 13.8024 0H8.30852C8.20597 0 8.12207 0.0797498 8.12207 0.176913V1.76913C8.12207 1.8663 8.20597 1.94579 8.30852 1.94579ZM0 13.5768C0 19.3238 4.93453 23.9993 11 23.9993C17.0655 23.9993 22 19.3238 22 13.5768C22 7.83001 17.0655 3.1543 11 3.1543C4.93453 3.1543 0 7.83001 0 13.5768ZM2.3466 13.5768C2.3466 9.05604 6.22849 5.37795 11 5.37795C15.7715 5.37795 19.6534 9.05604 19.6534 13.5768C19.6534 18.0978 15.7715 21.7759 11 21.7759C6.22849 21.7759 2.3466 18.0978 2.3466 13.5768ZM9.99573 13.571C9.86644 13.7848 9.83157 14.0197 9.87842 14.2352C9.93502 14.4956 10.1113 14.7275 10.3854 14.8579C10.8865 15.0964 11.5243 14.9064 11.8103 14.434L14.1204 10.6152C14.4061 10.1428 14.2318 9.56692 13.7305 9.3283C13.2297 9.09004 12.5919 9.27995 12.3062 9.7523L9.99573 13.571ZM20.5757 6.16097L18.5687 4.49657C18.5136 4.45089 18.508 4.37064 18.5562 4.3184L19.3468 3.46285C19.395 3.41061 19.4797 3.40531 19.5348 3.45099L21.5418 5.11514C21.597 5.16107 21.6026 5.24107 21.5543 5.29331L20.7638 6.14911C20.7153 6.20135 20.6309 6.20665 20.5757 6.16097Z" fill="#fff" height="24"></path></svg></i><span style="color:{{ section.settings.cor_texto_contador }}; padding-left: 5px;"> A PROMOÇÃO TERMINA EM:</span> <span id="time"></span></p> <!-- Aqui vai a imagem e o texto -->
+</div>
+  
+
+<div class= "textotimer"> <a style='font-size:15px'><b>{{savings}}</b></a></div>
+          <p></p> 
+ 
+<style>
+  
+@media screen and (min-width: 720px) {  
+.countdown{
+    
+  color: #fff;
+    font-size: 23px;
+    background-image: linear-gradient(135deg, {{ section.settings.cor_contador_cor }}, {{ section.settings.cor_contador_cor1 }});       /* Aqui vai a cor de fundo */
+    overflow: hidden;
+    margin-top: -45px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 15px 15px 0px 0px;
+  }
+  }
+
+ @media screen and (max-width: 720px) {  
+.countdown{
+    color: #fff;
+    font-size: 14px;
+    text-align: left;
+    /*margin: 1em 0 2em;*/
+    border: 2px double #000000; /* Aqui vai a cor, tipo e expessura da borda */
+    padding: 2px;
+    line-height: 2.4;
+    background-image: linear-gradient(135deg, {{ section.settings.cor_contador_cor }}, {{ section.settings.cor_contador_cor1 }});       /* Aqui vai a cor de fundo */
+    border: 1px;
+   /* box-shadow: 0 0 8px rgba(0,0,0,.5); /* Aqui vai a sombra de fundo */
+    width:100%;
+    border-radius: 15px; 
+    margin-top: 10px;
+  
+ } 
+ }  
+@media screen and (min-width: 641px) {  
+.countdown p > span{
+  	color: #ffffff;
+	font-weight:900; 
+    color: {{ section.settings.cor_relogio_contador }};
+ }
+
+.countdown p > i > svg {
+    width: 18px;
+    top: 4px;
+    position: relative;
+ }
+
+.countdown > p.text
+ {
+    text-align: left;
+    font-weight: 900;
+    line-height: 1.48;
+    padding: 5px;
+ } 
+
+}
+
+  @media screen and (max-width: 941px) {  
+.countdown p > span{
+  	color: #ffffff;
+	font-weight:900; 
+    color: #05d976;
+ }
+
+.countdown p > i > svg {
+    width: 18px;
+    top: 4px;
+    position: relative;
+ }
+
+.countdown > p.text
+ {
+    text-align: left;
+    font-weight: 900;
+    padding: 5px;
+ } 
+</style>
+{% endif %}
+<!-- Final contador -->
+
+
+     
+        

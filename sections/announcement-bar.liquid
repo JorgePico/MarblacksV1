@@ -1,0 +1,479 @@
+<!--Inicio anuncio com imagem-->
+<!--banner desktop-->
+  {% if section.settings.anuncio_img%}
+   <div class="header__top">
+       <div class="borderation"> 
+          <a class='ocutar-desktop'{% if section.settings.url_i %} href="{{ section.settings.url_i}} {% endif %}">
+             <div class="ocutar-desktop"><img src="{{ section.settings.imgdesk| img_url: '2000x100' }}"/></div></a>
+                </div></div>
+
+                 <a class='mobileannouncement'{% if section.settings.url_i %} href="{{ section.settings.url_i}} {% endif %}">
+           <div class="mobileannouncement"><img src="{{ section.settings.imgmb| img_url: '2000x100' }}"/></div></a> 
+                        <style>
+                          .header__top {
+                           background: {{ section.settings.fundo_banner}};
+                           z-index: 1002;
+                           }   
+                           @media screen and (min-width:720px){
+                          .ocutar-mobile{
+                           display:none !important;    
+                           }   
+                           } 
+                           @media screen and (max-width:720px){
+                          .ocutar-desktop{
+                           display:none !important;    
+                           }                              
+                           }   
+                          .ocutar-desktop {                                
+                           margin-top: 0px;  
+                           border-radius: 6px;      
+                           }           
+                          .ocutar-mobile {      
+                           
+                           margin-top: 0px;
+                           border-radius: 6px;      
+                           }    
+                          .borderation {
+                           background: {{ section.settings.fundo_banner}};
+                           }   
+                           </style> 
+                           {%- endif -%} 
+                           <!--Final anuncio com imagem-->
+
+  {%- if section.settings.show_announcement-%}
+      <div id="shopify-section-announcement-bar" class="shopify-section"><section class="show-on-mobile" data-section-id="announcement-bar" data-section-type="announcement-bar" data-section-settings='{
+          "showNewsletter": true}'>
+      
+      <div id="announcement-bar-newsletter" class="announcement-bar__newsletter hidden-phone" aria-hidden="true">
+        <div class="container">
+          <div class="announcement-bar__close-container">
+            <button class="announcement-bar__close" data-action="toggle-newsletter"><svg class="icon icon--close" viewBox="0 0 19 19" role="presentation">
+      <path d="M9.1923882 8.39339828l7.7781745-7.7781746 1.4142136 1.41421357-7.7781746 7.77817459 7.7781746 7.77817456L16.9705627 19l-7.7781745-7.7781746L1.41421356 19 0 17.5857864l7.7781746-7.77817456L0 2.02943725 1.41421356.61522369 9.1923882 8.39339828z" fill="currentColor" fill-rule="evenodd"></path>
+    </svg></button>
+          </div>
+        </div>
+        <div class="container container--extra-narrow">
+          <div class="announcement-bar__newsletter-inner"><span class="heading h1">Newsletter</span><div class="rte">
+                <p>Se inscreva em nossa newsletter para receber as últimas promoções.</p>
+              </div>            
+            <div class="newsletter"><form method="post" action="/contact#newsletter-announcement-bar" id="newsletter-announcement-bar" accept-charset="UTF-8" class="form newsletter__form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="contact[tags]" value="newsletter">            
+            <input type="hidden" name="contact[context]" value="announcement-bar">
+                  <div class="form__input-row">
+                    <div class="form__input-wrapper form__input-wrapper--labelled">
+                      <input type="email" id="announcement[contact][email]" name="contact[email]" class="form__field form__field--text" autofocus required>
+                      <label for="announcement[contact][email]" class="form__floating-label">Seu email</label>
+                    </div>
+                    <button type="submit" class="form__submit button button--primary4">Inscreve</button>
+                  </div></form></div>       
+          </div>
+        </div>
+      </div><div class="announcement-bar">
+      <div class="container">
+        <div class="announcement-bar__inner"><!--<p class="announcement-bar__content announcement-bar__content--left"></p>-->
+   
+          <ul class="announcementbarul"><li  class="announcement-bar__content announcement-bar__content--left announcementbarli"><svg class="announcesvg" viewbox="0 0 23 24" role="presentation">
+      <g stroke-width="2" fill="none" fill-rule="evenodd">
+        <path d="M6.5 3.25l12 6" stroke="white"></path>
+        <path stroke="white" d="M23 7l-10 5L1 6M13 12v11"></path>
+        <path stroke="white" stroke-linecap="square" d="M23 7v10l-10 6-12-6V6l10-5z"></path>
+      </g>
+            </svg>{{section.settings.texto_frete_text}}</li>
+            
+            <style>
+              .announcementbarul{
+                display: contents;
+              }
+              @media only screen and (max-width:999px) {
+                .announcementbarli {
+                  display: none !important;
+                  padding: 7px;
+                }
+                .announcementbarli:first-child {
+                  display: block !important;
+                }
+                
+              }
+              .announcementbarli > svg {
+                max-width: 32px !important;
+                width: 22px;
+    			vertical-align: middle;
+    			display: inline-block;
+                margin-right: 5px
+                
+              }
+              
+              .announcementbarli > svg > g > path {
+                stroke: #ffffff !important;
+              }
+              .announcementbarli > svg > g > circle {
+                stroke:#ffffff !important;
+              }
+              .announcementbarli > svg > g > path:last-child {
+                stroke: #ffffff !important;
+              }
+            </style>
+
+        
+
+
+        
+<!--<script media="only screen and (max-device-width: 920px)">
+          if (screen && screen.width < 920) {
+          var current = 0,
+        slides = document.getElementsByClassName("announcement-bar__content");
+
+    setInterval(function() {
+      for (var i = 0; i < slides.length; i++) {
+        slides[i].style.opacity = 0;
+      }
+      current = (current != slides.length - 1) ? current + 1 : 0;
+      slides[current].style.opacity = 1;
+    }, 300);
+          }
+        </script>-->
+
+
+        
+            {% if section.settings.deixar_frete%}
+            <li  class="announcement-bar__content announcement-bar__content--left announcementbarli"><svg viewBox="0 0 23 24" role="presentation">
+      <g transform="translate(1 1)" stroke-width="1.5" fill="none" fill-rule="evenodd">
+        <path stroke="#c0392b" d="M8 4h8v7"></path>
+        <path stroke="#c0392b" stroke-linecap="square" d="M11 7L8 4l3-3"></path>
+        <circle stroke="#1c1c1c" stroke-linecap="square" cx="6" cy="20" r="2"></circle>
+        <circle stroke="#1c1c1c" stroke-linecap="square" cx="18" cy="20" r="2"></circle>
+        <path stroke="#1c1c1c" stroke-linecap="square" d="M21 5l-2 10H5L3 0H0"></path>
+      </g>
+    </svg>{{section.settings.garantia_devolucao}}</li>
+            
+            <style>
+              .announcementbarul{
+                display: contents;
+              }
+              @media only screen and (max-width:999px) {
+                .announcementbarli {
+                  display: none !important;
+                  padding: 7px;
+                }
+                .announcementbarli:first-child {
+                  display: block !important;
+                }
+                
+              }
+              .announcementbarli > svg {
+                max-width: 32px !important;
+                width: 22px;
+    			vertical-align: middle;
+    			display: inline-block;
+                margin-right: 5px
+                
+              }
+              
+              .announcementbarli > svg > g > path {
+                stroke: #ffffff !important;
+              }
+              .announcementbarli > svg > g > circle {
+                stroke:#ffffff !important;
+              }
+              .announcementbarli > svg > g > path:last-child {
+                stroke: #ffffff !important;
+              }
+            </style><li  class="announcement-bar__content announcement-bar__content--left announcementbarli"><svg viewBox="0 0 24 23" role="presentation">
+      <g stroke-width="1.5" fill="none" fill-rule="evenodd">
+        <path d="M17 1c-2.1 0-3.9 1.1-5 2.7C10.9 2.1 9.1 1 7 1 3.7 1 1 3.7 1 7c0 6 11 15 11 15s11-9 11-15c0-3.3-2.7-6-6-6z" stroke="#1c1c1c" stroke-linecap="square"></path>
+        <path d="M16 5c1.65 0 3 1.35 3 3" stroke="#c0392b" stroke-linecap="round"></path>
+      </g>
+            </svg> {{section.settings.satisfacao_text}}</li>
+            
+            <style>
+              .announcementbarul{
+                display: contents;
+              }
+              @media only screen and (max-width:999px) {
+                .announcementbarli {
+                  display: none !important;
+                  padding: 7px;
+                }
+                .announcementbarli:first-child {
+                  display: block !important;
+                }
+                
+              }
+              .announcementbarli > svg {
+                max-width: 32px !important;
+                width: 22px;
+    			vertical-align: middle;
+    			display: inline-block;
+                margin-right: 5px
+                
+              }
+              
+              .announcementbarli > svg > g > path {
+                stroke: #ffffff !important;
+              }
+              .announcementbarli > svg > g > circle {
+                stroke:#ffffff !important;
+              }
+              .announcementbarli > svg > g > path:last-child {
+                stroke: #ffffff !important;
+              }
+            </style></ul>{% endif %}
+
+ <!--       </style><li  class="announcement-bar__content announcement-bar__content--left announcementbarli"><svg viewBox="0 0 24 20" role="presentation">
+      <g stroke-width="1.5" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <path d="M1 5h22M1 9h22M21 19H3c-1.105 0-2-.895-2-2V3c0-1.105.895-2 2-2h18c1.105 0 2 .895 2 2v14c0 1.105-.895 2-2 2z" stroke="#1c1c1c"></path>
+        <path d="M5 14h5M18 14h1" stroke="#c0392b"></path>
+      </g>
+    </svg><b>Desconto 5% Off no Pix</b></li>
+            
+            <style>
+              .announcementbarul{
+                display: contents;
+              }
+              @media only screen and (max-width:999px) {
+                .announcementbarli {
+                  display: none !important;
+                  padding: 7px;
+                }
+                .announcementbarli:first-child {
+                  display: block !important;
+                }
+                
+              }
+              .announcementbarli > svg {
+                max-width: 32px !important;
+                width: 22px;
+    			vertical-align: middle;
+    			display: inline-block;
+                margin-right: 5px
+                
+              }
+              
+              .announcementbarli > svg > g > path {
+                stroke: #ffffff !important;
+              }
+              .announcementbarli > svg > g > circle {
+                stroke:#ffffff !important;
+              }
+              .announcementbarli > svg > g > path:last-child {
+                stroke: #ffffff !important;
+              }
+            </style></ul>-->
+              
+              
+          
+          
+         
+         <!-- <p class="announcement-bar__content announcement-bar__content--right mobhide"> <svg class="announcesvg" viewBox="0 0 24 23" role="presentation">
+      <g stroke-width="2" fill="none" fill-rule="evenodd">
+        <path d="M17 1c-2.1 0-3.9 1.1-5 2.7C10.9 2.1 9.1 1 7 1 3.7 1 1 3.7 1 7c0 6 11 15 11 15s11-9 11-15c0-3.3-2.7-6-6-6z" stroke="white" stroke-linecap="square"></path>
+        <path d="M16 5c1.65 0 3 1.35 3 3" stroke="#c0392b" stroke-linecap="round"></path>
+      </g>
+    </svg> Satisfação Garantida ou Dinheiro de Volta</p>--><!--<a style="display:none">--><button style="display: none" type="button" class="announcement-bar__button hidden-phone" data-action="toggle-newsletter" aria-expanded="false" aria-controls="announcement-bar-newsletter"><svg class="icon icon--newsletter" viewBox="0 0 20 17" role="presentation">
+      <path d="M19.1666667 0H.83333333C.37333333 0 0 .37995 0 .85v15.3c0 .47005.37333333.85.83333333.85H19.1666667c.46 0 .8333333-.37995.8333333-.85V.85c0-.47005-.3733333-.85-.8333333-.85zM7.20975004 10.8719018L5.3023283 12.7794369c-.14877889.1487878-.34409888.2235631-.53941886.2235631-.19531999 0-.39063998-.0747753-.53941887-.2235631-.29832076-.2983385-.29832076-.7805633 0-1.0789018L6.1309123 9.793l1.07883774 1.0789018zm8.56950946 1.9075351c-.1487789.1487878-.3440989.2235631-.5394189.2235631-.19532 0-.39064-.0747753-.5394189-.2235631L12.793 10.8719018 13.8718377 9.793l1.9074218 1.9075351c.2983207.2983385.2983207.7805633 0 1.0789018zm.9639048-7.45186267l-6.1248086 5.44429317c-.1706197.1516625-.3946127.2278826-.6186057.2278826-.223993 0-.447986-.0762201-.61860567-.2278826l-6.1248086-5.44429317c-.34211431-.30410267-.34211431-.79564457 0-1.09974723.34211431-.30410267.89509703-.30410267 1.23721134 0L9.99975 9.1222466l5.5062029-4.8944196c.3421143-.30410267.8950971-.30410267 1.2372114 0 .3421143.30410266.3421143.79564456 0 1.09974723z" fill="currentColor"></path>
+          </svg>Inscreva-se</button></div>
+      </div>
+    </div>
+      
+      
+  </section>
+
+  <style>
+    .announcement-bar {
+      background-image: linear-gradient(to right, {{section.settings.background1}}, {{section.settings.background2}});
+      
+      {% if section.settings.border_bottom1 %}
+      border-bottom: 1px solid #f5f5f5;
+      {%- endif -%}  
+        
+    }
+      </style></div>
+<style>
+  
+  @media screen and (min-width: 641px) {
+.announcement-bar__content {
+ color: {{section.settings.text_color}};
+}  
+  
+  }  
+  
+  
+.announcement-bar__content {
+ color: {{section.settings.text_color}};
+  
+}
+  
+  
+ @media screen and (min-width: 641px) {
+.announcement-bar__button {  
+background: {{ section.settings.cor_newsletter}};
+  
+}
+    
+  }  
+  
+  
+  
+  @media screen and (min-width: 641px) {
+.announcement-bar__inner {
+  {% if section.settings.deixar_frete%}
+  {%- else -%}
+  align-items: center;
+  justify-content: center;
+      
+
+  
+  {%- endif -%}
+  
+  
+  
+}
+    {% if section.settings.deixar_frete%}
+   .announcement-bar__content {
+    padding: 7px 0;
+    margin-right: auto;
+    
+    
+  } 
+    
+    {%- endif -%}
+</style>  
+
+ {%- endif -%}
+{% schema %}
+{
+  "name": "Barra superior",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Mostrar barra superior",
+      "default": true
+    },
+    {
+
+
+      "type": "color",
+      "id": "background1",
+      "label": "Cor1 de fundo da barra",
+      "default": "#1e2d7d"
+    },
+    {
+
+
+      "type": "color",
+      "id": "background2",
+      "label": "Cor2 de fundo da barra",
+      "default": "#1e2d7d"
+    },
+    {
+
+
+
+
+      "type": "color",
+      "id": "text_color",
+      "label": "Cor do texto da barra",
+      "default": "#ffffff"
+    
+    },
+    {
+
+
+     "type": "color",
+      "id": "cor_newsletter",
+      "label": "Alterar cor botão newsletter",
+      "default": "#ffffff"
+    
+    },
+    {
+
+
+
+
+      "type": "checkbox",
+      "id": "border_bottom1",
+      "label": "Colocar linha abaixo da barra ",
+      "default": true
+    },
+    {
+
+      "type": "text",
+            "id": "texto_frete_text",
+            "label": "Texto do frete 01 ",
+            "info": "Texto sobre o frete da sua loja",
+            "default": "Frete Grátis para Todo Brasil"
+    },
+    {
+
+
+    "type": "checkbox",
+      "id": "deixar_frete",
+      "label": "Desmarque para deixar somente frete grátis",
+      "default": false
+    },
+    {
+
+
+
+      "type": "text",
+            "id": "garantia_devolucao",
+            "label": "Texto da garantia e devolução 02 ",
+            "info": "Texto Trocas Garantias",
+            "default": "Devoluções & Trocas Garantidas"
+    },
+    {
+
+      "type": "text",
+            "id": "satisfacao_text",
+            "label": "Texto satisfação do cliente 03 ",
+            "info": "Texto Trocas Garantias",
+            "default": "Satisfação Garantida ou Seu Dinheiro de Volta"
+
+    },
+    {
+
+
+
+     "type": "header",
+            "content": "Banner Promocional"
+        },
+        {
+
+             
+            "type": "checkbox",
+            "id": "anuncio_img",
+            "label": "Anúncio em imagem",
+            "default": false
+             },
+             {
+            "type": "color",
+            "id": "fundo_banner",
+            "label": "Cor de fundo da seção banner",
+            "default": "transparent"
+        
+        },
+        {
+            "type": "image_picker",
+            "id": "imgdesk",
+            "info": "Sugestão (2000x100)",
+            "label": "Imagem Desktop "
+        },
+        {
+            "type": "image_picker",
+            "id": "imgmb",
+            "info": "Sugestão (2000x250)",
+            "label": "Imagem Mobile"
+        
+
+
+        },
+        {
+            "type": "url",
+            "id": "url_i",
+            "info": "Deixe em branco para desativar",
+            "label": "Link do anúncio"
+    }
+  ]
+}
+{% endschema %}
+
