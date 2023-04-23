@@ -452,7 +452,7 @@
               {%- else -%}
                 <span class="price price--highlight">{{ selected_variant.price | money }}</span>
               {%- endif -%}
-              <p style="color: var(--text-color); margin: 3px 0px 0px 0px;"> o en hasta <b style="color: var(--text-color); font-size: 17px">12 cuotas</b> de <b style="color: var(--text-color); font-size: 16px"><span>{{ selected_variant.price |times: 1.2161 | divided_by: 12 | round:2 | money }}</span></b></p>    
+              <p style="color: var(--text-color); margin: 3px 0px 0px 0px;"> O en hasta  <b style="color: var(--text-color); font-size: 17px">12 cuotas</b> de <b style="color: var(--text-color); font-size: 16px"><span>{{ selected_variant.price |times: 1.2161 | divided_by: 12 | round:2 | money }}</span></b></p>    
               </div>
 
            {% if section.settings.mostrar_economize %}
@@ -599,7 +599,7 @@
                                class="shipping-estimated"></p>                           
 
                           {% if section.settings.relogio_entrega %}
-                        <span style="font-size:14px;display:block;line-height:19px"> Comprando en hasta       
+                        <span style="font-size:14px;display:block;line-height:19px"> ComprandO en hasta        
                       <span class="sellify-countdown-timer" id="countdown"> <span> <span class="ts-value" id="hours" style="display:none;"></span> <span class="ts-unit" data-text="horas" style="display:none;">horas</span> </span> <span> <span class="ts-value" id="minutes" style="font-weight: bold; color:{{ section.settings.cor_relogio }} "></span> <span class="ts-unit" data-text="min" style="font-weight: bold; color:{{ section.settings.cor_relogio }} ">min</span> </span> <span> <span class="ts-value" id="seconds" style="font-weight: bold; color:{{ section.settings.cor_relogio }}"></span> <span class="ts-unit" data-text="segs" style="font-weight: bold; color:{{ section.settings.cor_relogio }}">seg</span> </span> </span>
                      </span></p>
                      
