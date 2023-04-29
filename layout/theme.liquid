@@ -32,14 +32,14 @@
     {%- endif -%}
 
     {%- comment -%}Few prefech to increase performance on commonly used third-parties{%- endcomment -%}
-    <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}">
+    <link rel="preload" as="style" href="{{ 'theme.css' | asset_url }}"  onload="this.rel='stylesheet'">
     <link rel="preconnect" href="https://cdn.shopify.com">
     <link rel="preconnect" href="https://fonts.shopifycdn.com">
     <link rel="dns-prefetch" href="https://productreviews.shopifycdn.com">
     <link rel="dns-prefetch" href="https://ajax.googleapis.com">
     <link rel="dns-prefetch" href="https://maps.googleapis.com">
     <link rel="dns-prefetch" href="https://maps.gstatic.com">
-    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet">
+   
 
     {% render 'social-meta-tags' %}
     {% render 'css-variables' %}
@@ -160,11 +160,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {% section 'text-with-icons' %}
     {% section 'footer' %}
 
-    <script src="//cdn.codeblackbelt.com/js/modules/frequently-bought-together/main.min.js?shop=marblacks-adm.myshopify.com" defer></script>
+
+
+    
     {{ 'pfx.js' | asset_url | script_tag }}
     
 	 <!-- Não remova. Checkout Yampi. -->
-{% capture yampi_snippet_content %}{% include 'YampiSnippet' %}{% endcapture %} {% unless yampi_snippet_content contains 'Liquid error' %} {% include 'YampiSnippet' %} {% endunless %}
+
 <!-- Não remova. Checkout Yampi. --> </body>
  </html>
 

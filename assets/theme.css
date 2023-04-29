@@ -1180,19 +1180,15 @@ body:not(.is-tabbing) textarea:focus {
     transform: translateX(100%);
   }
 }
-img.lazyload[data-sizes=auto] {
-  width: 100%;
-  /* this is needed to help LazySizes calculate the correct size */
-}
+
 
 .image--fade-in {
-  opacity: 0;
+    width: 130px;
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 
-.lazyloaded.image--fade-in,
-.no-js [data-bgset],
-.no-js [data-bg] {
+.lazyloaded.image--fade-in {
   opacity: 1;
 }
 
