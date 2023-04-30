@@ -162,7 +162,7 @@
           "1598060184149": {
             "type": "text",
             "settings": {
-              "title": "ATENDIMENTO AO CLIENTE",
+              "title": "Atención al cliente",
               "content": "<p><strong>SAC (Atención al Cliente) <\/strong><\/p><p><strong>Email:<\/strong> Soporte@marblacks.com.co<\/p><p><strong>WhatsApp:<\/strong> +(57) 315-687-7912<\/p>"
             }
           },
@@ -208,6 +208,7 @@
           "cor_2": "#ff5f5f",
           "cor_3": "#9100ff",
           "cor_4": "#0086ff",
+          "logo": "shopify:\/\/shop_images\/1_b0bf1424-cd82-47d0-81b2-bce814.png",
           "logo_max_width": 140,
           "mobile_logo_max_width": 100,
           "show_social_media": false,
@@ -558,7 +559,7 @@
             "type": "item",
             "settings": {
               "icon": "bi-fast-delivery",
-              "title": "Frete Grátis",
+              "title": "Envio Grátis",
               "content": "<p>Envío rápido y acompañado con código de seguimiento<\/p>"
             }
           },
@@ -566,15 +567,15 @@
             "type": "item",
             "settings": {
               "icon": "bi-customer-support",
-              "title": "Suporte ao Cliente",
-              "content": "<p>servicio lun. al sáb. 8:00 am a 6:00 pm<\/p>"
+              "title": "Soporte al Cliente",
+              "content": "<p>servicio lun. a sáb. 8:00 am a 6:00 pm<\/p>"
             }
           },
           "text-with-icons-3": {
             "type": "item",
             "settings": {
               "icon": "bi-secure-payment",
-              "title": "Pagamento Seguro",
+              "title": "Pago Seguro",
               "content": "<p>Aceptamos tarjetas de crédito y transferencias bancarias<\/p>"
             }
           }
@@ -636,41 +637,6 @@
           "upsell_heading": "Complete o seu carrinho",
           "upsell_collection": "",
           "upsell_products_count": 4
-        }
-      },
-      "16256632635ec0715a": {
-        "type": "offers",
-        "blocks": {
-          "1625663263ec0c105a-1": {
-            "type": "offer",
-            "settings": {
-              "title": "Fernanda Almeida - ⭐⭐⭐⭐⭐",
-              "content": "<p>Excelente atendimento, suporte sempre prestativo para resolver as minhas dúvidas com o produto.<\/p>"
-            }
-          },
-          "b03b9f4e-971a-4300-bc0f-f71178423b55": {
-            "type": "offer",
-            "settings": {
-              "title": "Andre Siqueira - ⭐⭐⭐⭐⭐",
-              "content": "<p>O produto de fato cumpre tudo o que promete, já recomendei para vários amigos e eles compraram também.<\/p>"
-            }
-          },
-          "1625663263ec0c105a-0": {
-            "type": "offer",
-            "settings": {
-              "title": "Cleusa Maria - ⭐⭐⭐⭐⭐",
-              "content": "<p>\"Foi minha primeira compra na internet. Adorei o site vou sempre comprar aqui.\"<\/p>"
-            }
-          }
-        },
-        "block_order": [
-          "1625663263ec0c105a-1",
-          "b03b9f4e-971a-4300-bc0f-f71178423b55",
-          "1625663263ec0c105a-0"
-        ],
-        "settings": {
-          "items_per_row": 3,
-          "stack_mobile": true
         }
       },
       "list-collections-template": {
@@ -771,6 +737,7 @@
       },
       "1651320688c1452da9": {
         "type": "promotion-list",
+        "disabled": true,
         "blocks": {
           "1651320688c1452da9-0": {
             "type": "item",
@@ -853,6 +820,7 @@
       },
       "165850699407f1ba35": {
         "type": "collection-with-image",
+        "disabled": true,
         "settings": {
           "collection": "mas-vendidos",
           "products_count": 20,
@@ -1000,7 +968,6 @@
       "1659753583776d4519",
       "16608300336b1488ae",
       "16594504856da94767",
-      "16256632635ec0715a",
       "1651320688c1452da9",
       "165850699407f1ba35"
     ]
