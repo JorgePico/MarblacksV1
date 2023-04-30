@@ -1,1 +1,3023 @@
-{"current":{"heading_color":"#000000","text_color":"#737b97","accent_color":"#00d132","link_color":"#53b956","border_color":"#dfe4e6","background":"#f7f7f6","secondary_background":"#ffffff","error_color":"#ff0000","success_color":"#33bb33","primary_button_background":"#00d132","primary_button_text_color":"#36312c","secondary_button_background":"#00d132","secondary_button_text_color":"#ffffff","header_background":"#000000","header_text_color":"#ffffff","header_light_text_color":"#00d86b","header_accent_color":"#00d132","cor_preco_cor":"#0086ff","cor_compare_cor":"#8a9297","onsale_1":"#00d132","onsale_2":"#00d132","product_in_stock_color":"#53b956","product_low_stock_color":"#ee0000","product_sold_out_color":"#8a9297","custom_1_cor1":"#102169","custom_1_cor2":"#1a36b0","custom_2_cor1":"#ac1bc5","custom_2_cor2":"#da4af2","product_star_color":"#ffbd00","zapzap":true,"lado_zap":"2","zapicon":true,"zap_altura":35,"zap_altura_box":115,"numberzap":"+573156877912","titlezap":"Hable con nosotros\n<span>\nNecesitas ayuda cuenta con nosotros.<\/span>","chatzap":"¡Hola, estoy aquí para ayudarte!","digizap":"Ingrese su mensaje","base_text_font_size":15,"heading_font":"ubuntu_n4","text_font":"ubuntu_n4","underline_links":true,"animation_image_zoom":true,"search_mode":"product,article,page","show_vendor":false,"show_secondary_image":true,"show_discount":true,"discount_mode":"percentage","product_price_position":"after_title","product_image_size":"square","show_color_swatch":false,"show_inventory_quantity":false,"low_inventory_threshold":0,"show_reviews_badge":true,"cart_type":"page","cart_empty_button_link":"shopify:\/\/collections\/all","cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"700","social_facebook":"https:\/\/www.facebook.com\/shopify","social_twitter":"https:\/\/twitter.com\/shopify","social_pinterest":"https:\/\/www.pinterest.com\/shopify","social_instagram":"https:\/\/instagram.com\/shopify","social_vimeo":"","social_tumblr":"","social_youtube":"https:\/\/www.youtube.com\/user\/shopify","social_linkedin":"","social_snapchat":"","social_fancy":"","favicon":"shopify:\/\/shop_images\/imagem_2021-06-30_142454.png","atalho_f12_enable":false,"botoes_campos":"30px","sombra1_botao":false,"estilo_botao":false,"borda_botao":false,"tag_card":false,"borda_redonda":"15px","sombra_card":true,"juros":"1010","checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_image":"","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_body_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_accent_color":"#00badb","checkout_button_color":"#00badb","checkout_error_color":"#ff0000","botao_redondo_cormprar10":"2161","largura_site":1300,"botao_direito_enable":false,"product_label_2_background":"#9400ff","product_label_1_background":"#102169","product_on_sale_accent":"#00d86b","botao_direito":true,"share_image":"","social_google_plus":"","sections":{"header":{"type":"header","settings":{"enable_sticky_header":true,"logo":"shopify:\/\/shop_images\/1_b0bf1424-cd82-47d0-81b2-bce814cf7f3d.png","logo_max_width":215,"mobile_logo_max_width":170,"largura_site":1300,"centro_logo_mobile":"20%","nav_cor":"#000000","nav_cor_texto":"#ffffff","codigo_rastreio":false,"url_rastreio":"shopify:\/\/pages\/rastreio","cart_icon_icon":"bag","menu_position_1":"center","espaco_acima_menu":"5","espaco_abaixo_menu":"10","espaco_menu":"20","espaco_menu_inferior":"-10px","barra_degradee":true,"altura_linha_mobile":1,"cor_1":"#fcd000","cor_2":"#ff5f5f","cor_3":"#9100ff","cor_4":"#0086ff","sombra_menu":"10","anuncio_img":false,"fundo_banner":"#02195a","url_i":"shopify:\/\/products\/relogio-digital-em-aco-inoxidavel-esportiva-com-bluetooth-a-prova-de-agua-masculino","show_locale_selector":false,"show_currency_selector":false,"navigation_menu":"","desktop_navigation_layout":"inline","desktop_navigation_open_trigger":"hover","show_navigation_social_media":true,"navigation_phone_number":"Whatsapp +57 315-687-7912","navigation_email":"Soporte@marblacks.com.co","show_condensed_search":false,"cor_botao":"#ffffff","cor_icone":"#000000","fundo_barra_pesquisa":"#ffffff","borda_pesquisa":"#000000","retirar_borda":true,"botao_padrao":false,"botao_redondo":true,"botao_sombra":false,"tamanho_pesquisa":"44px","margin_superior_pesquisa":"59","margin_inferior_pesquisa":"-10px","show_search_filter":false,"search_menu":"","show_search_menu_title":true}},"footer":{"type":"footer","blocks":{"1598060184149":{"type":"text","settings":{"title":"ATENDIMENTO AO CLIENTE","content":"<p><strong>SAC (Atención al Cliente) <\/strong><\/p><p><strong>Email:<\/strong> Soporte@marblacks.com.co<\/p><p><strong>WhatsApp:<\/strong> +(57) 315-687-7912<\/p>"}},"footer-1":{"type":"links","settings":{"menu":""}},"bd0342a8-e745-4965-80fd-f49d6074a69f":{"type":"links","settings":{"menu":""}},"943aca47-c2d5-44e4-9245-d5ab3572d5c2":{"type":"links","settings":{"menu":"footer"}},"footer-2":{"type":"newsletter","settings":{"title":"RECIBE NUESTRAS PROMOCIONES","subheading":"<p>Suscríbete con tu correo electrónico a continuación:<\/p>"}}},"block_order":["1598060184149","footer-1","bd0342a8-e745-4965-80fd-f49d6074a69f","943aca47-c2d5-44e4-9245-d5ab3572d5c2","footer-2"],"custom_css":[],"settings":{"barra_degradee":true,"cor_1":"#fcd000","cor_2":"#ff5f5f","cor_3":"#9100ff","cor_4":"#0086ff","logo_max_width":140,"mobile_logo_max_width":100,"show_social_media":false,"show_payment_icons":true,"show_locale_selector":true,"cor_footer":"#000000","cor_texto":"#ffffff","des_cnpj":false,"numero_cnpj":"","endereco_company_desktop":"","endereco_company_mobile":"","retirar_texto":false,"texto_seguranca":"Loja 100% segura","mostrar_selo1":false,"selo1":"Link sem https:\/\/","mostrar_selo2":false,"selo2":"Link aqui","mostrar_selo3":false,"selo3":"Link sem https:\/\/","show_currency_selector":true,"show_cookie_bar":false,"text":"<p>Nós utilizamos cookies para personalizar anúncios e melhorar a sua <br\/>experiência no site. Ao continuar navegando, você concorda com a nossa política <\/p>","accept_button":"Continuar"}},"slideshow":{"type":"slideshow","blocks":{"64939740-2d54-47f0-bc3f-d10776a4f9ae":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/banner_drop3.png","mobile_image":"shopify:\/\/shop_images\/banner_drop_mobile2.png","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":"shopify:\/\/products\/relogio-smartwatch-inteligente-masculino-para-apple-e-android"}},"slide-0":{"type":"image","disabled":true,"settings":{"show_overlay":false,"overlay_opacity":100,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":""}}},"block_order":["64939740-2d54-47f0-bc3f-d10776a4f9ae","slide-0"],"settings":{"edge_to_edge":false,"section_size":"preserve_ratio","carousel_effect":"slide","autoplay":true,"cycle_speed":3}},"collection-list":{"type":"collection-list","disabled":true,"blocks":{"collection-0":{"type":"collection","settings":{"collection":""}},"collection-1":{"type":"collection","settings":{"collection":""}},"collection-2":{"type":"collection","settings":{"collection":""}},"collection-3":{"type":"collection","settings":{"collection":""}}},"block_order":["collection-0","collection-1","collection-2","collection-3"],"settings":{"title":"Entregamos em todo Brasil","link_title":"Envio imediato","link":"","round_images":true,"show_collection_title":true}},"featured-product":{"type":"featured-product","disabled":true,"settings":{"product":"","title":"Featured product","link_title":"View details","link_url":"","show_vendor":true,"show_sku":false,"show_share_buttons":true,"show_description":true,"description_below_add_to_cart":false,"selector_mode":"block","color_mode":"color","show_quantity_selector":true,"show_reviews_badge":false,"show_payment_button":true,"image_size":"small","enable_image_zoom":true,"enable_video_looping":false,"zoom_effect":"outside","carousel_effect":"fade","show_inventory_quantity":false,"low_inventory_threshold":0}},"collection-template":{"type":"collection-template","settings":{"show_collection_image":true,"collapse_collection_description":false,"frete_full":true,"collection_image_size":"small","products_per_row":"4","default_products_per_page":24,"default_view_layout":"grid","show_quick_buy":"list_grid","show_quick_view":"list","quick_links":"","quick_links_show_products_count":true,"show_filters":false,"show_filter_color_swatch":false,"filter_type":"tag","open_group_filters_mode":"all_closed","filter_group_order":""}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"title":"Recently viewed","show_quick_buy":false}},"product-template":{"type":"product-template","settings":{"novo_vendidos":false,"vendidos_2":"6px","vendidos":true,"espaco_top1":true,"vendidos_texto":"de clientes satisfechos","mostrar_clientes_online":false,"max_clientes":"100","min_clientes":"100","vendidos_cor":"#1b1b1b","titulo_tamanho_desktop":"26px","titulo_peso_desktop":"400","titulo_tamanho_mobile":"23px","titulo_peso_mobile":"700","espaco_titulo":"-1px","selo_verificacao":true,"cor_selo":"#0086ff","superior_tag_espaco_promocao":"5px","inferior_tag_espaco_promocao":"5px","peso_price_text":"300","preco_tamanho_desktop":"28px","preco_tamanho_mobile":"25px","mostrar_codigo":false,"estoque_dis":"#0086ff","show_vendor1":false,"texto_vendedor":"Promoción exclusiva:","cor_texto_vendedor":"#0086ff","cor_fundo_vendedor":"#f0f8ff","cor_borda_vendedor":"#f0f8ff","show_sku":false,"show_share_buttons":false,"show_taxes_included":false,"mostrar_economize":true,"tag_pix":false,"pix_desconto":"5","pix_cor_icone":"#ffffff","pix_cor_fundo":"#0086ff","pix_cor_borda":"#0086ff","pix_cor_texto":"#ffffff","selector_mode":"block","color_mode":"variant_image","variante_redonda":false,"variante_sombra":true,"margin_superior_variante":30,"delivery_time":false,"relogio_entrega":false,"cor_relogio":"#0086ff","delivery_time1":false,"textofrete":"Envio Grátis","delivery_time_text":"Recibir entre:","entrega_estimada_cor":"#53b956","enable_garantia":false,"garantia_text":"<b>30 Garantía de 30 días<\/b>","cor_text_garantia":"#53b956","enable_troca":true,"troca_text":"<b>7 días para cambios y devoluciones<\/b>","cor_text_troca":"#53b956","size_text_frete":"14px","delivery_time_min_days":2,"delivery_time_max_days":7,"box_Fretedrop":false,"box_correios":true,"delivery_cep":false,"caixa_cep":65,"caixa_cep_mobile":90,"cor_borda_cep":"#f6f6f8","cor_background_cep":"#f6f6f8","cor_botao_cep":"#0086ff","box_parcelamento":true,"fundo_box":"#f6f6f8","borda_box":"#f6f6f8","cor_contador":false,"contador_2":"30","cor_texto_contador":"#ffffff","cor_relogio_contador":"#05d976","cor_contador_cor":"#1836b4","cor_contador_cor1":"#102169","show_quantity_selector":false,"show_payment_button":false,"button_cor_color":"#00d132","texto_botao_text":"Agregar al carrito","tamanho_fonte_botao":"19","button_tamanho":"55","botao_animado":false,"estilo_botao":false,"borda_inferior_botao":"1","botao_redondo_cormprar":"30","botao_redondo":"30px","image_size":"large","enable_image_zoom":false,"enable_video_looping":false,"zoom_effect":"outside","carousel_effect":"fade","show_inventory_quantity":false,"low_inventory_threshold":0,"content_display_mode":"show_all_and_expand_description","tab_page_1_handle":"","tab_page_2_handle":"","tab_page_3_handle":"","enable_reviews":true,"show_reviews_badge":true,"termometro_ml":false,"badge_01":false,"badge_02":false,"badge_03":false,"badge_04":false,"show_shipping_estimator":false,"shipping_estimator_default_country":"","show_refunds_policy":false}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"heading":"Te podría gustar","frete_full":true,"show_quick_buy":true}},"announcement-bar":{"type":"announcement-bar","settings":{"show_announcement":false,"background1":"#ff0045","background2":"#00d86b","text_color":"#ffffff","cor_newsletter":"rgba(0,0,0,0)","border_bottom1":false,"texto_frete_text":"<strong>ENVÍO GRATIS A TODO BRASIL<\/strong>","deixar_frete":true,"garantia_devolucao":"<strong>Devoluciones y cambios garantizados<\/strong>","satisfacao_text":"<strong>Su satisfacción garantizada o le devolvemos su dinero<\/strong>","anuncio_img":false,"fundo_banner":"#000000","url_i":""}},"popups":{"type":"popups","blocks":{"b6c7473b-3c8e-43a3-92e0-ac1de2d923c3":{"type":"exit","settings":{"show_only_for_visitors":true,"show_only_once":true,"title":"Obtenga 15% de descuento","subheading":"en tu próximo pedido + ofertas exclusivas","show_newsletter":true,"button_text":"Obtenga 15% de descuento","success_message":"¡Pronto recibirás un correo electrónico con tu código de descuento!","close_message":"No gracias, prefiero pagar más"}}},"block_order":["b6c7473b-3c8e-43a3-92e0-ac1de2d923c3"],"settings":{}},"text-with-icons":{"type":"text-with-icons","blocks":{"text-with-icons-0":{"type":"item","settings":{"icon":"bi-delivery","title":"Compra Segura","content":"<p>Entorno seguro para pagos en línea<\/p>"}},"text-with-icons-1":{"type":"item","settings":{"icon":"bi-fast-delivery","title":"Frete Grátis","content":"<p>Envío rápido y acompañado con código de seguimiento<\/p>"}},"text-with-icons-2":{"type":"item","settings":{"icon":"bi-customer-support","title":"Suporte ao Cliente","content":"<p>servicio lun. al sáb. 8:00 am a 6:00 pm<\/p>"}},"text-with-icons-3":{"type":"item","settings":{"icon":"bi-secure-payment","title":"Pagamento Seguro","content":"<p>Aceptamos tarjetas de crédito y transferencias bancarias<\/p>"}}},"block_order":["text-with-icons-0","text-with-icons-1","text-with-icons-2","text-with-icons-3"],"settings":{"show_section":true,"stack_mobile":false}},"static-promotion-list":{"type":"static-promotion-list","settings":{"expand_items":true,"section_size":"large","stack_mobile":false}},"static-recently-viewed-products":{"type":"static-recently-viewed-products","settings":{"show_section":true,"frete_full":true,"title":"Visualizado recentemente","show_quick_buy":true}},"static-newsletter":{"type":"static-newsletter","settings":{"show_section":false,"title":"Subscribe to our newsletter","content":"<p>A short sentence describing what someone will receive by subscribing<\/p>","subtext":"100% free, Unsubscribe any time!","background":"#1e2d7d","text":"#ffffff"}},"cart-template":{"type":"cart-template","settings":{"enable_order_notes":false,"largura_cart":"1480px","sombra_card_cart":true,"cart_redondo":"30px","cart_botao_redondo":"30px","show_payment_icons":false,"gift_wrap_product":"","gift_wrap_text":"Do you want a gift wrap","gift_wrap_button":"Add a gift wrap","show_shipping_estimator":false,"shipping_estimator_default_country":"Brasil","trust_heading":"Our guarantees","upsell_heading":"Complete o seu carrinho","upsell_collection":"","upsell_products_count":4}},"16256632635ec0715a":{"type":"offers","blocks":{"1625663263ec0c105a-1":{"type":"offer","settings":{"title":"Fernanda Almeida - ⭐⭐⭐⭐⭐","content":"<p>Excelente atendimento, suporte sempre prestativo para resolver as minhas dúvidas com o produto.<\/p>"}},"b03b9f4e-971a-4300-bc0f-f71178423b55":{"type":"offer","settings":{"title":"Andre Siqueira - ⭐⭐⭐⭐⭐","content":"<p>O produto de fato cumpre tudo o que promete, já recomendei para vários amigos e eles compraram também.<\/p>"}},"1625663263ec0c105a-0":{"type":"offer","settings":{"title":"Cleusa Maria - ⭐⭐⭐⭐⭐","content":"<p>\"Foi minha primeira compra na internet. Adorei o site vou sempre comprar aqui.\"<\/p>"}}},"block_order":["1625663263ec0c105a-1","b03b9f4e-971a-4300-bc0f-f71178423b55","1625663263ec0c105a-0"],"settings":{"items_per_row":3,"stack_mobile":true}},"list-collections-template":{"type":"list-collections-template","settings":{"collections_to_show":"all","show_collection_title":true,"show_collection_overlay":true,"collection_overlay_opacity":20}},"page-faq-template":{"type":"page-faq-template","blocks":{"page-faq-template-0":{"type":"separator","settings":{"title":"Shipping"}},"page-faq-template-1":{"type":"question","settings":{"title":"Do you ship overseas?","answer":"<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"}},"page-faq-template-2":{"type":"question","settings":{"title":"How long will it take to get my order?","answer":"<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"}},"page-faq-template-3":{"type":"question","settings":{"title":"What shipping carriers do you use?","answer":"<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"}},"page-faq-template-4":{"type":"separator","settings":{"title":"Product"}},"page-faq-template-5":{"type":"question","settings":{"title":"Can I return my product?","answer":"<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"}},"page-faq-template-6":{"type":"question","settings":{"title":"Can I get my product personalized?","answer":"<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"}},"page-faq-template-7":{"type":"separator","settings":{"title":"Other"}},"page-faq-template-8":{"type":"question","settings":{"title":"Any question?","answer":"<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"}}},"block_order":["page-faq-template-0","page-faq-template-1","page-faq-template-2","page-faq-template-3","page-faq-template-4","page-faq-template-5","page-faq-template-6","page-faq-template-7","page-faq-template-8"],"settings":{"show_contact_info":true,"contact_info_heading":"Any question?","contact_info_text":"<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.<\/p>","contact_1_icon":"bi-phone","contact_1_heading":"Customer support","contact_1_text":"<p>Enter your text here<\/p>","contact_2_icon":"bi-email","contact_2_heading":"Send a message","contact_2_text":"<p>Enter your text here<\/p>"}},"1651320688c1452da9":{"type":"promotion-list","blocks":{"1651320688c1452da9-0":{"type":"item","settings":{"show_overlay":false,"overlay_opacity":50,"stretch_image":false,"background":"#000000","background2":"#ff0045","text_color":"#ffffff","bordas_redonda":"13px","title":"Smartwatch padrão","content":"Smartwatch padrão","content_position":"top_left","button_background":"#ffffff","button_text_color":"#000000","button_text":"Saiba mais","button_link":"shopify:\/\/products\/relogio-quartzo-masculino-de-pulso-estilo-militar"}},"1651320688c1452da9-1":{"type":"item","settings":{"show_overlay":false,"overlay_opacity":50,"stretch_image":false,"background":"#000000","background2":"#ff0045","text_color":"#ffffff","bordas_redonda":"13px","title":"Smartwatch padrão","content":"Smartwatch padrão","content_position":"top_left","button_background":"#ffffff","button_text_color":"#7a00ff","button_text":"Saiba mais","button_link":""}},"1651320688c1452da9-2":{"type":"item","settings":{"show_overlay":false,"overlay_opacity":50,"stretch_image":false,"background":"#000000","background2":"#ff0045","text_color":"#ffffff","bordas_redonda":"13px","title":"Smartwatch padrão","content":"Smartwatch padrão","content_position":"top_left","button_background":"#ffffff","button_text_color":"#7a00ff","button_text":"Saiba mais","button_link":""}}},"block_order":["1651320688c1452da9-0","1651320688c1452da9-1","1651320688c1452da9-2"],"settings":{"expand_items":true,"section_size":"medium","stack_mobile":false}},"search-template":{"type":"search-template","settings":{"products_per_row":"4","default_view_layout":"grid","show_quick_view":"list","show_quick_buy":"list","quick_links":""}},"165850699407f1ba35":{"type":"collection-with-image","settings":{"collection":"mas-vendidos","products_count":20,"background":"#000000","text_color":"#ffffff","title":"Mas vendidos","content":"Compralos en la tienda mas confiable de Colombia.","button_background":"#ff002e","button_text_color":"#ffffff","button_text":"VER MAS PRODUCTOS","more_redondo":"50px","button_link":"shopify:\/\/collections"}},"16594504856da94767":{"type":"featured-collection","settings":{"collection":"tecnologia","frete_full":true,"title":"Ultimos productos","products_count":12,"layout":"vertical","stack_desktop":false,"show_quick_buy":true,"link_title":"Ver mais","link_url":""}},"minimal-header":{"type":"minimal-header","settings":{"logo":"shopify:\/\/shop_images\/Logo_drospstar_novo.png","logo_max_width":270,"mobile_logo_max_width":100}},"password-template":{"type":"password-template","settings":{"show_social_media":true,"heading":"Aberto em breve","text":"<p>Um conteúdo descrevendo o que sua loja venderá.<\/p>","show_newsletter_signup":true,"newsletter_text":"<p>Uma frase curta descrevendo o que alguém receberá ao se inscrever.<\/p>"}},"1659753583776d4519":{"type":"slideshow","blocks":{"1659753583776d4519-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Entrega_garantizada_con_pago_Contra_Entrga.png","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":""}}},"block_order":["1659753583776d4519-0"],"settings":{"edge_to_edge":false,"section_size":"preserve_ratio","carousel_effect":"slide","autoplay":true,"espaco_slide":false,"cycle_speed":5}},"16608300336b1488ae":{"type":"collection-list","blocks":{"16608300336b1488ae-0":{"type":"collection","settings":{"collection":"mas-vendidos"}},"16608300336b1488ae-1":{"type":"collection","settings":{"collection":"deportes-y-fitness"}},"16663ca5-e3e7-4281-b8f7-bdc058b38aa1":{"type":"collection","settings":{"collection":"hogar"}},"ac26e064-3b8b-42ff-9a01-a160204441d6":{"type":"collection","settings":{"collection":"belleza"}},"93aee82e-4285-4403-b82f-3894d9bcdf48":{"type":"collection","settings":{"collection":"mascotas"}},"324bdce9-4b27-46a3-80d2-9ceab79b1140":{"type":"collection","settings":{"collection":"tecnologia"}},"4758d5d7-2753-4fce-ba2d-033d8c800151":{"type":"collection","settings":{"collection":"frontpage"}}},"block_order":["16608300336b1488ae-0","16608300336b1488ae-1","16663ca5-e3e7-4281-b8f7-bdc058b38aa1","ac26e064-3b8b-42ff-9a01-a160204441d6","93aee82e-4285-4403-b82f-3894d9bcdf48","324bdce9-4b27-46a3-80d2-9ceab79b1140","4758d5d7-2753-4fce-ba2d-033d8c800151"],"settings":{"title":"","link_title":"Ver mas","link":"shopify:\/\/collections","round_images":true,"show_collection_title":true}}},"content_for_index":["1659753583776d4519","16608300336b1488ae","16594504856da94767","16256632635ec0715a","1651320688c1452da9","165850699407f1ba35"],"blocks":{"13669795325273674392":{"type":"shopify:\/\/apps\/releasit-cod-form-upsells\/blocks\/app-embed\/72faf214-4174-4fec-886b-0d0e8d3af9a2","disabled":false,"settings":{}},"2965712708760319418":{"type":"shopify:\/\/apps\/proof-bear-sales-popup\/blocks\/widget\/6e90b7fd-96ea-488b-9571-34f0c382838a","disabled":false,"settings":{}},"4214657528271059384":{"type":"shopify:\/\/apps\/a2reviews-product-reviews\/blocks\/app-embed\/6a88647f-451d-4142-88de-9df2dab10243","disabled":false,"settings":{}},"14159691304313693114":{"type":"shopify:\/\/apps\/pixel-conversions-api-facebook\/blocks\/app-embed\/e244883f-9001-4b7d-b3e2-a64012fd8879","disabled":false,"settings":{}},"855628211100114053":{"type":"shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507","disabled":false,"settings":{}}}},"presets":{"Magento":{"heading_color":"#3d3935","text_color":"#3d3935","accent_color":"#64a70b","link_color":"#53b956","border_color":"#dfe4e6","background":"#ffffff","secondary_background":"#ffffff","error_color":"#ff0000","success_color":"#33bb33","primary_button_background":"#64a70b","primary_button_text_color":"#36312c","secondary_button_background":"#00d132","secondary_button_text_color":"#ffffff","header_background":"#ffffff","header_text_color":"#3d3935","header_light_text_color":"#3d3935","header_accent_color":"#c74109","cor_preco_cor":"#64a70b","cor_compare_cor":"#8a9297","onsale_1":"#ff7941","onsale_2":"#ff7941","product_in_stock_color":"#53b956","product_low_stock_color":"#ee0000","product_sold_out_color":"#8a9297","custom_1_cor1":"#102169","custom_1_cor2":"#1a36b0","custom_2_cor1":"#ac1bc5","custom_2_cor2":"#da4af2","product_star_color":"#ffbd00","zapzap":true,"lado_zap":"2","zap_altura":35,"zap_altura_box":115,"numberzap":"5512996748652","titlezap":"Fale Conosco \n<span>\nPrecisando de ajuda conte conosco.<\/span>","chatzap":"Olá, estou aqui para te ajudar!","digizap":"Digite sua mensagem","base_text_font_size":15,"heading_font":"oswald_n7","text_font":"oswald_n4","underline_links":true,"animation_image_zoom":true,"search_mode":"product,article,page","show_vendor":false,"show_secondary_image":true,"show_discount":true,"discount_mode":"percentage","product_price_position":"after_title","product_image_size":"square","show_color_swatch":false,"show_inventory_quantity":false,"low_inventory_threshold":0,"show_reviews_badge":false,"cart_type":"page","cart_empty_button_link":"shopify:\/\/collections\/all","cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"700","social_facebook":"https:\/\/www.facebook.com\/shopify","social_twitter":"https:\/\/twitter.com\/shopify","social_pinterest":"https:\/\/www.pinterest.com\/shopify","social_instagram":"https:\/\/instagram.com\/shopify","social_vimeo":"","social_tumblr":"","social_youtube":"https:\/\/www.youtube.com\/user\/shopify","social_linkedin":"","social_snapchat":"","social_fancy":"","favicon":"shopify:\/\/shop_images\/imagem_2021-06-30_142454.png","atalho_f12_enable":false,"botoes_campos":"30px","sombra1_botao":false,"estilo_botao":true,"borda_botao":false,"tag_card":true,"borda_redonda":"15px","sombra_card":true,"juros":"1010","checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_image":"","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_body_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_accent_color":"#00badb","checkout_button_color":"#00badb","checkout_error_color":"#ff0000","botao_redondo_cormprar10":"2161","largura_site":1300,"botao_direito_enable":false,"product_label_2_background":"#9400ff","product_label_1_background":"#102169","product_on_sale_accent":"#00d86b","botao_direito":true,"share_image":"","social_google_plus":"","sections":{"header":{"type":"header","settings":{"enable_sticky_header":false,"logo":"shopify:\/\/shop_images\/logo_magento.png","logo_max_width":215,"mobile_logo_max_width":130,"largura_site":1480,"centro_logo_mobile":"-5%","nav_cor":"#ffffff","nav_cor_texto":"#3d3935","codigo_rastreio":true,"url_rastreio":"shopify:\/\/pages\/codigo-de-rastreio","cart_icon_icon":"bag","menu_position_1":"center","espaco_acima_menu":"5","espaco_abaixo_menu":"10","espaco_menu":"20","espaco_menu_inferior":"10","barra_degradee":false,"altura_linha_mobile":1,"cor_1":"#c74109","cor_2":"#ff7941","cor_3":"#ff7941","cor_4":"#c74109","sombra_menu":"10","anuncio_img":false,"fundo_banner":"#02195a","imgdesk":"shopify:\/\/shop_images\/Responsivo_mobile6.png","imgmb":"shopify:\/\/shop_images\/Responsivo_mobile3.png","url_i":"shopify:\/\/products\/relogio-digital-em-aco-inoxidavel-esportiva-com-bluetooth-a-prova-de-agua-masculino","show_locale_selector":false,"show_currency_selector":false,"navigation_menu":"menu","desktop_navigation_layout":"inline","desktop_navigation_open_trigger":"hover","show_navigation_social_media":true,"navigation_phone_number":"Whatsapp +55 00 0000-0000","navigation_email":"email","show_condensed_search":false,"cor_botao":"#f3f3f3","cor_icone":"#e04403","retirar_borda":true,"botao_padrao":false,"botao_redondo":true,"borda_pesquisa":"#f3f3f3","tamanho_pesquisa":"44px","margin_superior_pesquisa":"59px","margin_inferior_pesquisa":"0","fundo_barra_pesquisa":"#f3f3f3","show_search_filter":false,"search_menu":"","show_search_menu_title":true}},"footer":{"type":"footer","blocks":{"1598060184149":{"type":"text","settings":{"title":"ATENDIMENTO AO CLIENTE","content":"<p><strong>SAC (Serviço de Atendimento ao Consumidor)<\/strong><\/p><p><strong>E-mail: <\/strong>sualoja@email.com<br\/><strong>WhatsApp:<\/strong>  (99) 9 9999-9999<\/p>"}},"footer-1":{"type":"links","settings":{"menu":"menu"}},"bd0342a8-e745-4965-80fd-f49d6074a69f":{"type":"links","settings":{"menu":""}},"943aca47-c2d5-44e4-9245-d5ab3572d5c2":{"type":"links","settings":{"menu":"footer"}},"footer-2":{"type":"newsletter","settings":{"title":"RECEBA NOSSAS PROMOÇÕES","subheading":"<p>Assine com seu e-mail abaixo:<\/p>"}}},"block_order":["1598060184149","footer-1","bd0342a8-e745-4965-80fd-f49d6074a69f","943aca47-c2d5-44e4-9245-d5ab3572d5c2","footer-2"],"settings":{"logo":"shopify:\/\/shop_images\/Logo_drospstar_novo.png","logo_max_width":140,"mobile_logo_max_width":100,"show_social_media":false,"show_payment_icons":true,"show_locale_selector":true,"cor_footer":"#595959","cor_texto":"#ffffff","des_cnpj":true,"numero_cnpj":"00.000.000\/0001-00","endereco_company_desktop":"Logradouro, № - Cidade-UF | XXXXX-XXX","endereco_company_mobile":"Logradouro, № - Cidade-UF | XXXXX-XXX","show_currency_selector":true,"show_cookie_bar":true,"text":"<p>Utilizamos cookies<\/p>","accept_button":"Ok"}},"slideshow":{"type":"slideshow","blocks":{"64939740-2d54-47f0-bc3f-d10776a4f9ae":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/banner_drop3.png","mobile_image":"shopify:\/\/shop_images\/banner_drop_mobile2.png","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":"shopify:\/\/products\/relogio-smartwatch-inteligente-masculino-para-apple-e-android"}},"slide-0":{"type":"image","disabled":true,"settings":{"show_overlay":false,"overlay_opacity":100,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":""}}},"block_order":["64939740-2d54-47f0-bc3f-d10776a4f9ae","slide-0"],"settings":{"edge_to_edge":false,"section_size":"preserve_ratio","carousel_effect":"slide","autoplay":true,"cycle_speed":3}},"collection-list":{"type":"collection-list","disabled":true,"blocks":{"collection-0":{"type":"collection","settings":{"collection":""}},"collection-1":{"type":"collection","settings":{"collection":""}},"collection-2":{"type":"collection","settings":{"collection":""}},"collection-3":{"type":"collection","settings":{"collection":""}}},"block_order":["collection-0","collection-1","collection-2","collection-3"],"settings":{"title":"Entregamos em todo Brasil","link_title":"Envio imediato","link":"","round_images":true,"show_collection_title":true}},"featured-product":{"type":"featured-product","disabled":true,"settings":{"product":"","title":"Featured product","link_title":"View details","link_url":"","show_vendor":true,"show_sku":false,"show_share_buttons":true,"show_description":true,"description_below_add_to_cart":false,"selector_mode":"block","color_mode":"color","show_quantity_selector":true,"show_reviews_badge":false,"show_payment_button":true,"image_size":"small","enable_image_zoom":true,"enable_video_looping":false,"zoom_effect":"outside","carousel_effect":"fade","show_inventory_quantity":false,"low_inventory_threshold":0}},"collection-template":{"type":"collection-template","settings":{"show_collection_image":true,"collapse_collection_description":false,"frete_full":true,"collection_image_size":"small","products_per_row":"4","default_products_per_page":24,"default_view_layout":"grid","show_quick_buy":"list_grid","show_quick_view":"list","quick_links":"","quick_links_show_products_count":true,"show_filters":false,"show_filter_color_swatch":true,"filter_type":"group","open_group_filters_mode":"all_closed","filter_group_order":""}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"title":"Recently viewed","show_quick_buy":false}},"product-template":{"type":"product-template","settings":{"novo_vendidos":true,"vendidos_2":"6px","vendidos":false,"espaco_top1":true,"vendidos_texto":"de clientes satisfeitos","mostrar_clientes_online":true,"max_clientes":"100","min_clientes":"80","vendidos_cor":"#6e6e6e","titulo_tamanho_desktop":"26px","titulo_peso_desktop":"400","titulo_tamanho_mobile":"23px","titulo_peso_mobile":"700","espaco_titulo":"-1px","selo_verificacao":false,"cor_selo":"#ff7941","superior_tag_espaco_promocao":"5px","inferior_tag_espaco_promocao":"5px","peso_price_text":"300","preco_tamanho_desktop":"28px","preco_tamanho_mobile":"25px","mostrar_codigo":true,"estoque_dis":"#3d3935","show_vendor1":false,"texto_vendedor":"Promoção exclusiva:","cor_texto_vendedor":"#0086ff","cor_fundo_vendedor":"#f0f8ff","cor_borda_vendedor":"#f0f8ff","show_sku":false,"show_share_buttons":false,"show_taxes_included":false,"mostrar_economize":false,"tag_pix":false,"pix_desconto":"5","pix_cor_icone":"#ffffff","pix_cor_fundo":"#e04403","pix_cor_borda":"#e04403","pix_cor_texto":"#ffffff","selector_mode":"dropdown","color_mode":"variant_image","variante_redonda":false,"variante_sombra":true,"margin_superior_variante":18,"delivery_time":false,"relogio_entrega":true,"cor_relogio":"#0086ff","delivery_time1":true,"textofrete":"Frete Grátis","delivery_time_text":"Receba entre:","entrega_estimada_cor":"#53b956","enable_garantia":true,"garantia_text":"<b>30 Dias de Garantia<\/b>","cor_text_garantia":"#53b956","enable_troca":true,"troca_text":"<b>7 dias para trocas e devoluções<\/b>","cor_text_troca":"#53b956","size_text_frete":"14px","delivery_time_min_days":1,"delivery_time_max_days":2,"box_Fretedrop":false,"box_correios":false,"delivery_cep":true,"cor_borda_cep":"#f6f6f8","cor_background_cep":"#f3f3f3","cor_botao_cep":"#ff7941","box_parcelamento":true,"fundo_box":"#f3f3f3","borda_box":"#f3f3f3","cor_contador":true,"contador_2":"30","cor_texto_contador":"#ffffff","cor_relogio_contador":"#05d976","cor_contador_cor":"#1836b4","cor_contador_cor1":"#102169","show_quantity_selector":false,"show_payment_button":false,"button_cor_color":"#64a70b","texto_botao_text":"COMPRAR","tamanho_fonte_botao":"19","button_tamanho":"55","botao_animado":true,"estilo_botao":false,"borda_inferior_botao":"0","botao_redondo_cormprar":"30","botao_redondo":"30px","image_size":"large","enable_image_zoom":false,"enable_video_looping":false,"zoom_effect":"outside","carousel_effect":"fade","show_inventory_quantity":false,"low_inventory_threshold":0,"content_display_mode":"show_all_and_expand_description","tab_page_1_handle":"","tab_page_2_handle":"","tab_page_3_handle":"","enable_reviews":false,"show_reviews_badge":false,"termometro_ml":true,"badge_01":false,"badge_02":false,"badge_03":false,"badge_04":false,"badgebotao":"shopify:\/\/shop_images\/selo-seguranca3.png","show_shipping_estimator":false,"shipping_estimator_default_country":"Brasil","show_refunds_policy":false}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"heading":"Você pode gostar","frete_full":true,"show_quick_buy":true}},"announcement-bar":{"type":"announcement-bar","settings":{"show_announcement":false,"background1":"#7a00ff","background2":"#00d86b","text_color":"#ffffff","cor_newsletter":"rgba(0,0,0,0)","border_bottom1":false,"texto_frete_text":"<b> FRETE GRÁTIS PARA TODO BRASIL<\/b>","deixar_frete":false,"garantia_devolucao":"<b>Devoluções & Trocas Garantidas<\/b>","satisfacao_text":"<b>Satisfação Garantida ou Seu Dinheiro de Volta<\/b>","anuncio_img":true,"fundo_banner":"#e04403","imgdesk":"shopify:\/\/shop_images\/Responsivo_mobile6.png","imgmb":"shopify:\/\/shop_images\/banner_mobile.png","url_i":"shopify:\/\/collections\/relogios-masculinos"}},"popups":{"type":"popups","blocks":{"b6c7473b-3c8e-43a3-92e0-ac1de2d923c3":{"type":"exit","settings":{"show_only_for_visitors":true,"show_only_once":true,"title":"Ganhe 15% OFF","subheading":"no seu próximo pedido + ofertas exclusivas","show_newsletter":true,"button_text":"Ganhe 15% OFF","success_message":"Em breve você receberá um e-mail contendo seu código de desconto!","close_message":"Não obrigado, prefiro pagar mais"}}},"block_order":["b6c7473b-3c8e-43a3-92e0-ac1de2d923c3"],"settings":{}},"text-with-icons":{"type":"text-with-icons","blocks":{"text-with-icons-0":{"type":"item","settings":{"icon":"bi-delivery","title":"Entregamos em todo Brasil","content":"<p>Envio imediato<\/p>"}},"text-with-icons-1":{"type":"item","settings":{"icon":"bi-returns","title":"Cliente Satisfeito ou Reembolso Imediato","content":"<p>Prazo de entrega de 10 à 30 dias úteis<\/p>"}},"text-with-icons-2":{"type":"item","settings":{"icon":"bi-customer-support","title":"Suporte ao Cliente","content":"<p>Atendimento Seg. a Sáb. <strong>8:00h<\/strong> às <strong>18:00h<\/strong><\/p>"}},"text-with-icons-3":{"type":"item","settings":{"icon":"bi-secure-payment","title":"Pagamento Seguro","content":"<p>Aceitamos Cartão de Crédito e Boleto Bancário<\/p>"}}},"block_order":["text-with-icons-0","text-with-icons-1","text-with-icons-2","text-with-icons-3"],"settings":{"show_section":true,"stack_mobile":false}},"static-promotion-list":{"type":"static-promotion-list","settings":{"expand_items":true,"section_size":"large","stack_mobile":false}},"static-recently-viewed-products":{"type":"static-recently-viewed-products","settings":{"show_section":true,"frete_full":true,"title":"Visualizado recentemente","show_quick_buy":true}},"static-newsletter":{"type":"static-newsletter","settings":{"show_section":false,"title":"Subscribe to our newsletter","content":"<p>A short sentence describing what someone will receive by subscribing<\/p>","subtext":"100% free, Unsubscribe any time!","background":"#1e2d7d","text":"#ffffff"}},"cart-template":{"type":"cart-template","settings":{"enable_order_notes":false,"largura_cart":"1480px","sombra_card_cart":true,"cart_redondo":"30px","cart_botao_redondo":"30px","show_payment_icons":false,"gift_wrap_product":"","gift_wrap_text":"Do you want a gift wrap","gift_wrap_button":"Add a gift wrap","show_shipping_estimator":false,"shipping_estimator_default_country":"Brasil","trust_heading":"Our guarantees","upsell_heading":"Complete o seu carrinho","upsell_collection":"","upsell_products_count":4}},"16256632635ec0715a":{"type":"offers","blocks":{"1625663263ec0c105a-1":{"type":"offer","settings":{"title":"Fernanda Almeida - ⭐⭐⭐⭐⭐","content":"<p>Excelente atendimento, suporte sempre prestativo para resolver as minhas dúvidas com o produto.<\/p>"}},"b03b9f4e-971a-4300-bc0f-f71178423b55":{"type":"offer","settings":{"title":"Andre Siqueira - ⭐⭐⭐⭐⭐","content":"<p>O produto de fato cumpre tudo o que promete, já recomendei para vários amigos e eles compraram também.<\/p>"}},"1625663263ec0c105a-0":{"type":"offer","settings":{"title":"Cleusa Maria - ⭐⭐⭐⭐⭐","content":"<p>\"Foi minha primeira compra na internet. Adorei o site vou sempre comprar aqui.\"<\/p>"}}},"block_order":["1625663263ec0c105a-1","b03b9f4e-971a-4300-bc0f-f71178423b55","1625663263ec0c105a-0"],"settings":{"items_per_row":3,"stack_mobile":true}},"list-collections-template":{"type":"list-collections-template","settings":{"collections_to_show":"all","show_collection_title":true,"show_collection_overlay":true,"collection_overlay_opacity":20}},"page-faq-template":{"type":"page-faq-template","blocks":{"page-faq-template-0":{"type":"separator","settings":{"title":"Shipping"}},"page-faq-template-1":{"type":"question","settings":{"title":"Do you ship overseas?","answer":"<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"}},"page-faq-template-2":{"type":"question","settings":{"title":"How long will it take to get my order?","answer":"<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"}},"page-faq-template-3":{"type":"question","settings":{"title":"What shipping carriers do you use?","answer":"<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"}},"page-faq-template-4":{"type":"separator","settings":{"title":"Product"}},"page-faq-template-5":{"type":"question","settings":{"title":"Can I return my product?","answer":"<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"}},"page-faq-template-6":{"type":"question","settings":{"title":"Can I get my product personalized?","answer":"<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"}},"page-faq-template-7":{"type":"separator","settings":{"title":"Other"}},"page-faq-template-8":{"type":"question","settings":{"title":"Any question?","answer":"<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"}}},"block_order":["page-faq-template-0","page-faq-template-1","page-faq-template-2","page-faq-template-3","page-faq-template-4","page-faq-template-5","page-faq-template-6","page-faq-template-7","page-faq-template-8"],"settings":{"show_contact_info":true,"contact_info_heading":"Any question?","contact_info_text":"<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.<\/p>","contact_1_icon":"bi-phone","contact_1_heading":"Customer support","contact_1_text":"<p>Enter your text here<\/p>","contact_2_icon":"bi-email","contact_2_heading":"Send a message","contact_2_text":"<p>Enter your text here<\/p>"}},"1651320688c1452da9":{"type":"promotion-list","blocks":{"1651320688c1452da9-0":{"type":"item","settings":{"show_overlay":false,"overlay_opacity":50,"stretch_image":false,"background":"#e04403","background2":"#c74109","text_color":"#ffffff","bordas_redonda":"13px","title":"Smartwatch padrão","content":"Smartwatch padrão","content_position":"top_left","button_background":"#ffffff","button_text_color":"#e04403","button_text":"Saiba mais","button_link":"shopify:\/\/products\/relogio-quartzo-masculino-de-pulso-estilo-militar"}},"1651320688c1452da9-1":{"type":"item","settings":{"show_overlay":false,"overlay_opacity":50,"stretch_image":false,"background":"#c74109","background2":"#e04403","text_color":"#ffffff","bordas_redonda":"13px","title":"Smartwatch padrão","content":"Smartwatch padrão","content_position":"top_left","button_background":"#ffffff","button_text_color":"#e04403","button_text":"Saiba mais","button_link":""}},"1651320688c1452da9-2":{"type":"item","settings":{"show_overlay":false,"overlay_opacity":50,"stretch_image":false,"background":"#c74109","background2":"#e04403","text_color":"#ffffff","bordas_redonda":"13px","title":"Smartwatch padrão","content":"Smartwatch padrão","content_position":"top_left","button_background":"#ffffff","button_text_color":"#e04403","button_text":"Saiba mais","button_link":""}}},"block_order":["1651320688c1452da9-0","1651320688c1452da9-1","1651320688c1452da9-2"],"settings":{"expand_items":true,"section_size":"medium","stack_mobile":false}},"search-template":{"type":"search-template","settings":{"products_per_row":"4","default_view_layout":"grid","show_quick_view":"list","show_quick_buy":"list","quick_links":""}},"165850699407f1ba35":{"type":"collection-with-image","settings":{"collection":"relogios-inteligentes","products_count":20,"background":"#c74109","text_color":"#ffffff","title":"Promoção Especial","content":"DIA DOS NAMORADOS","button_background":"#b021e6","button_text_color":"#ffffff","button_text":"","more_redondo":"50px","button_link":""}},"16594504856da94767":{"type":"featured-collection","settings":{"collection":"relogios-inteligentes","frete_full":true,"title":"Relógios Inteligentes","products_count":12,"layout":"vertical","stack_desktop":false,"show_quick_buy":true,"link_title":"Ver mais","link_url":""}},"minimal-header":{"type":"minimal-header","settings":{"logo":"shopify:\/\/shop_images\/Logo_drospstar_novo.png","logo_max_width":270,"mobile_logo_max_width":100}},"password-template":{"type":"password-template","settings":{"show_social_media":true,"heading":"Aberto em breve","text":"<p>Um conteúdo descrevendo o que sua loja venderá.<\/p>","show_newsletter_signup":true,"newsletter_text":"<p>Uma frase curta descrevendo o que alguém receberá ao se inscrever.<\/p>"}},"1659753583776d4519":{"type":"slideshow","blocks":{"1659753583776d4519-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/swift.png","mobile_image":"shopify:\/\/shop_images\/swift3_mobile.png","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":""}}},"block_order":["1659753583776d4519-0"],"settings":{"edge_to_edge":false,"section_size":"preserve_ratio","carousel_effect":"slide","autoplay":true,"cycle_speed":5}},"16608300336b1488ae":{"type":"collection-list","disabled":true,"blocks":{"16608300336b1488ae-0":{"type":"collection","settings":{"collection":"lancamentos","image":"shopify:\/\/shop_images\/1_bc1e2b70-0dd6-45f7-9d1c-744cdd20d00c.png"}},"16608300336b1488ae-1":{"type":"collection","settings":{"collection":"mais-vendidos","image":"shopify:\/\/shop_images\/2.png"}}},"block_order":["16608300336b1488ae-0","16608300336b1488ae-1"],"settings":{"title":"Our collections","link_title":"View all","link":"shopify:\/\/collections","round_images":true,"show_collection_title":true}},"16608466039d73579d":{"type":"slideshow","blocks":{"16608466039d73579d-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/swift2.png","mobile_image":"shopify:\/\/shop_images\/swif_mobile.png","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"Button","link":""}}},"block_order":["16608466039d73579d-0"],"settings":{"edge_to_edge":false,"section_size":"preserve_ratio","carousel_effect":"slide","autoplay":true,"cycle_speed":5}}},"content_for_index":["16608466039d73579d","1659753583776d4519","1651320688c1452da9","16594504856da94767","165850699407f1ba35","16256632635ec0715a","16608300336b1488ae"]},"Verde e azul":{"heading_color":"#737b97","text_color":"#737b97","accent_color":"#00d132","link_color":"#53b956","border_color":"#dfe4e6","background":"#f7f7f6","secondary_background":"#ffffff","error_color":"#ff0000","success_color":"#33bb33","primary_button_background":"#00d132","primary_button_text_color":"#36312c","secondary_button_background":"#00d132","secondary_button_text_color":"#ffffff","header_background":"#102169","header_text_color":"#ffffff","header_light_text_color":"#00d86b","header_accent_color":"#00d132","cor_preco_cor":"#0086ff","cor_compare_cor":"#8a9297","onsale_1":"#00d132","onsale_2":"#00d132","product_in_stock_color":"#53b956","product_low_stock_color":"#ee0000","product_sold_out_color":"#8a9297","custom_1_cor1":"#102169","custom_1_cor2":"#1a36b0","custom_2_cor1":"#ac1bc5","custom_2_cor2":"#da4af2","product_star_color":"#ffbd00","zapzap":true,"lado_zap":"2","zap_altura":35,"zap_altura_box":115,"numberzap":"5512996748652","titlezap":"Fale Conosco \n<span>\nPrecisando de ajuda conte conosco.<\/span>","chatzap":"Olá, estou aqui para te ajudar!","digizap":"Digite sua mensagem","base_text_font_size":15,"heading_font":"ubuntu_n4","text_font":"ubuntu_n4","underline_links":true,"animation_image_zoom":true,"search_mode":"product,article,page","show_vendor":false,"show_secondary_image":true,"show_discount":true,"discount_mode":"percentage","product_price_position":"after_title","product_image_size":"square","show_color_swatch":false,"show_inventory_quantity":false,"low_inventory_threshold":0,"show_reviews_badge":false,"cart_type":"page","cart_empty_button_link":"shopify:\/\/collections\/all","cart_show_free_shipping_threshold":false,"cart_free_shipping_threshold":"700","social_facebook":"https:\/\/www.facebook.com\/shopify","social_twitter":"https:\/\/twitter.com\/shopify","social_pinterest":"https:\/\/www.pinterest.com\/shopify","social_instagram":"https:\/\/instagram.com\/shopify","social_vimeo":"","social_tumblr":"","social_youtube":"https:\/\/www.youtube.com\/user\/shopify","social_linkedin":"","social_snapchat":"","social_fancy":"","favicon":"shopify:\/\/shop_images\/imagem_2021-06-30_142454.png","atalho_f12_enable":false,"botoes_campos":"30px","sombra1_botao":false,"estilo_botao":true,"borda_botao":false,"tag_card":true,"borda_redonda":"15px","sombra_card":true,"juros":"1010","checkout_header_image":"","checkout_logo_image":"","checkout_logo_position":"left","checkout_logo_size":"medium","checkout_body_background_image":"","checkout_body_background_color":"#fff","checkout_input_background_color_mode":"white","checkout_sidebar_background_image":"","checkout_sidebar_background_color":"#fafafa","checkout_heading_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_body_font":"-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'","checkout_accent_color":"#00badb","checkout_button_color":"#00badb","checkout_error_color":"#ff0000","botao_redondo_cormprar10":"2161","largura_site":1300,"botao_direito_enable":false,"product_label_2_background":"#9400ff","product_label_1_background":"#102169","product_on_sale_accent":"#00d86b","botao_direito":true,"share_image":"","social_google_plus":"","sections":{"header":{"type":"header","settings":{"enable_sticky_header":false,"logo":"shopify:\/\/shop_images\/Logo_drospstar_novo.png","logo_max_width":215,"mobile_logo_max_width":130,"largura_site":1480,"centro_logo_mobile":"-5%","nav_cor":"#102169","nav_cor_texto":"#ffffff","codigo_rastreio":true,"url_rastreio":"shopify:\/\/pages\/codigo-de-rastreio","cart_icon_icon":"bag","menu_position_1":"center","espaco_acima_menu":"5","espaco_abaixo_menu":"10","espaco_menu":"20","espaco_menu_inferior":"10","barra_degradee":true,"altura_linha_mobile":1,"cor_1":"#fcd000","cor_2":"#ff5f5f","cor_3":"#9100ff","cor_4":"#0086ff","sombra_menu":"10","anuncio_img":false,"fundo_banner":"#02195a","imgdesk":"shopify:\/\/shop_images\/Frete_gratis_e_ate_70__OFF_maior.png","imgmb":"shopify:\/\/shop_images\/Responsivo_mobile3.png","url_i":"shopify:\/\/products\/relogio-digital-em-aco-inoxidavel-esportiva-com-bluetooth-a-prova-de-agua-masculino","show_locale_selector":false,"show_currency_selector":false,"navigation_menu":"menu","desktop_navigation_layout":"inline","desktop_navigation_open_trigger":"hover","show_navigation_social_media":true,"navigation_phone_number":"Whatsapp +55 00 0000-0000","navigation_email":"email","show_condensed_search":false,"cor_botao":"#ffffff","cor_icone":"#102169","retirar_borda":true,"botao_padrao":false,"botao_redondo":true,"borda_pesquisa":"#36312c","tamanho_pesquisa":"44px","margin_superior_pesquisa":"59px","margin_inferior_pesquisa":"0","fundo_barra_pesquisa":"#ffffff","show_search_filter":false,"search_menu":"","show_search_menu_title":true}},"footer":{"type":"footer","blocks":{"1598060184149":{"type":"text","settings":{"title":"ATENDIMENTO AO CLIENTE","content":"<p><strong>SAC (Serviço de Atendimento ao Consumidor)<\/strong><\/p><p><strong>E-mail: <\/strong>sualoja@email.com<br\/><strong>WhatsApp:<\/strong>  (99) 9 9999-9999<\/p>"}},"footer-1":{"type":"links","settings":{"menu":"menu"}},"bd0342a8-e745-4965-80fd-f49d6074a69f":{"type":"links","settings":{"menu":""}},"943aca47-c2d5-44e4-9245-d5ab3572d5c2":{"type":"links","settings":{"menu":"footer"}},"footer-2":{"type":"newsletter","settings":{"title":"RECEBA NOSSAS PROMOÇÕES","subheading":"<p>Assine com seu e-mail abaixo:<\/p>"}}},"block_order":["1598060184149","footer-1","bd0342a8-e745-4965-80fd-f49d6074a69f","943aca47-c2d5-44e4-9245-d5ab3572d5c2","footer-2"],"settings":{"logo":"shopify:\/\/shop_images\/Logo_drospstar_novo.png","logo_max_width":140,"mobile_logo_max_width":100,"show_social_media":false,"show_payment_icons":true,"show_locale_selector":true,"cor_footer":"#102169","cor_texto":"#ffffff","des_cnpj":true,"numero_cnpj":"00.000.000\/0001-00","endereco_company_desktop":"Logradouro, № - Cidade-UF | XXXXX-XXX","endereco_company_mobile":"Logradouro, № - Cidade-UF | XXXXX-XXX","show_currency_selector":true,"show_cookie_bar":true,"text":"<p>Utilizamos cookies<\/p>","accept_button":"Ok"}},"slideshow":{"type":"slideshow","blocks":{"64939740-2d54-47f0-bc3f-d10776a4f9ae":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/banner_drop3.png","mobile_image":"shopify:\/\/shop_images\/banner_drop_mobile2.png","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":"shopify:\/\/products\/relogio-smartwatch-inteligente-masculino-para-apple-e-android"}},"slide-0":{"type":"image","disabled":true,"settings":{"show_overlay":false,"overlay_opacity":100,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":""}}},"block_order":["64939740-2d54-47f0-bc3f-d10776a4f9ae","slide-0"],"settings":{"edge_to_edge":false,"section_size":"preserve_ratio","carousel_effect":"slide","autoplay":true,"cycle_speed":3}},"collection-list":{"type":"collection-list","disabled":true,"blocks":{"collection-0":{"type":"collection","settings":{"collection":""}},"collection-1":{"type":"collection","settings":{"collection":""}},"collection-2":{"type":"collection","settings":{"collection":""}},"collection-3":{"type":"collection","settings":{"collection":""}}},"block_order":["collection-0","collection-1","collection-2","collection-3"],"settings":{"title":"Entregamos em todo Brasil","link_title":"Envio imediato","link":"","round_images":true,"show_collection_title":true}},"featured-product":{"type":"featured-product","disabled":true,"settings":{"product":"","title":"Featured product","link_title":"View details","link_url":"","show_vendor":true,"show_sku":false,"show_share_buttons":true,"show_description":true,"description_below_add_to_cart":false,"selector_mode":"block","color_mode":"color","show_quantity_selector":true,"show_reviews_badge":false,"show_payment_button":true,"image_size":"small","enable_image_zoom":true,"enable_video_looping":false,"zoom_effect":"outside","carousel_effect":"fade","show_inventory_quantity":false,"low_inventory_threshold":0}},"collection-template":{"type":"collection-template","settings":{"show_collection_image":true,"collapse_collection_description":false,"frete_full":true,"collection_image_size":"small","products_per_row":"4","default_products_per_page":24,"default_view_layout":"grid","show_quick_buy":"list_grid","show_quick_view":"list","quick_links":"","quick_links_show_products_count":true,"show_filters":false,"show_filter_color_swatch":true,"filter_type":"group","open_group_filters_mode":"all_closed","filter_group_order":""}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"title":"Recently viewed","show_quick_buy":false}},"product-template":{"type":"product-template","settings":{"novo_vendidos":true,"vendidos_2":"6px","vendidos":false,"espaco_top1":true,"vendidos_texto":"de clientes satisfeitos","mostrar_clientes_online":false,"max_clientes":"100","min_clientes":"80","vendidos_cor":"#6e6e6e","titulo_tamanho_desktop":"26px","titulo_peso_desktop":"400","titulo_tamanho_mobile":"23px","titulo_peso_mobile":"700","espaco_titulo":"-1px","selo_verificacao":true,"cor_selo":"#0086ff","superior_tag_espaco_promocao":"5px","inferior_tag_espaco_promocao":"5px","peso_price_text":"300","preco_tamanho_desktop":"28px","preco_tamanho_mobile":"25px","mostrar_codigo":true,"show_vendor1":false,"texto_vendedor":"Promoção exclusiva:","cor_texto_vendedor":"#0086ff","cor_fundo_vendedor":"#f0f8ff","cor_borda_vendedor":"#f0f8ff","show_sku":false,"show_share_buttons":false,"show_taxes_included":false,"mostrar_economize":true,"tag_pix":true,"pix_desconto":"5","pix_cor_icone":"#ffffff","pix_cor_fundo":"#0086ff","pix_cor_borda":"#0086ff","pix_cor_texto":"#ffffff","selector_mode":"dropdown","color_mode":"variant_image","variante_redonda":true,"variante_sombra":true,"margin_superior_variante":18,"delivery_time":false,"relogio_entrega":true,"cor_relogio":"#0086ff","delivery_time1":true,"textofrete":"Frete Grátis","delivery_time_text":"Receba entre:","entrega_estimada_cor":"#53b956","enable_garantia":true,"garantia_text":"<b>30 Dias de Garantia<\/b>","cor_text_garantia":"#53b956","enable_troca":true,"troca_text":"<b>7 dias para trocas e devoluções<\/b>","cor_text_troca":"#53b956","size_text_frete":"14px","delivery_time_min_days":1,"delivery_time_max_days":2,"box_Fretedrop":false,"box_correios":false,"delivery_cep":true,"cor_borda_cep":"#f6f6f8","cor_background_cep":"#f6f6f8","cor_botao_cep":"#0086ff","box_parcelamento":true,"cor_contador":true,"contador_2":"30","cor_texto_contador":"#ffffff","cor_relogio_contador":"#05d976","cor_contador_cor":"#1836b4","cor_contador_cor1":"#102169","show_quantity_selector":false,"show_payment_button":false,"button_cor_color":"#00d132","texto_botao_text":"COMPRAR","tamanho_fonte_botao":"19","button_tamanho":"55","botao_animado":true,"estilo_botao":false,"borda_inferior_botao":"0","botao_redondo_cormprar":"30","botao_redondo":"30px","image_size":"large","enable_image_zoom":false,"enable_video_looping":false,"zoom_effect":"outside","carousel_effect":"fade","show_inventory_quantity":false,"low_inventory_threshold":0,"content_display_mode":"show_all_and_expand_description","tab_page_1_handle":"","tab_page_2_handle":"","tab_page_3_handle":"","enable_reviews":false,"show_reviews_badge":false,"termometro_ml":true,"badge_01":false,"badge_02":false,"badge_03":false,"badge_04":false,"badgebotao":"shopify:\/\/shop_images\/selo-seguranca3.png","show_shipping_estimator":false,"shipping_estimator_default_country":"Brasil","show_refunds_policy":false}},"product-recommendations":{"type":"product-recommendations","settings":{"show_product_recommendations":true,"heading":"Você pode gostar","frete_full":true,"show_quick_buy":true}},"announcement-bar":{"type":"announcement-bar","settings":{"show_announcement":false,"background1":"#7a00ff","background2":"#00d86b","text_color":"#ffffff","cor_newsletter":"rgba(0,0,0,0)","border_bottom1":false,"texto_frete_text":"<b> FRETE GRÁTIS PARA TODO BRASIL<\/b>","deixar_frete":true,"garantia_devolucao":"<b>Devoluções & Trocas Garantidas<\/b>","satisfacao_text":"<b>Satisfação Garantida ou Seu Dinheiro de Volta<\/b>","anuncio_img":true,"fundo_banner":"#02195a","imgdesk":"shopify:\/\/shop_images\/Frete_gratis_e_ate_70__OFF_maior.png","imgmb":"shopify:\/\/shop_images\/Responsivo_mobile4_6f5070d6-9fda-430c-9360-2388c1f20198.png","url_i":"shopify:\/\/collections\/relogios-masculinos"}},"popups":{"type":"popups","blocks":{"b6c7473b-3c8e-43a3-92e0-ac1de2d923c3":{"type":"exit","settings":{"show_only_for_visitors":true,"show_only_once":true,"title":"Ganhe 15% OFF","subheading":"no seu próximo pedido + ofertas exclusivas","show_newsletter":true,"button_text":"Ganhe 15% OFF","success_message":"Em breve você receberá um e-mail contendo seu código de desconto!","close_message":"Não obrigado, prefiro pagar mais"}}},"block_order":["b6c7473b-3c8e-43a3-92e0-ac1de2d923c3"],"settings":{}},"text-with-icons":{"type":"text-with-icons","blocks":{"text-with-icons-0":{"type":"item","settings":{"icon":"bi-delivery","title":"Entregamos em todo Brasil","content":"<p>Envio imediato<\/p>"}},"text-with-icons-1":{"type":"item","settings":{"icon":"bi-returns","title":"Cliente Satisfeito ou Reembolso Imediato","content":"<p>Prazo de entrega de 10 à 30 dias úteis<\/p>"}},"text-with-icons-2":{"type":"item","settings":{"icon":"bi-customer-support","title":"Suporte ao Cliente","content":"<p>Atendimento Seg. a Sáb. <strong>8:00h<\/strong> às <strong>18:00h<\/strong><\/p>"}},"text-with-icons-3":{"type":"item","settings":{"icon":"bi-secure-payment","title":"Pagamento Seguro","content":"<p>Aceitamos Cartão de Crédito e Boleto Bancário<\/p>"}}},"block_order":["text-with-icons-0","text-with-icons-1","text-with-icons-2","text-with-icons-3"],"settings":{"show_section":true,"stack_mobile":false}},"static-promotion-list":{"type":"static-promotion-list","settings":{"expand_items":true,"section_size":"large","stack_mobile":false}},"static-recently-viewed-products":{"type":"static-recently-viewed-products","settings":{"show_section":true,"frete_full":true,"title":"Visualizado recentemente","show_quick_buy":true}},"static-newsletter":{"type":"static-newsletter","settings":{"show_section":false,"title":"Subscribe to our newsletter","content":"<p>A short sentence describing what someone will receive by subscribing<\/p>","subtext":"100% free, Unsubscribe any time!","background":"#1e2d7d","text":"#ffffff"}},"cart-template":{"type":"cart-template","settings":{"enable_order_notes":false,"largura_cart":"1480px","sombra_card_cart":true,"cart_redondo":"30px","cart_botao_redondo":"30px","show_payment_icons":false,"gift_wrap_product":"","gift_wrap_text":"Do you want a gift wrap","gift_wrap_button":"Add a gift wrap","show_shipping_estimator":false,"shipping_estimator_default_country":"Brasil","trust_heading":"Our guarantees","upsell_heading":"Complete o seu carrinho","upsell_collection":"","upsell_products_count":4}},"16256632635ec0715a":{"type":"offers","blocks":{"1625663263ec0c105a-1":{"type":"offer","settings":{"title":"Fernanda Almeida - ⭐⭐⭐⭐⭐","content":"<p>Excelente atendimento, suporte sempre prestativo para resolver as minhas dúvidas com o produto.<\/p>"}},"b03b9f4e-971a-4300-bc0f-f71178423b55":{"type":"offer","settings":{"title":"Andre Siqueira - ⭐⭐⭐⭐⭐","content":"<p>O produto de fato cumpre tudo o que promete, já recomendei para vários amigos e eles compraram também.<\/p>"}},"1625663263ec0c105a-0":{"type":"offer","settings":{"title":"Cleusa Maria - ⭐⭐⭐⭐⭐","content":"<p>\"Foi minha primeira compra na internet. Adorei o site vou sempre comprar aqui.\"<\/p>"}}},"block_order":["1625663263ec0c105a-1","b03b9f4e-971a-4300-bc0f-f71178423b55","1625663263ec0c105a-0"],"settings":{"items_per_row":3,"stack_mobile":true}},"list-collections-template":{"type":"list-collections-template","settings":{"collections_to_show":"all","show_collection_title":true,"show_collection_overlay":true,"collection_overlay_opacity":20}},"page-faq-template":{"type":"page-faq-template","blocks":{"page-faq-template-0":{"type":"separator","settings":{"title":"Shipping"}},"page-faq-template-1":{"type":"question","settings":{"title":"Do you ship overseas?","answer":"<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"}},"page-faq-template-2":{"type":"question","settings":{"title":"How long will it take to get my order?","answer":"<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"}},"page-faq-template-3":{"type":"question","settings":{"title":"What shipping carriers do you use?","answer":"<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"}},"page-faq-template-4":{"type":"separator","settings":{"title":"Product"}},"page-faq-template-5":{"type":"question","settings":{"title":"Can I return my product?","answer":"<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"}},"page-faq-template-6":{"type":"question","settings":{"title":"Can I get my product personalized?","answer":"<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"}},"page-faq-template-7":{"type":"separator","settings":{"title":"Other"}},"page-faq-template-8":{"type":"question","settings":{"title":"Any question?","answer":"<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"}}},"block_order":["page-faq-template-0","page-faq-template-1","page-faq-template-2","page-faq-template-3","page-faq-template-4","page-faq-template-5","page-faq-template-6","page-faq-template-7","page-faq-template-8"],"settings":{"show_contact_info":true,"contact_info_heading":"Any question?","contact_info_text":"<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.<\/p>","contact_1_icon":"bi-phone","contact_1_heading":"Customer support","contact_1_text":"<p>Enter your text here<\/p>","contact_2_icon":"bi-email","contact_2_heading":"Send a message","contact_2_text":"<p>Enter your text here<\/p>"}},"1651320688c1452da9":{"type":"promotion-list","blocks":{"1651320688c1452da9-0":{"type":"item","settings":{"show_overlay":false,"overlay_opacity":50,"stretch_image":false,"background":"#7a00ff","background2":"#00d86b","text_color":"#ffffff","bordas_redonda":"13px","title":"Smartwatch padrão","content":"Smartwatch padrão","content_position":"top_left","button_background":"#ffffff","button_text_color":"#7114b5","button_text":"Saiba mais","button_link":"shopify:\/\/products\/relogio-quartzo-masculino-de-pulso-estilo-militar"}},"1651320688c1452da9-1":{"type":"item","settings":{"show_overlay":false,"overlay_opacity":50,"stretch_image":false,"background":"#7a00ff","background2":"#00d86b","text_color":"#ffffff","bordas_redonda":"13px","title":"Smartwatch padrão","content":"Smartwatch padrão","content_position":"top_left","button_background":"#ffffff","button_text_color":"#7a00ff","button_text":"Saiba mais","button_link":""}},"1651320688c1452da9-2":{"type":"item","settings":{"show_overlay":false,"overlay_opacity":50,"stretch_image":false,"background":"#7a00ff","background2":"#00d86b","text_color":"#ffffff","bordas_redonda":"13px","title":"Smartwatch padrão","content":"Smartwatch padrão","content_position":"top_left","button_background":"#ffffff","button_text_color":"#7a00ff","button_text":"Saiba mais","button_link":""}}},"block_order":["1651320688c1452da9-0","1651320688c1452da9-1","1651320688c1452da9-2"],"settings":{"expand_items":true,"section_size":"medium","stack_mobile":false}},"search-template":{"type":"search-template","settings":{"products_per_row":"4","default_view_layout":"grid","show_quick_view":"list","show_quick_buy":"list","quick_links":""}},"165850699407f1ba35":{"type":"collection-with-image","settings":{"collection":"relogios-inteligentes","products_count":20,"image":"shopify:\/\/shop_images\/Design_sem_nome.png","background":"#102169","text_color":"#ffffff","title":"Promoção Especial","content":"DIA DOS NAMORADOS","button_background":"#b021e6","button_text_color":"#ffffff","button_text":"","more_redondo":"50px","button_link":""}},"16594504856da94767":{"type":"featured-collection","settings":{"collection":"relogios-inteligentes","frete_full":true,"title":"Relógios Inteligentes","products_count":12,"layout":"vertical","stack_desktop":false,"show_quick_buy":true,"link_title":"Ver mais","link_url":""}},"minimal-header":{"type":"minimal-header","settings":{"logo":"shopify:\/\/shop_images\/Logo_drospstar_novo.png","logo_max_width":270,"mobile_logo_max_width":100}},"password-template":{"type":"password-template","settings":{"show_social_media":true,"heading":"Aberto em breve","text":"<p>Um conteúdo descrevendo o que sua loja venderá.<\/p>","show_newsletter_signup":true,"newsletter_text":"<p>Uma frase curta descrevendo o que alguém receberá ao se inscrever.<\/p>"}},"1659753583776d4519":{"type":"slideshow","blocks":{"1659753583776d4519-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/banner_drop3.png","mobile_image":"shopify:\/\/shop_images\/banner_drop_mobile2.png","show_overlay":false,"overlay_opacity":30,"text_color":"#ffffff","title":"","content":"","content_position":"middle_center","button_background":"#ffffff","button_text_color":"#000000","button_text":"","link":""}}},"block_order":["1659753583776d4519-0"],"settings":{"edge_to_edge":false,"section_size":"preserve_ratio","carousel_effect":"slide","autoplay":true,"cycle_speed":5}},"16608300336b1488ae":{"type":"collection-list","blocks":{"16608300336b1488ae-0":{"type":"collection","settings":{"collection":"mais-vendidos","image":"shopify:\/\/shop_images\/pet.png"}},"16608300336b1488ae-1":{"type":"collection","settings":{"collection":"relogios-masculinos","image":"shopify:\/\/shop_images\/utensilios.png"}},"16663ca5-e3e7-4281-b8f7-bdc058b38aa1":{"type":"collection","settings":{"collection":"kids","image":"shopify:\/\/shop_images\/babys.png"}},"ac26e064-3b8b-42ff-9a01-a160204441d6":{"type":"collection","settings":{"collection":"relogios-inteligentes","image":"shopify:\/\/shop_images\/smart_2922b7fd-0d5f-41d0-9a0d-45a6c761f331.png"}},"93aee82e-4285-4403-b82f-3894d9bcdf48":{"type":"collection","settings":{"collection":"relogios-femininos","image":"shopify:\/\/shop_images\/ferramentas.png"}},"324bdce9-4b27-46a3-80d2-9ceab79b1140":{"type":"collection","settings":{"collection":"saude-beleza","image":"shopify:\/\/shop_images\/Ftiness.png"}}},"block_order":["16608300336b1488ae-0","16608300336b1488ae-1","16663ca5-e3e7-4281-b8f7-bdc058b38aa1","ac26e064-3b8b-42ff-9a01-a160204441d6","93aee82e-4285-4403-b82f-3894d9bcdf48","324bdce9-4b27-46a3-80d2-9ceab79b1140"],"settings":{"title":"","link_title":"Ver mais","link":"shopify:\/\/collections","round_images":true,"show_collection_title":true}}},"content_for_index":["1659753583776d4519","16608300336b1488ae","16594504856da94767","1651320688c1452da9","165850699407f1ba35","16256632635ec0715a"]}}}
+{
+  "current": {
+    "heading_color": "#000000",
+    "text_color": "#737b97",
+    "accent_color": "#00d132",
+    "link_color": "#53b956",
+    "border_color": "#dfe4e6",
+    "background": "#f7f7f6",
+    "secondary_background": "#ffffff",
+    "error_color": "#ff0000",
+    "success_color": "#33bb33",
+    "primary_button_background": "#00d132",
+    "primary_button_text_color": "#36312c",
+    "secondary_button_background": "#00d132",
+    "secondary_button_text_color": "#ffffff",
+    "header_background": "#000000",
+    "header_text_color": "#ffffff",
+    "header_light_text_color": "#00d86b",
+    "header_accent_color": "#00d132",
+    "cor_preco_cor": "#0086ff",
+    "cor_compare_cor": "#8a9297",
+    "onsale_1": "#00d132",
+    "onsale_2": "#00d132",
+    "product_in_stock_color": "#53b956",
+    "product_low_stock_color": "#ee0000",
+    "product_sold_out_color": "#8a9297",
+    "custom_1_cor1": "#102169",
+    "custom_1_cor2": "#1a36b0",
+    "custom_2_cor1": "#ac1bc5",
+    "custom_2_cor2": "#da4af2",
+    "product_star_color": "#ffbd00",
+    "zapzap": true,
+    "lado_zap": "2",
+    "zapicon": true,
+    "zap_altura": 35,
+    "zap_altura_box": 115,
+    "numberzap": "+573156877912",
+    "titlezap": "Hable con nosotros\n<span>\nNecesitas ayuda cuenta con nosotros.<\/span>",
+    "chatzap": "¡Hola, estoy aquí para ayudarte!",
+    "digizap": "Ingrese su mensaje",
+    "base_text_font_size": 15,
+    "heading_font": "ubuntu_n4",
+    "text_font": "ubuntu_n4",
+    "underline_links": true,
+    "animation_image_zoom": true,
+    "search_mode": "product,article,page",
+    "show_vendor": false,
+    "show_secondary_image": true,
+    "show_discount": true,
+    "discount_mode": "percentage",
+    "product_price_position": "after_title",
+    "product_image_size": "square",
+    "show_color_swatch": false,
+    "show_inventory_quantity": false,
+    "low_inventory_threshold": 0,
+    "show_reviews_badge": true,
+    "cart_type": "page",
+    "cart_empty_button_link": "shopify:\/\/collections\/all",
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "700",
+    "social_facebook": "https:\/\/www.facebook.com\/shopify",
+    "social_twitter": "https:\/\/twitter.com\/shopify",
+    "social_pinterest": "https:\/\/www.pinterest.com\/shopify",
+    "social_instagram": "https:\/\/instagram.com\/shopify",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "https:\/\/www.youtube.com\/user\/shopify",
+    "social_linkedin": "",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/imagem_2021-06-30_142454.png",
+    "atalho_f12_enable": false,
+    "botoes_campos": "30px",
+    "sombra1_botao": false,
+    "estilo_botao": false,
+    "borda_botao": false,
+    "tag_card": false,
+    "borda_redonda": "15px",
+    "sombra_card": true,
+    "juros": "1010",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#00badb",
+    "checkout_button_color": "#00badb",
+    "checkout_error_color": "#ff0000",
+    "botao_redondo_cormprar10": "2161",
+    "largura_site": 1300,
+    "botao_direito_enable": false,
+    "product_label_2_background": "#9400ff",
+    "product_label_1_background": "#102169",
+    "product_on_sale_accent": "#00d86b",
+    "botao_direito": true,
+    "share_image": "",
+    "social_google_plus": "",
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "enable_sticky_header": true,
+          "logo": "shopify:\/\/shop_images\/1_b0bf1424-cd82-47d0-81b2-bce814.png",
+          "logo_max_width": 215,
+          "mobile_logo_max_width": 170,
+          "largura_site": 1300,
+          "centro_logo_mobile": "20%",
+          "nav_cor": "#000000",
+          "nav_cor_texto": "#ffffff",
+          "codigo_rastreio": true,
+          "url_rastreio": "shopify:\/\/pages\/rastreio",
+          "cart_icon_icon": "bag",
+          "menu_position_1": "center",
+          "espaco_acima_menu": "5",
+          "espaco_abaixo_menu": "10",
+          "espaco_menu": "20",
+          "espaco_menu_inferior": "-10px",
+          "barra_degradee": true,
+          "altura_linha_mobile": 1,
+          "cor_1": "#fcd000",
+          "cor_2": "#ff5f5f",
+          "cor_3": "#9100ff",
+          "cor_4": "#0086ff",
+          "sombra_menu": "10",
+          "anuncio_img": false,
+          "fundo_banner": "#02195a",
+          "url_i": "shopify:\/\/products\/relogio-digital-em-aco-inoxidavel-esportiva-com-bluetooth-a-prova-de-agua-masculino",
+          "show_locale_selector": false,
+          "show_currency_selector": false,
+          "navigation_menu": "",
+          "desktop_navigation_layout": "inline",
+          "desktop_navigation_open_trigger": "hover",
+          "show_navigation_social_media": true,
+          "navigation_phone_number": "Whatsapp +57 315-687-7912",
+          "navigation_email": "Soporte@marblacks.com.co",
+          "show_condensed_search": false,
+          "cor_botao": "#ffffff",
+          "cor_icone": "#000000",
+          "fundo_barra_pesquisa": "#ffffff",
+          "borda_pesquisa": "#000000",
+          "retirar_borda": true,
+          "botao_padrao": false,
+          "botao_redondo": true,
+          "botao_sombra": false,
+          "tamanho_pesquisa": "44px",
+          "margin_superior_pesquisa": "59",
+          "margin_inferior_pesquisa": "-10px",
+          "show_search_filter": false,
+          "search_menu": "",
+          "show_search_menu_title": true
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "1598060184149": {
+            "type": "text",
+            "settings": {
+              "title": "ATENDIMENTO AO CLIENTE",
+              "content": "<p><strong>SAC (Atención al Cliente) <\/strong><\/p><p><strong>Email:<\/strong> Soporte@marblacks.com.co<\/p><p><strong>WhatsApp:<\/strong> +(57) 315-687-7912<\/p>"
+            }
+          },
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "bd0342a8-e745-4965-80fd-f49d6074a69f": {
+            "type": "links",
+            "settings": {
+              "menu": ""
+            }
+          },
+          "943aca47-c2d5-44e4-9245-d5ab3572d5c2": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "footer-2": {
+            "type": "newsletter",
+            "settings": {
+              "title": "RECIBE NUESTRAS PROMOCIONES",
+              "subheading": "<p>Suscríbete con tu correo electrónico a continuación:<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1598060184149",
+          "footer-1",
+          "bd0342a8-e745-4965-80fd-f49d6074a69f",
+          "943aca47-c2d5-44e4-9245-d5ab3572d5c2",
+          "footer-2"
+        ],
+        "custom_css": [
+
+        ],
+        "settings": {
+          "barra_degradee": true,
+          "cor_1": "#fcd000",
+          "cor_2": "#ff5f5f",
+          "cor_3": "#9100ff",
+          "cor_4": "#0086ff",
+          "logo_max_width": 140,
+          "mobile_logo_max_width": 100,
+          "show_social_media": false,
+          "show_payment_icons": true,
+          "show_locale_selector": true,
+          "cor_footer": "#000000",
+          "cor_texto": "#ffffff",
+          "des_cnpj": false,
+          "numero_cnpj": "",
+          "endereco_company_desktop": "",
+          "endereco_company_mobile": "",
+          "retirar_texto": false,
+          "texto_seguranca": "Loja 100% segura",
+          "mostrar_selo1": false,
+          "selo1": "Link sem https:\/\/",
+          "mostrar_selo2": false,
+          "selo2": "Link aqui",
+          "mostrar_selo3": false,
+          "selo3": "Link sem https:\/\/",
+          "show_currency_selector": true,
+          "show_cookie_bar": false,
+          "text": "<p>Nós utilizamos cookies para personalizar anúncios e melhorar a sua <br\/>experiência no site. Ao continuar navegando, você concorda com a nossa política <\/p>",
+          "accept_button": "Continuar"
+        }
+      },
+      "slideshow": {
+        "type": "slideshow",
+        "blocks": {
+          "64939740-2d54-47f0-bc3f-d10776a4f9ae": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/banner_drop3.png",
+              "mobile_image": "shopify:\/\/shop_images\/banner_drop_mobile2.png",
+              "show_overlay": false,
+              "overlay_opacity": 30,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#ffffff",
+              "button_text_color": "#000000",
+              "button_text": "",
+              "link": "shopify:\/\/products\/relogio-smartwatch-inteligente-masculino-para-apple-e-android"
+            }
+          },
+          "slide-0": {
+            "type": "image",
+            "disabled": true,
+            "settings": {
+              "show_overlay": false,
+              "overlay_opacity": 100,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#ffffff",
+              "button_text_color": "#000000",
+              "button_text": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "64939740-2d54-47f0-bc3f-d10776a4f9ae",
+          "slide-0"
+        ],
+        "settings": {
+          "edge_to_edge": false,
+          "section_size": "preserve_ratio",
+          "carousel_effect": "slide",
+          "autoplay": true,
+          "cycle_speed": 3
+        }
+      },
+      "collection-list": {
+        "type": "collection-list",
+        "disabled": true,
+        "blocks": {
+          "collection-0": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "collection-1": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "collection-2": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          },
+          "collection-3": {
+            "type": "collection",
+            "settings": {
+              "collection": ""
+            }
+          }
+        },
+        "block_order": [
+          "collection-0",
+          "collection-1",
+          "collection-2",
+          "collection-3"
+        ],
+        "settings": {
+          "title": "Entregamos em todo Brasil",
+          "link_title": "Envio imediato",
+          "link": "",
+          "round_images": true,
+          "show_collection_title": true
+        }
+      },
+      "featured-product": {
+        "type": "featured-product",
+        "disabled": true,
+        "settings": {
+          "product": "",
+          "title": "Featured product",
+          "link_title": "View details",
+          "link_url": "",
+          "show_vendor": true,
+          "show_sku": false,
+          "show_share_buttons": true,
+          "show_description": true,
+          "description_below_add_to_cart": false,
+          "selector_mode": "block",
+          "color_mode": "color",
+          "show_quantity_selector": true,
+          "show_reviews_badge": false,
+          "show_payment_button": true,
+          "image_size": "small",
+          "enable_image_zoom": true,
+          "enable_video_looping": false,
+          "zoom_effect": "outside",
+          "carousel_effect": "fade",
+          "show_inventory_quantity": false,
+          "low_inventory_threshold": 0
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "show_collection_image": true,
+          "collapse_collection_description": false,
+          "frete_full": true,
+          "collection_image_size": "small",
+          "products_per_row": "4",
+          "default_products_per_page": 24,
+          "default_view_layout": "grid",
+          "show_quick_buy": "list_grid",
+          "show_quick_view": "list",
+          "quick_links": "",
+          "quick_links_show_products_count": true,
+          "show_filters": false,
+          "show_filter_color_swatch": false,
+          "filter_type": "tag",
+          "open_group_filters_mode": "all_closed",
+          "filter_group_order": ""
+        }
+      },
+      "recently-viewed-products": {
+        "type": "recently-viewed-products",
+        "settings": {
+          "title": "Recently viewed",
+          "show_quick_buy": false
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "novo_vendidos": false,
+          "vendidos_2": "6px",
+          "vendidos": true,
+          "espaco_top1": true,
+          "vendidos_texto": "de clientes satisfechos",
+          "mostrar_clientes_online": false,
+          "max_clientes": "100",
+          "min_clientes": "100",
+          "vendidos_cor": "#1b1b1b",
+          "titulo_tamanho_desktop": "26px",
+          "titulo_peso_desktop": "400",
+          "titulo_tamanho_mobile": "23px",
+          "titulo_peso_mobile": "700",
+          "espaco_titulo": "-1px",
+          "selo_verificacao": true,
+          "cor_selo": "#0086ff",
+          "superior_tag_espaco_promocao": "5px",
+          "inferior_tag_espaco_promocao": "5px",
+          "peso_price_text": "300",
+          "preco_tamanho_desktop": "28px",
+          "preco_tamanho_mobile": "25px",
+          "mostrar_codigo": false,
+          "estoque_dis": "#0086ff",
+          "show_vendor1": false,
+          "texto_vendedor": "Promoción exclusiva:",
+          "cor_texto_vendedor": "#0086ff",
+          "cor_fundo_vendedor": "#f0f8ff",
+          "cor_borda_vendedor": "#f0f8ff",
+          "show_sku": false,
+          "show_share_buttons": false,
+          "show_taxes_included": false,
+          "mostrar_economize": true,
+          "tag_pix": false,
+          "pix_desconto": "5",
+          "pix_cor_icone": "#ffffff",
+          "pix_cor_fundo": "#0086ff",
+          "pix_cor_borda": "#0086ff",
+          "pix_cor_texto": "#ffffff",
+          "selector_mode": "block",
+          "color_mode": "variant_image",
+          "variante_redonda": false,
+          "variante_sombra": true,
+          "margin_superior_variante": 30,
+          "delivery_time": false,
+          "relogio_entrega": false,
+          "cor_relogio": "#0086ff",
+          "delivery_time1": false,
+          "textofrete": "Envio Grátis",
+          "delivery_time_text": "Recibir entre:",
+          "entrega_estimada_cor": "#53b956",
+          "enable_garantia": false,
+          "garantia_text": "<b>30 Garantía de 30 días<\/b>",
+          "cor_text_garantia": "#53b956",
+          "enable_troca": true,
+          "troca_text": "<b>7 días para cambios y devoluciones<\/b>",
+          "cor_text_troca": "#53b956",
+          "size_text_frete": "14px",
+          "delivery_time_min_days": 2,
+          "delivery_time_max_days": 7,
+          "box_Fretedrop": false,
+          "box_correios": true,
+          "delivery_cep": false,
+          "caixa_cep": 65,
+          "caixa_cep_mobile": 90,
+          "cor_borda_cep": "#f6f6f8",
+          "cor_background_cep": "#f6f6f8",
+          "cor_botao_cep": "#0086ff",
+          "box_parcelamento": true,
+          "fundo_box": "#f6f6f8",
+          "borda_box": "#f6f6f8",
+          "cor_contador": false,
+          "contador_2": "30",
+          "cor_texto_contador": "#ffffff",
+          "cor_relogio_contador": "#05d976",
+          "cor_contador_cor": "#1836b4",
+          "cor_contador_cor1": "#102169",
+          "show_quantity_selector": false,
+          "show_payment_button": false,
+          "button_cor_color": "#00d132",
+          "texto_botao_text": "Agregar al carrito",
+          "tamanho_fonte_botao": "19",
+          "button_tamanho": "55",
+          "botao_animado": false,
+          "estilo_botao": false,
+          "borda_inferior_botao": "1",
+          "botao_redondo_cormprar": "30",
+          "botao_redondo": "30px",
+          "image_size": "large",
+          "enable_image_zoom": false,
+          "enable_video_looping": false,
+          "zoom_effect": "outside",
+          "carousel_effect": "fade",
+          "show_inventory_quantity": false,
+          "low_inventory_threshold": 0,
+          "content_display_mode": "show_all_and_expand_description",
+          "tab_page_1_handle": "",
+          "tab_page_2_handle": "",
+          "tab_page_3_handle": "",
+          "enable_reviews": true,
+          "show_reviews_badge": true,
+          "termometro_ml": false,
+          "badge_01": false,
+          "badge_02": false,
+          "badge_03": false,
+          "badge_04": false,
+          "show_shipping_estimator": false,
+          "shipping_estimator_default_country": "",
+          "show_refunds_policy": false
+        }
+      },
+      "product-recommendations": {
+        "type": "product-recommendations",
+        "settings": {
+          "show_product_recommendations": true,
+          "heading": "Te podría gustar",
+          "frete_full": true,
+          "show_quick_buy": true
+        }
+      },
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "show_announcement": false,
+          "background1": "#ff0045",
+          "background2": "#00d86b",
+          "text_color": "#ffffff",
+          "cor_newsletter": "rgba(0,0,0,0)",
+          "border_bottom1": false,
+          "texto_frete_text": "<strong>ENVÍO GRATIS A TODO BRASIL<\/strong>",
+          "deixar_frete": true,
+          "garantia_devolucao": "<strong>Devoluciones y cambios garantizados<\/strong>",
+          "satisfacao_text": "<strong>Su satisfacción garantizada o le devolvemos su dinero<\/strong>",
+          "anuncio_img": false,
+          "fundo_banner": "#000000",
+          "url_i": ""
+        }
+      },
+      "popups": {
+        "type": "popups",
+        "blocks": {
+          "b6c7473b-3c8e-43a3-92e0-ac1de2d923c3": {
+            "type": "exit",
+            "settings": {
+              "show_only_for_visitors": true,
+              "show_only_once": true,
+              "title": "Obtenga 15% de descuento",
+              "subheading": "en tu próximo pedido + ofertas exclusivas",
+              "show_newsletter": true,
+              "button_text": "Obtenga 15% de descuento",
+              "success_message": "¡Pronto recibirás un correo electrónico con tu código de descuento!",
+              "close_message": "No gracias, prefiero pagar más"
+            }
+          }
+        },
+        "block_order": [
+          "b6c7473b-3c8e-43a3-92e0-ac1de2d923c3"
+        ],
+        "settings": {
+        }
+      },
+      "text-with-icons": {
+        "type": "text-with-icons",
+        "blocks": {
+          "text-with-icons-0": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-delivery",
+              "title": "Compra Segura",
+              "content": "<p>Entorno seguro para pagos en línea<\/p>"
+            }
+          },
+          "text-with-icons-1": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-fast-delivery",
+              "title": "Frete Grátis",
+              "content": "<p>Envío rápido y acompañado con código de seguimiento<\/p>"
+            }
+          },
+          "text-with-icons-2": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-customer-support",
+              "title": "Suporte ao Cliente",
+              "content": "<p>servicio lun. al sáb. 8:00 am a 6:00 pm<\/p>"
+            }
+          },
+          "text-with-icons-3": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-secure-payment",
+              "title": "Pagamento Seguro",
+              "content": "<p>Aceptamos tarjetas de crédito y transferencias bancarias<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "text-with-icons-0",
+          "text-with-icons-1",
+          "text-with-icons-2",
+          "text-with-icons-3"
+        ],
+        "settings": {
+          "show_section": true,
+          "stack_mobile": false
+        }
+      },
+      "static-promotion-list": {
+        "type": "static-promotion-list",
+        "settings": {
+          "expand_items": true,
+          "section_size": "large",
+          "stack_mobile": false
+        }
+      },
+      "static-recently-viewed-products": {
+        "type": "static-recently-viewed-products",
+        "settings": {
+          "show_section": true,
+          "frete_full": true,
+          "title": "Visualizado recentemente",
+          "show_quick_buy": true
+        }
+      },
+      "static-newsletter": {
+        "type": "static-newsletter",
+        "settings": {
+          "show_section": false,
+          "title": "Subscribe to our newsletter",
+          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
+          "subtext": "100% free, Unsubscribe any time!",
+          "background": "#1e2d7d",
+          "text": "#ffffff"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "enable_order_notes": false,
+          "largura_cart": "1480px",
+          "sombra_card_cart": true,
+          "cart_redondo": "30px",
+          "cart_botao_redondo": "30px",
+          "show_payment_icons": false,
+          "gift_wrap_product": "",
+          "gift_wrap_text": "Do you want a gift wrap",
+          "gift_wrap_button": "Add a gift wrap",
+          "show_shipping_estimator": false,
+          "shipping_estimator_default_country": "Brasil",
+          "trust_heading": "Our guarantees",
+          "upsell_heading": "Complete o seu carrinho",
+          "upsell_collection": "",
+          "upsell_products_count": 4
+        }
+      },
+      "16256632635ec0715a": {
+        "type": "offers",
+        "blocks": {
+          "1625663263ec0c105a-1": {
+            "type": "offer",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/descarga_3.webp",
+              "title": "Fernanda Almeida - ⭐⭐⭐⭐⭐",
+              "content": "<p>Excelente atendimento, suporte sempre prestativo para resolver as minhas dúvidas com o produto.<\/p>"
+            }
+          },
+          "b03b9f4e-971a-4300-bc0f-f71178423b55": {
+            "type": "offer",
+            "settings": {
+              "title": "Andre Siqueira - ⭐⭐⭐⭐⭐",
+              "content": "<p>O produto de fato cumpre tudo o que promete, já recomendei para vários amigos e eles compraram também.<\/p>"
+            }
+          },
+          "1625663263ec0c105a-0": {
+            "type": "offer",
+            "settings": {
+              "title": "Cleusa Maria - ⭐⭐⭐⭐⭐",
+              "content": "<p>\"Foi minha primeira compra na internet. Adorei o site vou sempre comprar aqui.\"<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "1625663263ec0c105a-1",
+          "b03b9f4e-971a-4300-bc0f-f71178423b55",
+          "1625663263ec0c105a-0"
+        ],
+        "settings": {
+          "items_per_row": 3,
+          "stack_mobile": true
+        }
+      },
+      "list-collections-template": {
+        "type": "list-collections-template",
+        "settings": {
+          "collections_to_show": "all",
+          "show_collection_title": true,
+          "show_collection_overlay": true,
+          "collection_overlay_opacity": 20
+        }
+      },
+      "page-faq-template": {
+        "type": "page-faq-template",
+        "blocks": {
+          "page-faq-template-0": {
+            "type": "separator",
+            "settings": {
+              "title": "Shipping"
+            }
+          },
+          "page-faq-template-1": {
+            "type": "question",
+            "settings": {
+              "title": "Do you ship overseas?",
+              "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+            }
+          },
+          "page-faq-template-2": {
+            "type": "question",
+            "settings": {
+              "title": "How long will it take to get my order?",
+              "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+            }
+          },
+          "page-faq-template-3": {
+            "type": "question",
+            "settings": {
+              "title": "What shipping carriers do you use?",
+              "answer": "<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"
+            }
+          },
+          "page-faq-template-4": {
+            "type": "separator",
+            "settings": {
+              "title": "Product"
+            }
+          },
+          "page-faq-template-5": {
+            "type": "question",
+            "settings": {
+              "title": "Can I return my product?",
+              "answer": "<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"
+            }
+          },
+          "page-faq-template-6": {
+            "type": "question",
+            "settings": {
+              "title": "Can I get my product personalized?",
+              "answer": "<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"
+            }
+          },
+          "page-faq-template-7": {
+            "type": "separator",
+            "settings": {
+              "title": "Other"
+            }
+          },
+          "page-faq-template-8": {
+            "type": "question",
+            "settings": {
+              "title": "Any question?",
+              "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "page-faq-template-0",
+          "page-faq-template-1",
+          "page-faq-template-2",
+          "page-faq-template-3",
+          "page-faq-template-4",
+          "page-faq-template-5",
+          "page-faq-template-6",
+          "page-faq-template-7",
+          "page-faq-template-8"
+        ],
+        "settings": {
+          "show_contact_info": true,
+          "contact_info_heading": "Any question?",
+          "contact_info_text": "<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.<\/p>",
+          "contact_1_icon": "bi-phone",
+          "contact_1_heading": "Customer support",
+          "contact_1_text": "<p>Enter your text here<\/p>",
+          "contact_2_icon": "bi-email",
+          "contact_2_heading": "Send a message",
+          "contact_2_text": "<p>Enter your text here<\/p>"
+        }
+      },
+      "1651320688c1452da9": {
+        "type": "promotion-list",
+        "blocks": {
+          "1651320688c1452da9-0": {
+            "type": "item",
+            "settings": {
+              "show_overlay": false,
+              "overlay_opacity": 50,
+              "stretch_image": false,
+              "background": "#000000",
+              "background2": "#ff0045",
+              "text_color": "#ffffff",
+              "bordas_redonda": "13px",
+              "title": "Smartwatch padrão",
+              "content": "Smartwatch padrão",
+              "content_position": "top_left",
+              "button_background": "#ffffff",
+              "button_text_color": "#000000",
+              "button_text": "Saiba mais",
+              "button_link": "shopify:\/\/products\/relogio-quartzo-masculino-de-pulso-estilo-militar"
+            }
+          },
+          "1651320688c1452da9-1": {
+            "type": "item",
+            "settings": {
+              "show_overlay": false,
+              "overlay_opacity": 50,
+              "stretch_image": false,
+              "background": "#000000",
+              "background2": "#ff0045",
+              "text_color": "#ffffff",
+              "bordas_redonda": "13px",
+              "title": "Smartwatch padrão",
+              "content": "Smartwatch padrão",
+              "content_position": "top_left",
+              "button_background": "#ffffff",
+              "button_text_color": "#7a00ff",
+              "button_text": "Saiba mais",
+              "button_link": ""
+            }
+          },
+          "1651320688c1452da9-2": {
+            "type": "item",
+            "settings": {
+              "show_overlay": false,
+              "overlay_opacity": 50,
+              "stretch_image": false,
+              "background": "#000000",
+              "background2": "#ff0045",
+              "text_color": "#ffffff",
+              "bordas_redonda": "13px",
+              "title": "Smartwatch padrão",
+              "content": "Smartwatch padrão",
+              "content_position": "top_left",
+              "button_background": "#ffffff",
+              "button_text_color": "#7a00ff",
+              "button_text": "Saiba mais",
+              "button_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1651320688c1452da9-0",
+          "1651320688c1452da9-1",
+          "1651320688c1452da9-2"
+        ],
+        "settings": {
+          "expand_items": true,
+          "section_size": "medium",
+          "stack_mobile": false
+        }
+      },
+      "search-template": {
+        "type": "search-template",
+        "settings": {
+          "products_per_row": "4",
+          "default_view_layout": "grid",
+          "show_quick_view": "list",
+          "show_quick_buy": "list",
+          "quick_links": ""
+        }
+      },
+      "165850699407f1ba35": {
+        "type": "collection-with-image",
+        "settings": {
+          "collection": "mas-vendidos",
+          "products_count": 20,
+          "background": "#000000",
+          "text_color": "#ffffff",
+          "title": "Mas vendidos",
+          "content": "Compralos en la tienda mas confiable de Colombia.",
+          "button_background": "#ff002e",
+          "button_text_color": "#ffffff",
+          "button_text": "VER MAS PRODUCTOS",
+          "more_redondo": "50px",
+          "button_link": "shopify:\/\/collections"
+        }
+      },
+      "16594504856da94767": {
+        "type": "featured-collection",
+        "settings": {
+          "collection": "frontpage",
+          "frete_full": true,
+          "title": "Ultimos productos",
+          "products_count": 12,
+          "layout": "vertical",
+          "stack_desktop": true,
+          "show_quick_buy": true,
+          "link_title": "Ver mais",
+          "link_url": ""
+        }
+      },
+      "minimal-header": {
+        "type": "minimal-header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/Logo_drospstar_novo.png",
+          "logo_max_width": 270,
+          "mobile_logo_max_width": 100
+        }
+      },
+      "password-template": {
+        "type": "password-template",
+        "settings": {
+          "show_social_media": true,
+          "heading": "Aberto em breve",
+          "text": "<p>Um conteúdo descrevendo o que sua loja venderá.<\/p>",
+          "show_newsletter_signup": true,
+          "newsletter_text": "<p>Uma frase curta descrevendo o que alguém receberá ao se inscrever.<\/p>"
+        }
+      },
+      "1659753583776d4519": {
+        "type": "slideshow",
+        "blocks": {
+          "1659753583776d4519-0": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Entrega_garantizada_con_pago_Con.png",
+              "mobile_image": "shopify:\/\/shop_images\/Entrega_garantizada_con_pago_Con.png",
+              "show_overlay": false,
+              "overlay_opacity": 30,
+              "text_color": "#ffffff",
+              "title": "",
+              "content": "",
+              "content_position": "middle_center",
+              "button_background": "#ffffff",
+              "button_text_color": "#000000",
+              "button_text": "",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "1659753583776d4519-0"
+        ],
+        "settings": {
+          "edge_to_edge": false,
+          "section_size": "preserve_ratio",
+          "carousel_effect": "slide",
+          "autoplay": true,
+          "espaco_slide": false,
+          "cycle_speed": 5
+        }
+      },
+      "16608300336b1488ae": {
+        "type": "collection-list",
+        "blocks": {
+          "16608300336b1488ae-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "mas-vendidos"
+            }
+          },
+          "16608300336b1488ae-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "deportes-y-fitness"
+            }
+          },
+          "16663ca5-e3e7-4281-b8f7-bdc058b38aa1": {
+            "type": "collection",
+            "settings": {
+              "collection": "hogar"
+            }
+          },
+          "ac26e064-3b8b-42ff-9a01-a160204441d6": {
+            "type": "collection",
+            "settings": {
+              "collection": "belleza"
+            }
+          },
+          "93aee82e-4285-4403-b82f-3894d9bcdf48": {
+            "type": "collection",
+            "settings": {
+              "collection": "mascotas"
+            }
+          },
+          "324bdce9-4b27-46a3-80d2-9ceab79b1140": {
+            "type": "collection",
+            "settings": {
+              "collection": "tecnologia"
+            }
+          },
+          "4758d5d7-2753-4fce-ba2d-033d8c800151": {
+            "type": "collection",
+            "settings": {
+              "collection": "frontpage"
+            }
+          }
+        },
+        "block_order": [
+          "16608300336b1488ae-0",
+          "16608300336b1488ae-1",
+          "16663ca5-e3e7-4281-b8f7-bdc058b38aa1",
+          "ac26e064-3b8b-42ff-9a01-a160204441d6",
+          "93aee82e-4285-4403-b82f-3894d9bcdf48",
+          "324bdce9-4b27-46a3-80d2-9ceab79b1140",
+          "4758d5d7-2753-4fce-ba2d-033d8c800151"
+        ],
+        "settings": {
+          "title": "",
+          "link_title": "Ver mas",
+          "link": "shopify:\/\/collections",
+          "round_images": true,
+          "show_collection_title": true
+        }
+      }
+    },
+    "content_for_index": [
+      "1659753583776d4519",
+      "16608300336b1488ae",
+      "16594504856da94767",
+      "16256632635ec0715a",
+      "1651320688c1452da9",
+      "165850699407f1ba35"
+    ],
+    "blocks": {
+      "13669795325273674392": {
+        "type": "shopify:\/\/apps\/releasit-cod-form-upsells\/blocks\/app-embed\/72faf214-4174-4fec-886b-0d0e8d3af9a2",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "2965712708760319418": {
+        "type": "shopify:\/\/apps\/proof-bear-sales-popup\/blocks\/widget\/6e90b7fd-96ea-488b-9571-34f0c382838a",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "4214657528271059384": {
+        "type": "shopify:\/\/apps\/a2reviews-product-reviews\/blocks\/app-embed\/6a88647f-451d-4142-88de-9df2dab10243",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14159691304313693114": {
+        "type": "shopify:\/\/apps\/pixel-conversions-api-facebook\/blocks\/app-embed\/e244883f-9001-4b7d-b3e2-a64012fd8879",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Magento": {
+      "heading_color": "#3d3935",
+      "text_color": "#3d3935",
+      "accent_color": "#64a70b",
+      "link_color": "#53b956",
+      "border_color": "#dfe4e6",
+      "background": "#ffffff",
+      "secondary_background": "#ffffff",
+      "error_color": "#ff0000",
+      "success_color": "#33bb33",
+      "primary_button_background": "#64a70b",
+      "primary_button_text_color": "#36312c",
+      "secondary_button_background": "#00d132",
+      "secondary_button_text_color": "#ffffff",
+      "header_background": "#ffffff",
+      "header_text_color": "#3d3935",
+      "header_light_text_color": "#3d3935",
+      "header_accent_color": "#c74109",
+      "cor_preco_cor": "#64a70b",
+      "cor_compare_cor": "#8a9297",
+      "onsale_1": "#ff7941",
+      "onsale_2": "#ff7941",
+      "product_in_stock_color": "#53b956",
+      "product_low_stock_color": "#ee0000",
+      "product_sold_out_color": "#8a9297",
+      "custom_1_cor1": "#102169",
+      "custom_1_cor2": "#1a36b0",
+      "custom_2_cor1": "#ac1bc5",
+      "custom_2_cor2": "#da4af2",
+      "product_star_color": "#ffbd00",
+      "zapzap": true,
+      "lado_zap": "2",
+      "zap_altura": 35,
+      "zap_altura_box": 115,
+      "numberzap": "5512996748652",
+      "titlezap": "Fale Conosco \n<span>\nPrecisando de ajuda conte conosco.<\/span>",
+      "chatzap": "Olá, estou aqui para te ajudar!",
+      "digizap": "Digite sua mensagem",
+      "base_text_font_size": 15,
+      "heading_font": "oswald_n7",
+      "text_font": "oswald_n4",
+      "underline_links": true,
+      "animation_image_zoom": true,
+      "search_mode": "product,article,page",
+      "show_vendor": false,
+      "show_secondary_image": true,
+      "show_discount": true,
+      "discount_mode": "percentage",
+      "product_price_position": "after_title",
+      "product_image_size": "square",
+      "show_color_swatch": false,
+      "show_inventory_quantity": false,
+      "low_inventory_threshold": 0,
+      "show_reviews_badge": false,
+      "cart_type": "page",
+      "cart_empty_button_link": "shopify:\/\/collections\/all",
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "700",
+      "social_facebook": "https:\/\/www.facebook.com\/shopify",
+      "social_twitter": "https:\/\/twitter.com\/shopify",
+      "social_pinterest": "https:\/\/www.pinterest.com\/shopify",
+      "social_instagram": "https:\/\/instagram.com\/shopify",
+      "social_vimeo": "",
+      "social_tumblr": "",
+      "social_youtube": "https:\/\/www.youtube.com\/user\/shopify",
+      "social_linkedin": "",
+      "social_snapchat": "",
+      "social_fancy": "",
+      "favicon": "shopify:\/\/shop_images\/imagem_2021-06-30_142454.png",
+      "atalho_f12_enable": false,
+      "botoes_campos": "30px",
+      "sombra1_botao": false,
+      "estilo_botao": true,
+      "borda_botao": false,
+      "tag_card": true,
+      "borda_redonda": "15px",
+      "sombra_card": true,
+      "juros": "1010",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#00badb",
+      "checkout_button_color": "#00badb",
+      "checkout_error_color": "#ff0000",
+      "botao_redondo_cormprar10": "2161",
+      "largura_site": 1300,
+      "botao_direito_enable": false,
+      "product_label_2_background": "#9400ff",
+      "product_label_1_background": "#102169",
+      "product_on_sale_accent": "#00d86b",
+      "botao_direito": true,
+      "share_image": "",
+      "social_google_plus": "",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "enable_sticky_header": false,
+            "logo": "shopify:\/\/shop_images\/logo_magento.png",
+            "logo_max_width": 215,
+            "mobile_logo_max_width": 130,
+            "largura_site": 1480,
+            "centro_logo_mobile": "-5%",
+            "nav_cor": "#ffffff",
+            "nav_cor_texto": "#3d3935",
+            "codigo_rastreio": true,
+            "url_rastreio": "shopify:\/\/pages\/codigo-de-rastreio",
+            "cart_icon_icon": "bag",
+            "menu_position_1": "center",
+            "espaco_acima_menu": "5",
+            "espaco_abaixo_menu": "10",
+            "espaco_menu": "20",
+            "espaco_menu_inferior": "10",
+            "barra_degradee": false,
+            "altura_linha_mobile": 1,
+            "cor_1": "#c74109",
+            "cor_2": "#ff7941",
+            "cor_3": "#ff7941",
+            "cor_4": "#c74109",
+            "sombra_menu": "10",
+            "anuncio_img": false,
+            "fundo_banner": "#02195a",
+            "imgdesk": "shopify:\/\/shop_images\/Responsivo_mobile6.png",
+            "imgmb": "shopify:\/\/shop_images\/Responsivo_mobile3.png",
+            "url_i": "shopify:\/\/products\/relogio-digital-em-aco-inoxidavel-esportiva-com-bluetooth-a-prova-de-agua-masculino",
+            "show_locale_selector": false,
+            "show_currency_selector": false,
+            "navigation_menu": "menu",
+            "desktop_navigation_layout": "inline",
+            "desktop_navigation_open_trigger": "hover",
+            "show_navigation_social_media": true,
+            "navigation_phone_number": "Whatsapp +55 00 0000-0000",
+            "navigation_email": "email",
+            "show_condensed_search": false,
+            "cor_botao": "#f3f3f3",
+            "cor_icone": "#e04403",
+            "retirar_borda": true,
+            "botao_padrao": false,
+            "botao_redondo": true,
+            "borda_pesquisa": "#f3f3f3",
+            "tamanho_pesquisa": "44px",
+            "margin_superior_pesquisa": "59px",
+            "margin_inferior_pesquisa": "0",
+            "fundo_barra_pesquisa": "#f3f3f3",
+            "show_search_filter": false,
+            "search_menu": "",
+            "show_search_menu_title": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1598060184149": {
+              "type": "text",
+              "settings": {
+                "title": "ATENDIMENTO AO CLIENTE",
+                "content": "<p><strong>SAC (Serviço de Atendimento ao Consumidor)<\/strong><\/p><p><strong>E-mail: <\/strong>sualoja@email.com<br\/><strong>WhatsApp:<\/strong>  (99) 9 9999-9999<\/p>"
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "menu"
+              }
+            },
+            "bd0342a8-e745-4965-80fd-f49d6074a69f": {
+              "type": "links",
+              "settings": {
+                "menu": ""
+              }
+            },
+            "943aca47-c2d5-44e4-9245-d5ab3572d5c2": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "RECEBA NOSSAS PROMOÇÕES",
+                "subheading": "<p>Assine com seu e-mail abaixo:<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1598060184149",
+            "footer-1",
+            "bd0342a8-e745-4965-80fd-f49d6074a69f",
+            "943aca47-c2d5-44e4-9245-d5ab3572d5c2",
+            "footer-2"
+          ],
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Logo_drospstar_novo.png",
+            "logo_max_width": 140,
+            "mobile_logo_max_width": 100,
+            "show_social_media": false,
+            "show_payment_icons": true,
+            "show_locale_selector": true,
+            "cor_footer": "#595959",
+            "cor_texto": "#ffffff",
+            "des_cnpj": true,
+            "numero_cnpj": "00.000.000\/0001-00",
+            "endereco_company_desktop": "Logradouro, № - Cidade-UF | XXXXX-XXX",
+            "endereco_company_mobile": "Logradouro, № - Cidade-UF | XXXXX-XXX",
+            "show_currency_selector": true,
+            "show_cookie_bar": true,
+            "text": "<p>Utilizamos cookies<\/p>",
+            "accept_button": "Ok"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "64939740-2d54-47f0-bc3f-d10776a4f9ae": {
+              "type": "image",
+              "settings": {
+                "image": "shopify:\/\/shop_images\/banner_drop3.png",
+                "mobile_image": "shopify:\/\/shop_images\/banner_drop_mobile2.png",
+                "show_overlay": false,
+                "overlay_opacity": 30,
+                "text_color": "#ffffff",
+                "title": "",
+                "content": "",
+                "content_position": "middle_center",
+                "button_background": "#ffffff",
+                "button_text_color": "#000000",
+                "button_text": "",
+                "link": "shopify:\/\/products\/relogio-smartwatch-inteligente-masculino-para-apple-e-android"
+              }
+            },
+            "slide-0": {
+              "type": "image",
+              "disabled": true,
+              "settings": {
+                "show_overlay": false,
+                "overlay_opacity": 100,
+                "text_color": "#ffffff",
+                "title": "",
+                "content": "",
+                "content_position": "middle_center",
+                "button_background": "#ffffff",
+                "button_text_color": "#000000",
+                "button_text": "",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "64939740-2d54-47f0-bc3f-d10776a4f9ae",
+            "slide-0"
+          ],
+          "settings": {
+            "edge_to_edge": false,
+            "section_size": "preserve_ratio",
+            "carousel_effect": "slide",
+            "autoplay": true,
+            "cycle_speed": 3
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "disabled": true,
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "collection-3": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2",
+            "collection-3"
+          ],
+          "settings": {
+            "title": "Entregamos em todo Brasil",
+            "link_title": "Envio imediato",
+            "link": "",
+            "round_images": true,
+            "show_collection_title": true
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "title": "Featured product",
+            "link_title": "View details",
+            "link_url": "",
+            "show_vendor": true,
+            "show_sku": false,
+            "show_share_buttons": true,
+            "show_description": true,
+            "description_below_add_to_cart": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "show_quantity_selector": true,
+            "show_reviews_badge": false,
+            "show_payment_button": true,
+            "image_size": "small",
+            "enable_image_zoom": true,
+            "enable_video_looping": false,
+            "zoom_effect": "outside",
+            "carousel_effect": "fade",
+            "show_inventory_quantity": false,
+            "low_inventory_threshold": 0
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_image": true,
+            "collapse_collection_description": false,
+            "frete_full": true,
+            "collection_image_size": "small",
+            "products_per_row": "4",
+            "default_products_per_page": 24,
+            "default_view_layout": "grid",
+            "show_quick_buy": "list_grid",
+            "show_quick_view": "list",
+            "quick_links": "",
+            "quick_links_show_products_count": true,
+            "show_filters": false,
+            "show_filter_color_swatch": true,
+            "filter_type": "group",
+            "open_group_filters_mode": "all_closed",
+            "filter_group_order": ""
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "title": "Recently viewed",
+            "show_quick_buy": false
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "novo_vendidos": true,
+            "vendidos_2": "6px",
+            "vendidos": false,
+            "espaco_top1": true,
+            "vendidos_texto": "de clientes satisfeitos",
+            "mostrar_clientes_online": true,
+            "max_clientes": "100",
+            "min_clientes": "80",
+            "vendidos_cor": "#6e6e6e",
+            "titulo_tamanho_desktop": "26px",
+            "titulo_peso_desktop": "400",
+            "titulo_tamanho_mobile": "23px",
+            "titulo_peso_mobile": "700",
+            "espaco_titulo": "-1px",
+            "selo_verificacao": false,
+            "cor_selo": "#ff7941",
+            "superior_tag_espaco_promocao": "5px",
+            "inferior_tag_espaco_promocao": "5px",
+            "peso_price_text": "300",
+            "preco_tamanho_desktop": "28px",
+            "preco_tamanho_mobile": "25px",
+            "mostrar_codigo": true,
+            "estoque_dis": "#3d3935",
+            "show_vendor1": false,
+            "texto_vendedor": "Promoção exclusiva:",
+            "cor_texto_vendedor": "#0086ff",
+            "cor_fundo_vendedor": "#f0f8ff",
+            "cor_borda_vendedor": "#f0f8ff",
+            "show_sku": false,
+            "show_share_buttons": false,
+            "show_taxes_included": false,
+            "mostrar_economize": false,
+            "tag_pix": false,
+            "pix_desconto": "5",
+            "pix_cor_icone": "#ffffff",
+            "pix_cor_fundo": "#e04403",
+            "pix_cor_borda": "#e04403",
+            "pix_cor_texto": "#ffffff",
+            "selector_mode": "dropdown",
+            "color_mode": "variant_image",
+            "variante_redonda": false,
+            "variante_sombra": true,
+            "margin_superior_variante": 18,
+            "delivery_time": false,
+            "relogio_entrega": true,
+            "cor_relogio": "#0086ff",
+            "delivery_time1": true,
+            "textofrete": "Frete Grátis",
+            "delivery_time_text": "Receba entre:",
+            "entrega_estimada_cor": "#53b956",
+            "enable_garantia": true,
+            "garantia_text": "<b>30 Dias de Garantia<\/b>",
+            "cor_text_garantia": "#53b956",
+            "enable_troca": true,
+            "troca_text": "<b>7 dias para trocas e devoluções<\/b>",
+            "cor_text_troca": "#53b956",
+            "size_text_frete": "14px",
+            "delivery_time_min_days": 1,
+            "delivery_time_max_days": 2,
+            "box_Fretedrop": false,
+            "box_correios": false,
+            "delivery_cep": true,
+            "cor_borda_cep": "#f6f6f8",
+            "cor_background_cep": "#f3f3f3",
+            "cor_botao_cep": "#ff7941",
+            "box_parcelamento": true,
+            "fundo_box": "#f3f3f3",
+            "borda_box": "#f3f3f3",
+            "cor_contador": true,
+            "contador_2": "30",
+            "cor_texto_contador": "#ffffff",
+            "cor_relogio_contador": "#05d976",
+            "cor_contador_cor": "#1836b4",
+            "cor_contador_cor1": "#102169",
+            "show_quantity_selector": false,
+            "show_payment_button": false,
+            "button_cor_color": "#64a70b",
+            "texto_botao_text": "COMPRAR",
+            "tamanho_fonte_botao": "19",
+            "button_tamanho": "55",
+            "botao_animado": true,
+            "estilo_botao": false,
+            "borda_inferior_botao": "0",
+            "botao_redondo_cormprar": "30",
+            "botao_redondo": "30px",
+            "image_size": "large",
+            "enable_image_zoom": false,
+            "enable_video_looping": false,
+            "zoom_effect": "outside",
+            "carousel_effect": "fade",
+            "show_inventory_quantity": false,
+            "low_inventory_threshold": 0,
+            "content_display_mode": "show_all_and_expand_description",
+            "tab_page_1_handle": "",
+            "tab_page_2_handle": "",
+            "tab_page_3_handle": "",
+            "enable_reviews": false,
+            "show_reviews_badge": false,
+            "termometro_ml": true,
+            "badge_01": false,
+            "badge_02": false,
+            "badge_03": false,
+            "badge_04": false,
+            "badgebotao": "shopify:\/\/shop_images\/selo-seguranca3.png",
+            "show_shipping_estimator": false,
+            "shipping_estimator_default_country": "Brasil",
+            "show_refunds_policy": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "heading": "Você pode gostar",
+            "frete_full": true,
+            "show_quick_buy": true
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "settings": {
+            "show_announcement": false,
+            "background1": "#7a00ff",
+            "background2": "#00d86b",
+            "text_color": "#ffffff",
+            "cor_newsletter": "rgba(0,0,0,0)",
+            "border_bottom1": false,
+            "texto_frete_text": "<b> FRETE GRÁTIS PARA TODO BRASIL<\/b>",
+            "deixar_frete": false,
+            "garantia_devolucao": "<b>Devoluções & Trocas Garantidas<\/b>",
+            "satisfacao_text": "<b>Satisfação Garantida ou Seu Dinheiro de Volta<\/b>",
+            "anuncio_img": true,
+            "fundo_banner": "#e04403",
+            "imgdesk": "shopify:\/\/shop_images\/Responsivo_mobile6.png",
+            "imgmb": "shopify:\/\/shop_images\/banner_mobile.png",
+            "url_i": "shopify:\/\/collections\/relogios-masculinos"
+          }
+        },
+        "popups": {
+          "type": "popups",
+          "blocks": {
+            "b6c7473b-3c8e-43a3-92e0-ac1de2d923c3": {
+              "type": "exit",
+              "settings": {
+                "show_only_for_visitors": true,
+                "show_only_once": true,
+                "title": "Ganhe 15% OFF",
+                "subheading": "no seu próximo pedido + ofertas exclusivas",
+                "show_newsletter": true,
+                "button_text": "Ganhe 15% OFF",
+                "success_message": "Em breve você receberá um e-mail contendo seu código de desconto!",
+                "close_message": "Não obrigado, prefiro pagar mais"
+              }
+            }
+          },
+          "block_order": [
+            "b6c7473b-3c8e-43a3-92e0-ac1de2d923c3"
+          ],
+          "settings": {
+          }
+        },
+        "text-with-icons": {
+          "type": "text-with-icons",
+          "blocks": {
+            "text-with-icons-0": {
+              "type": "item",
+              "settings": {
+                "icon": "bi-delivery",
+                "title": "Entregamos em todo Brasil",
+                "content": "<p>Envio imediato<\/p>"
+              }
+            },
+            "text-with-icons-1": {
+              "type": "item",
+              "settings": {
+                "icon": "bi-returns",
+                "title": "Cliente Satisfeito ou Reembolso Imediato",
+                "content": "<p>Prazo de entrega de 10 à 30 dias úteis<\/p>"
+              }
+            },
+            "text-with-icons-2": {
+              "type": "item",
+              "settings": {
+                "icon": "bi-customer-support",
+                "title": "Suporte ao Cliente",
+                "content": "<p>Atendimento Seg. a Sáb. <strong>8:00h<\/strong> às <strong>18:00h<\/strong><\/p>"
+              }
+            },
+            "text-with-icons-3": {
+              "type": "item",
+              "settings": {
+                "icon": "bi-secure-payment",
+                "title": "Pagamento Seguro",
+                "content": "<p>Aceitamos Cartão de Crédito e Boleto Bancário<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "text-with-icons-0",
+            "text-with-icons-1",
+            "text-with-icons-2",
+            "text-with-icons-3"
+          ],
+          "settings": {
+            "show_section": true,
+            "stack_mobile": false
+          }
+        },
+        "static-promotion-list": {
+          "type": "static-promotion-list",
+          "settings": {
+            "expand_items": true,
+            "section_size": "large",
+            "stack_mobile": false
+          }
+        },
+        "static-recently-viewed-products": {
+          "type": "static-recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "frete_full": true,
+            "title": "Visualizado recentemente",
+            "show_quick_buy": true
+          }
+        },
+        "static-newsletter": {
+          "type": "static-newsletter",
+          "settings": {
+            "show_section": false,
+            "title": "Subscribe to our newsletter",
+            "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
+            "subtext": "100% free, Unsubscribe any time!",
+            "background": "#1e2d7d",
+            "text": "#ffffff"
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "enable_order_notes": false,
+            "largura_cart": "1480px",
+            "sombra_card_cart": true,
+            "cart_redondo": "30px",
+            "cart_botao_redondo": "30px",
+            "show_payment_icons": false,
+            "gift_wrap_product": "",
+            "gift_wrap_text": "Do you want a gift wrap",
+            "gift_wrap_button": "Add a gift wrap",
+            "show_shipping_estimator": false,
+            "shipping_estimator_default_country": "Brasil",
+            "trust_heading": "Our guarantees",
+            "upsell_heading": "Complete o seu carrinho",
+            "upsell_collection": "",
+            "upsell_products_count": 4
+          }
+        },
+        "16256632635ec0715a": {
+          "type": "offers",
+          "blocks": {
+            "1625663263ec0c105a-1": {
+              "type": "offer",
+              "settings": {
+                "title": "Fernanda Almeida - ⭐⭐⭐⭐⭐",
+                "content": "<p>Excelente atendimento, suporte sempre prestativo para resolver as minhas dúvidas com o produto.<\/p>"
+              }
+            },
+            "b03b9f4e-971a-4300-bc0f-f71178423b55": {
+              "type": "offer",
+              "settings": {
+                "title": "Andre Siqueira - ⭐⭐⭐⭐⭐",
+                "content": "<p>O produto de fato cumpre tudo o que promete, já recomendei para vários amigos e eles compraram também.<\/p>"
+              }
+            },
+            "1625663263ec0c105a-0": {
+              "type": "offer",
+              "settings": {
+                "title": "Cleusa Maria - ⭐⭐⭐⭐⭐",
+                "content": "<p>\"Foi minha primeira compra na internet. Adorei o site vou sempre comprar aqui.\"<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1625663263ec0c105a-1",
+            "b03b9f4e-971a-4300-bc0f-f71178423b55",
+            "1625663263ec0c105a-0"
+          ],
+          "settings": {
+            "items_per_row": 3,
+            "stack_mobile": true
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "collections_to_show": "all",
+            "show_collection_title": true,
+            "show_collection_overlay": true,
+            "collection_overlay_opacity": 20
+          }
+        },
+        "page-faq-template": {
+          "type": "page-faq-template",
+          "blocks": {
+            "page-faq-template-0": {
+              "type": "separator",
+              "settings": {
+                "title": "Shipping"
+              }
+            },
+            "page-faq-template-1": {
+              "type": "question",
+              "settings": {
+                "title": "Do you ship overseas?",
+                "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+              }
+            },
+            "page-faq-template-2": {
+              "type": "question",
+              "settings": {
+                "title": "How long will it take to get my order?",
+                "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+              }
+            },
+            "page-faq-template-3": {
+              "type": "question",
+              "settings": {
+                "title": "What shipping carriers do you use?",
+                "answer": "<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"
+              }
+            },
+            "page-faq-template-4": {
+              "type": "separator",
+              "settings": {
+                "title": "Product"
+              }
+            },
+            "page-faq-template-5": {
+              "type": "question",
+              "settings": {
+                "title": "Can I return my product?",
+                "answer": "<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"
+              }
+            },
+            "page-faq-template-6": {
+              "type": "question",
+              "settings": {
+                "title": "Can I get my product personalized?",
+                "answer": "<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"
+              }
+            },
+            "page-faq-template-7": {
+              "type": "separator",
+              "settings": {
+                "title": "Other"
+              }
+            },
+            "page-faq-template-8": {
+              "type": "question",
+              "settings": {
+                "title": "Any question?",
+                "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "page-faq-template-0",
+            "page-faq-template-1",
+            "page-faq-template-2",
+            "page-faq-template-3",
+            "page-faq-template-4",
+            "page-faq-template-5",
+            "page-faq-template-6",
+            "page-faq-template-7",
+            "page-faq-template-8"
+          ],
+          "settings": {
+            "show_contact_info": true,
+            "contact_info_heading": "Any question?",
+            "contact_info_text": "<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.<\/p>",
+            "contact_1_icon": "bi-phone",
+            "contact_1_heading": "Customer support",
+            "contact_1_text": "<p>Enter your text here<\/p>",
+            "contact_2_icon": "bi-email",
+            "contact_2_heading": "Send a message",
+            "contact_2_text": "<p>Enter your text here<\/p>"
+          }
+        },
+        "1651320688c1452da9": {
+          "type": "promotion-list",
+          "blocks": {
+            "1651320688c1452da9-0": {
+              "type": "item",
+              "settings": {
+                "show_overlay": false,
+                "overlay_opacity": 50,
+                "stretch_image": false,
+                "background": "#e04403",
+                "background2": "#c74109",
+                "text_color": "#ffffff",
+                "bordas_redonda": "13px",
+                "title": "Smartwatch padrão",
+                "content": "Smartwatch padrão",
+                "content_position": "top_left",
+                "button_background": "#ffffff",
+                "button_text_color": "#e04403",
+                "button_text": "Saiba mais",
+                "button_link": "shopify:\/\/products\/relogio-quartzo-masculino-de-pulso-estilo-militar"
+              }
+            },
+            "1651320688c1452da9-1": {
+              "type": "item",
+              "settings": {
+                "show_overlay": false,
+                "overlay_opacity": 50,
+                "stretch_image": false,
+                "background": "#c74109",
+                "background2": "#e04403",
+                "text_color": "#ffffff",
+                "bordas_redonda": "13px",
+                "title": "Smartwatch padrão",
+                "content": "Smartwatch padrão",
+                "content_position": "top_left",
+                "button_background": "#ffffff",
+                "button_text_color": "#e04403",
+                "button_text": "Saiba mais",
+                "button_link": ""
+              }
+            },
+            "1651320688c1452da9-2": {
+              "type": "item",
+              "settings": {
+                "show_overlay": false,
+                "overlay_opacity": 50,
+                "stretch_image": false,
+                "background": "#c74109",
+                "background2": "#e04403",
+                "text_color": "#ffffff",
+                "bordas_redonda": "13px",
+                "title": "Smartwatch padrão",
+                "content": "Smartwatch padrão",
+                "content_position": "top_left",
+                "button_background": "#ffffff",
+                "button_text_color": "#e04403",
+                "button_text": "Saiba mais",
+                "button_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1651320688c1452da9-0",
+            "1651320688c1452da9-1",
+            "1651320688c1452da9-2"
+          ],
+          "settings": {
+            "expand_items": true,
+            "section_size": "medium",
+            "stack_mobile": false
+          }
+        },
+        "search-template": {
+          "type": "search-template",
+          "settings": {
+            "products_per_row": "4",
+            "default_view_layout": "grid",
+            "show_quick_view": "list",
+            "show_quick_buy": "list",
+            "quick_links": ""
+          }
+        },
+        "165850699407f1ba35": {
+          "type": "collection-with-image",
+          "settings": {
+            "collection": "relogios-inteligentes",
+            "products_count": 20,
+            "background": "#c74109",
+            "text_color": "#ffffff",
+            "title": "Promoção Especial",
+            "content": "DIA DOS NAMORADOS",
+            "button_background": "#b021e6",
+            "button_text_color": "#ffffff",
+            "button_text": "",
+            "more_redondo": "50px",
+            "button_link": ""
+          }
+        },
+        "16594504856da94767": {
+          "type": "featured-collection",
+          "settings": {
+            "collection": "relogios-inteligentes",
+            "frete_full": true,
+            "title": "Relógios Inteligentes",
+            "products_count": 12,
+            "layout": "vertical",
+            "stack_desktop": false,
+            "show_quick_buy": true,
+            "link_title": "Ver mais",
+            "link_url": ""
+          }
+        },
+        "minimal-header": {
+          "type": "minimal-header",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Logo_drospstar_novo.png",
+            "logo_max_width": 270,
+            "mobile_logo_max_width": 100
+          }
+        },
+        "password-template": {
+          "type": "password-template",
+          "settings": {
+            "show_social_media": true,
+            "heading": "Aberto em breve",
+            "text": "<p>Um conteúdo descrevendo o que sua loja venderá.<\/p>",
+            "show_newsletter_signup": true,
+            "newsletter_text": "<p>Uma frase curta descrevendo o que alguém receberá ao se inscrever.<\/p>"
+          }
+        },
+        "1659753583776d4519": {
+          "type": "slideshow",
+          "blocks": {
+            "1659753583776d4519-0": {
+              "type": "image",
+              "settings": {
+                "image": "shopify:\/\/shop_images\/swift.png",
+                "mobile_image": "shopify:\/\/shop_images\/swift3_mobile.png",
+                "show_overlay": false,
+                "overlay_opacity": 30,
+                "text_color": "#ffffff",
+                "title": "",
+                "content": "",
+                "content_position": "middle_center",
+                "button_background": "#ffffff",
+                "button_text_color": "#000000",
+                "button_text": "",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1659753583776d4519-0"
+          ],
+          "settings": {
+            "edge_to_edge": false,
+            "section_size": "preserve_ratio",
+            "carousel_effect": "slide",
+            "autoplay": true,
+            "cycle_speed": 5
+          }
+        },
+        "16608300336b1488ae": {
+          "type": "collection-list",
+          "disabled": true,
+          "blocks": {
+            "16608300336b1488ae-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "lancamentos",
+                "image": "shopify:\/\/shop_images\/1_bc1e2b70-0dd6-45f7-9d1c-744cdd20d00c.png"
+              }
+            },
+            "16608300336b1488ae-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "mais-vendidos",
+                "image": "shopify:\/\/shop_images\/2.png"
+              }
+            }
+          },
+          "block_order": [
+            "16608300336b1488ae-0",
+            "16608300336b1488ae-1"
+          ],
+          "settings": {
+            "title": "Our collections",
+            "link_title": "View all",
+            "link": "shopify:\/\/collections",
+            "round_images": true,
+            "show_collection_title": true
+          }
+        },
+        "16608466039d73579d": {
+          "type": "slideshow",
+          "blocks": {
+            "16608466039d73579d-0": {
+              "type": "image",
+              "settings": {
+                "image": "shopify:\/\/shop_images\/swift2.png",
+                "mobile_image": "shopify:\/\/shop_images\/swif_mobile.png",
+                "show_overlay": false,
+                "overlay_opacity": 30,
+                "text_color": "#ffffff",
+                "title": "",
+                "content": "",
+                "content_position": "middle_center",
+                "button_background": "#ffffff",
+                "button_text_color": "#000000",
+                "button_text": "Button",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "16608466039d73579d-0"
+          ],
+          "settings": {
+            "edge_to_edge": false,
+            "section_size": "preserve_ratio",
+            "carousel_effect": "slide",
+            "autoplay": true,
+            "cycle_speed": 5
+          }
+        }
+      },
+      "content_for_index": [
+        "16608466039d73579d",
+        "1659753583776d4519",
+        "1651320688c1452da9",
+        "16594504856da94767",
+        "165850699407f1ba35",
+        "16256632635ec0715a",
+        "16608300336b1488ae"
+      ]
+    },
+    "Verde e azul": {
+      "heading_color": "#737b97",
+      "text_color": "#737b97",
+      "accent_color": "#00d132",
+      "link_color": "#53b956",
+      "border_color": "#dfe4e6",
+      "background": "#f7f7f6",
+      "secondary_background": "#ffffff",
+      "error_color": "#ff0000",
+      "success_color": "#33bb33",
+      "primary_button_background": "#00d132",
+      "primary_button_text_color": "#36312c",
+      "secondary_button_background": "#00d132",
+      "secondary_button_text_color": "#ffffff",
+      "header_background": "#102169",
+      "header_text_color": "#ffffff",
+      "header_light_text_color": "#00d86b",
+      "header_accent_color": "#00d132",
+      "cor_preco_cor": "#0086ff",
+      "cor_compare_cor": "#8a9297",
+      "onsale_1": "#00d132",
+      "onsale_2": "#00d132",
+      "product_in_stock_color": "#53b956",
+      "product_low_stock_color": "#ee0000",
+      "product_sold_out_color": "#8a9297",
+      "custom_1_cor1": "#102169",
+      "custom_1_cor2": "#1a36b0",
+      "custom_2_cor1": "#ac1bc5",
+      "custom_2_cor2": "#da4af2",
+      "product_star_color": "#ffbd00",
+      "zapzap": true,
+      "lado_zap": "2",
+      "zap_altura": 35,
+      "zap_altura_box": 115,
+      "numberzap": "5512996748652",
+      "titlezap": "Fale Conosco \n<span>\nPrecisando de ajuda conte conosco.<\/span>",
+      "chatzap": "Olá, estou aqui para te ajudar!",
+      "digizap": "Digite sua mensagem",
+      "base_text_font_size": 15,
+      "heading_font": "ubuntu_n4",
+      "text_font": "ubuntu_n4",
+      "underline_links": true,
+      "animation_image_zoom": true,
+      "search_mode": "product,article,page",
+      "show_vendor": false,
+      "show_secondary_image": true,
+      "show_discount": true,
+      "discount_mode": "percentage",
+      "product_price_position": "after_title",
+      "product_image_size": "square",
+      "show_color_swatch": false,
+      "show_inventory_quantity": false,
+      "low_inventory_threshold": 0,
+      "show_reviews_badge": false,
+      "cart_type": "page",
+      "cart_empty_button_link": "shopify:\/\/collections\/all",
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "700",
+      "social_facebook": "https:\/\/www.facebook.com\/shopify",
+      "social_twitter": "https:\/\/twitter.com\/shopify",
+      "social_pinterest": "https:\/\/www.pinterest.com\/shopify",
+      "social_instagram": "https:\/\/instagram.com\/shopify",
+      "social_vimeo": "",
+      "social_tumblr": "",
+      "social_youtube": "https:\/\/www.youtube.com\/user\/shopify",
+      "social_linkedin": "",
+      "social_snapchat": "",
+      "social_fancy": "",
+      "favicon": "shopify:\/\/shop_images\/imagem_2021-06-30_142454.png",
+      "atalho_f12_enable": false,
+      "botoes_campos": "30px",
+      "sombra1_botao": false,
+      "estilo_botao": true,
+      "borda_botao": false,
+      "tag_card": true,
+      "borda_redonda": "15px",
+      "sombra_card": true,
+      "juros": "1010",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#00badb",
+      "checkout_button_color": "#00badb",
+      "checkout_error_color": "#ff0000",
+      "botao_redondo_cormprar10": "2161",
+      "largura_site": 1300,
+      "botao_direito_enable": false,
+      "product_label_2_background": "#9400ff",
+      "product_label_1_background": "#102169",
+      "product_on_sale_accent": "#00d86b",
+      "botao_direito": true,
+      "share_image": "",
+      "social_google_plus": "",
+      "sections": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "enable_sticky_header": false,
+            "logo": "shopify:\/\/shop_images\/Logo_drospstar_novo.png",
+            "logo_max_width": 215,
+            "mobile_logo_max_width": 130,
+            "largura_site": 1480,
+            "centro_logo_mobile": "-5%",
+            "nav_cor": "#102169",
+            "nav_cor_texto": "#ffffff",
+            "codigo_rastreio": true,
+            "url_rastreio": "shopify:\/\/pages\/codigo-de-rastreio",
+            "cart_icon_icon": "bag",
+            "menu_position_1": "center",
+            "espaco_acima_menu": "5",
+            "espaco_abaixo_menu": "10",
+            "espaco_menu": "20",
+            "espaco_menu_inferior": "10",
+            "barra_degradee": true,
+            "altura_linha_mobile": 1,
+            "cor_1": "#fcd000",
+            "cor_2": "#ff5f5f",
+            "cor_3": "#9100ff",
+            "cor_4": "#0086ff",
+            "sombra_menu": "10",
+            "anuncio_img": false,
+            "fundo_banner": "#02195a",
+            "imgdesk": "shopify:\/\/shop_images\/Frete_gratis_e_ate_70__OFF_maior.png",
+            "imgmb": "shopify:\/\/shop_images\/Responsivo_mobile3.png",
+            "url_i": "shopify:\/\/products\/relogio-digital-em-aco-inoxidavel-esportiva-com-bluetooth-a-prova-de-agua-masculino",
+            "show_locale_selector": false,
+            "show_currency_selector": false,
+            "navigation_menu": "menu",
+            "desktop_navigation_layout": "inline",
+            "desktop_navigation_open_trigger": "hover",
+            "show_navigation_social_media": true,
+            "navigation_phone_number": "Whatsapp +55 00 0000-0000",
+            "navigation_email": "email",
+            "show_condensed_search": false,
+            "cor_botao": "#ffffff",
+            "cor_icone": "#102169",
+            "retirar_borda": true,
+            "botao_padrao": false,
+            "botao_redondo": true,
+            "borda_pesquisa": "#36312c",
+            "tamanho_pesquisa": "44px",
+            "margin_superior_pesquisa": "59px",
+            "margin_inferior_pesquisa": "0",
+            "fundo_barra_pesquisa": "#ffffff",
+            "show_search_filter": false,
+            "search_menu": "",
+            "show_search_menu_title": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "1598060184149": {
+              "type": "text",
+              "settings": {
+                "title": "ATENDIMENTO AO CLIENTE",
+                "content": "<p><strong>SAC (Serviço de Atendimento ao Consumidor)<\/strong><\/p><p><strong>E-mail: <\/strong>sualoja@email.com<br\/><strong>WhatsApp:<\/strong>  (99) 9 9999-9999<\/p>"
+              }
+            },
+            "footer-1": {
+              "type": "links",
+              "settings": {
+                "menu": "menu"
+              }
+            },
+            "bd0342a8-e745-4965-80fd-f49d6074a69f": {
+              "type": "links",
+              "settings": {
+                "menu": ""
+              }
+            },
+            "943aca47-c2d5-44e4-9245-d5ab3572d5c2": {
+              "type": "links",
+              "settings": {
+                "menu": "footer"
+              }
+            },
+            "footer-2": {
+              "type": "newsletter",
+              "settings": {
+                "title": "RECEBA NOSSAS PROMOÇÕES",
+                "subheading": "<p>Assine com seu e-mail abaixo:<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1598060184149",
+            "footer-1",
+            "bd0342a8-e745-4965-80fd-f49d6074a69f",
+            "943aca47-c2d5-44e4-9245-d5ab3572d5c2",
+            "footer-2"
+          ],
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Logo_drospstar_novo.png",
+            "logo_max_width": 140,
+            "mobile_logo_max_width": 100,
+            "show_social_media": false,
+            "show_payment_icons": true,
+            "show_locale_selector": true,
+            "cor_footer": "#102169",
+            "cor_texto": "#ffffff",
+            "des_cnpj": true,
+            "numero_cnpj": "00.000.000\/0001-00",
+            "endereco_company_desktop": "Logradouro, № - Cidade-UF | XXXXX-XXX",
+            "endereco_company_mobile": "Logradouro, № - Cidade-UF | XXXXX-XXX",
+            "show_currency_selector": true,
+            "show_cookie_bar": true,
+            "text": "<p>Utilizamos cookies<\/p>",
+            "accept_button": "Ok"
+          }
+        },
+        "slideshow": {
+          "type": "slideshow",
+          "blocks": {
+            "64939740-2d54-47f0-bc3f-d10776a4f9ae": {
+              "type": "image",
+              "settings": {
+                "image": "shopify:\/\/shop_images\/banner_drop3.png",
+                "mobile_image": "shopify:\/\/shop_images\/banner_drop_mobile2.png",
+                "show_overlay": false,
+                "overlay_opacity": 30,
+                "text_color": "#ffffff",
+                "title": "",
+                "content": "",
+                "content_position": "middle_center",
+                "button_background": "#ffffff",
+                "button_text_color": "#000000",
+                "button_text": "",
+                "link": "shopify:\/\/products\/relogio-smartwatch-inteligente-masculino-para-apple-e-android"
+              }
+            },
+            "slide-0": {
+              "type": "image",
+              "disabled": true,
+              "settings": {
+                "show_overlay": false,
+                "overlay_opacity": 100,
+                "text_color": "#ffffff",
+                "title": "",
+                "content": "",
+                "content_position": "middle_center",
+                "button_background": "#ffffff",
+                "button_text_color": "#000000",
+                "button_text": "",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "64939740-2d54-47f0-bc3f-d10776a4f9ae",
+            "slide-0"
+          ],
+          "settings": {
+            "edge_to_edge": false,
+            "section_size": "preserve_ratio",
+            "carousel_effect": "slide",
+            "autoplay": true,
+            "cycle_speed": 3
+          }
+        },
+        "collection-list": {
+          "type": "collection-list",
+          "disabled": true,
+          "blocks": {
+            "collection-0": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "collection-1": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "collection-2": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            },
+            "collection-3": {
+              "type": "collection",
+              "settings": {
+                "collection": ""
+              }
+            }
+          },
+          "block_order": [
+            "collection-0",
+            "collection-1",
+            "collection-2",
+            "collection-3"
+          ],
+          "settings": {
+            "title": "Entregamos em todo Brasil",
+            "link_title": "Envio imediato",
+            "link": "",
+            "round_images": true,
+            "show_collection_title": true
+          }
+        },
+        "featured-product": {
+          "type": "featured-product",
+          "disabled": true,
+          "settings": {
+            "product": "",
+            "title": "Featured product",
+            "link_title": "View details",
+            "link_url": "",
+            "show_vendor": true,
+            "show_sku": false,
+            "show_share_buttons": true,
+            "show_description": true,
+            "description_below_add_to_cart": false,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "show_quantity_selector": true,
+            "show_reviews_badge": false,
+            "show_payment_button": true,
+            "image_size": "small",
+            "enable_image_zoom": true,
+            "enable_video_looping": false,
+            "zoom_effect": "outside",
+            "carousel_effect": "fade",
+            "show_inventory_quantity": false,
+            "low_inventory_threshold": 0
+          }
+        },
+        "collection-template": {
+          "type": "collection-template",
+          "settings": {
+            "show_collection_image": true,
+            "collapse_collection_description": false,
+            "frete_full": true,
+            "collection_image_size": "small",
+            "products_per_row": "4",
+            "default_products_per_page": 24,
+            "default_view_layout": "grid",
+            "show_quick_buy": "list_grid",
+            "show_quick_view": "list",
+            "quick_links": "",
+            "quick_links_show_products_count": true,
+            "show_filters": false,
+            "show_filter_color_swatch": true,
+            "filter_type": "group",
+            "open_group_filters_mode": "all_closed",
+            "filter_group_order": ""
+          }
+        },
+        "recently-viewed-products": {
+          "type": "recently-viewed-products",
+          "settings": {
+            "title": "Recently viewed",
+            "show_quick_buy": false
+          }
+        },
+        "product-template": {
+          "type": "product-template",
+          "settings": {
+            "novo_vendidos": true,
+            "vendidos_2": "6px",
+            "vendidos": false,
+            "espaco_top1": true,
+            "vendidos_texto": "de clientes satisfeitos",
+            "mostrar_clientes_online": false,
+            "max_clientes": "100",
+            "min_clientes": "80",
+            "vendidos_cor": "#6e6e6e",
+            "titulo_tamanho_desktop": "26px",
+            "titulo_peso_desktop": "400",
+            "titulo_tamanho_mobile": "23px",
+            "titulo_peso_mobile": "700",
+            "espaco_titulo": "-1px",
+            "selo_verificacao": true,
+            "cor_selo": "#0086ff",
+            "superior_tag_espaco_promocao": "5px",
+            "inferior_tag_espaco_promocao": "5px",
+            "peso_price_text": "300",
+            "preco_tamanho_desktop": "28px",
+            "preco_tamanho_mobile": "25px",
+            "mostrar_codigo": true,
+            "show_vendor1": false,
+            "texto_vendedor": "Promoção exclusiva:",
+            "cor_texto_vendedor": "#0086ff",
+            "cor_fundo_vendedor": "#f0f8ff",
+            "cor_borda_vendedor": "#f0f8ff",
+            "show_sku": false,
+            "show_share_buttons": false,
+            "show_taxes_included": false,
+            "mostrar_economize": true,
+            "tag_pix": true,
+            "pix_desconto": "5",
+            "pix_cor_icone": "#ffffff",
+            "pix_cor_fundo": "#0086ff",
+            "pix_cor_borda": "#0086ff",
+            "pix_cor_texto": "#ffffff",
+            "selector_mode": "dropdown",
+            "color_mode": "variant_image",
+            "variante_redonda": true,
+            "variante_sombra": true,
+            "margin_superior_variante": 18,
+            "delivery_time": false,
+            "relogio_entrega": true,
+            "cor_relogio": "#0086ff",
+            "delivery_time1": true,
+            "textofrete": "Frete Grátis",
+            "delivery_time_text": "Receba entre:",
+            "entrega_estimada_cor": "#53b956",
+            "enable_garantia": true,
+            "garantia_text": "<b>30 Dias de Garantia<\/b>",
+            "cor_text_garantia": "#53b956",
+            "enable_troca": true,
+            "troca_text": "<b>7 dias para trocas e devoluções<\/b>",
+            "cor_text_troca": "#53b956",
+            "size_text_frete": "14px",
+            "delivery_time_min_days": 1,
+            "delivery_time_max_days": 2,
+            "box_Fretedrop": false,
+            "box_correios": false,
+            "delivery_cep": true,
+            "cor_borda_cep": "#f6f6f8",
+            "cor_background_cep": "#f6f6f8",
+            "cor_botao_cep": "#0086ff",
+            "box_parcelamento": true,
+            "cor_contador": true,
+            "contador_2": "30",
+            "cor_texto_contador": "#ffffff",
+            "cor_relogio_contador": "#05d976",
+            "cor_contador_cor": "#1836b4",
+            "cor_contador_cor1": "#102169",
+            "show_quantity_selector": false,
+            "show_payment_button": false,
+            "button_cor_color": "#00d132",
+            "texto_botao_text": "COMPRAR",
+            "tamanho_fonte_botao": "19",
+            "button_tamanho": "55",
+            "botao_animado": true,
+            "estilo_botao": false,
+            "borda_inferior_botao": "0",
+            "botao_redondo_cormprar": "30",
+            "botao_redondo": "30px",
+            "image_size": "large",
+            "enable_image_zoom": false,
+            "enable_video_looping": false,
+            "zoom_effect": "outside",
+            "carousel_effect": "fade",
+            "show_inventory_quantity": false,
+            "low_inventory_threshold": 0,
+            "content_display_mode": "show_all_and_expand_description",
+            "tab_page_1_handle": "",
+            "tab_page_2_handle": "",
+            "tab_page_3_handle": "",
+            "enable_reviews": false,
+            "show_reviews_badge": false,
+            "termometro_ml": true,
+            "badge_01": false,
+            "badge_02": false,
+            "badge_03": false,
+            "badge_04": false,
+            "badgebotao": "shopify:\/\/shop_images\/selo-seguranca3.png",
+            "show_shipping_estimator": false,
+            "shipping_estimator_default_country": "Brasil",
+            "show_refunds_policy": false
+          }
+        },
+        "product-recommendations": {
+          "type": "product-recommendations",
+          "settings": {
+            "show_product_recommendations": true,
+            "heading": "Você pode gostar",
+            "frete_full": true,
+            "show_quick_buy": true
+          }
+        },
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "settings": {
+            "show_announcement": false,
+            "background1": "#7a00ff",
+            "background2": "#00d86b",
+            "text_color": "#ffffff",
+            "cor_newsletter": "rgba(0,0,0,0)",
+            "border_bottom1": false,
+            "texto_frete_text": "<b> FRETE GRÁTIS PARA TODO BRASIL<\/b>",
+            "deixar_frete": true,
+            "garantia_devolucao": "<b>Devoluções & Trocas Garantidas<\/b>",
+            "satisfacao_text": "<b>Satisfação Garantida ou Seu Dinheiro de Volta<\/b>",
+            "anuncio_img": true,
+            "fundo_banner": "#02195a",
+            "imgdesk": "shopify:\/\/shop_images\/Frete_gratis_e_ate_70__OFF_maior.png",
+            "imgmb": "shopify:\/\/shop_images\/Responsivo_mobile4_6f5070d6-9fda-430c-9360-2388c1f20198.png",
+            "url_i": "shopify:\/\/collections\/relogios-masculinos"
+          }
+        },
+        "popups": {
+          "type": "popups",
+          "blocks": {
+            "b6c7473b-3c8e-43a3-92e0-ac1de2d923c3": {
+              "type": "exit",
+              "settings": {
+                "show_only_for_visitors": true,
+                "show_only_once": true,
+                "title": "Ganhe 15% OFF",
+                "subheading": "no seu próximo pedido + ofertas exclusivas",
+                "show_newsletter": true,
+                "button_text": "Ganhe 15% OFF",
+                "success_message": "Em breve você receberá um e-mail contendo seu código de desconto!",
+                "close_message": "Não obrigado, prefiro pagar mais"
+              }
+            }
+          },
+          "block_order": [
+            "b6c7473b-3c8e-43a3-92e0-ac1de2d923c3"
+          ],
+          "settings": {
+          }
+        },
+        "text-with-icons": {
+          "type": "text-with-icons",
+          "blocks": {
+            "text-with-icons-0": {
+              "type": "item",
+              "settings": {
+                "icon": "bi-delivery",
+                "title": "Entregamos em todo Brasil",
+                "content": "<p>Envio imediato<\/p>"
+              }
+            },
+            "text-with-icons-1": {
+              "type": "item",
+              "settings": {
+                "icon": "bi-returns",
+                "title": "Cliente Satisfeito ou Reembolso Imediato",
+                "content": "<p>Prazo de entrega de 10 à 30 dias úteis<\/p>"
+              }
+            },
+            "text-with-icons-2": {
+              "type": "item",
+              "settings": {
+                "icon": "bi-customer-support",
+                "title": "Suporte ao Cliente",
+                "content": "<p>Atendimento Seg. a Sáb. <strong>8:00h<\/strong> às <strong>18:00h<\/strong><\/p>"
+              }
+            },
+            "text-with-icons-3": {
+              "type": "item",
+              "settings": {
+                "icon": "bi-secure-payment",
+                "title": "Pagamento Seguro",
+                "content": "<p>Aceitamos Cartão de Crédito e Boleto Bancário<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "text-with-icons-0",
+            "text-with-icons-1",
+            "text-with-icons-2",
+            "text-with-icons-3"
+          ],
+          "settings": {
+            "show_section": true,
+            "stack_mobile": false
+          }
+        },
+        "static-promotion-list": {
+          "type": "static-promotion-list",
+          "settings": {
+            "expand_items": true,
+            "section_size": "large",
+            "stack_mobile": false
+          }
+        },
+        "static-recently-viewed-products": {
+          "type": "static-recently-viewed-products",
+          "settings": {
+            "show_section": true,
+            "frete_full": true,
+            "title": "Visualizado recentemente",
+            "show_quick_buy": true
+          }
+        },
+        "static-newsletter": {
+          "type": "static-newsletter",
+          "settings": {
+            "show_section": false,
+            "title": "Subscribe to our newsletter",
+            "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
+            "subtext": "100% free, Unsubscribe any time!",
+            "background": "#1e2d7d",
+            "text": "#ffffff"
+          }
+        },
+        "cart-template": {
+          "type": "cart-template",
+          "settings": {
+            "enable_order_notes": false,
+            "largura_cart": "1480px",
+            "sombra_card_cart": true,
+            "cart_redondo": "30px",
+            "cart_botao_redondo": "30px",
+            "show_payment_icons": false,
+            "gift_wrap_product": "",
+            "gift_wrap_text": "Do you want a gift wrap",
+            "gift_wrap_button": "Add a gift wrap",
+            "show_shipping_estimator": false,
+            "shipping_estimator_default_country": "Brasil",
+            "trust_heading": "Our guarantees",
+            "upsell_heading": "Complete o seu carrinho",
+            "upsell_collection": "",
+            "upsell_products_count": 4
+          }
+        },
+        "16256632635ec0715a": {
+          "type": "offers",
+          "blocks": {
+            "1625663263ec0c105a-1": {
+              "type": "offer",
+              "settings": {
+                "title": "Fernanda Almeida - ⭐⭐⭐⭐⭐",
+                "content": "<p>Excelente atendimento, suporte sempre prestativo para resolver as minhas dúvidas com o produto.<\/p>"
+              }
+            },
+            "b03b9f4e-971a-4300-bc0f-f71178423b55": {
+              "type": "offer",
+              "settings": {
+                "title": "Andre Siqueira - ⭐⭐⭐⭐⭐",
+                "content": "<p>O produto de fato cumpre tudo o que promete, já recomendei para vários amigos e eles compraram também.<\/p>"
+              }
+            },
+            "1625663263ec0c105a-0": {
+              "type": "offer",
+              "settings": {
+                "title": "Cleusa Maria - ⭐⭐⭐⭐⭐",
+                "content": "<p>\"Foi minha primeira compra na internet. Adorei o site vou sempre comprar aqui.\"<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "1625663263ec0c105a-1",
+            "b03b9f4e-971a-4300-bc0f-f71178423b55",
+            "1625663263ec0c105a-0"
+          ],
+          "settings": {
+            "items_per_row": 3,
+            "stack_mobile": true
+          }
+        },
+        "list-collections-template": {
+          "type": "list-collections-template",
+          "settings": {
+            "collections_to_show": "all",
+            "show_collection_title": true,
+            "show_collection_overlay": true,
+            "collection_overlay_opacity": 20
+          }
+        },
+        "page-faq-template": {
+          "type": "page-faq-template",
+          "blocks": {
+            "page-faq-template-0": {
+              "type": "separator",
+              "settings": {
+                "title": "Shipping"
+              }
+            },
+            "page-faq-template-1": {
+              "type": "question",
+              "settings": {
+                "title": "Do you ship overseas?",
+                "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.<\/p>"
+              }
+            },
+            "page-faq-template-2": {
+              "type": "question",
+              "settings": {
+                "title": "How long will it take to get my order?",
+                "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.<\/p>"
+              }
+            },
+            "page-faq-template-3": {
+              "type": "question",
+              "settings": {
+                "title": "What shipping carriers do you use?",
+                "answer": "<p>We use all major carriers, and local courier partners. You’ll be asked to select a delivery method during checkout.<\/p>"
+              }
+            },
+            "page-faq-template-4": {
+              "type": "separator",
+              "settings": {
+                "title": "Product"
+              }
+            },
+            "page-faq-template-5": {
+              "type": "question",
+              "settings": {
+                "title": "Can I return my product?",
+                "answer": "<p>We always aim for make sure our customers love our products, but if you do need to return an order, we’re happy to help. Just email us directly and we’ll take you through the process.<\/p>"
+              }
+            },
+            "page-faq-template-6": {
+              "type": "question",
+              "settings": {
+                "title": "Can I get my product personalized?",
+                "answer": "<p>It depends on the creator and the product. All options are outlined on the product page, so look out for customization options there.<\/p>"
+              }
+            },
+            "page-faq-template-7": {
+              "type": "separator",
+              "settings": {
+                "title": "Other"
+              }
+            },
+            "page-faq-template-8": {
+              "type": "question",
+              "settings": {
+                "title": "Any question?",
+                "answer": "<p>You can contact us through our contact page! We will be happy to assist you.<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "page-faq-template-0",
+            "page-faq-template-1",
+            "page-faq-template-2",
+            "page-faq-template-3",
+            "page-faq-template-4",
+            "page-faq-template-5",
+            "page-faq-template-6",
+            "page-faq-template-7",
+            "page-faq-template-8"
+          ],
+          "settings": {
+            "show_contact_info": true,
+            "contact_info_heading": "Any question?",
+            "contact_info_text": "<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.<\/p>",
+            "contact_1_icon": "bi-phone",
+            "contact_1_heading": "Customer support",
+            "contact_1_text": "<p>Enter your text here<\/p>",
+            "contact_2_icon": "bi-email",
+            "contact_2_heading": "Send a message",
+            "contact_2_text": "<p>Enter your text here<\/p>"
+          }
+        },
+        "1651320688c1452da9": {
+          "type": "promotion-list",
+          "blocks": {
+            "1651320688c1452da9-0": {
+              "type": "item",
+              "settings": {
+                "show_overlay": false,
+                "overlay_opacity": 50,
+                "stretch_image": false,
+                "background": "#7a00ff",
+                "background2": "#00d86b",
+                "text_color": "#ffffff",
+                "bordas_redonda": "13px",
+                "title": "Smartwatch padrão",
+                "content": "Smartwatch padrão",
+                "content_position": "top_left",
+                "button_background": "#ffffff",
+                "button_text_color": "#7114b5",
+                "button_text": "Saiba mais",
+                "button_link": "shopify:\/\/products\/relogio-quartzo-masculino-de-pulso-estilo-militar"
+              }
+            },
+            "1651320688c1452da9-1": {
+              "type": "item",
+              "settings": {
+                "show_overlay": false,
+                "overlay_opacity": 50,
+                "stretch_image": false,
+                "background": "#7a00ff",
+                "background2": "#00d86b",
+                "text_color": "#ffffff",
+                "bordas_redonda": "13px",
+                "title": "Smartwatch padrão",
+                "content": "Smartwatch padrão",
+                "content_position": "top_left",
+                "button_background": "#ffffff",
+                "button_text_color": "#7a00ff",
+                "button_text": "Saiba mais",
+                "button_link": ""
+              }
+            },
+            "1651320688c1452da9-2": {
+              "type": "item",
+              "settings": {
+                "show_overlay": false,
+                "overlay_opacity": 50,
+                "stretch_image": false,
+                "background": "#7a00ff",
+                "background2": "#00d86b",
+                "text_color": "#ffffff",
+                "bordas_redonda": "13px",
+                "title": "Smartwatch padrão",
+                "content": "Smartwatch padrão",
+                "content_position": "top_left",
+                "button_background": "#ffffff",
+                "button_text_color": "#7a00ff",
+                "button_text": "Saiba mais",
+                "button_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1651320688c1452da9-0",
+            "1651320688c1452da9-1",
+            "1651320688c1452da9-2"
+          ],
+          "settings": {
+            "expand_items": true,
+            "section_size": "medium",
+            "stack_mobile": false
+          }
+        },
+        "search-template": {
+          "type": "search-template",
+          "settings": {
+            "products_per_row": "4",
+            "default_view_layout": "grid",
+            "show_quick_view": "list",
+            "show_quick_buy": "list",
+            "quick_links": ""
+          }
+        },
+        "165850699407f1ba35": {
+          "type": "collection-with-image",
+          "settings": {
+            "collection": "relogios-inteligentes",
+            "products_count": 20,
+            "image": "shopify:\/\/shop_images\/Design_sem_nome.png",
+            "background": "#102169",
+            "text_color": "#ffffff",
+            "title": "Promoção Especial",
+            "content": "DIA DOS NAMORADOS",
+            "button_background": "#b021e6",
+            "button_text_color": "#ffffff",
+            "button_text": "",
+            "more_redondo": "50px",
+            "button_link": ""
+          }
+        },
+        "16594504856da94767": {
+          "type": "featured-collection",
+          "settings": {
+            "collection": "relogios-inteligentes",
+            "frete_full": true,
+            "title": "Relógios Inteligentes",
+            "products_count": 12,
+            "layout": "vertical",
+            "stack_desktop": false,
+            "show_quick_buy": true,
+            "link_title": "Ver mais",
+            "link_url": ""
+          }
+        },
+        "minimal-header": {
+          "type": "minimal-header",
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/Logo_drospstar_novo.png",
+            "logo_max_width": 270,
+            "mobile_logo_max_width": 100
+          }
+        },
+        "password-template": {
+          "type": "password-template",
+          "settings": {
+            "show_social_media": true,
+            "heading": "Aberto em breve",
+            "text": "<p>Um conteúdo descrevendo o que sua loja venderá.<\/p>",
+            "show_newsletter_signup": true,
+            "newsletter_text": "<p>Uma frase curta descrevendo o que alguém receberá ao se inscrever.<\/p>"
+          }
+        },
+        "1659753583776d4519": {
+          "type": "slideshow",
+          "blocks": {
+            "1659753583776d4519-0": {
+              "type": "image",
+              "settings": {
+                "image": "shopify:\/\/shop_images\/banner_drop3.png",
+                "mobile_image": "shopify:\/\/shop_images\/banner_drop_mobile2.png",
+                "show_overlay": false,
+                "overlay_opacity": 30,
+                "text_color": "#ffffff",
+                "title": "",
+                "content": "",
+                "content_position": "middle_center",
+                "button_background": "#ffffff",
+                "button_text_color": "#000000",
+                "button_text": "",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "1659753583776d4519-0"
+          ],
+          "settings": {
+            "edge_to_edge": false,
+            "section_size": "preserve_ratio",
+            "carousel_effect": "slide",
+            "autoplay": true,
+            "cycle_speed": 5
+          }
+        },
+        "16608300336b1488ae": {
+          "type": "collection-list",
+          "blocks": {
+            "16608300336b1488ae-0": {
+              "type": "collection",
+              "settings": {
+                "collection": "mais-vendidos",
+                "image": "shopify:\/\/shop_images\/pet.png"
+              }
+            },
+            "16608300336b1488ae-1": {
+              "type": "collection",
+              "settings": {
+                "collection": "relogios-masculinos",
+                "image": "shopify:\/\/shop_images\/utensilios.png"
+              }
+            },
+            "16663ca5-e3e7-4281-b8f7-bdc058b38aa1": {
+              "type": "collection",
+              "settings": {
+                "collection": "kids",
+                "image": "shopify:\/\/shop_images\/babys.png"
+              }
+            },
+            "ac26e064-3b8b-42ff-9a01-a160204441d6": {
+              "type": "collection",
+              "settings": {
+                "collection": "relogios-inteligentes",
+                "image": "shopify:\/\/shop_images\/smart_2922b7fd-0d5f-41d0-9a0d-45a6c761f331.png"
+              }
+            },
+            "93aee82e-4285-4403-b82f-3894d9bcdf48": {
+              "type": "collection",
+              "settings": {
+                "collection": "relogios-femininos",
+                "image": "shopify:\/\/shop_images\/ferramentas.png"
+              }
+            },
+            "324bdce9-4b27-46a3-80d2-9ceab79b1140": {
+              "type": "collection",
+              "settings": {
+                "collection": "saude-beleza",
+                "image": "shopify:\/\/shop_images\/Ftiness.png"
+              }
+            }
+          },
+          "block_order": [
+            "16608300336b1488ae-0",
+            "16608300336b1488ae-1",
+            "16663ca5-e3e7-4281-b8f7-bdc058b38aa1",
+            "ac26e064-3b8b-42ff-9a01-a160204441d6",
+            "93aee82e-4285-4403-b82f-3894d9bcdf48",
+            "324bdce9-4b27-46a3-80d2-9ceab79b1140"
+          ],
+          "settings": {
+            "title": "",
+            "link_title": "Ver mais",
+            "link": "shopify:\/\/collections",
+            "round_images": true,
+            "show_collection_title": true
+          }
+        }
+      },
+      "content_for_index": [
+        "1659753583776d4519",
+        "16608300336b1488ae",
+        "16594504856da94767",
+        "1651320688c1452da9",
+        "165850699407f1ba35",
+        "16256632635ec0715a"
+      ]
+    }
+  }
+}
