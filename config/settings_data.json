@@ -498,10 +498,10 @@
         "type": "featured-collection",
         "settings": {
           "collection": "frontpage",
-          "title": "Ofertas da semana",
+          "title": "Ultimos productos",
           "products_count": 50,
           "layout": "vertical",
-          "stack_desktop": false,
+          "stack_desktop": true,
           "show_quick_buy": false,
           "link_title": "Ver todos",
           "link_url": ""
@@ -511,7 +511,7 @@
         "type": "featured-collection",
         "settings": {
           "collection": "frontpage",
-          "title": "Acessórios + vendidos",
+          "title": "Productos + vendidos",
           "products_count": 50,
           "layout": "vertical",
           "stack_desktop": false,
