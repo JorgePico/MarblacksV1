@@ -841,7 +841,7 @@
           "collection": "frontpage",
           "frete_full": true,
           "title": "Ultimos productos",
-          "products_count": 50,
+          "products_count": 20,
           "layout": "vertical",
           "stack_desktop": true,
           "show_quick_buy": true,
