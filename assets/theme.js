@@ -2719,7 +2719,8 @@
        * @return {String} value - formatted value
        */
       value: function formatMoney(cents, format) {
-        if (typeof cents === 'string') {
+       
+   if (typeof cents === 'string') {
           cents = cents.replace('.', '');
         }
 
