@@ -170,8 +170,9 @@
             "type": "text",
             "settings": {
               "mostrar_logotipo": true,
+              "logotipo_footer": "shopify:\/\/shop_images\/1_b0bf1424-cd82-47d0-81b2-bce814.png",
               "logo_max_width_footer": 190,
-              "title": "ATENDIMENTO AO CLIENTE",
+              "title": "ATENCIÓN AL CLIENTE",
               "content": "<p><strong>E-mail: <\/strong>loja@gmail.com<br\/><strong>WhatsApp:<\/strong> +55 (99) 9 9999-9999<\/p>"
             }
           },
@@ -180,7 +181,7 @@
             "settings": {
               "mostrar_logotipo": false,
               "logo_max_width_footer": 140,
-              "title": "INFORMAÇÕES LEGAIS",
+              "title": "INFORMACIÓN LEGAL",
               "content": "<p>Razão Social: Proposito Negocios Digitais LTDA, Endereço: Seu Endereço Aqui - 3095, Cidade, Estado,<br\/>CEP: 90900000<\/p>"
             }
           },
@@ -454,16 +455,16 @@
             "type": "item",
             "settings": {
               "icon": "bi-mobile-payment",
-              "title": "Compra Segura",
-              "content": "<p>Ambiente  seguro para pagamentos online<\/p>"
+              "title": "Compra segura",
+              "content": "<p>Entorno seguro para pagos en línea<\/p>"
             }
           },
           "text-with-icons-0": {
             "type": "item",
             "settings": {
               "icon": "bi-fast-delivery",
-              "title": "Frete Grátis",
-              "content": "<p>Envio rápido e acompanhado com código de rastreio<br\/><\/p>"
+              "title": "Envío gratis",
+              "content": "<p>Envío rápido y acompañado con código de seguimiento<br\/><\/p>"
             }
           },
           "text-with-icons-2": {
@@ -664,35 +665,37 @@
           "1649913261818592e3-0": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/1.png",
               "show_overlay": false,
               "overlay_opacity": 50,
               "stretch_image": false,
-              "background": "#f71b1b",
+              "background": "#f4063b",
               "background2": "#000000",
               "text_color": "#ffffff",
-              "title": "Haylou LS02 Smartwatch",
-              "content": "Por apenas R$ 219,90",
+              "title": "SmartWatch Active 2",
+              "content": "Por apenas $ 250,000",
               "content_position": "top_left",
               "button_background": "#ffffff",
-              "button_text_color": "#f71b1b",
+              "button_text_color": "#f4063b",
               "button_text": "Ver produto",
-              "button_link": "shopify:\/\/products\/haylou-ls02-smartwatch"
+              "button_link": ""
             }
           },
           "1649913261818592e3-1": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/3.png",
               "show_overlay": false,
               "overlay_opacity": 50,
               "stretch_image": false,
               "background": "#000000",
-              "background2": "#f71b1b",
+              "background2": "#f4063b",
               "text_color": "#ffffff",
               "title": "Haylou RT2 (LS10)",
               "content": "Por apenas R$ 289,90",
               "content_position": "top_left",
               "button_background": "#ffffff",
-              "button_text_color": "#f71b1b",
+              "button_text_color": "#f4063b",
               "button_text": "Ver produto",
               "button_link": "shopify:\/\/products\/haylou-rt2-ls10"
             }
@@ -700,17 +703,18 @@
           "1649913261818592e3-2": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/2.png",
               "show_overlay": false,
               "overlay_opacity": 50,
               "stretch_image": false,
-              "background": "#f71b1b",
+              "background": "#f4063b",
               "background2": "#000000",
               "text_color": "#ffffff",
               "title": "Haylou GST Smartwatch",
               "content": "Por apenas R$ 259,90",
               "content_position": "top_left",
               "button_background": "#ffffff",
-              "button_text_color": "#7a00ff",
+              "button_text_color": "#f4063b",
               "button_text": "Ver produto",
               "button_link": "shopify:\/\/products\/smartwatch-dropmeta"
             }
@@ -732,14 +736,14 @@
         "settings": {
           "collection": "frontpage",
           "products_count": 12,
-          "background1": "#7a00ff",
-          "background2": "#25edca",
+          "background1": "#00d864",
+          "background2": "#000000",
           "text_color": "#ffffff",
-          "title": "Os produtos mais vendidos da sua coleção",
-          "content": "Veja mais produtos relacionados clicando no botão abaixo",
+          "title": "Los productos más vendidos de tu colección",
+          "content": "Ver más productos relacionados haciendo clic en el botón de abajo",
           "button_background": "#ffffff",
-          "button_text_color": "#702dfa",
-          "button_text": "Ver mais produtos",
+          "button_text_color": "#00d864",
+          "button_text": "Ver más productos",
           "button_link": ""
         }
       },
