@@ -51,7 +51,7 @@
     "product_price_position": "after_title",
     "product_image_size": "square",
     "show_color_swatch": false,
-    "show_inventory_quantity": false,
+    "show_inventory_quantity": true,
     "low_inventory_threshold": 0,
     "show_reviews_badge": true,
     "cart_type": "page",
@@ -970,7 +970,39 @@
       "16594504856da94767",
       "1651320688c1452da9",
       "165850699407f1ba35"
-    ]
+    ],
+    "blocks": {
+      "4214657528271059384": {
+        "type": "shopify:\/\/apps\/a2reviews-product-reviews\/blocks\/app-embed\/6a88647f-451d-4142-88de-9df2dab10243",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13669795325273674392": {
+        "type": "shopify:\/\/apps\/releasit-cod-form-upsells\/blocks\/app-embed\/72faf214-4174-4fec-886b-0d0e8d3af9a2",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "2965712708760319418": {
+        "type": "shopify:\/\/apps\/proof-bear-sales-popup\/blocks\/widget\/6e90b7fd-96ea-488b-9571-34f0c382838a",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14159691304313693114": {
+        "type": "shopify:\/\/apps\/pixel-conversions-api-facebook\/blocks\/app-embed\/e244883f-9001-4b7d-b3e2-a64012fd8879",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Magento": {
