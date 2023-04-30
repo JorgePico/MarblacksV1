@@ -1,226 +1,42 @@
-{%- if settings.lado_zap == '1' -%}
-
-<style> 
-  
-.sticky-button {left: 19px;bottom: var(--zap_altura-bottom);}
-  
-.chat-menu:checked+.sticky-button+.sticky-chat {
-  
-    bottom: var(--zap_altura_box-bottom);
-    left: 21px;
-  
-}
-  
-@media (max-width: 768px) {
-  
-    {%- if settings.addtocart == true or settings.addtocart_qt_compra == true -%}
-    
-   #nt_backtop {
-    
-    bottom: 121px !important;
-    right: 12px;
-    
-}
-  
-  #sticky-button {
-  
-    bottom: 116px !important;
-  
-    }
-  
-  .chat-menu:checked+.sticky-button+.sticky-chat {
-    
-    bottom: 183px !important;
-    
-}
-  
-  {%- endif -%}
-  
-    {%- if settings.addtocart2 == true -%}
-    
-   #nt_backtop {
-    
-    bottom: 129px !important;
-    right: 10px;
-    
-}
-  
-  {%- endif -%}
-  
-{%- if settings.addtocart == false and settings.addtocart2 == false and settings.addtocart_qt_compra == false -%}
-    
-   #nt_backtop {
-    
-    bottom: 63px !important;
-    right: 11px;
-    
-}
-  
-{%- endif -%}
-        
-#sticky-button {
-  
-    bottom: 58px;
-    left: 16px;
-  
-    }
-    
-.chat-menu:checked+.sticky-button+.sticky-chat {
-  
-    bottom: 120px;
-    right: 20px;
-  
-   }
-    
-.sticky-chat {left: 20px;}
-  
-}
-
-</style> 
-
-{%- endif -%}
-
-{%- if settings.lado_zap == '2' -%}
-
-<style> 
-  
-#nt_backtop {
-        
-    bottom: 73px;
-    right: 17px;
-    
-}
-  
-.sticky-button {
-    
-    right: 20px;
-    bottom: var(--zap_altura-bottom);
-  
-  }
-  
-.chat-menu:checked+.sticky-button+.sticky-chat {
-    
-    bottom: var(--zap_altura_box-bottom);
-    right: 20px;
-    
-}
-  
-.sticky-chat {right: 20px;}
-  
-@media (max-width: 768px) {
-  
-  {%- if settings.addtocart == true or settings.addtocart_qt_compra == true -%}
-    
-   #nt_backtop {
-    
-    bottom: 184px !important;
-    right: 15px;
-    
-}
-  
-  #sticky-button {
-  
-    bottom: 116px !important;
-  
-    }
-  
-  .chat-menu:checked+.sticky-button+.sticky-chat {
-    
-    bottom: 183px !important;
-    
-}
-  
-  {%- endif -%}
-  
-    {%- if settings.addtocart2 == true -%}
-    
-   #nt_backtop {
-    
-    bottom: 185px !important;
-    right: 15px;
-    
-}
-  
-  {%- endif -%}
-  
-{%- if settings.addtocart == false and settings.addtocart2 == false and settings.addtocart_qt_compra == false -%}
-    
-   #nt_backtop {
-    
-    bottom: 117px !important;
-    right: 15px;
-    
-}
-  
-{%- endif -%}
-    
-#sticky-button {
-  
-    bottom: 58px;
-  
-    }
-    
-.chat-menu:checked+.sticky-button+.sticky-chat {
-  
-    bottom: 120px;
-    right: 20px;
-  
-   }
-    
-.sticky-chat {right: 20px;}
-  
-}
-
-</style> 
-
-{%- endif -%}
-
 <style>
   
   :root {
   
   --imagezap-background: url({{ settings.imagezap | img_url: 'master' }});
-  --colorzap-color             : {{ settings.colorzap }};
-  --zap_altura-bottom          : {{ settings.zap_altura }}px;
-  --zap_altura_box-bottom      : {{ settings.zap_altura_box }}px;
+  --colorzap-color: {{ settings.colorzap }};
     
   }
     
   .hidden {
 	display: none;
 }
-    
-    #nt_backtop span {
-    border-radius: 10em;
-}
 
 .sticky-button {
   
     position: fixed;
-    background: var(--imagezap-background);
-    background: none;
+    background: none var(--imagezap-background);
     background-size: contain;
-    background-repeat: no-repeat;    
-    bottom: var(--zap_altura-bottom);
+    background-repeat: no-repeat;
+    bottom: 20px;
+    right: 20px;
     border-radius: 50px;
-    box-shadow: 0 0px 0px 0 rgb(0 0 0 / 10%);
-    z-index: 200;
+    box-shadow: 0 0px 12px 0 rgb(0 0 0 / 10%);
+    z-index: 20;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 45px;
-	-webkit-transition: all 0.2s ease-out;
-	transition: all 0.2s ease-out;
+    width: 55px;
+    height: 55px;
+    -webkit-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
       
 }
 
 .sticky-button svg {
-  
 	margin: auto;
 	fill: #fff;
     width: 35px;
 	height: 35px;
-  
 }
 
 .sticky-button a,.sticky-button label {
@@ -240,18 +56,19 @@
 
 .sticky-chat {
 	position: fixed;
-	bottom: 185px;
+	bottom: 85px;
+	right: 20px;
 	width: 320px;
 	-webkit-transition: all .3s ease-out;
 	transition: all .3s ease-out;
-	z-index: 201;
+	z-index: 21;
 	opacity: 0;
 	visibility: hidden;
 }
 
 .sticky-chat a {
   text-decoration: none;
-  font-family:sans-serif;
+  font-family: 'Roboto',sans-serif;
   color: #505050;
   
 }
@@ -262,11 +79,11 @@
 }
 
 .sticky-chat .chat-content {
-	border-radius: 10px;
-	background-color: #fff;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+	border-radius: 14px;
+    background-color: #dbe0e6b8;
+    backdrop-filter: blur(25px);
 	overflow: hidden;
-	font-family: sans-serif;
+	font-family: var(--text-font-family);
 	font-weight: 400;
 }
 
@@ -302,7 +119,7 @@
 	padding-left: 15px;
 	font-size: 14px;
 	font-weight: 600;
-	font-family: sans-serif;
+	font-family: var(--heading-font-family);
   color: #fff;
 }
 
@@ -327,12 +144,13 @@
 	margin-right: auto;
 	padding: 10px;
     height: fit-content;
-	background-color: #f0f5fb;
+	background-color: white;
 	border-radius: 0px 15px 15px;
+    box-shadow: 0 10px 20px #151b230f;
 }
 
 .sticky-chat .chat-text span:after {
-	content: 'ahora mismo';
+	content: 'agora mesmo';
 	display: inline-block;
 	margin-left: 10px;
 	font-size: 9px;
@@ -360,12 +178,12 @@
 	align-items: center;
 	margin-top: 5px;
 	padding: 10px;
-	border-radius: 10px;
-	background-color: #fff;
-	box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+	border-radius: 14px;
+    background-color: #dbe0e6b8;
+    backdrop-filter: blur(25px);
 	overflow: hidden;
 	font-size: 12px;
-	font-family: sans-serif;
+	font-family: var(--text-font-family);
 	font-weight: 400;
   
 }
@@ -394,6 +212,8 @@
 
 .chat-menu:checked+.sticky-button+.sticky-chat {
   
+bottom: 88px;
+    right: 18px;
 	opacity: 1;
 	visibility: visible;
   
@@ -403,27 +223,28 @@
         
       display: flex;
       margin: 0;
+      box-shadow: 0 10px 20px #151b230f;
         
     }
 
     .wa-chat-widget-send input {
       
-    background: #f0f5fb;
-    border: 0 !important;
-    border-right: 1px solid #dee6ef !important;
-    height: auto !important;
-    font-size: 12px !important;
-    color: #000000 !important;
-    padding: 0.5rem !important;
+    background: white;
+    border: 0;
+    border-right: 1px solid #dee6ef;
+      color: #c1c5ca;
+    padding: 0.5rem 1.2rem;
     width: 100%;
-    border-radius: 10px 0 0 10px !important;
+    border-radius: 10px 0 0 10px;
       
     }
 
     .wa-chat-widget-send button {
       
-      background-color: #f0f5fb;
+      background-color: white;
       padding: 0.5rem;
+      padding-top: 11px;
+      padding-right: 15px;
       border-radius: 0 10px 10px 0;
       border: none;
       fill: #ffffff;
@@ -436,22 +257,30 @@
       }
     }
     
-    @media only (max-width: 768px) {
+    @media (max-width: 768px) {
     
-    .sticky-button2 {
-
-    bottom: 152px !important;
+    .sticky-button {
       
+    bottom: 64px;
+
+}
+      .chat-menu:checked+.sticky-button+.sticky-chat {
+        
+	bottom: 125px;
+    right: 21px;
+
 }
     
     }
+    
+  
 </style>
 
 <input class="chat-menu hidden" id="offchat-menu" type="checkbox"/>
-<div class="sticky-button {% if settings.sticky_atc == true %}sticky-button2{% endif %}" id="sticky-button">
+<div class="sticky-button" id="sticky-button">
 	<label for="offchat-menu">
       
-      {%- if settings.zapicon -%} <img width="45" height="45" src="{{ 'whatsapp.svg' | asset_url }}"> {%- endif -%}
+<img src="//cdn.shopify.com/s/files/1/0629/7449/2915/t/6/assets/whatsapp.svg?v=8122552569372891836" alt="WhatsApp">
       
 		<svg class="close-icon" viewBox="0 0 512 512">
 			<path d="M278.6 256l68.2-68.2c6.2-6.2 6.2-16.4 0-22.6-6.2-6.2-16.4-6.2-22.6 0L256 233.4l-68.2-68.2c-6.2-6.2-16.4-6.2-22.6 0-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3l68.2 68.2-68.2 68.2c-3.1 3.1-4.7 7.2-4.7 11.3 0 4.1 1.6 8.2 4.7 11.3 6.2 6.2 16.4 6.2 22.6 0l68.2-68.2 68.2 68.2c6.2 6.2 16.4 6.2 22.6 0 6.2-6.2 6.2-16.4 0-22.6L278.6 256z"/>
@@ -494,5 +323,5 @@
           </svg></button>
       </form>
     </div>    
-
+    
   </div>

@@ -70,3 +70,23 @@ body a2-questions{
 .a2cbnb-img img{
     max-width: 100%;
 }
+
+
+/* Custom CSS From APP */
+
+/* Fix stars rating heigh on Dropma */
+a2-reviews-total{
+  height: 30px;
+  display: block;
+  margin-top: -10px;
+}
+a2-reviews-total+.product-item__price-list {
+  margin-top: 0;
+}
+h1+a2-reviews-total, .product-meta a2-reviews-total{
+  margin-top: 0;
+}
+
+body .product-item__title{
+  margin-bottom: 12px;
+}

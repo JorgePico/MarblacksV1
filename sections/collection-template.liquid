@@ -1,3 +1,7 @@
+{% if collection.sort_by == 'best-selling' %}
+ <br><br><center><h4>TECLE F5 CONTINUAMENTE 159 VEZES QUE IRÁ FUNCIONAR<br><br></h4></center>
+{% else %}
+
 {%- comment -%}We start by creating a lot of useful variables !{%- endcomment -%}
 
 {%- assign items_per_page = cart.attributes.collection_products_per_page | default: section.settings.default_products_per_page -%}
@@ -194,7 +198,7 @@
                     {%- assign groups = groups | append: tag_parts.first | append: ',' -%}
                   {% endfor %}
 
-                  {%- assign color_label = 'color,colour,couleur,cor,colore,farbe,색,色,カラー,färg,farve' | split: ',' -%}
+                  {%- assign color_label = 'color,colour,couleur,cor,modelo,colore,farbe,색,色,カラー,färg,farve' | split: ',' -%}
                   {%- assign groups = groups | split: ',' | compact | uniq -%}
 
                   {%- assign groups_order = section.settings.filter_group_order | downcase | strip | replace: ', ', ',' | split: ',' -%}
@@ -357,9 +361,8 @@
                 <p class="empty-state__heading heading h1">{{ collection.title }}</p>
                 <p class="empty-state__description">{{ 'collection.general.empty' | t }}</p>
 
-              
                 <div class="empty-state__button-container">
-                  <a href="{{ routes.root_url }}" class="empty-state__button button button--secondary">{{ 'collection.general.empty_button' | t }}</a>
+                  <a href="{{ routes.root_url }}" class="empty-state__button button button--primary">{{ 'collection.general.empty_button' | t }}</a>
                 </div>
               </div>
             {%- else -%}
@@ -679,7 +682,7 @@
                   {%- assign groups = groups | append: tag_parts.first | append: ',' -%}
                 {%- endfor -%}
 
-                {%- assign color_label = 'color,colour,couleur,cor,colore,farbe,색,色,カラー,färg,farve' | split: ',' -%}
+                {%- assign color_label = 'color,colour,couleur,cor,modelo,colore,farbe,색,色,カラー,färg,farve' | split: ',' -%}
                 {%- assign groups = groups | split: ',' | compact | uniq -%}
 
                 {%- assign groups_order = section.settings.filter_group_order | downcase | strip | replace: ', ', ',' | split: ',' -%}
@@ -804,6 +807,8 @@
   {%- endif -%}
 
   {%- comment -%}
+  
+  
   --------------------------------------------------------------------------------------
   QUICK VIEW CONTAINER
   --------------------------------------------------------------------------------------
@@ -821,7 +826,7 @@
     </div>
   </div>
 </section>
-
+{% endif %}
 {% schema %}
 {
   "name": "Collection page",
@@ -833,26 +838,12 @@
       "default": true
     },
     {
- 
       "type": "checkbox",
       "id": "collapse_collection_description",
       "label": "Collapse long description",
       "default": false
     },
     {
-
-
-
-    "type": "checkbox",
-      "id": "frete_full",
-      "label": "Habilitar frete grátis nas coleções",
-      "default": true
-    },
-    {
-
-
-
-
       "type": "select",
       "id": "collection_image_size",
       "label": "Collection image size",

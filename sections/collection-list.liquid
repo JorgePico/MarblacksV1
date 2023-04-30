@@ -1,4 +1,3 @@
-
 <section class="section" data-section-id="{{ section.id }}" data-section-type="collection-list">
   <div class="container">
     {%- if section.settings.title != blank -%}
@@ -21,7 +20,7 @@
             {%- unless collection.empty? -%}
             {%- assign collection_image = block.settings.image | default: collection.image | default: collection.products.first.featured_image -%}
 
-            <div class="collection-item__image-wrapper {% if section.settings.round_images %}collection-item__image-wrapper--rounded{% endif %}">
+            <div class="collection-item__image-wrapper {% if section.settings.round_images %}collection-item__image-wrapper--rounded{% endif %}" style="background: var(--background)!important; padding: 1.5px; background-image: url({{ collection_image | img_url: '1x1' }})">
               {%- capture supported_sizes -%}{%- render 'image-size', sizes: '300,400,500,600,700,800', image: collection_image -%}{%- endcapture -%}
               {%- assign image_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
@@ -55,6 +54,10 @@
   </div>
 </section>
 
+  {% if section.settings.collection_dm_new %}
+  {% render 'collection-dm-new' %}
+  {% endif %}
+
 {% schema %}
 {
   "name": "Collection list",
@@ -62,14 +65,21 @@
     {
       "type": "text",
       "id": "title",
-      "label": "Heading",
-      "default": "Our collections"
+      "label": "Título da seção",
+      "default": "Nossas coleções"
     },
     {
       "type": "text",
       "id": "link_title",
-      "label": "Link title",
+      "label": "Título do link",
       "default": "View all"
+    },
+    {
+      "type": "checkbox",
+      "id": "collection_dm_new",
+      "label": "Coleções centralizadas",
+      "info": "Caso você queira deixar suas coleções no formato de carrossel, é recomendado que desmarque a caixa.",
+      "default": true
     },
     {
       "type": "url",
@@ -80,13 +90,13 @@
     {
       "type": "checkbox",
       "id": "round_images",
-      "label": "Round images",
+      "label": "Imagens redondas",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_collection_title",
-      "label": "Show collection title",
+      "label": "Mostrar título das coleções",
       "default": true
     }
   ],

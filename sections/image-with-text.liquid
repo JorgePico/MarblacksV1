@@ -23,14 +23,14 @@
       <div class="image-with-text__text-container">
         <div class="image-with-text__text-aligner">
           {%- if section.settings.title != blank -%}
-            <h2 class="heading h3">{{ section.settings.title | escape }}</h2>
+            <h2 style="font-size: 32px;margin-bottom: 5px;font-weight: bold;">{{ section.settings.title | escape }}</h2>
           {%- endif -%}
 
           <div class="rte">
             {{ section.settings.content }}
 
             {%- if section.settings.button_link != blank and section.settings.button_text != blank -%}
-              <a href="{{ section.settings.button_link }}" class="button button--primary6">{{ section.settings.button_text | escape }}</a>
+              <a href="{{ section.settings.button_link }}" class="button button--primary">{{ section.settings.button_text | escape }}</a>
             {%- endif -%}
           </div>
         </div>

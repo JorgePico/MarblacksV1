@@ -1,6 +1,4 @@
-
 {%- assign product = all_products[section.settings.product] -%}
-
 
 {%- capture section_settings -%}
 {
@@ -36,7 +34,7 @@
     <div class="featured-product">
       {%- unless product.empty? -%}
         {%- render 'product-gallery', product: product -%}
-        {%- render 'product-info2', product: product -%}
+        {%- render 'product-info', product: product -%}
       {%- else -%}
         {% comment %}
         ------------------------------------------------------------------------------
@@ -113,7 +111,7 @@
 
                     <div class="product-form__info-content">
                       <div class="price-list">
-                        <span class="price">{{ 4000 | money }}</span>
+                        <span class="price">{{ 4000 | money_without_trailing_zeros }}</span>
                       </div>
                     </div>
                   </div>

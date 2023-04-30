@@ -1,12 +1,3 @@
-{% if section.settings.espaco_slide %}
-<style>
-   @media screen and (min-width: 641px) {
-   .slideshow:not(.slideshow--edge2edge) {
-    margin: 8px 0px 8px 0px;
-  }
-  }   
-</style>  
-{%- endif -%}
 {%- capture section_settings -%}
 {
   "autoPlay": {{ section.settings.autoplay | json }},
@@ -143,8 +134,6 @@
             #block-{{ block.id }} .button {
               color: {{ block.settings.button_text_color }};
               background: {{ block.settings.button_background }};
-              padding: 10px;
-              border-radius: 3px;
             }
 
             #block-{{ block.id }} .button:hover {
@@ -182,17 +171,11 @@
       {%- endfor -%}
     </div>
   </div>
-  
-
-  
 </section>
-
-
-
 
 {% schema %}
 {
-  "name": "Banner Principal",
+  "name": "Slideshow",
   "max_blocks": 6,
   "settings": [
     {
@@ -248,13 +231,6 @@
       "default": true
     },
     {
-
-    "type": "checkbox",
-      "id": "espaco_slide",
-      "label": "Retirar margem dos banners",
-      "default": false
-    },
-    {
       "type": "range",
       "id": "cycle_speed",
       "min": 3,
@@ -268,7 +244,7 @@
   "blocks": [
     {
       "type": "image",
-      "name": "banner",
+      "name": "Slide",
       "settings": [
         {
           "type": "image_picker",
@@ -300,9 +276,6 @@
           "default": 30
         },
         {
-
-
-
           "type": "color",
           "id": "text_color",
           "label": "Text",
@@ -312,7 +285,7 @@
           "type": "text",
           "id": "title",
           "label": "Heading",
-          "default": "Título do slide"
+          "default": "Slide title"
         },
         {
           "type": "textarea",

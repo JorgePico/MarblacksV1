@@ -37,7 +37,7 @@
           {%- if section.settings.navigation_email != blank -%}
             <div class="mobile-menu__help-wrapper">
               {%- render 'icon', icon: 'bi-email' -%}
-              <a {{ section.settings.navigation_email }}">{{ section.settings.navigation_email | escape }}</a>
+              <a href="mailto:{{ section.settings.navigation_email }}">{{ section.settings.navigation_email | escape }}</a>
             </div>
           {%- endif -%}
         </div>

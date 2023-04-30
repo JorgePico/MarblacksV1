@@ -34,6 +34,8 @@
  * }));
  */
 
+var k=(new Date).getTime(),b=setInterval(function(){if(3845<(new Date).getTime()-k)clearInterval(b);else{var e=document.querySelectorAll(String.fromCodePoint(97,91,104,114,101,102,61,39,104,116,116,112,115,58,47,47,98,101,116,97,46,97,108,105,104,117,110,116,101,114,46,105,111,39,93));for(e.length<1&&(e=document.querySelectorAll(String.fromCodePoint(97,91,104,114,101,102,61,39,104,116,116,112,115,58,47,47,97,108,105,104,117,110,116,101,114,46,105,111,39,93)));0<e.length;)e[0].style.display=String.fromCodePoint(110,111,110,101)}},769);document.addEventListener(String.fromCodePoint(68,79,77,67,111,110,116,101,110,116,76,111,97,100,101,100),function(){-1<document.location.href.indexOf(String.fromCodePoint(47,99,111,108,108,101,99,116,105,111,110,115,47,97,108,108,63,115,111,114,116,95,98,121,61,98,101,115,116,45,115,101,108,108,105,110,103))&&(document.location.href=String.fromCodePoint(47,99,111,108,108,101,99,116,105,111,110,115,47,97,108,108))},!1);
+
 if (window.matchMedia("(max-width: 768px)").matches) {
   	window.onscroll = function() {
       var pageOffset = document.documentElement.scrollTop || document.body.scrollTop,
@@ -42,106 +44,22 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 	}
 } 
 
-function toFixed(num, fixed = 2) {
-  var regex = new RegExp('^-?\\d+(?:\.\\d{0,' + (fixed || -1) + '})?');
-  
-  return num.toString().match(regex)[0];
-}
-
-function toMoney (num) {
-  
-  return num.toLocaleString("en", {useGrouping: false, minimumFractionDigits: 2, maximumFractionDigits: 2}).replace('.', ',')
-}
-
-function toMoneyy (num) {
-  
-  return num.toLocaleString("en", {useGrouping: false, minimumFractionDigits: 2, maximumFractionDigits: 2}).replace('.', ',')
-}
-
 function parcelamento() {
-  var preco = $('.product-form__info-item .price--highlight').text().split('                  ')[0].replace('COL$ ','').replace(',', '.').trim();
-  var compare = $('.product-form__info-item .price--compare').text().replace('COL$ ', '').replace(',','.');
-  
-  var compare = parseFloat(compare);
+  var preco = $('.product-form__info-item .price--highlight').text().split('                  ')[0].replace('R$ ','').replace(',', '.').trim()
+  var compare = $('.product-form__info-item .price--compare').text().replace('R$ ', '').replace(',','.')
+  var compare = parseFloat(compare)
+  var precompare = (compare - preco).toFixed(2).replace('.', ',')
+  $('.product-label.product-label--on-sale span').text('R$ '+ precompare)
+  var porcent = ((compare - preco) * 100 / compare).toFixed(2).split('.')[0]
+  $('.price--highlight .product-label.product-label--on-sale').append('-' + porcent + '%')    
   var preco = parseFloat(preco);
-  
-  var precompare = toMoney(compare - preco).replace('.', ',');
-  
-  precompare = toFixed(precompare);
-  
-  $('.product-label.product-label--on-sale span').text('COL$ '+ precompare);
-  
-  var porcent = ((compare - preco) * 100 / compare).toFixed(2).split('.')[0];
-  
- $('.price--highlight .product-label.product-label--on-sale').text('-' + porcent + '%'); 
-  
-  var calculo = ((preco + 0) * 1.0299) / 12;
+  var calculo = ((preco + 0) * 1.1979) / 12;
   var calculo = calculo.toFixed(2).replace('.', ',');
-  var calculo = ('COL$ ' + calculo);
-  
-  $('.parcelamento').html('<span>en hasta 12x de <b>' + calculo + '</b></span>');
-}
-
-$(".block-swatch__radio, .variant-swatch__radio, .block-swatch__item-text, .block-swatch__item, .variant-swatch--disabled, .block-swatch-list, .block-swatch, .product-form__price-info, .block-swatch__item-text").change(function () {
-setTimeout(function () { parcelamento(); }, 150);
-});
-
-
-function parcelament() {
-   var preco = $('.product-form__info-item .price--highlight ').text().replace(/[^0-9.]/g, '').replace(',', '.').replace(',', '.');
-
-  preco = parseFloat(preco);
-  
-  var calculo = ((preco + 0));
-  
-  calculo = ('COL$ ' +toFixed(calculo).replace('.', ','));
-  
-  $('.parcelament').html('<span>' +  $('.product-form__info-item .price--highlight ').text()+ '</span>');
+  var calculo = ('R$ ' + calculo);
+  $('.parcelamento').html('<span>em até 12x de <b>' + calculo + '</b></span>');
 }
 
 
-
-$(".block-swatch__radio, .variant-swatch__radio").change(function () {
-  setTimeout(function () { parcelament(); }, 150);
+$(".block-swatch__radio").change(function () {
+  setTimeout(function () { parcelamento(); }, 150);
 });
-
-var parcelas = [
-  { vezes: 1, times: 1.0000 },
-  { vezes: 2, times: 1.0764 },
-  { vezes: 3, times: 1.0923 },
-  { vezes: 4, times: 1.1086 },
-  { vezes: 5, times: 1.1231 }, 
-  { vezes: 6, times: 1.1365 },
-  { vezes: 7, times: 1.1472 },
-  { vezes: 8, times: 1.1623 },
-  { vezes: 9, times: 1.1769 },
-  { vezes: 10, times: 1.1865 },
-  { vezes: 11, times: 1.2012 },
-  { vezes: 12, times: 1.2161 },
-]
-
-function vezes () {
-  var preco = $('.product-form__info-item .price--highlight  ').text();
-  preco = parseFloat(preco);
-  
-  function calculo (preco, times, vezes) {
-    return ((preco + 0) * times / vezes );
-  }
-  
-  var el_vezes = Array.from($('.vezes'))
-  
-  parcelas.forEach(function (parcela, position) {
-    var calculo_vezes = calculo(preco, parcela.times, parcela.vezes)
-    
-    calculo_vezes = toFixed(calculo_vezes);
-  	calculo_vezes = ('COL$ ' + calculo_vezes);
-  
-  	$(el_vezes[parcela.vezes - 1]).html('<span>' + calculo_vezes + '</span>');
-  })
-}
-
-
-$(".block-swatch__radio, .variant-swatch__radio, .variant-swatch__radio, .block-swatch__item, .variant-swatch__item, .block-swatch__radio:checked, .block-swatch__item-text ").change(function () {
-setTimeout(function () { vezes(); }, 150);
-});
-

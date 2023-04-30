@@ -27,18 +27,17 @@
                 {%- endif -%}
 
                 {%- if block.settings.button_text != blank -%}
-                  <span class="promo-block__cta button8 button--floating">{{ block.settings.button_text | escape }}</span>
+                  <span class="promo-block__cta button button--floating">{{ block.settings.button_text | escape }}</span>
                 {%- endif -%}
               </div>
 
               <style>
                 #block-{{ block.id }} .promo-block {
-                  background-image: linear-gradient(to right, {{ block.settings.background }}, {{ block.settings.background2 }});
-                  color: {{ block.settings.text_color }};
-                  border-radius: {{ block.settings.bordas_redonda }};  
+                  background-image: linear-gradient(150deg, {{ block.settings.background }}, {{ block.settings.background2 }});
+                  color: {{ block.settings.text_color }}
                 }
 
-                #block-{{ block.id }} .button8 {
+                #block-{{ block.id }} .button {
                   background: {{ block.settings.button_background }};
                   color: {{ block.settings.button_text_color }};
                 }
@@ -80,7 +79,7 @@
 
 {% schema %}
 {
-  "name": "Blocos de promoção",
+  "name": "Promotion blocks",
   "settings": [
     {
       "type": "checkbox",
@@ -113,9 +112,6 @@
       "id": "stack_mobile",
       "label": "Stack on mobile",
       "default": false
-
-     
-
     }
   ],
   "blocks": [
@@ -155,32 +151,20 @@
         {
           "type": "color",
           "id": "background",
-          "label": "Background",
+          "label": "Background 1",
           "default": "#000000"
         },
         {
-
-
-        "type": "color",
+          "type": "color",
           "id": "background2",
-          "label": "Background2",
-          "default": "#000000"
+          "label": "Background 2",
+          "default": "#f3f4f4"
         },
         {
-
           "type": "color",
           "id": "text_color",
           "label": "Text",
           "default": "#ffffff"
-
-        },
-        {
-          "type": "text",
-          "id": "bordas_redonda",
-          "label": "escolha um valor de 0 a 30 para arredondar as brodas",
-          "default": "7px"
-
-
         },
         {
           "type": "text",

@@ -1,5 +1,5 @@
 {%- comment -%}Color labels used to detect what is a color swatch{%- endcomment -%}
-{%- assign color_label = 'color,colour,couleur,cor,cores,colore,farbe,색,色,カラー,färg,farve' | split: ',' -%}
+{%- assign color_label = 'color,colour,couleur,cor,colore,modelo,farbe,색,色,カラー,färg,farve,Escolha Sua Cor' | split: ',' -%}
 
 <div class="product-item {% if horizontal %}product-item--horizontal{% elsif list %}product-item--list{% else %}product-item--vertical{% endif %} {% if section.id == 'blog-sidebar' %}product-item--compact{% endif %} {{ grid_classes }}">
   {%- capture product_labels -%}
@@ -21,21 +21,28 @@
       {%- if settings.discount_mode == 'percentage' -%}
         {%- assign savings = product.compare_at_price | minus: product.price | times: 100.0 | divided_by: product.compare_at_price | round | append: '%' -%}
       {%- else -%}
-        {%- capture savings -%}<span>{{ product.compare_at_price | minus: product.price | money}}</span>{%- endcapture -%}
+        {%- capture savings -%}<span>{{ product.compare_at_price | minus: product.price | money_without_trailing_zeros }}</span>{%- endcapture -%}
       {%- endif -%}
 
-      <span class="product-label product-label--on-sale"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down" width="1.3em" height="1.3em" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: -3px; margin-left: -3px;">
+      <span class="product-label product-label--on-sale">
+        
+  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-down" width="1.3em" height="1.3em" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-right: -3px; margin-left: -3px;">
   <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
   <line x1="12" y1="5" x2="12" y2="19"></line>
   <line x1="18" y1="13" x2="12" y2="19"></line>
   <line x1="6" y1="13" x2="12" y2="19"></line>
-  </svg>&nbsp;{{ 'collection.product.discount_html' | t: savings: savings }}</span>
+  </svg>
+        
+        {{ 'collection.product.discount_html' | t: savings: savings }}</span>
+  
     {%- endif -%}
   {%- endcapture -%}
 
   {%- if product_labels != blank -%}
     <div class="product-item__label-list">
+      
       {{- product_labels -}}
+           
     </div>
   {%- endif -%}
 
@@ -120,64 +127,35 @@
   <div class="product-item__info">
     <div class="product-item__info-inner">
       {%- capture price_list -%}
-        <div class="product-item__price-list price-list2">
+        <div class="product-item__price-list price-list">
           {%- if product.price < product.compare_at_price -%}
             {%- if product.compare_at_price_varies -%}
-              {%- capture price_min -%}<span>{{ product.price_min | money }}</span>{%- endcapture -%}
-              {%- capture price_max -%}<span>{{ product.price_max | money }}</span>{%- endcapture -%}
+              {%- capture price_min -%}<span>{{ product.price_min | money_without_trailing_zeros }}</span>{%- endcapture -%}
+              {%- capture price_max -%}<span>{{ product.price_max | money_without_trailing_zeros }}</span>{%- endcapture -%}
+              <span class="apartirde">A partir de</span>
+              <div class="align-price-compare-home">
               <span class="price price--highlight">{{ 'collection.product.from_price_html' | t: price_min: price_min, price_max: price_max }}</span>
-              <span class="price price--compare">{{ product.compare_at_price_min | money}}</span>
+              <span class="price price--compare">{{ product.compare_at_price_min | money_without_trailing_zeros }}</span>
+              </div>
             {%- else -%}
-              <span class="price price--highlight">{{ product.price | money }}</span>
-              <span class="price price--compare">{{ product.compare_at_price | money }}</span>
+              <div class="align-price-compare-home">
+              <span class="price price--highlight">{{ product.price | money_without_trailing_zeros }}</span>
+              <span class="price price--compare">{{ product.compare_at_price | money_without_trailing_zeros }}</span>
+              </div>
             {%- endif -%}
           {%- elsif product.price_varies -%}
-            {%- capture price_min -%}<span>{{ product.price_min | money }}</span>{%- endcapture -%}
-            {%- capture price_max -%}<span>{{ product.price_max | money }}</span>{%- endcapture -%}
+            {%- capture price_min -%}<span>{{ product.price_min | money_without_trailing_zeros }}</span>{%- endcapture -%}
+            {%- capture price_max -%}<span>{{ product.price_max | money_without_trailing_zeros }}</span>{%- endcapture -%}
             <span class="price">{{ 'collection.product.from_price_html' | t: price_min: price_min, price_max: price_max }}</span>
           {%- else -%}
-            <span class="price">{{ product.price | money }}</span>
+            <span class="price">{{ product.price | money_without_trailing_zeros }}</span>
           {%- endif -%}
         </div>
 
-      
-      <p class="marginparcela" style='font-size:15px'>O llevalo en 12 cuotas de <span style="color:black"><b>{{ product.price | times: 1.2161 | divided_by: 12 | round :2 | money }}</b></span> </p> 
-      
-     <style>
-      .marginparcela {
-       margin-bottom:-5px; 
-        margin-top: -5px;
-      }
-        
-      </style>  
-      
-      
-      <a style= "margin-bottom: -10px; "class="areviews_product_item areviews_stars{{ product.id }}"  data-product-id="{{ product.id }}"></a>
-      {% if section.settings.frete_full %}
-
-<div style="margin-top: 5px;display:">
-   
-        <span class="textofrete" style="color:#ffffff; padding: 2px 8px 3px 8px; background: var(--header-accent-color);"><i class="fa-solid fa-truck"></i>&nbsp;ENVIO GRÁTIS</span>
-      
-   </div>
-      {%- endif -%}
-        
-        <style>
-        .textofrete {
-         border-radius: 30px;
-         font-weight: bold;
-
-        }  
- 
-        </style>  
-      
-     <!-- <p style='font-size:15px'><span style="color:green"> <b>Envio Grátis </b></span>-->
-      
-      
         {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
           <div class="product-item__price-info">
             <div class="unit-price-measurement">
-              <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money }}</span>
+              <span class="unit-price-measurement__price">{{ product.selected_or_first_available_variant.unit_price | money_without_trailing_zeros }}</span>
               <span class="unit-price-measurement__separator">/ </span>
 
               {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
@@ -211,7 +189,8 @@
         {{ vendor }}
       {%- endif -%}
 
-      <a href="{{ filtered_variant.url | default: product.url | within: collection }}" class="product-item__title text--strong link">{{ product.title | truncate:30}}</a>
+      <a href="{{ filtered_variant.url | default: product.url | within: collection }}" class="product-item__title text--strong link">{{ product.title }}</a>
+    {% render 'a2reviews-total' type:'collection', product:product %}
 
       {%- if settings.product_price_position == 'before_title' -%}
         {{ vendor }}
@@ -270,6 +249,71 @@
         {{ price_list }}
       {%- endif -%}
 
+      {% assign divididopor = settings.qty_vezes %}
+      {% assign percentual = settings.porcentagem_de_juros %}
+      {%- if settings.mostrar_parcelascomo == 'info_juros' -%}
+      <p style="font-size: 14px; margin-bottom: 0;"><b>{{ divididopor }}x</b> de <b style="color: var(--product-on-sale-accent)">{{- product.price | divided_by: divididopor | times: percentual | money -}}</b><b style="color: #b1b5c3;font-weight: bold;font-size: 10px;margin-left: 4px;">COM JUROS</b></p>
+      {%- endif -%}
+
+      {%- if settings.mostrar_parcelascomo == 'info_sem_juros' -%}
+      <p style="font-size: 14px; margin-bottom: 0;"><b>{{ divididopor }}x</b> de <b style="color: var(--product-on-sale-accent)">{{- product.price | divided_by: divididopor | times: 1.0000 | money -}}</b><b style="color: var(--product-on-sale-accent);font-weight: bold;font-size: 10px;margin-left: 4px;">SEM JUROS</b></p>
+      {%- endif -%}
+
+      {%- if settings.mostrar_parcelascomo == 'no_info_juros' -%}
+      <p style="font-size: 14px; margin-bottom: 0;">em até <b>{{ divididopor }}x</b> de <b style="color: var(--product-on-sale-accent)">{{- product.price | divided_by: divididopor | times: percentual | money -}}</b></p>
+      {%- endif -%}
+      
+        {%- if settings.mostrar_estrelas -%}
+     
+      <div style="width: 100%; margin-top: -5px;">
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+
+        <span style="font-size: 12px; color: #bbbbbb">(5.0)</span>
+        
+      </div>
+
+        {%- endif -%}
+        {%- if settings.mostrar_estrelas_ryviu -%}
+     <div class="ryviu-collection">
+     <ryviu-widget-total collection="1" reviews_data="{{product.metafields.ryviu.product_reviews_info  | escape  }}" product_id="{{product.id}}" handle="{{product.handle}}"></ryviu-widget-total>
+     </div>
+{% comment %}
+      <div style="width: 100%; margin-top: -5px;">
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+        <i style="color: var(--corstars); font-size: 12px;" class="fas fa-star" aria-hidden="true"></i>
+
+        <span style="font-size: 12px; color: #bbbbbb">(5.0)</span>
+        
+      </div>
+{% endcomment %}
+        {%- endif -%}
+          
+        {%- if settings.mostrar_fretegratis1 -%}
+      
+   <div style="margin-top: 0px;display:">
+   
+      <span class="barradefundo" style="color: var(--cordotexto); padding: 2px 8px 2px 8px; background: var(--cordabarra);">FRETE GRÁTIS</span>
+      
+   </div>
+      
+      {%- endif -%}
+      
+      <div>
+      <!-- Start Areviews Collection Rating Code -->
+      {%- if template.name == 'product' and template != 'product.quick-view' -%} 
+      <div class='areviews_header_stars'></div> 
+      {% else %}
+      <div class='areviews_product_item areviews_stars{{ product.id }}'  data-product-id='{{ product.id }}'></div>
+      {% endif %}
+      <!-- End Areviews Collection Rating Code -->
+      
       {%- if settings.show_reviews_badge -%}
         <a class="product-item__reviews-badge link" href="{{ product.url | within: collection }}#product-reviews">
           <span class="shopify-product-reviews-badge" data-id="{{ product.id }}">
@@ -286,7 +330,18 @@
           </span>
         </a>
       {%- endif -%}
+     </div>
 
+        {%- if settings.mostrar_bfimg -%}
+
+{% for tag in product.tags %}
+  {% if tag contains 'blackfriday' %} 
+  {% render "bfimg" %}
+  {% endif %}
+{% endfor %}  
+
+        {% endif %}
+      
       {%- if settings.show_inventory_quantity and product.template_suffix != 'pre-order' -%}
         {%- if product.available -%}
           {%- assign should_calculate_inventory = true -%}
@@ -364,12 +419,15 @@
         {%- else -%}
           <button class="{{ quick_buy_classes | replace: 'button--primary', 'button--disabled' }}" disabled>{{ 'collection.product.sold_out' | t }}</button>
         {%- endif -%}
-{%- if section.settings.show_quick_view == 'list_grid' -%}
+
+        {%- if section.settings.show_quick_view == 'list_grid' -%}
           {%- assign quick_view_classes = 'product-item__action-button button button--small button--ternary hidden-phone' -%}
+        {%- else -%}
+          {%- assign quick_view_classes = 'product-item__action-button product-item__action-button--list-view-only button button--small button--ternary hidden-phone' -%}
         {%- endif -%}
 
+        <button type="button" class="{{ quick_view_classes }}" data-action="open-modal" data-secondary-action="open-quick-view" aria-controls="modal-quick-view-{{ section.id }}" data-product-url="{{ product.url }}">{{ 'collection.product.quick_view' | t }}</button>
       {%- endform -%}
     {%- endif -%}
-        
   </div>
 </div>

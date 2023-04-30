@@ -1,13 +1,14 @@
-
-  
 <!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">{% render 'fk-lck' %}
 
-<html class="no-js">
   <head>
+
+    <!-- IMPORTANTE! COLOQUE SEUS PIXELS APARTIR DESTE AVISO -->
     
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="theme-color" content="{{ settings.accent_color }}">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 
     {%- capture seo_page_title -%}
       {%- if request.page_type == 'search' and search.terms != blank -%}
@@ -23,8 +24,6 @@
       <meta name="description" content="{{ page_description | escape }}">
     {%- endif -%}
 
-    
-
     <link rel="canonical" href="{{ canonical_url }}">
 
     {%- if settings.favicon -%}
@@ -39,20 +38,79 @@
     <link rel="dns-prefetch" href="https://ajax.googleapis.com">
     <link rel="dns-prefetch" href="https://maps.googleapis.com">
     <link rel="dns-prefetch" href="https://maps.gstatic.com">
-    <link href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" rel="stylesheet">
-
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-migrate-3.4.0.min.js" integrity="sha256-mBCu5+bVfYzOqpYyK4jm30ZxAZRomuErKEFJFIyrwvM=" crossorigin="anonymous"></script>
+   
+    {% if settings.ali_hunter_enable %}
+      {% render 'blockalihtr' %}
+    {% endif %}
+    
     {% render 'social-meta-tags' %}
     {% render 'css-variables' %}
-    {%- if settings.zapzap -%}  {% render '7070' %} {%- endif -%}
 
     {{ content_for_header }}
-
+    {%include "setbg"%}
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
 
     {% render 'microdata-schema' %}
+  
+    <!-- INICIO DO BLOQUEADOR -->
+  
+    {% if settings.botao_direito_enable %}
+        <script type="text/javascript">
+            var message="Desculpe, o clique com o botão direito foi desativado.";
+            function clickIE() {if (document.all) {(message);return false;}}
+            function clickNS(e) {if
+            (document.layers||(document.getElementById&&!document.all)) {
+                if (e.which==2||e.which==3) {(message);return false;}}}
+            if (document.layers)
+            {document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+            else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+            document.oncontextmenu=new Function("return false")
+        </script>
+    {% endif %}
 
+    {% if settings.atalho_f12_enable %}
+        <script>
+            document.onkeydown = function(e) {
+                if(event.keyCode == 123) {
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
+                    return false;
+                }
+                if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
+                    return false;
+                }
+                if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
+                    return false;
+                }
+            }
+        </script>
+    {% endif %}
+
+    {% if settings.selecionar_conteudo_enable %}
+        <script>
+            function disableselect(e) {
+                return false;
+            }
+
+            function reEnable() {
+                return true;
+            }
+
+            document.onselectstart = new Function("return false");
+
+            if (window.sidebar) {
+                document.onmousedown = disableselect;
+                document.onclick = reEnable;
+            }
+        </script>
+    {% endif %}
+  
+    <!-- FINAL DO BLOQUEADOR -->
     
-
     <script>
       // This allows to expose several variables to the global scope, to be used in scripts
       window.theme = {
@@ -105,7 +163,7 @@
       <script src="{{ 'customer_area.js' | shopify_asset_url }}" defer></script>
     {%- endif -%}
 
-    <script src="//cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&features=fetch,Element.prototype.closest,Element.prototype.matches,Element.prototype.remove,Element.prototype.classList,Array.prototype.includes,Array.prototype.fill,String.prototype.includes,String.prototype.padStart,Object.assign,CustomEvent,Intl,URL,DOMTokenList,IntersectionObserver,IntersectionObserverEntry" defer></script>
+    <script src="//cdn.polyfill.io/v3/polyfill.min.js?unknown=polyfill&features=fetch,Element.prototype.closest,Element.prototype.matches,Element.prototype.remove,Element.prototype.classList,Array.prototype.includes,Array.prototype.fill,String.prototype.includes,String.prototype.padStart,Object.assign,CustomEvent,Intl,URL,DOMTokenList,IntersectionObserver,IntersectionObserverEntry" defer></script><!--thi@gohsil@--> 
     <script src="{{ 'theme.min.js' | asset_url }}" defer></script>
     <script src="{{ 'custom.js' | asset_url }}" defer></script>
 
@@ -123,22 +181,23 @@
         })();
       </script>
     {%- endif -%}
-  
- {% render 'gsf-conversion-pixels' %}
-<script src='https://areviewsapp.com/js_codes/collection_rating.js' defer></script>    
     
-    
+    {{ '//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' | stylesheet_tag }}
+  {{ 'a2reviews-custom.css' | asset_url | stylesheet_tag }}
 
-{{ 'a2reviews-custom.css' | asset_url | stylesheet_tag }}
+    {% render 'gsf-conversion-pixels' %}
+
+  	  
+<!-- RYVIU APP :: Settings global -->	
+    <script> var ryviu_global_settings = {{shop.metafields.ryviu.user_settings }};</script>
+<!-- RYVIU APP -->
 
 {% include 'a2reviews-head-var' %}
-</head> 
-  <body class="warehouse--v1 {% if settings.animation_image_zoom %}features--animate-zoom{% endif%} template-{{ request.page_type | handle }} {% if request.page_type contains '/' %}template-{{ request.page_type | split: '/' | last | handle }}{% endif %}" data-instant-intensity="viewport">
+</head>
+
+  <body class="warehouse--v1 {% if settings.animation_image_zoom %}features--animate-zoom{% endif%} template-{{ request.page_type | handle }} {% if request.page_type contains '/' %}template-{{ request.page_type | split: '/' | last | handle }}{% endif %}" data-instant-intensity="viewport"><!--thi@gohsil@-->  
+
     <span class="loading-bar"></span>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MXCWHFL"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 
     {% section 'announcement-bar' %}
 
@@ -148,7 +207,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {%- endunless -%}
 
     {% section 'header' %}
-    
 
     <main id="main" role="main">
       {{ content_for_layout }}
@@ -157,729 +215,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     {%- if request.page_type == 'blog' or request.page_type == 'article' or request.page_type == 'page' -%}
       {% section 'static-newsletter' %}
     {%- endif -%}
+
     {% section 'text-with-icons' %}
     {% section 'footer' %}
 
     <script src="//cdn.codeblackbelt.com/js/modules/frequently-bought-together/main.min.js?shop=marblacks-adm.myshopify.com" defer></script>
-    {{ 'pfx.js' | asset_url | script_tag }}
     
-	 <!-- Não remova. Checkout Yampi. -->
-{% capture yampi_snippet_content %}{% include 'YampiSnippet' %}{% endcapture %} {% unless yampi_snippet_content contains 'Liquid error' %} {% include 'YampiSnippet' %} {% endunless %}
-<!-- Não remova. Checkout Yampi. --> </body>
- </html>
+    {%- if settings.addzap -%} {% include 'addzap' %} {%- endif -%}
 
-
-
-{% if settings.atalho_f12_enable %}
-  <!-- INICIO DO BLOQUEADOR -->
-
-<!-- script block do mouse inicio -->
-  <script type="text/javascript">
-var message="Desculpe, o clique com o botão direito foi desativado.";
-function clickIE() {if (document.all) {(message);return false;}}
-function clickNS(e) {if
-(document.layers||(document.getElementById&&!document.all)) {
-if (e.which==2||e.which==3) {(message);return false;}}}
-if (document.layers)
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
-else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
-document.oncontextmenu=new Function("return false")
-</script>
-<!-- script block do mouse final -->
-
-<!-- script block atalhos 2 + F12 inicio -->
-<script>
-  document.onkeydown = function(e) {
-if(event.keyCode == 123) {
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)){
-return false;
-}
-if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)){
-return false;
-}
-}
-  </script>
-<!-- script block atalhos 2 + F12 final -->  
-
-<!-- script block selecionar conteúdo - inicio -->  
-<script>
-    function disableselect(e) {
-    return false;
-}
-
-function reEnable() {
-    return true;
-}
-
-document.onselectstart = new Function("return false");
-
-if (window.sidebar) {
-    document.onmousedown = disableselect;
-    document.onclick = reEnable;
-}
-</script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
-    <script src="//cdn.shopify.com/s/files/1/0533/7235/4736/t/2/assets/custom.js?v=6598476256455585169" defer></script>
-<!-- script block selecionar conteúdo - final -->
-
- <!-- Bloquear a função: Desabilitar JS - inicio -->
-<noscript id="easycoding"><style>body *{display:none}body:before{content: 'ATENÇÃO!!! ESSA ÁREA É RESTRITA A FUNCIONÁRIOS \A Se esse for seu caso solicite o acesso em nossa página de contato. \A\A  ©️ Easycoding — Todos os direitos reservados.';
-    text-align: center;
-    display: block;	
-    display: block;
-    margin-top: 200px;
-    white-space: pre-wrap;
-    line-height: 1.8;}  </style>
-  <meta charset="utf-8"><h5><b></h5></b><meta http-equiv="refresh" content="3; URL='https://www.google.com/'">
-</noscript>
-<!-- Bloquear a função: Desabilitar JS - final -->
-
-<!-- FIM DO BLOQUEADOR-->  
-    {% endif %} 
-  
-  
-  <!--botões arredondados--> 
-  <style>
-
-   .pix {
-    {% if settings.tag_card %}  
-    border-radius: 30px 30px 30px 30p   
-    {%- else -%}    
-    border-radius: 7px 7px 7px 7px;      
-    {%- endif -%}  
-   }
-  
-   .form__field {
-  
-   border-radius: {{ settings.botoes_campos }};  
-
-  }  
-  
-  .button--primary {
-   border-radius: {{ settings.botoes_campos }}; 
-   width: 100%; 
-   height:50px;
-   {% if settings.estilo_botao %}
-   -webkit-box-shadow: 0 2px 4px #ccc, inset 0 26px hsl(0deg 0% 100% / 20%);
-   {% endif %}
-  
-  }
-  .button--primary {
-   
-  } 
-    
-   .button--primarycart {
-   background: var(--primary-button-background);
-   color: var(--primary-button-text-color);
-   animation: shake 3s;
-   animation-iteration-count: infinite;
-   width: 100%;
-   height: 50px;
-   border-radius:  {{ settings.botoes_campos }}; 
-   font-weight: bold;
-   font-size: 15px;
-   color: white;
-   text-align: center;
-   line-height: 4px;
-   padding: 15px;
-   {% if settings.estilo_botao %}
-   -webkit-box-shadow: 0 2px 4px #ccc, inset 0 26px hsl(0deg 0% 100% / 20%);
-   {% endif %}
-    
-  }
-    
-   .button--secondary { 
-    border-radius: {{ settings.botoes_campos }};
-    font-weight:bold; 
-    width: inherit; 
-    {% if settings.estilo_botao %}
-   -webkit-box-shadow: 0 2px 4px #ccc, inset 0 26px hsl(0deg 0% 100% / 20%);
-   {% endif %} 
-   
-  }     
-    
-  .button--primary4{
-   border-radius: {{ settings.botoes_campos }};
-   {% if settings.estilo_botao %}
-   -webkit-box-shadow: 0 2px 4px #ccc, inset 0 26px hsl(0deg 0% 100% / 20%);
-   {% endif %} 
-    
-  } 
-    
-   .button--primary6{
-     
-   background: transparent;
-   color: var(--primary-button-text-color);
-   animation-iteration-count: infinite;
-   height: 50px;
-   border-radius:  {{ settings.botoes_campos }}; 
-   font-weight: bold;
-   font-size: 20px;
-   color: var(--primary-button-background);
-   text-align: center;
-   padding: 15px; 
-   border: 2px solid var(--primary-button-background);
-   <!-- {% if settings.estilo_botao %} 
-   -webkit-box-shadow: 0 2px 4px #ccc, inset 0 26px hsl(0deg 0% 100% / 20%);  
-    {% endif %}-->
-    
-  }  
-       
-  .button--primary6{
-   width: 100%; 
-   height: 50px;
-   display: block;
-   line-height: 12px;
-   margin-top: 15px;
-    
-  }
-  
-  .button--primary6 span:hover {
-  background: var(--primary-button-background);
-  border: 1px solid var(--primary-button-background);
-  color: white;
-  width: 100%;  
-    
-  } 
-    
-  .button--primary10 {
-   border-radius: {{ settings.botoes_campos }};
-  {% if settings.estilo_botao %}
-  -webkit-box-shadow: 0 2px 4px #ccc, inset 0 26px hsl(0deg 0% 100% / 20%);
-  {% endif %}
-    
-  }
-   
-  .button--primary12 {
-   background: var(--primary-button-background);
-   color: var(--primary-button-text-color);
-   animation: shake 3s;
-   animation-iteration-count: infinite;
-   width: 100%;
-   height: 50px;
-   border-bottom: 2px solid #00000075;
-   border-radius:  {{ settings.botoes_campos }}; 
-   font-weight: bold;
-   font-size: 20px;
-   color: white;
-   text-align: center;
-   padding: 15px;
-     
-   }  
-  .quantity-selector { 
-   border-radius: {{ settings.botoes_campos }};     
-   }
-  .button--primary21 {
-   border-radius: {{ settings.botoes_campos }};
-   {% if settings.estilo_botao %}
-   -webkit-box-shadow: 0 2px 4px #ccc, inset 0 26px hsl(0deg 0% 100% / 20%);
-   {% endif %} 
-    
-   } 
-    
-   .select-wrapper--primary select:valid {
-    
-    border-radius: {{ settings.botoes_campos }};
-  
-   }
-   </style>
-   <!--final botões arredondados-->
-  
-  
-   <!--Sombra nos botões--> 
-   {% if settings.sombra1_botao %}  
-  
-   <style>
-     
-   .button--primary {
-   box-shadow: 0 10px 30px #e3e3e3;
-     
-   } 
-     
-  .button--primary3 {
-   box-shadow: 0 10px 30px #e3e3e3;
-
-  }
-    
-  .button--primary4 {  
-   box-shadow: 0 10px 30px #e3e3e3;
-  
-  }  
-    
-  .button--primary6{
-   box-shadow: 0 10px 30px #e3e3e3;
-    
-  }  
-    
-   .button--primary10 { 
-    box-shadow: 0 10px 30px #e3e3e3;
-  }
-     
-  .button--primary12 {  
-   box-shadow: 0 10px 30px #e3e3e3;
-
-  }   
-
-  .button--primary21 {
-   box-shadow: 0 10px 30px #e3e3e3;
-     
-  }   
-     
-  </style>  
-  
-  {% endif %} 
-  <!--Final sombra nos botões-->
-  
-  
-  
-   
-
-  <!--borda inferior do botão-->
-  {% if settings.borda_botao %}  
-
-  
-  <style>
-    
-    .button--primary {      
-    border-bottom: 2px solid #00000075;
-      
-    } 
-    .button--secondary {      
-    border-bottom: 2px solid #00000075;  
-    
-    }
-    .button--primary3 {      
-    border-bottom: 2px solid #00000075;  
-      
-    }   
-    
-    .button--primary4 {   
-    border-bottom: 2px solid #00000075; 
-           
-    }   
-    
-    .button--primary6 {   
-    border-bottom: 2px solid #00000075;       
-
-    } 
-    
-    
-    .button--primary10 {
-    border-bottom: 2px solid #00000075;       
-   
-    }
-
-    .button--primary21 {
-    border-bottom: 2px solid #00000075;       
-   
-    }
-    
-    .button--primarycart {   
-    border-bottom: 2px solid #00000075;
-      
-    }
-     } 
-  </style>
-    {% endif %} 
-  
-  
-  <style>
-   .button--primary3 { 
-    {% if settings.estilo_botao %}
-   -webkit-box-shadow: 0 2px 4px #ccc, inset 0 26px hsl(0deg 0% 100% / 20%);
-   {% endif %} 
-    
-   }  
-    
-    
-   .button--primary13 { 
-    {% if settings.estilo_botao %}
-   -webkit-box-shadow: 0 2px 4px #ccc, inset 0 26px hsl(0deg 0% 100% / 20%);
-   {% endif %} 
-    
-   }   
-  
-  </style>  
-
-   <style>
-   
-   .button--primary13 { 
-  
-   border-radius: {{ settings.botoes_campos }};
-   margin-top: 5px;  
-   }  
-     
-   .button--primary3 {
-     
-    border-radius: {{ settings.botoes_campos }}; 
-    font-size: 20px;
-    font-weight: bold;
-     
-   
-   }  
-   </style>
-  
-  <style>
-
-    /*card arredondado*/
-
-    @media screen and (min-width: 641px){
-    .card {
-    margin-bottom: 30px;
-    border-radius: {{settings.borda_redonda}};
-    border: 1px solid var(--border-color);
- 
-    
-    {% if settings.sombra_card %} 
-
-    
-    box-shadow: 0 10px 30px #e3e3e3;
-    
-    {%- endif -%}
-      
-    }
-      
-    @media screen and (min-width: 641px) {
-    
-     /*Featured collection*/ 
-    .product-list {
-    
-    border-radius: {{settings.borda_redonda}};
-    
-    {% if settings.sombra_card %} 
-
-     /*Featured collection*/ 
-    /*box-shadow: 10px 15px 10px rgba(0,0,0,.05);*/
-    
-    {%- endif -%}
-      
-    }
-      
-     /*Seção Voce pode gostar*/ 
-    @media screen and (min-width: 1280px) {
-      
-    .offer-item--inline {
-    border-radius: {{settings.borda_redonda}};
-    {% if settings.sombra_card %} 
-
-    
-    box-shadow: 0 10px 30px #e3e3e3;
-    
-    {%- endif -%}
-      
-    } 
-      
-    
-    
-    }
-      
-    .product-item__label-list > .product-label {
-     border-radius: 30px 30px 30px 30px;
-      
-    }  
-      
-
-    .product-label1 {
-  
-     {% if settings.tag_card %} 
-      
-      border-radius: 30px 30px 30px 30px;
-      
-      {%- else -%}
-      
-      border-radius: 7px 7px 7px 7px;
-      
-      {%- endif -%} 
-  
-     }
-
- 
-     /*seção Voce pode gostar*/ 
-    @media screen and (min-width: 1000px) {
-   .product-list::before { 
-  
-    border-radius:{{settings.borda_redonda}};
-    }
-      
-    }
-      
-      /*seção Voce pode gostar*/ 
-   .product-list .flickity-viewport {
-     border-radius: {{settings.borda_redonda}};
-     
-    }      
-      
-     
-    .product-item__label-list > .product-label {
-      
-      {% if settings.tag_card %} 
-      
-      border-radius: 30px 30px 30px 30px;
-      
-      {%- else -%}
-      
-      border-radius: 7px 7px 7px 7px;
-      
-      {%- endif -%}
-    }  
-      
-     
-     </style>      
-     <style>
-      
-       
-       .product-item {
-         margin-bottom: 28px;
-        
-      border-radius: {{settings.borda_redonda}};
-       }
-      
-      </style>
-
-       <style>
-  .product-item {
-    
-    
-    {% if settings.sombra_card %} 
-      
-      box-shadow: 0px 3px 15px -7px #0000003d;
-       
-      {% endif %} 
-    
-  }
-
-
-  @media screen and (min-width: 1000px) {
- .featured-collection {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  padding: 6px 6px 6px 0;
-  border-radius: {{settings.borda_redonda}};      
-  }
-  }
-
-  <style>
-  
-  @media screen and (max-width: 640px)
-.product-list--scrollable .product-item {
-  width: 32%;
-  border-radius: 3px;
-  
-  
-  </style>
-  
-    <style>
-  
-     .offer-item {
-       
-      {% if settings.sombra_card %} 
-      
-      box-shadow: 0px 3px 15px -7px #0000003d;
-       
-      {% endif %} 
-
-     } 
-      
-</style>  
-  
-  
-<style>
-  
-  
-      @media screen and (max-width: 640px) {
-     .product-list--scrollable .product-item { 
-       
-       
-      {% if settings.sombra_card %} 
- 
-      box-shadow: 0px 3px 15px -7px #0000003d 
-       
-     }  
-      {% endif %} 
-  
-        
-     }   
-  
-</style>  
-  
-<style>
-  
-  
-.price--compare {
-   color: {{settings.cor_compare_cor}};  
-}  
-  
-.price {
-  
-   font-weight: 700;  
-   color: {{settings.cor_preco_cor}};
-  
-}  
-  
-  
-.product-item .price--compare {
-  
-   font-weight: 300;  
-   color: {{settings.cor_compare_cor}}; 
-  
-} 
-  
-  
-.product-form .price--compare {
-  
-   font-weight: 300;
-   color: {{settings.cor_compare_cor}}; 
-  
-}  
-  
-  
- .product-item__price-list  {
-   
- color: {{settings.cor_preco_cor}}; 
-   
- }   
-  
-  
-</style>  
-    
-  
-<style>
-
-  
-  
-  .price--highlight {
-   color: {{settings.cor_preco_cor}};
-
-  }  
-  
-    
-  .price--compare {
-   color: red;
-
-  
-  }
-  
-  
-  /*preço coleções desktop*/
-  @media screen and (min-width: 641px) {
-  .product-item__title {
-    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 14px));
-  }
-
-  .product-item--vertical .price:not(.price--compare),
-  .product-item--list .price:not(.price--compare) {
-    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 20px));
-    color: {{settings.cor_preco_cor}};
-    font-weight: 700;
-  }
-}
-
-   /*preço coleções mobile*/
-   @media screen and (max-width: 641px) {
-  .product-item__title {
-    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 14px));
-  }
-     
-  
-
-  .product-item--vertical .price:not(.price--compare),
-  .product-item--list .price:not(.price--compare) {
-    font-size: calc(var(--base-text-font-size) - (var(--default-text-font-size) - 20px));
-    color: {{settings.cor_preco_cor}} ;
-    font-weight: 700;
-  }
-}
-  
-</style>  
-  
-<style>
-  
-  .product-label1{
-   {% if settings.tag_card %} 
-      
-      border-radius: 30px 30px 30px 30px;
-      
-      {%- else -%}
-      
-      border-radius: 7px 7px 7px 7px;
-      
-      {%- endif -%} 
-  
-     }
-  
-  } 
-  
-</style> 
-  
-  
-  
-<style>
-  
-  
-.product-list--scrollable .product-item:last-child {
-  
-  border-radius: {{settings.borda_redonda}};
-}  
-  
-  
-.product-label--on-sale {
-  background-image: linear-gradient(to right, {{settings.onsale_1}}, {{settings.onsale_2}});
-}  
-  
-.product-label--custom1 {
-  background: linear-gradient(to right, {{settings.custom_1_cor1}}, {{settings.custom_1_cor2}});  
-}  
-  
-  
-.product-label--custom2 {
-  background-image: linear-gradient(to right, {{settings.custom_2_cor1}}, {{settings.custom_2_cor2}}); 
-  
-}
-  
-.discount__percentage {
-  background-image: linear-gradient(to right, {{settings.onsale_1}}, {{settings.onsale_2}});
-  
-  
-} 
-
-.product-label{
-  border-radius: 30px; 
-{% if settings.tag_card %} 
-      
-      border-radius: 30px 30px 30px 30px;
-      
-      {%- else -%}
-      
-      border-radius: 7px 7px 7px 7px;
-      
-      {%- endif -%} 
-  
-} 
-
-.discount__percentage {
-
-border-radius: 30px; 
-{% if settings.tag_card %} 
-      
-      border-radius: 30px 30px 30px 30px;
-      
-      {%- else -%}
-      
-      border-radius: 7px 7px 7px 7px;
-      
-      {%- endif -%}   
-
-}
-
-.shipping-preview-line1 {
-  border-radius: {{ settings.botoes_campos }};
-  }
-  </style>  
-
-
+</body>
+</html>

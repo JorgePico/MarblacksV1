@@ -58,12 +58,9 @@
     return arr2;
   }
 
-  function _createForOfIteratorHelper(o, allowArrayLike) {
-    var it;
-
+  function _createForOfIteratorHelper(o) {
     if (typeof Symbol === "undefined" || o[Symbol.iterator] == null) {
-      if (Array.isArray(o) || (it = _unsupportedIterableToArray(o)) || allowArrayLike && o && typeof o.length === "number") {
-        if (it) o = it;
+      if (Array.isArray(o) || (o = _unsupportedIterableToArray(o))) {
         var i = 0;
 
         var F = function () {};
@@ -89,7 +86,8 @@
       throw new TypeError("Invalid attempt to iterate non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.");
     }
 
-    var normalCompletion = true,
+    var it,
+        normalCompletion = true,
         didErr = false,
         err;
     return {
@@ -1929,8 +1927,9 @@
 
         this.delegateRoot.on('click', '[data-action="decrease-quantity"]', this._updateQuantity.bind(this));
         this.delegateRoot.on('click', '[data-action="increase-quantity"]', this._updateQuantity.bind(this));
-        this.delegateRoot.on('change', '.quantity-selector__value', this._updateQuantity.bind(this));
-        this.delegateRoot.on('keyup', '.quantity-selector__value', this._updateQuantitySize.bind(this));
+        this.delegateRoot.on('change', '.quantity-selector:not(.quantity-selector--product) .quantity-selector__value', this._updateQuantity.bind(this));
+        this.delegateRoot.on('keyup', '.quantity-selector:not(.quantity-selector--product) .quantity-selector__value', this._updateQuantitySize.bind(this));
+        this.delegateRoot.on('keydown', '.quantity-selector__value', this._blockEnterKey.bind(this));
         this.delegateRoot.on('product:added', this._onProductAdded.bind(this));
         this.delegateRoot.on('cart:refresh', this._onCartRefresh.bind(this));
       }
@@ -2975,12 +2974,8 @@
           if (newVariant['compare_at_price'] > newVariant['price']) {
             productPrices.innerHTML += "<span class=\"price price--highlight\" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>");
             productPrices.innerHTML += "<span class=\"price price--compare\" data-money-convertible>".concat(Currency.formatMoney(newVariant['compare_at_price'], window.theme.moneyFormat), "</span>");
-            productPrices.innerHTML += "<br>";
-            productPrices.innerHTML += "<p style=\"color: var(--text-color); margin: 3px 0px 0px 0px;\"> o en hasta <a style=\"color: var(--text-color); font-size: 15px\">12x</a> de <a style=\"color: var(--text-color); font-size: 16px\">".concat(Currency.formatMoney(newVariant['price'] / 12 * 1.2161 , window.theme.moneyFormat), "</a></p>");
           } else {
             productPrices.innerHTML += "<span class=\"price\" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>");
-            productPrices.innerHTML += "<br>";
-            productPrices.innerHTML += "<p style=\"color: var(--text-color); margin: 3px 0px 0px 0px;\"> o en hasta <a style=\"color: var(--text-color); font-size: 15px\">12x</a> de <a style=\"color: var(--text-color); font-size: 16px\">".concat(Currency.formatMoney(newVariant['price'] / 12 * 1.2161 , window.theme.moneyFormat), "</a></p>");
           }
 
           productPrices.style.display = '';
@@ -3100,8 +3095,10 @@
           unitPriceMeasurement.querySelector('.unit-price-measurement__reference-unit').innerHTML = newVariant['unit_price_measurement']['reference_unit']; // Reference value may be absent
 
           var unitPriceReferenceValue = unitPriceMeasurement.querySelector('.unit-price-measurement__reference-value');
-          unitPriceReferenceValue.innerHTML = newVariant['unit_price_measurement']['reference_value'];
-          unitPriceReferenceValue.style.display = newVariant['unit_price_measurement']['reference_value'] === 1 ? 'none' : 'inline';
+
+          if (unitPriceReferenceValue) {
+            unitPriceReferenceValue.innerHTML = newVariant['unit_price_measurement']['reference_value'];
+          }
         }
       }
       /**
@@ -8643,13 +8640,7 @@
               if (item.getAttribute('data-media-id') === _this2.productGalleryElement.getAttribute('data-initial-media-id')) {
                 initialIndex = index;
               }
-            }); // For some reason (and I have spent hours trying to understand), Flickity set a zero height at start, before
-            // replacing it with the correct height. Unfortunately this cause the carousel to jump, which is detrimental
-            // to both user experience and PageSpeed score. As a consequence, I am pre-setting the height
-
-            var firstSlide = filteredCells[initialIndex];
-            firstSlide.classList.add('is-selected');
-            this.productGalleryElement.style.height = "".concat(firstSlide.clientHeight, "px");
+            });
             this.flickityInstance = new flickityFade(this.productGalleryElement, {
               accessibility: false,
               prevNextButtons: false,
@@ -8658,16 +8649,7 @@
               draggable: !Responsive.matchesBreakpoint('supports-hover'),
               fade: this.options['galleryTransitionEffect'] === 'fade',
               cellSelector: '.product-gallery__carousel-item:not(.is-filtered)',
-              initialIndex: initialIndex,
-              on: {
-                ready: function ready() {
-                  // Remove the pre-set height (that was used to pre-allocate the space) so that it can react properly to
-                  // changes of height.
-                  setTimeout(function () {
-                    _this2.productGalleryElement.style.height = null;
-                  }, 1000);
-                }
-              }
+              initialIndex: initialIndex
             });
           }
         } // If there are thumbnails, we need to synchronize the thumbnails
@@ -9367,6 +9349,294 @@
     return BlogSidebarSection;
   }();
 
+  var ValuePicker = /*#__PURE__*/function () {
+    function ValuePicker(id) {
+      var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      _classCallCheck(this, ValuePicker);
+
+      this.id = id;
+      this.delegateRoot = new Delegate(document.documentElement);
+      this.isOpen = false;
+      this.togglerElement = document.querySelector("[data-action=\"open-value-picker\"][aria-controls=\"".concat(this.id, "\"]"));
+
+      this.onSelect = options['onValueSelect'] || function () {};
+
+      this._attachListeners();
+    }
+
+    _createClass(ValuePicker, [{
+      key: "destroy",
+      value: function destroy() {
+        this.delegateRoot.off();
+      }
+    }, {
+      key: "_attachListeners",
+      value: function _attachListeners() {
+        this.delegateRoot.on('click', "[data-action=\"open-value-picker\"][aria-controls=\"".concat(this.id, "\"]"), this._toggle.bind(this));
+        this.delegateRoot.on('click', "[data-action=\"close-value-picker\"][aria-controls=\"".concat(this.id, "\"]"), this._toggle.bind(this));
+        this.delegateRoot.on('click', "#".concat(this.id, " [data-action=\"select-value\"]"), this._selectValue.bind(this));
+        this.delegateRoot.on('click', this._detectOutsideClick.bind(this), true);
+        this.delegateRoot.on('focusout', "#".concat(this.id), this._onFocusOut.bind(this));
+      }
+    }, {
+      key: "_toggle",
+      value: function _toggle(event) {
+        if (this.isOpen) {
+          this._close(event);
+        } else {
+          this._open(event);
+        }
+      }
+    }, {
+      key: "_open",
+      value: function _open() {
+        document.querySelector("[data-action=\"open-value-picker\"][aria-controls=\"".concat(this.id, "\"]")).setAttribute('aria-expanded', 'true');
+        document.getElementById(this.id).setAttribute('aria-hidden', 'false'); // This is quite ugly, but in order to avoid an issue with the header that has a higher z-index, we have to temporarily reduce
+        // it while we have the element open
+
+        if (Responsive.matchesBreakpoint('phone')) {
+          var headerElement = document.querySelector('.shopify-section__header');
+          headerElement.style.zIndex = '3';
+        }
+
+        this.isOpen = true;
+        document.body.classList.add('no-mobile-scroll');
+      }
+    }, {
+      key: "_close",
+      value: function _close() {
+        document.querySelector("[data-action=\"open-value-picker\"][aria-controls=\"".concat(this.id, "\"]")).setAttribute('aria-expanded', 'false');
+        document.getElementById(this.id).setAttribute('aria-hidden', 'true'); // This is quite ugly, but in order to avoid an issue with the header that has a higher z-index, we have to temporarily reduce
+        // it while we have the element open
+
+        var headerElement = document.querySelector('.shopify-section__header');
+        headerElement.style.zIndex = '';
+        this.isOpen = false;
+        document.body.classList.remove('no-mobile-scroll');
+      }
+    }, {
+      key: "_selectValue",
+      value: function _selectValue(event, target) {
+        this.onSelect(target.getAttribute('data-value'));
+
+        this._close();
+      }
+    }, {
+      key: "_onFocusOut",
+      value: function _onFocusOut(event) {
+        var container = document.getElementById(this.id); // If the element that get the new focus is not contains within the value picker, we close it
+
+        if (!container.contains(event.relatedTarget)) {
+          this._close();
+        }
+      }
+    }, {
+      key: "_detectOutsideClick",
+      value: function _detectOutsideClick(event) {
+        // If already closed, nothing to do
+        if (!this.isOpen || this.togglerElement === event.target || this.togglerElement.contains(event.target)) {
+          return;
+        }
+
+        if (!event.target.closest('.value-picker__inner') && this.isOpen) {
+          this._close(event);
+        }
+      }
+    }]);
+
+    return ValuePicker;
+  }();
+
+  var AccountSection = /*#__PURE__*/function () {
+    function AccountSection(element) {
+      _classCallCheck(this, AccountSection);
+
+      this.element = element;
+      this.domDelegate = new Delegate(this.element);
+      this.element.querySelectorAll('[action*="/account/addresses"]').forEach(function (addressForm) {
+        new CountrySelector(addressForm.querySelector('[name="address[country]"]'), addressForm.querySelector('[name="address[province]"]'));
+      });
+      this.pageSelector = new ValuePicker('account-selector');
+    }
+
+    _createClass(AccountSection, [{
+      key: "_onUnload",
+      value: function _onUnload() {
+        this.pageSelector.destroy();
+      }
+    }]);
+
+    return AccountSection;
+  }();
+
+  var AnnouncementBarSection = /*#__PURE__*/function () {
+    function AnnouncementBarSection(element) {
+      _classCallCheck(this, AnnouncementBarSection);
+
+      this.element = element;
+      this.domDelegate = new Delegate(this.element);
+      this.options = JSON.parse(this.element.getAttribute('data-section-settings'));
+      this.isOpen = false; // We set the new width of the announcement bar button if any
+
+      if (this.options['showNewsletter']) {
+        document.documentElement.style.setProperty('--announcement-bar-button-width', this.element.querySelector('.announcement-bar__button').clientWidth + 'px');
+      } else {
+        document.documentElement.style.removeProperty('--announcement-bar-button-width');
+      }
+
+      this._attachListeners();
+    }
+
+    _createClass(AnnouncementBarSection, [{
+      key: "onSelect",
+      value: function onSelect() {
+        if (this.options['showNewsletter'] && !this.isOpen) {
+          this._toggleNewsletter();
+        }
+      }
+    }, {
+      key: "onDeselect",
+      value: function onDeselect() {
+        if (this.options['showNewsletter'] && this.isOpen) {
+          this._toggleNewsletter();
+        }
+      }
+    }, {
+      key: "onUnload",
+      value: function onUnload() {
+        this.domDelegate.off();
+      }
+    }, {
+      key: "_attachListeners",
+      value: function _attachListeners() {
+        this.domDelegate.on('click', '[data-action="toggle-newsletter"]', this._toggleNewsletter.bind(this));
+        this.domDelegate.on('keyup', this._handleKey.bind(this));
+      }
+    }, {
+      key: "_toggleNewsletter",
+      value: function _toggleNewsletter() {
+        var togglerElement = this.element.querySelector('.announcement-bar__button'),
+            newsletterElement = this.element.querySelector('.announcement-bar__newsletter');
+
+        if (togglerElement.getAttribute('aria-expanded') === 'false') {
+          togglerElement.setAttribute('aria-expanded', 'true');
+          newsletterElement.setAttribute('aria-hidden', 'false');
+          Animation.slideDown(newsletterElement, function () {
+            Accessibility.trapFocus(newsletterElement, 'announcement-bar');
+          });
+        } else {
+          togglerElement.setAttribute('aria-expanded', 'false');
+          newsletterElement.setAttribute('aria-hidden', 'true');
+          Animation.slideUp(newsletterElement);
+          Accessibility.removeTrapFocus(newsletterElement, 'announcement-bar');
+        }
+
+        this.isOpen = !this.isOpen;
+      }
+    }, {
+      key: "_handleKey",
+      value: function _handleKey(event) {
+        if (event.key === 'Escape' && this.isOpen) {
+          this._toggleNewsletter();
+        }
+      }
+    }]);
+
+    return AnnouncementBarSection;
+  }();
+
+  var BlogSection = /*#__PURE__*/function () {
+    function BlogSection(element) {
+      _classCallCheck(this, BlogSection);
+
+      this.element = element;
+      this.blogTagSelector = new ValuePicker('blog-tag-selector');
+
+      if (Shopify.designMode) {
+        var elementToAdd = this.element.querySelector('.page__header');
+
+        if (elementToAdd) {
+          document.querySelector('.blog-container').previousElementSibling.remove();
+          document.querySelector('.blog-container').insertAdjacentElement('beforebegin', elementToAdd);
+        }
+      }
+    }
+
+    _createClass(BlogSection, [{
+      key: "onUnload",
+      value: function onUnload() {
+        this.blogTagSelector.destroy();
+      }
+    }]);
+
+    return BlogSection;
+  }();
+
+  var BlogPostSection = function BlogPostSection(element) {
+    _classCallCheck(this, BlogPostSection);
+
+    this.element = element;
+
+    if (Shopify.designMode) {
+      var elementToAdd = this.element.querySelector('.page__header');
+
+      if (elementToAdd) {
+        document.querySelector('.blog-container').previousElementSibling.remove();
+        document.querySelector('.blog-container').insertAdjacentElement('beforebegin', elementToAdd);
+      }
+    }
+  };
+
+  var BlogSidebarSection = /*#__PURE__*/function () {
+    function BlogSidebarSection(element) {
+      _classCallCheck(this, BlogSidebarSection);
+
+      this.element = element;
+
+      if (Shopify.designMode && window.SPR) {
+        window.SPR.initDomEls();
+        window.SPR.loadBadges();
+      }
+
+      if (window.theme.pageType === 'blog') {
+        this._fixItemsPerRow();
+      }
+    }
+    /**
+     * If sidebar is not visible, then we must do some adjustments to the grid of article (especially, we must change how many items per row are displayed).
+     * Because Shopify sections are independent, I didn't find a better approach than changing it in JavaScript
+     */
+
+
+    _createClass(BlogSidebarSection, [{
+      key: "_fixItemsPerRow",
+      value: function _fixItemsPerRow() {
+        var blocks = this.element.querySelectorAll('.blog-sidebar__item');
+
+        if (blocks.length === 0) {
+          document.querySelector('.blog-container').classList.add('blog-container--without-sidebar');
+          document.querySelectorAll('.shopify-section__blog-posts .block-list__item').forEach(function (item) {
+            if (item.classList.contains('1/2--lap-and-up')) {
+              item.classList.remove('1/2--lap-and-up');
+              item.classList.add('1/3--lap-and-up');
+            }
+          });
+        } else {
+          document.querySelector('.blog-container').classList.remove('blog-container--without-sidebar');
+          document.querySelectorAll('.shopify-section__blog-posts .block-list__item').forEach(function (item) {
+            if (item.classList.contains('1/3--lap-and-up')) {
+              item.classList.remove('1/3--lap-and-up');
+              item.classList.add('1/2--lap-and-up');
+            }
+          });
+        }
+      }
+    }]);
+
+    return BlogSidebarSection;
+  }();
+
   var ProductSection = /*#__PURE__*/function () {
     function ProductSection(element) {
       var _this = this;
@@ -9394,7 +9664,7 @@
       }
 
       if (this.options['showQuantitySelector']) {
-        var quantityPickerElement = this.element.querySelector('select[name="quantity"]');
+        var quantityPickerElement = this.element.querySelector('.quantity-selector--product');
 
         if (quantityPickerElement) {
           this.quantityPicker = new QuantityPicker(quantityPickerElement);
@@ -11260,6 +11530,11 @@
             _this.element.querySelector('.product-recommendations').innerHTML = container.querySelector('.product-recommendations').innerHTML;
 
             _this.productItemColorSwatch.recalculateSwatches();
+
+            if (Shopify.designMode && window.SPR) {
+              window.SPR.initDomEls();
+              window.SPR.loadBadges();
+            }
           });
         });
       }
@@ -11278,7 +11553,7 @@
           });
         }
 
-        if (window.SPR) {
+        if (Shopify.designMode && window.SPR) {
           window.SPR.initDomEls();
           window.SPR.loadBadges();
         }
@@ -11454,7 +11729,7 @@
 
             _this.productItemColorSwatch.recalculateSwatches();
 
-            if (window.SPR) {
+            if (Shopify.designMode && window.SPR) {
               window.SPR.initDomEls();
               window.SPR.loadBadges();
             } // Create the slideshow

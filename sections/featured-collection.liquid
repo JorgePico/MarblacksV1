@@ -1,6 +1,4 @@
-
 {%- capture section_settings -%}
-
 {
   "stackable": {% if section.settings.layout == 'vertical' and section.settings.stack_desktop == false %}false{% else %}true{% endif %},
   "layout": {{ section.settings.layout | json }}
@@ -110,7 +108,7 @@
 
 {% schema %}
 {
-  "name": "Coleção em destaque",
+  "name": "Featured collection",
   "settings": [
     {
       "type": "collection",
@@ -118,20 +116,6 @@
       "label": "Collection"
     },
     {
-  
-  
-  
-      "type": "checkbox",
-      "id": "frete_full",
-      "label": "Habilitar frete grátis nas coleções",
-      "default": true
-    },
-    {
-
-
-
-  
-  
       "type": "text",
       "id": "title",
       "label": "Heading",

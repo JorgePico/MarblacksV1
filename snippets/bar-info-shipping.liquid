@@ -1,0 +1,59 @@
+  <div class="align-localization align-localization-mobile">
+    <ion-icon class="icon-localization" name="location"></ion-icon><p id="client_local_final">Calculando frete para sua região...</p>
+  </div>
+
+<script type="text/javascript">
+
+  			$.getJSON( "https://myip.wtf/json", function(localizacao) {
+				var localTopBar = localizacao['YourFuckingLocation'];
+				var localTopBarFinal = localTopBar.replace(", Brazil", "");
+				$("#client_local_final").html("<b>Frete grátis</b> para <b>" + localTopBarFinal + "</b> e Região.");
+		    });
+   
+</script>
+
+<style>
+
+  .align-localization {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    background: {{ section.settings.bg_bar_info_shipping }};
+    padding: 6px 12px;
+    border-radius: 4px;
+  }
+
+  .align-localization>p>b {
+    color: {{ section.settings.bg_bar_info_bold }};
+  }
+  
+  .icon-localization {
+    font-size: 18px;
+    margin-bottom: 2px;
+    margin-right: 4px;
+    color: {{ section.settings.bg_bar_info_bold }};
+  }
+  
+  #client_local_final {
+    font-size: 12px;
+    color: {{ section.settings.bg_bar_info_normal }};
+  }
+  
+  .bar-info-shipping {
+    padding: 4px;
+    background: #ededed
+  }
+
+/* ALTERAÇÃO NO ORIGINAL*/
+
+  .nav-bar__inner>.container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+</style>

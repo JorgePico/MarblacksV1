@@ -147,7 +147,7 @@
                         <div class="line-item__meta">
                           <a href="{{ line_item.url }}" class="line-item__title link text--strong">{{ line_item.title }}</a>
 
-                          {%- unless line_item.properties == blank -%}
+                          {%- if line_item.properties.size > 0 -%}
                             <ul class="line-item__property-list">
                               {%- for property in line_item.properties -%}
                                 {%- assign first_character_in_key = property.first | truncate: 1, '' -%}
@@ -159,7 +159,7 @@
                                 <li class="line-item__property">{{ property.first }}: {{ property.last }}</li>
                               {%- endfor -%}
                             </ul>
-                          {%- endunless -%}
+                          {%- endif -%}
 
                           <div class="line-item__price-list">
                             {%- if line_item.original_line_price != line_item.final_line_price -%}

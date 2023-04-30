@@ -49,7 +49,7 @@
 
 <style>
   #shopify-section-{{ section.id }} .featured-collection {
-    background-color: {{ section.settings.background }};
+    background-image: linear-gradient(60deg, {{ section.settings.background1 }}, {{ section.settings.background2 }});
   }
 
   #shopify-section-{{ section.id }} .featured-collection__header {
@@ -59,14 +59,12 @@
   #shopify-section-{{ section.id }} .button {
     color: {{ section.settings.button_text_color }};
     background-color: {{ section.settings.button_background }};
-    border-radius: {{ section.settings.more_redondo }};
-    padding:  15px;
   }
 </style>
 
 {% schema %}
 {
-  "name": "Coleção com imagem",
+  "name": "Collection with image",
   "settings": [
     {
       "type": "collection",
@@ -90,8 +88,14 @@
     },
     {
       "type": "color",
-      "id": "background",
-      "label": "Background",
+      "id": "background1",
+      "label": "Cor 1",
+      "default": "#0774d7"
+    },
+    {
+      "type": "color",
+      "id": "background2",
+      "label": "Cor 2",
       "default": "#0774d7"
     },
     {
@@ -99,11 +103,8 @@
       "id": "text_color",
       "label": "Text",
       "default": "#ffffff"
-
-
     },
     {
-      
       "type": "text",
       "id": "title",
       "label": "Heading",
@@ -136,24 +137,6 @@
       "id": "button_text",
       "label": "Text",
       "default": "Learn more"
-
- 
-
-      },
-    {
-
-
-    "type": "text",
-      "id": "more_redondo",
-      "label": "Para deixar o botão arredondado escolha um valor entre 15px à 30px",
-      "default": "7px"
-
-
-
-   
-
-
-
     },
     {
       "type": "url",

@@ -59,7 +59,7 @@
                       {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,500,600,700,800,900,1000,1100,1200', image: media -%}{%- endcapture -%}
                       {%- assign image_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
-                      <div class="aspect-ratio" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%">
+                      <div class="aspect-ratio image-principal-border-radius" style="padding-bottom: {{ 100.0 | divided_by: media.aspect_ratio }}%">
                         <img class="product-gallery__image lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-zoom="{{ media | img_url: '1600x' }}" alt="{{ media_alt | escape }}">
 
                         <noscript>
