@@ -2976,11 +2976,11 @@
             productPrices.innerHTML += "<span class=\"price price--highlight\" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>");
             productPrices.innerHTML += "<span class=\"price price--compare\" data-money-convertible>".concat(Currency.formatMoney(newVariant['compare_at_price'], window.theme.moneyFormat), "</span>");
             productPrices.innerHTML += "<br>";
-            productPrices.innerHTML += "<p style=\"color: var(--text-color); margin: 3px 0px 0px 0px;\"> O en hasta  <a style=\"color: var(--text-color); font-size: 15px\">12 cuotas</a> de <a style=\"color: var(--text-color); font-size: 16px\">".concat(Currency.formatMoney(newVariant['price'] / 12 * 1.2161 , window.theme.moneyFormat), "</a></p>");
+            productPrices.innerHTML += "<p style=\"color: var(--text-color); margin: 3px 0px 0px 0px;\"> o en hasta <a style=\"color: var(--text-color); font-size: 15px\">12x</a> de <a style=\"color: var(--text-color); font-size: 16px\">".concat(Currency.formatMoney(newVariant['price'] / 12 * 1.2161 , window.theme.moneyFormat), "</a></p>");
           } else {
             productPrices.innerHTML += "<span class=\"price\" data-money-convertible>".concat(Currency.formatMoney(newVariant['price'], window.theme.moneyFormat), "</span>");
             productPrices.innerHTML += "<br>";
-            productPrices.innerHTML += "<p style=\"color: var(--text-color); margin: 3px 0px 0px 0px;\"> O en hasta  <a style=\"color: var(--text-color); font-size: 15px\">12 cuotas</a> de <a style=\"color: var(--text-color); font-size: 16px\">".concat(Currency.formatMoney(newVariant['price'] / 12 * 1.2161 , window.theme.moneyFormat), "</a></p>");
+            productPrices.innerHTML += "<p style=\"color: var(--text-color); margin: 3px 0px 0px 0px;\"> o en hasta <a style=\"color: var(--text-color); font-size: 15px\">12x</a> de <a style=\"color: var(--text-color); font-size: 16px\">".concat(Currency.formatMoney(newVariant['price'] / 12 * 1.2161 , window.theme.moneyFormat), "</a></p>");
           }
 
           productPrices.style.display = '';

@@ -325,7 +325,7 @@
               {%- else -%}
                 <span class="price">{{ selected_variant.price | money}}</span>
               {%- endif -%}
-              <p style="color: var(--text-color); margin: 3px 0px 0px 0px;"> O en hasta  <a style="color: var(--text-color); font-size: 15px">12 cuotas</a> de <b style="color: var(--text-color); font-size: 16px"><span>{{ selected_variant.price |times: 1.1979 | divided_by: 12 | round:2 | money }}</span></b></p>
+              <p style="color: var(--text-color); margin: 3px 0px 0px 0px;"> o en hasta <a style="color: var(--text-color); font-size: 15px">12 cuotas</a> de <b style="color: var(--text-color); font-size: 16px"><span>{{ selected_variant.price |times: 1.1979 | divided_by: 12 | round:2 | money }}</span></b></p>
             </div>
 
             <div class="product-form__price-info" style="display: {% if selected_variant.unit_price_measurement %}block{% else %}none{% endif %}">
