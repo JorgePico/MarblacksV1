@@ -56,7 +56,7 @@ function parcelamento() {
   var calculo = ((preco + 0) * 1.1979) / 12;
   var calculo = calculo.toFixed(2).replace('.', ',');
   var calculo = ('$ ' + calculo);
-  $('.parcelamento').html('<span>En hasta 12x de <b>' + calculo + '</b></span>');
+  $('.parcelamento').html('<span>O en hasta  12 cuotas de <b>' + calculo + '</b></span>');
 }
 
 
