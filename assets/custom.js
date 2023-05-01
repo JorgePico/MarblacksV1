@@ -45,17 +45,17 @@ if (window.matchMedia("(max-width: 768px)").matches) {
 } 
 
 function parcelamento() {
-  var preco = $('.product-form__info-item .price--highlight').text().split('                  ')[0].replace('COL$ ','').replace(',', '.').trim()
-  var compare = $('.product-form__info-item .price--compare').text().replace('COL$ ', '').replace(',','.')
+  var preco = $('.product-form__info-item .price--highlight').text().split('                  ')[0].replace('$ ','').replace(',', '.').trim()
+  var compare = $('.product-form__info-item .price--compare').text().replace('$ ', '').replace(',','.')
   var compare = parseFloat(compare)
   var precompare = (compare - preco).toFixed(2).replace('.', ',')
-  $('.product-label.product-label--on-sale span').text('COL$ '+ precompare)
+  $('.product-label.product-label--on-sale span').text('$ '+ precompare)
   var porcent = ((compare - preco) * 100 / compare).toFixed(2).split('.')[0]
   $('.price--highlight .product-label.product-label--on-sale').append('-' + porcent + '%')    
   var preco = parseFloat(preco);
   var calculo = ((preco + 0) * 1.1979) / 12;
   var calculo = calculo.toFixed(2).replace('.', ',');
-  var calculo = ('COL$ ' + calculo);
+  var calculo = ('$ ' + calculo);
   $('.parcelamento').html('<span>em até 12x de <b>' + calculo + '</b></span>');
 }
 
