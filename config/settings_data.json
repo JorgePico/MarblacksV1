@@ -358,7 +358,7 @@
         "settings": {
           "mostrar_Envio1": true,
           "selector_mode_background_shipping": "mod_1",
-          "tituloEnvio": "Entrega via Correios©",
+          "tituloEnvio": "Recibe en tu casa©",
           "cordaborda": "#00d864",
           "mostrar_Envio2": false,
           "mostrar_Enviogratis": false,
