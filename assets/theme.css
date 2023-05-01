@@ -231,7 +231,7 @@ input[type=submit] {
     font-size: 12px;
 }
 
-.fretefundo {
+.Enviofundo {
     margin: 24px 0;
     background: none;
     border-radius: var(--border-radius-theme);
@@ -1832,7 +1832,7 @@ img.lazyload[data-sizes=auto] {
   	width: 100%!important;
   }
   
-  .frete{
+  .Envio{
     margin-left: 0;
   }
   
@@ -2653,7 +2653,7 @@ img.lazyload[data-sizes=auto] {
  * --------------------------------------------------------------------
  */
 
-.tempofrete {
+.tempoEnvio {
     border-radius: var(--border-radius-theme);
     padding: 14px 15px 14px 18px;
     background: #f2f2f5;
