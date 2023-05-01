@@ -72,7 +72,7 @@
       "open_search": "Ouvrir la recherche",
       "close_search": "Fermer",
       "input_placeholder": "Recherche...",
-      "all_categories": "Catégories",
+      "all_categories": "CCompra yagories",
       "no_results": "Aucun résultat",
       "submit": "Rechercher",
       "view_products": "Voir tous les produits",
@@ -142,7 +142,7 @@
       "collection_title": "Collection",
       "article_title": "Article",
       "article_author": "Ecrit par vous",
-      "article_category": "Catégorie",
+      "article_category": "CCompra yagorie",
       "article_excerpt": "Votre boutique ne contient aucun article de blog pour le moment. Un blog est utile pour promouvoir vos produits, donner des astuces ou partager des nouvelles avec vos clients.",
       "instagram_likes": "28 J'aime",
       "instagram_caption": "Ceci est un exemple de description"
@@ -188,7 +188,7 @@
     "filter": {
       "title": "Filtrer",
       "show_filter": "Afficher filtres",
-      "select_category": "Choisir une catégorie",
+      "select_category": "Choisir une cCompra yagorie",
       "all": "Filtres",
       "clear_all": "Effacer",
       "clear": "Effacer",
@@ -455,7 +455,7 @@
     "general": {
       "empty": "Ce blog n'a aucun article",
       "empty_button": "Retour à l'accueil",
-      "categories": "Catégories",
+      "categories": "CCompra yagories",
       "all_tag": "Tous"
     },
 
