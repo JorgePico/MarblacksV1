@@ -358,7 +358,7 @@
         "settings": {
           "mostrar_Envio1": true,
           "selector_mode_background_shipping": "mod_1",
-          "tituloEnvio": "Recibe en tu casa©",
+          "tituloEnvio": "Recibe en casa",
           "cordaborda": "#00d864",
           "mostrar_Envio2": false,
           "mostrar_Enviogratis": false,
@@ -366,7 +366,7 @@
           "mostrar_correios": false,
           "mostrar_devolucao": false,
           "mostrar_garantia": false,
-          "mostrar_maisvendido": false,
+          "mostrar_Masvendido": false,
           "mostrar_btn_wtspp": true,
           "background_whatsapp_btn": "#ffffff",
           "txt_whatsapp_btn": "#00a74e",
@@ -576,8 +576,8 @@
           "image_position": "left",
           "image_width": 55,
           "title": "Pouco De Nós",
-          "content": "<p>Desenvolvidos para atender suas necessidades e prezar<br\/>pela satisfação e segurança entregando produtos da mais<br\/>alta qualidade da melhor forma possível!<\/p><p><em><strong>Quer saber mais sobre nós e nossa equipe?<\/strong><\/em><br\/>Clique no botão abaixo<\/p>",
-          "button_text": "Saber mais sobre nós",
+          "content": "<p>Desenvolvidos para atender suas necessidades e prezar<br\/>pela satisfação e segurança entregando produtos da Mas<br\/>alta qualidade da melhor forma possível!<\/p><p><em><strong>Quer saber Mas sobre nós e nossa equipe?<\/strong><\/em><br\/>Clique no botão abaixo<\/p>",
+          "button_text": "Saber Mas sobre nós",
           "button_link": "shopify:\/\/pages\/sobre-nos"
         }
       },
@@ -617,7 +617,7 @@
           "0c56a93b-d66f-4823-ae91-bd01bb634a00": {
             "type": "collection",
             "settings": {
-              "collection": "mais-vendidos"
+              "collection": "Mas-vendidos"
             }
           },
           "1649489657b78ca727-5": {
