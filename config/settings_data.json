@@ -360,13 +360,13 @@
           "selector_mode_background_shipping": "mod_1",
           "tituloEnvio": "Recibe en casa",
           "cordaborda": "#00d864",
-          "mostrar_Envio2": false,
-          "mostrar_Enviogratis": false,
-          "mostrar_Envio_full": false,
-          "mostrar_correios": false,
-          "mostrar_devolucao": false,
-          "mostrar_garantia": false,
-          "mostrar_maisvendido": false,
+          "mostrar_Envio2": true,
+          "mostrar_Enviogratis": true,
+          "mostrar_Envio_full": true,
+          "mostrar_correios": true,
+          "mostrar_devolucao": true,
+          "mostrar_garantia": true,
+          "mostrar_Masvendido": true,
           "mostrar_btn_wtspp": true,
           "background_whatsapp_btn": "#ffffff",
           "txt_whatsapp_btn": "#00a74e",
@@ -617,7 +617,7 @@
           "0c56a93b-d66f-4823-ae91-bd01bb634a00": {
             "type": "collection",
             "settings": {
-              "collection": "Mas-vendidos"
+              "collection": "mas-vendidos"
             }
           },
           "1649489657b78ca727-5": {
