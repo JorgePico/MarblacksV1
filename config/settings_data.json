@@ -190,10 +190,10 @@
             }
           },
           "23b7e603-1746-4ba2-b8e6-5856acdfd7a5": {
-            "type": "newsletter",
+            "type": "BOLETIN",
             "settings": {
-              "title": "Nossa Newsletter",
-              "subheading": "<p>¡Suscríbete a nuestra newsletter y recibe las mejores ofertas GRATIS!<\/p>"
+              "title": "NUESTRO BOLETIN",
+              "subheading": "<p>¡Suscríbete a nuestra BOLETIN y recibe las mejores ofertas GRATIS!<\/p>"
             }
           }
         },
@@ -433,10 +433,10 @@
           "text_color": "#ffffff",
           "mostraricone": true,
           "text": "¡ENVÍO EXPRÉS GRATIS!",
-          "show_newsletter": true,
-          "newsletter_button": "",
-          "newsletter_title": "Newsletter",
-          "newsletter_content": "<p>Suscríbete a nuestra newsletter para recibir las últimas promociones.<\/p>"
+          "show_BOLETIN": true,
+          "BOLETIN_button": "",
+          "BOLETIN_title": "BOLETIN",
+          "BOLETIN_content": "<p>Suscríbete a nuestra BOLETIN para recibir las últimas promociones.<\/p>"
         }
       },
       "popups": {
@@ -550,11 +550,11 @@
           "upsell_products_count": 4
         }
       },
-      "static-newsletter": {
-        "type": "static-newsletter",
+      "static-BOLETIN": {
+        "type": "static-BOLETIN",
         "settings": {
           "show_section": false,
-          "title": "Subscribe to our newsletter",
+          "title": "Subscribe to our BOLETIN",
           "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
           "subtext": "100% free, Unsubscribe any time!",
           "background": "#1e2d7d",
@@ -751,8 +751,8 @@
           "show_social_media": true,
           "heading": "Loja milionária em construção!",
           "text": "<p>Para acessar e sentir o gostinho do sucesso, coloque a senha \"4321\".<\/p>",
-          "show_newsletter_signup": false,
-          "newsletter_text": "<p>A short sentence describing what someone will receive by subscribing.<\/p>"
+          "show_BOLETIN_signup": false,
+          "BOLETIN_text": "<p>A short sentence describing what someone will receive by subscribing.<\/p>"
         }
       },
       "list-collections-template": {
@@ -888,9 +888,9 @@
               }
             },
             "footer-2": {
-              "type": "newsletter",
+              "type": "BOLETIN",
               "settings": {
-                "title": "Newsletter",
+                "title": "BOLETIN",
                 "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
               }
             }
@@ -1062,9 +1062,9 @@
           "settings": {
             "text_color": "#ffffff",
             "text": "Announce something here",
-            "newsletter_button": "Subscribe & Save",
-            "newsletter_title": "Newsletter",
-            "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+            "BOLETIN_button": "Subscribe & Save",
+            "BOLETIN_title": "BOLETIN",
+            "BOLETIN_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
           }
         },
         "1542984811767": {
@@ -1078,9 +1078,9 @@
           }
         },
         "1542984842027": {
-          "type": "newsletter",
+          "type": "BOLETIN",
           "settings": {
-            "title": "Newsletter",
+            "title": "BOLETIN",
             "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
           }
         },
@@ -1190,9 +1190,9 @@
               }
             },
             "footer-2": {
-              "type": "newsletter",
+              "type": "BOLETIN",
               "settings": {
-                "title": "Newsletter",
+                "title": "BOLETIN",
                 "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
               }
             }
@@ -1352,9 +1352,9 @@
           "settings": {
             "text_color": "#ffffff",
             "text": "Announce something here",
-            "newsletter_button": "Subscribe & Save",
-            "newsletter_title": "Newsletter",
-            "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+            "BOLETIN_button": "Subscribe & Save",
+            "BOLETIN_title": "BOLETIN",
+            "BOLETIN_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
           }
         },
         "1542984811767": {

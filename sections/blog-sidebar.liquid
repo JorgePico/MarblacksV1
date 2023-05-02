@@ -2,8 +2,8 @@
   <section class="blog-sidebar {% if section.settings.show_on_mobile %}hidden-tablet{% else %}hidden-pocket{% endif %}" data-section-id="{{ section.id }}" data-section-type="blog-sidebar">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
-        {%- when 'newsletter' -%}
-          <div class="blog-sidebar__item blog-sidebar__item--newsletter" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
+        {%- when 'BOLETIN' -%}
+          <div class="blog-sidebar__item blog-sidebar__item--BOLETIN" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
             <style>
               #block-{{ block.id }} {
                 background: {{ block.settings.background }};
@@ -21,30 +21,30 @@
               </div>
             {%- endif -%}
 
-            {%- assign newsletter_id = 'newsletter-' | append: block.id -%}
+            {%- assign BOLETIN_id = 'BOLETIN-' | append: block.id -%}
 
-            <div class="newsletter newsletter--compact">
-              {%- form 'customer', id: newsletter_id, class: 'form newsletter__form' -%}
+            <div class="BOLETIN BOLETIN--compact">
+              {%- form 'customer', id: BOLETIN_id, class: 'form BOLETIN__form' -%}
                 {%- if form.posted_successfully? -%}
-                  <p class="alert alert--success">{{ 'home_page.newsletter.success' | t }}</p>
+                  <p class="alert alert--success">{{ 'home_page.BOLETIN.success' | t }}</p>
                 {%- else -%}
                   {%- if form.errors -%}
                     <p class="alert alert--error">{{ form.errors.messages['email'] }}</p>
                   {%- endif -%}
 
-                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <input type="hidden" name="contact[tags]" value="BOLETIN">
 
                   <div class="form__input-wrapper form__input-wrapper--labelled">
-                    <input type="email" name="contact[email]" class="form__field form__field--text form__field--borderless" aria-label="{{ 'home_page.newsletter.input' | t }}" required>
-                    <label for="newsletter[contact][email]" class="form__floating-label">{{ 'home_page.newsletter.input' | t }}</label>
+                    <input type="email" name="contact[email]" class="form__field form__field--text form__field--borderless" aria-label="{{ 'home_page.BOLETIN.input' | t }}" required>
+                    <label for="BOLETIN[contact][email]" class="form__floating-label">{{ 'home_page.BOLETIN.input' | t }}</label>
                   </div>
 
-                  <button type="submit" class="form__submit form__submit--tight button button--primary button--full">{{ 'home_page.newsletter.submit' | t }}</button>
+                  <button type="submit" class="form__submit form__submit--tight button button--primary button--full">{{ 'home_page.BOLETIN.submit' | t }}</button>
                 {%- endif -%}
               {%- endform -%}
 
               {%- if block.settings.subtext != blank -%}
-                <p class="newsletter__text">{{ block.settings.subtext | escape }}</p>
+                <p class="BOLETIN__text">{{ block.settings.subtext | escape }}</p>
               {%- endif -%}
             </div>
           </div>
@@ -243,8 +243,8 @@
   ],
   "blocks": [
     {
-      "type": "newsletter",
-      "name": "Newsletter",
+      "type": "BOLETIN",
+      "name": "BOLETIN",
       "limit": 1,
       "settings": [
         {
@@ -426,7 +426,7 @@
   "default": {
     "blocks": [
       {
-        "type": "newsletter",
+        "type": "BOLETIN",
         "settings": {}
       },
       {

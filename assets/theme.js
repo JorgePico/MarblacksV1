@@ -1751,7 +1751,7 @@
     }, {
       key: "_openPopup",
       value: function _openPopup() {
-        if (!window.theme.isNewsletterPopupOpen) {
+        if (!window.theme.isBOLETINPopupOpen) {
           this.element.setAttribute('aria-hidden', 'false');
           localStorage.setItem('themeExitPopup', 'true');
           this.hasOpenOnceInCurrentPage = true;
@@ -2393,16 +2393,16 @@
     return ModalManager;
   }();
 
-  var NewsletterPopup = /*#__PURE__*/function () {
-    function NewsletterPopup(element) {
-      _classCallCheck(this, NewsletterPopup);
+  var BOLETINPopup = /*#__PURE__*/function () {
+    function BOLETINPopup(element) {
+      _classCallCheck(this, BOLETINPopup);
 
       this.element = element;
       this.delegateElement = new Delegate(this.element);
       this.options = JSON.parse(element.getAttribute('data-popup-settings')); // If the popup has been already displayed, we do not display it
 
       try {
-        if (window.location.hash === '#newsletter-popup' && window.theme.pageType !== '') {
+        if (window.location.hash === '#BOLETIN-popup' && window.theme.pageType !== '') {
           this._openPopup();
         } else if (!this.options['showOnlyOnce'] || this.options['showOnlyOnce'] && localStorage.getItem('themePopup') === null) {
           setTimeout(this._openPopup.bind(this), this.options['apparitionDelay'] * 1000);
@@ -2413,7 +2413,7 @@
       this._attachListeners();
     }
 
-    _createClass(NewsletterPopup, [{
+    _createClass(BOLETINPopup, [{
       key: "destroy",
       value: function destroy() {
         this.delegateElement.off();
@@ -2430,7 +2430,7 @@
         if (!window.theme.isExitPopupOpen) {
           this.element.setAttribute('aria-hidden', 'false');
           localStorage.setItem('themePopup', 'true');
-          window.theme.isNewsletterPopupOpen = true;
+          window.theme.isBOLETINPopupOpen = true;
           this.delegateElement.on('click', this._clickOutsideListener);
         }
       }
@@ -2438,7 +2438,7 @@
       key: "_closePopup",
       value: function _closePopup() {
         this.element.setAttribute('aria-hidden', 'true');
-        window.theme.isNewsletterPopupOpen = false;
+        window.theme.isBOLETINPopupOpen = false;
         this.delegateElement.off('click');
       }
     }, {
@@ -2450,7 +2450,7 @@
       }
     }]);
 
-    return NewsletterPopup;
+    return BOLETINPopup;
   }();
 
   var OverflowScroller = /*#__PURE__*/function () {
@@ -9192,7 +9192,7 @@
       this.options = JSON.parse(this.element.getAttribute('data-section-settings'));
       this.isOpen = false; // We set the new width of the announcement bar button if any
 
-      if (this.options['showNewsletter']) {
+      if (this.options['showBOLETIN']) {
         document.documentElement.style.setProperty('--announcement-bar-button-width', this.element.querySelector('.announcement-bar__button').clientWidth + 'px');
       } else {
         document.documentElement.style.removeProperty('--announcement-bar-button-width');
@@ -9204,15 +9204,15 @@
     _createClass(AnnouncementBarSection, [{
       key: "onSelect",
       value: function onSelect() {
-        if (this.options['showNewsletter'] && !this.isOpen) {
-          this._toggleNewsletter();
+        if (this.options['showBOLETIN'] && !this.isOpen) {
+          this._toggleBOLETIN();
         }
       }
     }, {
       key: "onDeselect",
       value: function onDeselect() {
-        if (this.options['showNewsletter'] && this.isOpen) {
-          this._toggleNewsletter();
+        if (this.options['showBOLETIN'] && this.isOpen) {
+          this._toggleBOLETIN();
         }
       }
     }, {
@@ -9223,26 +9223,26 @@
     }, {
       key: "_attachListeners",
       value: function _attachListeners() {
-        this.domDelegate.on('click', '[data-action="toggle-newsletter"]', this._toggleNewsletter.bind(this));
+        this.domDelegate.on('click', '[data-action="toggle-BOLETIN"]', this._toggleBOLETIN.bind(this));
         this.domDelegate.on('keyup', this._handleKey.bind(this));
       }
     }, {
-      key: "_toggleNewsletter",
-      value: function _toggleNewsletter() {
+      key: "_toggleBOLETIN",
+      value: function _toggleBOLETIN() {
         var togglerElement = this.element.querySelector('.announcement-bar__button'),
-            newsletterElement = this.element.querySelector('.announcement-bar__newsletter');
+            BOLETINElement = this.element.querySelector('.announcement-bar__BOLETIN');
 
         if (togglerElement.getAttribute('aria-expanded') === 'false') {
           togglerElement.setAttribute('aria-expanded', 'true');
-          newsletterElement.setAttribute('aria-hidden', 'false');
-          Animation.slideDown(newsletterElement, function () {
-            Accessibility.trapFocus(newsletterElement, 'announcement-bar');
+          BOLETINElement.setAttribute('aria-hidden', 'false');
+          Animation.slideDown(BOLETINElement, function () {
+            Accessibility.trapFocus(BOLETINElement, 'announcement-bar');
           });
         } else {
           togglerElement.setAttribute('aria-expanded', 'false');
-          newsletterElement.setAttribute('aria-hidden', 'true');
-          Animation.slideUp(newsletterElement);
-          Accessibility.removeTrapFocus(newsletterElement, 'announcement-bar');
+          BOLETINElement.setAttribute('aria-hidden', 'true');
+          Animation.slideUp(BOLETINElement);
+          Accessibility.removeTrapFocus(BOLETINElement, 'announcement-bar');
         }
 
         this.isOpen = !this.isOpen;
@@ -9251,7 +9251,7 @@
       key: "_handleKey",
       value: function _handleKey(event) {
         if (event.keyCode === 27 && this.isOpen) {
-          this._toggleNewsletter();
+          this._toggleBOLETIN();
         }
       }
     }]);
@@ -9480,7 +9480,7 @@
       this.options = JSON.parse(this.element.getAttribute('data-section-settings'));
       this.isOpen = false; // We set the new width of the announcement bar button if any
 
-      if (this.options['showNewsletter']) {
+      if (this.options['showBOLETIN']) {
         document.documentElement.style.setProperty('--announcement-bar-button-width', this.element.querySelector('.announcement-bar__button').clientWidth + 'px');
       } else {
         document.documentElement.style.removeProperty('--announcement-bar-button-width');
@@ -9492,15 +9492,15 @@
     _createClass(AnnouncementBarSection, [{
       key: "onSelect",
       value: function onSelect() {
-        if (this.options['showNewsletter'] && !this.isOpen) {
-          this._toggleNewsletter();
+        if (this.options['showBOLETIN'] && !this.isOpen) {
+          this._toggleBOLETIN();
         }
       }
     }, {
       key: "onDeselect",
       value: function onDeselect() {
-        if (this.options['showNewsletter'] && this.isOpen) {
-          this._toggleNewsletter();
+        if (this.options['showBOLETIN'] && this.isOpen) {
+          this._toggleBOLETIN();
         }
       }
     }, {
@@ -9511,26 +9511,26 @@
     }, {
       key: "_attachListeners",
       value: function _attachListeners() {
-        this.domDelegate.on('click', '[data-action="toggle-newsletter"]', this._toggleNewsletter.bind(this));
+        this.domDelegate.on('click', '[data-action="toggle-BOLETIN"]', this._toggleBOLETIN.bind(this));
         this.domDelegate.on('keyup', this._handleKey.bind(this));
       }
     }, {
-      key: "_toggleNewsletter",
-      value: function _toggleNewsletter() {
+      key: "_toggleBOLETIN",
+      value: function _toggleBOLETIN() {
         var togglerElement = this.element.querySelector('.announcement-bar__button'),
-            newsletterElement = this.element.querySelector('.announcement-bar__newsletter');
+            BOLETINElement = this.element.querySelector('.announcement-bar__BOLETIN');
 
         if (togglerElement.getAttribute('aria-expanded') === 'false') {
           togglerElement.setAttribute('aria-expanded', 'true');
-          newsletterElement.setAttribute('aria-hidden', 'false');
-          Animation.slideDown(newsletterElement, function () {
-            Accessibility.trapFocus(newsletterElement, 'announcement-bar');
+          BOLETINElement.setAttribute('aria-hidden', 'false');
+          Animation.slideDown(BOLETINElement, function () {
+            Accessibility.trapFocus(BOLETINElement, 'announcement-bar');
           });
         } else {
           togglerElement.setAttribute('aria-expanded', 'false');
-          newsletterElement.setAttribute('aria-hidden', 'true');
-          Animation.slideUp(newsletterElement);
-          Accessibility.removeTrapFocus(newsletterElement, 'announcement-bar');
+          BOLETINElement.setAttribute('aria-hidden', 'true');
+          Animation.slideUp(BOLETINElement);
+          Accessibility.removeTrapFocus(BOLETINElement, 'announcement-bar');
         }
 
         this.isOpen = !this.isOpen;
@@ -9539,7 +9539,7 @@
       key: "_handleKey",
       value: function _handleKey(event) {
         if (event.key === 'Escape' && this.isOpen) {
-          this._toggleNewsletter();
+          this._toggleBOLETIN();
         }
       }
     }]);
@@ -11395,7 +11395,7 @@
   };
 
   /**
-   * This class handles both the newsletter popup and exit popup
+   * This class handles both the BOLETIN popup and exit popup
    */
 
   var PopupsSection = /*#__PURE__*/function () {
@@ -11407,8 +11407,8 @@
       element.querySelectorAll('[data-popup-type]').forEach(function (popup) {
         if (popup.getAttribute('data-popup-type') === 'exit') {
           _this.exitPopup = new ExitPopup(popup);
-        } else if (popup.getAttribute('data-popup-type') === 'newsletter') {
-          _this.newsletterPopup = new NewsletterPopup(popup);
+        } else if (popup.getAttribute('data-popup-type') === 'BOLETIN') {
+          _this.BOLETINPopup = new BOLETINPopup(popup);
         }
       });
     }
@@ -11420,8 +11420,8 @@
           this.exitPopup.destroy();
         }
 
-        if (this.newsletterPopup) {
-          this.newsletterPopup.destroy();
+        if (this.BOLETINPopup) {
+          this.BOLETINPopup.destroy();
         }
       }
     }, {
@@ -11429,8 +11429,8 @@
       value: function onBlockSelect(event) {
         if (event.target.getAttribute('data-popup-type') === 'exit' && this.exitPopup) {
           this.exitPopup._openPopup();
-        } else if (event.target.getAttribute('data-popup-type') === 'newsletter' && this.newsletterPopup) {
-          this.newsletterPopup._openPopup();
+        } else if (event.target.getAttribute('data-popup-type') === 'BOLETIN' && this.BOLETINPopup) {
+          this.BOLETINPopup._openPopup();
         }
       }
     }, {
@@ -11440,8 +11440,8 @@
           this.exitPopup._closePopup();
         }
 
-        if (this.newsletterPopup) {
-          this.newsletterPopup._closePopup();
+        if (this.BOLETINPopup) {
+          this.BOLETINPopup._closePopup();
         }
       }
     }]);

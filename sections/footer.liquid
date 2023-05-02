@@ -67,31 +67,31 @@
                   </div>
                 {%- endunless -%}
 
-              {%- when 'newsletter' -%}
-                <div class="footer__block-item footer__block-item--newsletter" {{ block.shopify_attributes }}>
+              {%- when 'BOLETIN' -%}
+                <div class="footer__block-item footer__block-item--BOLETIN" {{ block.shopify_attributes }}>
                   <p class="footer__title heading h6">{{ block.settings.title | escape }}</p>
 
-                  <div class="footer__newsletter-wrapper">
+                  <div class="footer__BOLETIN-wrapper">
                     {%- if block.settings.subheading != blank -%}
-                      <div class="footer__newsletter-text rte">{{ block.settings.subheading }}</div>
+                      <div class="footer__BOLETIN-text rte">{{ block.settings.subheading }}</div>
                     {%- endif -%}
 
-                    {%- form 'customer', id: 'footer-newsletter', class: 'footer__newsletter-form' -%}
+                    {%- form 'customer', id: 'footer-BOLETIN', class: 'footer__BOLETIN-form' -%}
                       {%- if form.posted_successfully? -%}
-                        <p class="alert alert--success alert--center">{{ 'footer.newsletter.success' | t }}</p>
+                        <p class="alert alert--success alert--center">{{ 'footer.BOLETIN.success' | t }}</p>
                       {%- else -%}
                         {%- if form.errors -%}
                           <p class="alert alert--error alert--center">{{ form.errors.messages['email'] }}</p>
                         {%- endif -%}
 
-                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <input type="hidden" name="contact[tags]" value="BOLETIN">
 
                         <div class="form__input-wrapper form__input-wrapper--labelled">
                           <input type="email" id="footer[contact][email]" name="contact[email]" class="form__field form__field--text" required="">
-                          <label for="footer[contact][email]" class="form__floating-label">{{ 'footer.newsletter.input' | t }}</label>
+                          <label for="footer[contact][email]" class="form__floating-label">{{ 'footer.BOLETIN.input' | t }}</label>
                         </div>
 
-                        <button type="submit" class="form__submit form__submit--tight button button--primary">{{ 'footer.newsletter.submit' | t }}</button>
+                        <button type="submit" class="form__submit form__submit--tight button button--primary">{{ 'footer.BOLETIN.submit' | t }}</button>
                       {%- endif -%}
                     {%- endform -%}
                   </div>
@@ -598,8 +598,8 @@
       ]
     },
     {
-      "type": "newsletter",
-      "name": "Newsletter",
+      "type": "BOLETIN",
+      "name": "BOLETIN",
       "limit": 1,
       "settings": [
         {
@@ -610,7 +610,7 @@
           "type": "text",
           "id": "title",
           "label": "Heading",
-          "default": "Newsletter"
+          "default": "BOLETIN"
         },
         {
           "type": "richtext",
@@ -634,7 +634,7 @@
         }
       },
       {
-        "type": "newsletter",
+        "type": "BOLETIN",
         "settings": {}
       }
     ]

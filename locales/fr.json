@@ -11,9 +11,9 @@
       "enter_password": "Entrer avec le mot de passe",
       "password_input": "Mot de passe",
       "password_submit": "Entrer",
-      "newsletter_input": "Votre adresse email",
-      "newsletter_submit": "Me notifier",
-      "newsletter_success": "Merci pour votre inscription !",
+      "BOLETIN_input": "Votre adresse email",
+      "BOLETIN_submit": "Me notifier",
+      "BOLETIN_success": "Merci pour votre inscription !",
       "powered_by_html": "Cette boutique sera propulsée par {{shopify_link}}",
       "login_title": "Êtes-vous le gérant ?",
       "login_link": "Se connecter",
@@ -38,7 +38,7 @@
       "email_share": "Partager par email"
     },
     "popup": {
-      "success": "Vous avez été enregistré à notre newsletter !",
+      "success": "Vous avez été enregistré à notre BOLETIN !",
       "email_placeholder": "Votre email",
       "subscribe": "S'inscrire"
     }
@@ -81,8 +81,8 @@
       "follow_us": "Nous suivre",
       "we_accept": "Nous acceptons"
     },
-    "newsletter": {
-      "success": "Vous avez été enregistré à notre newsletter !",
+    "BOLETIN": {
+      "success": "Vous avez été enregistré à notre BOLETIN !",
       "input": "Votre email",
       "submit": "S'inscrire"
     }
@@ -133,8 +133,8 @@
       "instagram_likes": "28 J'aime",
       "instagram_caption": "Ceci est un exemple de description"
     },
-    "newsletter": {
-      "success": "Vous avez été enregistré à notre newsletter !",
+    "BOLETIN": {
+      "success": "Vous avez été enregistré à notre BOLETIN !",
       "input": "Votre email",
       "submit": "S'inscrire"
     }

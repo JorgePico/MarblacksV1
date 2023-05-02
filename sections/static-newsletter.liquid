@@ -1,5 +1,5 @@
 {%- if section.settings.show_section -%}
-  <section class="section section--isolated section--tight section--text-centered" data-section-id="{{ section.id }}" data-section-type="newsletter">
+  <section class="section section--isolated section--tight section--text-centered" data-section-id="{{ section.id }}" data-section-type="BOLETIN">
     <div class="container container--giga-narrow">
       {%- if section.settings.title != blank -%}
         <h2 class="heading h3">{{ section.settings.title | escape }}</h2>
@@ -11,32 +11,32 @@
         </div>
       {%- endif -%}
 
-      {%- assign newsletter_id = 'newsletter-' | append: section.id -%}
+      {%- assign BOLETIN_id = 'BOLETIN-' | append: section.id -%}
 
-      <div class="newsletter">
-        {%- form 'customer', id: newsletter_id, class: 'form newsletter__form' -%}
+      <div class="BOLETIN">
+        {%- form 'customer', id: BOLETIN_id, class: 'form BOLETIN__form' -%}
           {%- if form.posted_successfully? -%}
-            <p class="alert alert--success">{{ 'home_page.newsletter.success' | t }}</p>
+            <p class="alert alert--success">{{ 'home_page.BOLETIN.success' | t }}</p>
           {%- else -%}
             {%- if form.errors -%}
               <p class="alert alert--error">{{ form.errors.messages['email'] }}</p>
             {%- endif -%}
 
-            <input type="hidden" name="contact[tags]" value="newsletter">
+            <input type="hidden" name="contact[tags]" value="BOLETIN">
 
             <div class="form__input-row">
               <div class="form__input-wrapper form__input-wrapper--labelled">
-                <input type="email" id="newsletter[contact][email]" name="contact[email]" class="form__field form__field--text form__field--borderless" required>
-                <label for="newsletter[contact][email]" class="form__floating-label">{{ 'home_page.newsletter.input' | t }}</label>
+                <input type="email" id="BOLETIN[contact][email]" name="contact[email]" class="form__field form__field--text form__field--borderless" required>
+                <label for="BOLETIN[contact][email]" class="form__floating-label">{{ 'home_page.BOLETIN.input' | t }}</label>
               </div>
 
-              <button type="submit" class="form__submit button button--primary">{{ 'home_page.newsletter.submit' | t }}</button>
+              <button type="submit" class="form__submit button button--primary">{{ 'home_page.BOLETIN.submit' | t }}</button>
             </div>
           {%- endif -%}
         {%- endform -%}
 
         {%- if section.settings.subtext != blank -%}
-          <p class="newsletter__text">{{ section.settings.subtext | escape }}</p>
+          <p class="BOLETIN__text">{{ section.settings.subtext | escape }}</p>
         {%- endif -%}
       </div>
     </div>
@@ -52,7 +52,7 @@
 
 {% schema %}
 {
-  "name": "Newsletter",
+  "name": "BOLETIN",
   "class": "shopify-section--isolated",
   "settings": [
     {
@@ -69,7 +69,7 @@
       "type": "text",
       "id": "title",
       "label": "Heading",
-      "default": "Subscribe to our newsletter"
+      "default": "Subscribe to our BOLETIN"
     },
     {
       "type": "richtext",

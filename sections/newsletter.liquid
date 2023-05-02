@@ -1,4 +1,4 @@
-<section class="section section--text-centered" data-section-id="{{ section.id }}" data-section-type="newsletter">
+<section class="section section--text-centered" data-section-id="{{ section.id }}" data-section-type="BOLETIN">
   <div class="container container--extra-narrow">
     {%- if section.settings.title != blank -%}
       <h2 class="heading h3">{{ section.settings.title | escape }}</h2>
@@ -10,26 +10,26 @@
       </div>
     {%- endif -%}
 
-    {%- assign newsletter_id = 'newsletter-' | append: section.id -%}
+    {%- assign BOLETIN_id = 'BOLETIN-' | append: section.id -%}
 
-    <div class="newsletter newsletter--compact">
-      {%- form 'customer', id: newsletter_id, class: 'form newsletter__form' -%}
+    <div class="BOLETIN BOLETIN--compact">
+      {%- form 'customer', id: BOLETIN_id, class: 'form BOLETIN__form' -%}
         {%- if form.posted_successfully? -%}
-          <p class="alert alert--success">{{ 'home_page.newsletter.success' | t }}</p>
+          <p class="alert alert--success">{{ 'home_page.BOLETIN.success' | t }}</p>
         {%- else -%}
           {%- if form.errors -%}
             <p class="alert alert--error">{{ form.errors.messages['email'] }}</p>
           {%- endif -%}
 
-          <input type="hidden" name="contact[tags]" value="newsletter">
+          <input type="hidden" name="contact[tags]" value="BOLETIN">
 
           <div class="form__input-row">
             <div class="form__input-wrapper form__input-wrapper--labelled">
-              <input type="email" id="newsletter[contact][email]" name="contact[email]" class="form__field form__field--text" required>
-              <label for="newsletter[contact][email]" class="form__floating-label">{{ 'home_page.newsletter.input' | t }}</label>
+              <input type="email" id="BOLETIN[contact][email]" name="contact[email]" class="form__field form__field--text" required>
+              <label for="BOLETIN[contact][email]" class="form__floating-label">{{ 'home_page.BOLETIN.input' | t }}</label>
             </div>
 
-            <button type="submit" class="form__submit button button--primary">{{ 'home_page.newsletter.submit' | t }}</button>
+            <button type="submit" class="form__submit button button--primary">{{ 'home_page.BOLETIN.submit' | t }}</button>
           </div>
         {%- endif -%}
       {%- endform -%}
@@ -39,7 +39,7 @@
 
 {% schema %}
 {
-  "name": "Newsletter",
+  "name": "BOLETIN",
   "settings": [
     {
       "type": "paragraph",
@@ -49,7 +49,7 @@
       "type": "text",
       "id": "title",
       "label": "Heading",
-      "default": "Newsletter"
+      "default": "BOLETIN"
     },
     {
       "type": "richtext",
@@ -61,7 +61,7 @@
   "presets": [
     {
       "category": "Promotional",
-      "name": "Newsletter",
+      "name": "BOLETIN",
       "settings": {}
     }
   ]

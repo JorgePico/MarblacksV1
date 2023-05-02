@@ -1,37 +1,37 @@
 {%- if section.settings.show_announcement -%}
   {%- capture section_settings -%}
   {
-    "showNewsletter": {{ section.settings.show_newsletter | json }}
+    "showBOLETIN": {{ section.settings.show_BOLETIN | json }}
   }
   {%- endcapture -%}
 
   <section data-section-id="{{ section.id }}" data-section-type="announcement-bar" data-section-settings='{{ section_settings }}'>
-    {%- if section.settings.show_newsletter -%}
-      <div id="announcement-bar-newsletter" class="announcement-bar__newsletter hidden-phone" aria-hidden="true">
+    {%- if section.settings.show_BOLETIN -%}
+      <div id="announcement-bar-BOLETIN" class="announcement-bar__BOLETIN hidden-phone" aria-hidden="true">
         <div class="container">
           <div class="announcement-bar__close-container">
-            <button class="announcement-bar__close" data-action="toggle-newsletter">{% render 'icon', icon: 'close' %}</button>
+            <button class="announcement-bar__close" data-action="toggle-BOLETIN">{% render 'icon', icon: 'close' %}</button>
           </div>
         </div>
 
         <div class="container container--extra-narrow">
-          <div class="announcement-bar__newsletter-inner">
-            {%- if section.settings.newsletter_title != blank -%}
-              <h2 class="heading h1">{{ section.settings.newsletter_title | escape }}</h2>
+          <div class="announcement-bar__BOLETIN-inner">
+            {%- if section.settings.BOLETIN_title != blank -%}
+              <h2 class="heading h1">{{ section.settings.BOLETIN_title | escape }}</h2>
             {%- endif -%}
 
-            {%- if section.settings.newsletter_content != blank -%}
+            {%- if section.settings.BOLETIN_content != blank -%}
               <div class="rte">
-                {{ section.settings.newsletter_content }}
+                {{ section.settings.BOLETIN_content }}
               </div>
             {%- endif -%}
 
-            {%- assign newsletter_id = 'newsletter-' | append: section.id -%}
+            {%- assign BOLETIN_id = 'BOLETIN-' | append: section.id -%}
 
-            <div class="newsletter">
-              {%- form 'customer', id: newsletter_id, class: 'form newsletter__form' -%}
+            <div class="BOLETIN">
+              {%- form 'customer', id: BOLETIN_id, class: 'form BOLETIN__form' -%}
                 {%- if form.posted_successfully? -%}
-                  <p class="alert alert--success alert--center">{{ 'home_page.newsletter.success' | t }}</p>
+                  <p class="alert alert--success alert--center">{{ 'home_page.BOLETIN.success' | t }}</p>
                   {%- if form.context == 'announcement-bar' -%}
                     {%- assign open_announcement = true -%}
                   {%- endif -%}
@@ -40,16 +40,16 @@
                     <p class="alert alert--error">{{ form.errors.messages['email'] }}</p>
                   {%- endif -%}
 
-                  <input type="hidden" name="contact[tags]" value="newsletter">
+                  <input type="hidden" name="contact[tags]" value="BOLETIN">
                   <input type="hidden" name="contact[context]" value="announcement-bar">
 
                   <div class="form__input-row">
                     <div class="form__input-wrapper form__input-wrapper--labelled">
                       <input type="email" id="announcement[contact][email]" name="contact[email]" class="form__field form__field--text" autofocus required>
-                      <label for="announcement[contact][email]" class="form__floating-label">{{ 'home_page.newsletter.input' | t }}</label>
+                      <label for="announcement[contact][email]" class="form__floating-label">{{ 'home_page.BOLETIN.input' | t }}</label>
                     </div>
 
-                    <button type="submit" class="form__submit button button--primary">{{ 'home_page.newsletter.submit' | t }}</button>
+                    <button type="submit" class="form__submit button button--primary">{{ 'home_page.BOLETIN.submit' | t }}</button>
                   </div>
                 {%- endif -%}
               {%- endform -%}
@@ -79,10 +79,10 @@
           
           {%- endif -%}
 
-          {%- if section.settings.show_newsletter -%}
-            <button type="button" class="announcement-bar__button hidden-phone" data-action="toggle-newsletter" aria-expanded="false" aria-controls="announcement-bar-newsletter">
-              {%- render 'icon', icon: 'newsletter' -%}
-              {{- section.settings.newsletter_button | escape -}}
+          {%- if section.settings.show_BOLETIN -%}
+            <button type="button" class="announcement-bar__button hidden-phone" data-action="toggle-BOLETIN" aria-expanded="false" aria-controls="announcement-bar-BOLETIN">
+              {%- render 'icon', icon: 'BOLETIN' -%}
+              {{- section.settings.BOLETIN_button | escape -}}
             </button>
           {%- endif -%}
         </div>
@@ -100,7 +100,7 @@
   </style>
 
   <script>
-    {%- if section.settings.show_newsletter -%}
+    {%- if section.settings.show_BOLETIN -%}
       document.documentElement.style.setProperty('--announcement-bar-button-width', document.querySelector('.announcement-bar__button').clientWidth + 'px');
     {%- else -%}
       document.documentElement.style.removeProperty('--announcement-bar-button-width');
@@ -152,7 +152,7 @@
     },
     {
       "type": "header",
-      "content": "Newsletter"
+      "content": "BOLETIN"
     },
     {
       "type": "paragraph",
@@ -164,25 +164,25 @@
     },
     {
       "type": "checkbox",
-      "id": "show_newsletter",
+      "id": "show_BOLETIN",
       "label": "Show sign up form",
       "default": true
     },
     {
       "type": "text",
-      "id": "newsletter_button",
+      "id": "BOLETIN_button",
       "label": "Open button",
       "default": "Subscribe & Save"
     },
     {
       "type": "text",
-      "id": "newsletter_title",
+      "id": "BOLETIN_title",
       "label": "Heading",
-      "default": "Newsletter"
+      "default": "BOLETIN"
     },
     {
       "type": "richtext",
-      "id": "newsletter_content",
+      "id": "BOLETIN_content",
       "label": "Text",
       "default": "<p>A short sentence describing what someone will receive by subscribing</p>"
     }

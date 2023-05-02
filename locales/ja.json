@@ -13,9 +13,9 @@
       "enter_password": "パスワードでログインする",
       "password_input": "パスワード",
       "password_submit": "送信",
-      "newsletter_input": "メールアドレス",
-      "newsletter_submit": "購読する",
-      "newsletter_success": "ご購読ありがとうございます。",
+      "BOLETIN_input": "メールアドレス",
+      "BOLETIN_submit": "購読する",
+      "BOLETIN_success": "ご購読ありがとうございます。",
       "powered_by_html": "このストアは{{shopify_link}}で作られています。",
       "login_title": "ストア管理者ですか？",
       "login_link": "ログインはこちら",
@@ -92,7 +92,7 @@
       "we_accept": "を受け入れる"
     },
 
-    "newsletter": {
+    "BOLETIN": {
       "success": "ニュースレターにご購読ありがとうございます",
       "input": "メールアドレス",
       "submit": "申し込む"
@@ -148,7 +148,7 @@
       "instagram_caption": "これはキャプションの例です。"
     },
 
-    "newsletter": {
+    "BOLETIN": {
       "success": "ニュースレターのご購読ありがとうございます！",
       "input": "メールアドレス",
       "submit": "申し込む"
