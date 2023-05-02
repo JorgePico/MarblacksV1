@@ -13,7 +13,7 @@
 <div class="container container--medium">
   <div class="layout">
     <div class="layout__section">
-      {%- form 'contacto', class: 'form' -%}
+      {%- form 'contact', class: 'form' -%}
         {%- if section.settings.show_store_info -%}
           <div class="form__header">
             <h2 class="heading h3">{{ section.settings.form_heading | escape }}</h2>
@@ -21,7 +21,7 @@
         {%- endif -%}
 
         {%- if form.posted_successfully? -%}
-          <p class="alert alert--success">{{ 'contacto.form.successfully_sent' | t }}</p>
+          <p class="alert alert--success">{{ 'contact.form.successfully_sent' | t }}</p>
         {%- endif -%}
 
         {%- if form.errors -%}
@@ -40,13 +40,13 @@
 
         <div class="form__input-row">
           <div class="form__input-wrapper form__input-wrapper--labelled">
-            <input id="contacto-form-name" type="text" class="form__field form__field--text {% if customer.name != blank %}is-filled{% endif %}" name="contacto[name]" aria-label="{{ 'contacto.form.name' | t }}" required {% if customer %}value="{{ customer.name }}"{% endif %}>
-            <label for="contacto-form-name" class="form__floating-label">{{ 'contacto.form.name' | t }}</label>
+            <input id="contact-form-name" type="text" class="form__field form__field--text {% if customer.name != blank %}is-filled{% endif %}" name="contact[name]" aria-label="{{ 'contact.form.name' | t }}" required {% if customer %}value="{{ customer.name }}"{% endif %}>
+            <label for="contact-form-name" class="form__floating-label">{{ 'contact.form.name' | t }}</label>
           </div>
 
           <div class="form__input-wrapper form__input-wrapper--labelled">
-            <input id="contacto-form-email" type="email" class="form__field form__field--text {% if customer.email != blank %}is-filled{% endif %}" name="contacto[email]" aria-label="{{ 'contacto.form.email' | t }}" required {% if customer %}value="{{ customer.email }}"{% endif %}>
-            <label for="contacto-form-email" class="form__floating-label">{{ 'contacto.form.email' | t }}</label>
+            <input id="contact-form-email" type="email" class="form__field form__field--text {% if customer.email != blank %}is-filled{% endif %}" name="contact[email]" aria-label="{{ 'contact.form.email' | t }}" required {% if customer %}value="{{ customer.email }}"{% endif %}>
+            <label for="contact-form-email" class="form__floating-label">{{ 'contact.form.email' | t }}</label>
           </div>
         </div>
 
@@ -60,11 +60,11 @@
           {%- if block.type == 'text' -%}
             <div class="form__input-wrapper form__input-wrapper--labelled">
               {%- if block.settings.use_long_text -%}
-                <textarea id="contacto-form-{{ field_title | handle }}" name="contacto[{{ field_title | escape }}]" rows="7" class="form__field form__field--textarea" aria-label="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}></textarea>
-                <label for="contacto-form-{{ field_title | handle }}" class="form__floating-label">{{ block.settings.title | escape }}</label>
+                <textarea id="contact-form-{{ field_title | handle }}" name="contact[{{ field_title | escape }}]" rows="7" class="form__field form__field--textarea" aria-label="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}></textarea>
+                <label for="contact-form-{{ field_title | handle }}" class="form__floating-label">{{ block.settings.title | escape }}</label>
               {%- else -%}
-                <input id="contacto-form-{{ field_title | handle }}" type="text" class="form__field form__field--text" name="contacto[{{ field_title | escape }}]" aria-label="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}>
-                <label for="contacto-form-{{ field_title | handle }}" class="form__floating-label">{{ block.settings.title | escape }}</label>
+                <input id="contact-form-{{ field_title | handle }}" type="text" class="form__field form__field--text" name="contact[{{ field_title | escape }}]" aria-label="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}>
+                <label for="contact-form-{{ field_title | handle }}" class="form__floating-label">{{ block.settings.title | escape }}</label>
               {%- endif -%}
             </div>
           {%- elsif block.type == 'dropdown' -%}
@@ -75,10 +75,10 @@
             {%- endif -%}
 
             <div class="form__input-wrapper form__input-wrapper--labelled">
-              <div id="contacto-form-{{ field_title | handle }}" class="select-wrapper select-wrapper--primary">
+              <div id="contact-form-{{ field_title | handle }}" class="select-wrapper select-wrapper--primary">
                 {%- render 'icon', icon: 'arrow-bottom' -%}
 
-                <select name="contacto[{{ field_title | escape }}]" title="{{ block.settings.title | escape }}" required>
+                <select name="contact[{{ field_title | escape }}]" title="{{ block.settings.title | escape }}" required>
                   <option value="" disabled selected></option>
 
                   {%- for value in values -%}
@@ -89,29 +89,29 @@
                 </select>
               </div>
 
-              <label for="contacto-form-{{ field_title | handle }}" class="form__floating-label">{{ block.settings.title | escape }}</label>
+              <label for="contact-form-{{ field_title | handle }}" class="form__floating-label">{{ block.settings.title | escape }}</label>
             </div>
           {%- endif -%}
         {%- endfor -%}
 
         <div class="form__input-wrapper form__input-wrapper--labelled">
-          <textarea id="contacto-form-message" name="contacto[body]" rows="8" class="form__field form__field--textarea" aria-label="{{ 'contacto.form.message' | t }}" required></textarea>
-          <label for="contacto-form-message" class="form__floating-label">{{ 'contacto.form.message' | t }}</label>
+          <textarea id="contact-form-message" name="contact[body]" rows="8" class="form__field form__field--textarea" aria-label="{{ 'contact.form.message' | t }}" required></textarea>
+          <label for="contact-form-message" class="form__floating-label">{{ 'contact.form.message' | t }}</label>
         </div>
 
-        <button type="submit" class="form__submit {% unless section.settings.show_store_info %}form__submit--centered{% endunless %} button button--primary button--min-width">{{ 'contacto.form.submit' | t }}</button>
+        <button type="submit" class="form__submit {% unless section.settings.show_store_info %}form__submit--centered{% endunless %} button button--primary button--min-width">{{ 'contact.form.submit' | t }}</button>
       {%- endform -%}
     </div>
 
     {%- if section.settings.show_store_info -%}
       <div class="layout__section layout__section--large-secondary">
-        <div class="contacto__store-info">
+        <div class="contact__store-info">
           {%- if section.settings.store_heading != blank -%}
-            <h2 class="contacto__store-heading heading h3">{{ section.settings.store_heading | escape }}</h2>
+            <h2 class="contact__store-heading heading h3">{{ section.settings.store_heading | escape }}</h2>
           {%- endif -%}
 
           {%- if section.settings.store_image -%}
-            <div class="contacto__store-image">
+            <div class="contact__store-image">
               <div class="aspect-ratio" style="padding-bottom: {{ 100.0 | divided_by: section.settings.store_image.aspect_ratio }}%">
                 <img src="{{ section.settings.store_image | img_url: '700x' }}" alt="{{ section.settings.store_image.alt | escape }}">
               </div>
@@ -119,7 +119,7 @@
           {%- endif -%}
 
           {%- if section.settings.store_info != blank -%}
-            <div class="contacto__store-text rte">
+            <div class="contact__store-text rte">
               {{ section.settings.store_info }}
             </div>
           {%- endif -%}
@@ -131,7 +131,7 @@
 
 {% schema %}
 {
-  "name": "contacto page",
+  "name": "contact page",
   "settings": [
     {
       "type": "header",

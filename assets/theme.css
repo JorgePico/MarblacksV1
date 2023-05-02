@@ -10308,9 +10308,9 @@ iframe {
   display: block;
 }
 
-#shopify-product-reviews .spr-form-contacto-name,
-#shopify-product-reviews .spr-form-contacto-email,
-#shopify-product-reviews .spr-form-contacto-location,
+#shopify-product-reviews .spr-form-contact-name,
+#shopify-product-reviews .spr-form-contact-email,
+#shopify-product-reviews .spr-form-contact-location,
 #shopify-product-reviews .spr-form-review-rating,
 #shopify-product-reviews .spr-form-review-title,
 #shopify-product-reviews .spr-form-review-body {
@@ -12874,31 +12874,31 @@ iframe {
 
 /**
  * --------------------------------------------------------------------
- * contacto FORM
+ * contact FORM
  * --------------------------------------------------------------------
  */
 
-.contacto {
+.contact {
   margin-bottom: 40px;
 }
 
-.contacto__store-info {
+.contact__store-info {
   margin-top: 50px;
 }
 
-.contacto__store-heading,
-.contacto__store-image {
+.contact__store-heading,
+.contact__store-image {
   margin-bottom: 30px;
 }
 
 @media screen and (min-width: 641px) {
-  .contacto {
+  .contact {
     margin-bottom: 90px;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .contacto__store-info {
+  .contact__store-info {
     margin-top: 0;
     margin-left: 25px;
   }
@@ -13048,7 +13048,7 @@ iframe {
   text-align: center;
 }
 
-.faq__contacto-info {
+.faq__contact-info {
   margin-top: 50px;
 }
 

@@ -40,13 +40,13 @@
                     <p class="alert alert--error">{{ form.errors.messages['email'] }}</p>
                   {%- endif -%}
 
-                  <input type="hidden" name="contacto[tags]" value="BOLETIN">
-                  <input type="hidden" name="contacto[context]" value="announcement-bar">
+                  <input type="hidden" name="contact[tags]" value="BOLETIN">
+                  <input type="hidden" name="contact[context]" value="announcement-bar">
 
                   <div class="form__input-row">
                     <div class="form__input-wrapper form__input-wrapper--labelled">
-                      <input type="email" id="announcement[contacto][email]" name="contacto[email]" class="form__field form__field--text" autofocus required>
-                      <label for="announcement[contacto][email]" class="form__floating-label">{{ 'home_page.BOLETIN.input' | t }}</label>
+                      <input type="email" id="announcement[contact][email]" name="contact[email]" class="form__field form__field--text" autofocus required>
+                      <label for="announcement[contact][email]" class="form__floating-label">{{ 'home_page.BOLETIN.input' | t }}</label>
                     </div>
 
                     <button type="submit" class="form__submit button button--primary">{{ 'home_page.BOLETIN.submit' | t }}</button>
