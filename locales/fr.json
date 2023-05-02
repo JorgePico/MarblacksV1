@@ -444,7 +444,7 @@
       "success_moderated": "Votre commentaire a été envoyé. Il sera visible dès qu'il aura été accepté."
     }
   },
-  "Contacto": {
+   "Contact": {
     "form": {
       "name": "Votre nom",
       "email": "Votre email",

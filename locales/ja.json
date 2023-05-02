@@ -483,7 +483,7 @@
     }
   },
 
-  "Contacto": {
+   "Contact": {
     "form": {
       "name": "お名前",
       "email": "メールアドレス",
