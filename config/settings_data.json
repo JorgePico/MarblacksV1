@@ -561,8 +561,8 @@
           "text": "#ffffff"
         }
       },
-      "page-Contact-template": {
-        "type": "page-Contact-template",
+      "page-contact-template": {
+        "type": "page-contact-template",
         "settings": {
           "form_heading": "Preenche o formulário abaixo.",
           "show_store_info": false,

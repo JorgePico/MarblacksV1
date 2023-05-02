@@ -488,7 +488,7 @@
       
     <div id="loader" class="loader"></div>
       <div class="product-form__payment-container">
-        {%- if product.template_suffix != 'Contact' -%}
+        {%- if product.template_suffix != 'contact' -%}
           {%- if selected_variant.available -%}
             {%- if product.template_suffix == 'pre-order' -%}
               <button type="submit" class="product-form__add-button button button--primary btn-primary-buy" data-action="add-to-cart">{{ 'product.form.pre_order' | t }}</button>
@@ -508,10 +508,10 @@
             {{ form | payment_button }}
           {%- endif -%}
         {%- else -%}
-          <a href="mailto:{{ shop.email }}" class="button button--primary">{{ 'product.form.Contact_us' | t }}</a>
+          <a href="mailto:{{ shop.email }}" class="button button--primary">{{ 'product.form.contact_us' | t }}</a>
         {%- endif -%}
 
-        {%- if product.template_suffix != 'Contact' -%}
+        {%- if product.template_suffix != 'contact' -%}
           {%- if section.settings.show_quantity_selector -%}
              <div class="product-form__info-item product-form__info-item--quantity qty-margin-top">
 

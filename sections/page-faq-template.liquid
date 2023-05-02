@@ -44,56 +44,56 @@
       {%- endfor -%}
     </div>
 
-    {%- if section.settings.show_Contact_info -%}
+    {%- if section.settings.show_contact_info -%}
       <div class="container--unflush">
-        <div class="faq__Contact-info">
+        <div class="faq__contact-info">
           <header class="page__header page__header--stack page__header--centered">
-            {%- if section.settings.Contact_info_heading != blank -%}
-              <h2 class="page__title heading h2">{{ section.settings.Contact_info_heading | escape }}</h2>
+            {%- if section.settings.contact_info_heading != blank -%}
+              <h2 class="page__title heading h2">{{ section.settings.contact_info_heading | escape }}</h2>
             {%- endif -%}
 
-            {%- if section.settings.Contact_info_text != blank -%}
+            {%- if section.settings.contact_info_text != blank -%}
               <div class="page__description rte">
-                {{ section.settings.Contact_info_text }}
+                {{ section.settings.contact_info_text }}
               </div>
             {%- endif -%}
           </header>
 
           <div class="text-with-icons text-with-icons--boxed">
-            {%- if section.settings.Contact_1_heading != blank or section.settings.Contact_1_text != blank -%}
+            {%- if section.settings.contact_1_heading != blank or section.settings.contact_1_text != blank -%}
               <div class="text-with-icons__item">
                 <div class="text-with-icons__icon-wrapper">
-                  {%- render 'icon', icon: section.settings.Contact_1_icon, stroke_width: 1.5 -%}
+                  {%- render 'icon', icon: section.settings.contact_1_icon, stroke_width: 1.5 -%}
                 </div>
 
                 <div class="text-with-icons__content-wrapper">
-                  {%- if section.settings.Contact_1_heading != blank -%}
-                    <p class="text-with-icons__title text--strong">{{ section.settings.Contact_1_heading | escape }}</p>
+                  {%- if section.settings.contact_1_heading != blank -%}
+                    <p class="text-with-icons__title text--strong">{{ section.settings.contact_1_heading | escape }}</p>
                   {%- endif -%}
 
-                  {%- if section.settings.Contact_1_text != blank -%}
+                  {%- if section.settings.contact_1_text != blank -%}
                     <div class="text-with-icons__content rte">
-                      {{ section.settings.Contact_1_text }}
+                      {{ section.settings.contact_1_text }}
                     </div>
                   {%- endif -%}
                 </div>
               </div>
             {%- endif -%}
 
-            {%- if section.settings.Contact_2_heading != blank or section.settings.Contact_2_text != blank -%}
+            {%- if section.settings.contact_2_heading != blank or section.settings.contact_2_text != blank -%}
               <div class="text-with-icons__item">
                 <div class="text-with-icons__icon-wrapper">
-                  {%- render 'icon', icon: section.settings.Contact_2_icon, stroke_width: 1.5 -%}
+                  {%- render 'icon', icon: section.settings.contact_2_icon, stroke_width: 1.5 -%}
                 </div>
 
                 <div class="text-with-icons__content-wrapper">
-                  {%- if section.settings.Contact_2_heading != blank -%}
-                    <p class="text-with-icons__title text--strong">{{ section.settings.Contact_2_heading | escape }}</p>
+                  {%- if section.settings.contact_2_heading != blank -%}
+                    <p class="text-with-icons__title text--strong">{{ section.settings.contact_2_heading | escape }}</p>
                   {%- endif -%}
 
-                  {%- if section.settings.Contact_2_text != blank -%}
+                  {%- if section.settings.contact_2_text != blank -%}
                     <div class="text-with-icons__content rte">
-                      {{ section.settings.Contact_2_text }}
+                      {{ section.settings.contact_2_text }}
                     </div>
                   {%- endif -%}
                 </div>
@@ -112,22 +112,22 @@
   "settings": [
     {
       "type": "checkbox",
-      "id": "show_Contact_info",
+      "id": "show_contact_info",
       "label": "Show additional info",
       "info": "Additional info is displayed below all questions.",
       "default": true
     },
     {
       "type": "text",
-      "id": "Contact_info_heading",
+      "id": "contact_info_heading",
       "label": "Heading",
       "default": "Any question?"
     },
     {
       "type": "richtext",
-      "id": "Contact_info_text",
+      "id": "contact_info_text",
       "label": "Text",
-      "default": "<p>If we still haven't answered your question, you can Contact us below and we will get back to you as soon as possible.</p>"
+      "default": "<p>If we still haven't answered your question, you can contact us below and we will get back to you as soon as possible.</p>"
     },
     {
       "type": "header",
@@ -135,7 +135,7 @@
     },
     {
       "type": "select",
-      "id": "Contact_1_icon",
+      "id": "contact_1_icon",
       "label": "Icon",
       "options": [
         {
@@ -273,13 +273,13 @@
     },
     {
       "type": "text",
-      "id": "Contact_1_heading",
+      "id": "contact_1_heading",
       "label": "Heading",
       "default": "Customer support"
     },
     {
       "type": "richtext",
-      "id": "Contact_1_text",
+      "id": "contact_1_text",
       "label": "Text",
       "default": "<p>Enter your text here</p>"
     },
@@ -289,7 +289,7 @@
     },
     {
       "type": "select",
-      "id": "Contact_2_icon",
+      "id": "contact_2_icon",
       "label": "Icon",
       "options": [
         {
@@ -427,13 +427,13 @@
     },
     {
       "type": "text",
-      "id": "Contact_2_heading",
+      "id": "contact_2_heading",
       "label": "Heading",
       "default": "Send a message"
     },
     {
       "type": "richtext",
-      "id": "Contact_2_text",
+      "id": "contact_2_text",
       "label": "Text",
       "default": "<p>Enter your text here</p>"
     }
@@ -527,7 +527,7 @@
         "type": "question",
         "settings": {
           "title": "Any question?",
-          "answer": "<p>You can Contact us through our Contact page! We will be happy to assist you.</p>"
+          "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
         }
       }
     ]
