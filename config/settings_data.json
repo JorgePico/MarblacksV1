@@ -193,7 +193,7 @@
             "type": "BOLETIN",
             "settings": {
               "title": "NUESTRO BOLETIN",
-              "subheading": "<p>¡Suscríbete a nuestra BOLETIN y recibe las mejores ofertas GRATIS!<\/p>"
+              "subheading": "<p>¡Suscríbete a nuestro BOLETIN y recibe las mejores ofertas GRATIS!<\/p>"
             }
           }
         },
@@ -436,7 +436,7 @@
           "show_BOLETIN": true,
           "BOLETIN_button": "",
           "BOLETIN_title": "BOLETIN",
-          "BOLETIN_content": "<p>Suscríbete a nuestra BOLETIN para recibir las últimas promociones.<\/p>"
+          "BOLETIN_content": "<p>Suscríbete a nuestro BOLETIN para recibir las últimas promociones.<\/p>"
         }
       },
       "popups": {
