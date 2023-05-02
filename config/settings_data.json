@@ -468,15 +468,15 @@
             "settings": {
               "icon": "bi-love",
               "title": "Soporte profecional",
-              "content": "<p>Equipe de suporte de extrema qualidade a semana toda<br\/><\/p>"
+              "content": "<p>Equipo de soporte de primer nivel durante toda la semana.<br\/><\/p>"
             }
           },
           "text-with-icons-1": {
             "type": "item",
             "settings": {
               "icon": "bi-returns",
-              "title": "Satisfação ou Reembolso",
-              "content": "<p>Caso haja algo, devolvemos seu dinheiro com velocidade<\/p>"
+              "title": "Satisfacción o Reembolso",
+              "content": "<p>En caso de que  pase algo, le devolveremos su dinero rápidamente.<\/p>"
             }
           }
         },
