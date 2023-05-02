@@ -550,8 +550,8 @@
           "upsell_products_count": 4
         }
       },
-      "static-BOLETIN": {
-        "type": "static-BOLETIN",
+      "NEWSLETTER": {
+        "type": "NEWSLETTER",
         "settings": {
           "show_section": false,
           "title": "Subscribe to our BOLETIN",
@@ -561,8 +561,8 @@
           "text": "#ffffff"
         }
       },
-      "page-contact-template": {
-        "type": "page-contact-template",
+      "page-Contacto-template": {
+        "type": "page-Contacto-template",
         "settings": {
           "form_heading": "Preenche o formulário abaixo.",
           "show_store_info": false,
@@ -576,8 +576,8 @@
           "image_position": "left",
           "image_width": 55,
           "title": "Pouco De Nós",
-          "content": "<p>Desenvolvidos para atender suas necessidades e prezar<br\/>pela satisfação e segurança entregando produtos da Mas<br\/>alta qualidade da melhor forma possível!<\/p><p><em><strong>Quer saber Mas sobre nós e nossa equipe?<\/strong><\/em><br\/>Clique no botão abaixo<\/p>",
-          "button_text": "Saber Mas sobre nós",
+          "content": "<p>Desenvolvidos para atender suas necessidades e prezar<br\/>pela satisfação e segurança entregando produtos da Mas<br\/>alta qualidade da melhor forma possível!<\/p><p><em><strong>Quer Saber mas sobre nosotros e nossa equipe?<\/strong><\/em><br\/>Clique no botão abaixo<\/p>",
+          "button_text": "Saber mas sobre nosotros",
           "button_link": "shopify:\/\/pages\/sobre-nos"
         }
       },

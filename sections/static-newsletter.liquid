@@ -22,12 +22,12 @@
               <p class="alert alert--error">{{ form.errors.messages['email'] }}</p>
             {%- endif -%}
 
-            <input type="hidden" name="contact[tags]" value="BOLETIN">
+            <input type="hidden" name="Contacto[tags]" value="BOLETIN">
 
             <div class="form__input-row">
               <div class="form__input-wrapper form__input-wrapper--labelled">
-                <input type="email" id="BOLETIN[contact][email]" name="contact[email]" class="form__field form__field--text form__field--borderless" required>
-                <label for="BOLETIN[contact][email]" class="form__floating-label">{{ 'home_page.BOLETIN.input' | t }}</label>
+                <input type="email" id="BOLETIN[Contacto][email]" name="Contacto[email]" class="form__field form__field--text form__field--borderless" required>
+                <label for="BOLETIN[Contacto][email]" class="form__floating-label">{{ 'home_page.BOLETIN.input' | t }}</label>
               </div>
 
               <button type="submit" class="form__submit button button--primary">{{ 'home_page.BOLETIN.submit' | t }}</button>
