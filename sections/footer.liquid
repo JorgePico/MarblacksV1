@@ -84,11 +84,11 @@
                           <p class="alert alert--error alert--center">{{ form.errors.messages['email'] }}</p>
                         {%- endif -%}
 
-                        <input type="hidden" name="Contacto[tags]" value="BOLETIN">
+                        <input type="hidden" name="Contact[tags]" value="BOLETIN">
 
                         <div class="form__input-wrapper form__input-wrapper--labelled">
-                          <input type="email" id="footer[Contacto][email]" name="Contacto[email]" class="form__field form__field--text" required="">
-                          <label for="footer[Contacto][email]" class="form__floating-label">{{ 'footer.BOLETIN.input' | t }}</label>
+                          <input type="email" id="footer[Contact][email]" name="Contact[email]" class="form__field form__field--text" required="">
+                          <label for="footer[Contact][email]" class="form__floating-label">{{ 'footer.BOLETIN.input' | t }}</label>
                         </div>
 
                         <button type="submit" class="form__submit form__submit--tight button button--primary">{{ 'footer.BOLETIN.submit' | t }}</button>

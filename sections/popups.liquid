@@ -31,10 +31,10 @@
                       {%- if form.posted_successfully? -%}
                         <p class="alert alert--success alert--center">{{ 'general.popup.success' | t }}</p>
                       {%- else -%}
-                        <input type="hidden" name="Contacto[tags]" value="BOLETIN">
+                        <input type="hidden" name="Contact[tags]" value="BOLETIN">
 
                         <div class="form__input-wrapper form__input-wrapper--labelled">
-                          <input id="BOLETIN-popup[email]" type="text" class="form__field form__field--text" name="Contacto[email]" autofocus>
+                          <input id="BOLETIN-popup[email]" type="text" class="form__field form__field--text" name="Contact[email]" autofocus>
                           <label for="BOLETIN-popup[email]" class="form__floating-label">{{ 'general.popup.email_placeholder' | t }}</label>
                         </div>
 
@@ -77,10 +77,10 @@
                       {%- assign is_form_valid = true -%}
                       <p class="alert alert--success alert--center">{{ block.settings.success_message }}</p>
                     {%- else -%}
-                      <input type="hidden" name="Contacto[tags]" value="BOLETIN">
+                      <input type="hidden" name="Contact[tags]" value="BOLETIN">
 
                       <div class="form__input-wrapper form__input-wrapper--labelled">
-                        <input id="exit-popup[email]" type="text" class="form__field form__field--large form__field--text" name="Contacto[email]" autofocus>
+                        <input id="exit-popup[email]" type="text" class="form__field form__field--large form__field--text" name="Contact[email]" autofocus>
                         <label for="exit-popup[email]" class="form__floating-label">{{ 'general.popup.email_placeholder' | t }}</label>
                       </div>
 
