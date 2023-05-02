@@ -398,7 +398,7 @@
       "sold_out": "Rupture de stock",
       "pre_order": "Pré-commander",
       "unavailable": "Indisponible",
-      "contact_us": "Nous contacter"
+      "contacto_us": "Nous contactoer"
     }
   },
   "gift_card": {
@@ -444,7 +444,7 @@
       "success_moderated": "Votre commentaire a été envoyé. Il sera visible dès qu'il aura été accepté."
     }
   },
-   "contact": {
+   "contacto": {
     "form": {
       "name": "Votre nom",
       "email": "Votre email",
