@@ -252,15 +252,15 @@
       {% assign divididopor = settings.qty_vezes %}
       {% assign percentual = settings.porcentagem_de_juros %}
       {%- if settings.mostrar_parcelascomo == 'info_juros' -%}
-      <p style="font-size: 14px; margin-bottom: 0;"><b>{{ divididopor }}x</b> de <b style="color: var(--product-on-sale-accent)">{{- product.price | divided_by: divididopor | times: percentual | money -}}</b><b style="color: #b1b5c3;font-weight: bold;font-size: 10px;margin-left: 4px;">COM JUROS</b></p>
+      <p style="font-size: 14px; margin-bottom: 0;"><b>{{ divididopor }} cuotas</b> de <b style="color: var(--product-on-sale-accent)">{{- product.price | divided_by: divididopor | times: percentual | money -}}</b><b style="color: #b1b5c3;font-weight: bold;font-size: 10px;margin-left: 4px;">COM JUROS</b></p>
       {%- endif -%}
 
       {%- if settings.mostrar_parcelascomo == 'info_sem_juros' -%}
-      <p style="font-size: 14px; margin-bottom: 0;"><b>{{ divididopor }}x</b> de <b style="color: var(--product-on-sale-accent)">{{- product.price | divided_by: divididopor | times: 1.0000 | money -}}</b><b style="color: var(--product-on-sale-accent);font-weight: bold;font-size: 10px;margin-left: 4px;">SEM JUROS</b></p>
+      <p style="font-size: 14px; margin-bottom: 0;"><b>{{ divididopor }} cuotas</b> de <b style="color: var(--product-on-sale-accent)">{{- product.price | divided_by: divididopor | times: 1.0000 | money -}}</b><b style="color: var(--product-on-sale-accent);font-weight: bold;font-size: 10px;margin-left: 4px;">SEM JUROS</b></p>
       {%- endif -%}
 
       {%- if settings.mostrar_parcelascomo == 'no_info_juros' -%}
-      <p style="font-size: 14px; margin-bottom: 0;">O en hasta <b>{{ divididopor }}x</b> de <b style="color: var(--product-on-sale-accent)">{{- product.price | divided_by: divididopor | times: percentual | money -}}</b></p>
+      <p style="font-size: 14px; margin-bottom: 0;">O en hasta <b>{{ divididopor }} cuotas</b> de <b style="color: var(--product-on-sale-accent)">{{- product.price | divided_by: divididopor | times: percentual | money -}}</b></p>
       {%- endif -%}
       
         {%- if settings.mostrar_estrelas -%}
