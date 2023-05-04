@@ -19,7 +19,7 @@ This create a placeholder for product item, and is used exclusively on home page
       {%- if settings.discount_mode == 'percentage' -%}
         {%- assign savings = random_compare_at_price | minus: random_price | times: 100.0 | divided_by: random_compare_at_price | round | append: '%' -%}
       {%- else -%}
-        {%- capture savings -%}<span>{{ random_compare_at_price | minus: random_price | money }}</span>{%- endcapture -%}
+        {%- capture savings -%}<span>{{ random_compare_at_price | minus: random_price | money_without_trailing_zeros }}</span>{%- endcapture -%}
       {%- endif -%}
 
       <span class="product-label product-label--on-sale">{{ 'collection.product.discount_html' | t: savings: savings }}</span>
@@ -42,10 +42,10 @@ This create a placeholder for product item, and is used exclusively on home page
       {%- capture price_list -%}
         <div class="product-item__price-list price-list">
           {%- if on_sale -%}
-            <span class="price price--highlight">{{ random_price | money }}</span>
-            <span class="price price--compare">{{ random_compare_at_price | money }}</span>
+            <span class="price price--highlight">{{ random_price | money_without_trailing_zeros }}</span>
+            <span class="price price--compare">{{ random_compare_at_price | money_without_trailing_zeros }}</span>
           {%- else -%}
-            <span class="price">{{ random_price | money }}</span>
+            <span class="price">{{ random_price | money_without_trailing_zeros }}</span>
           {%- endif -%}
         </div>
       {%- endcapture -%}

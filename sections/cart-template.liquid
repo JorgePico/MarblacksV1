@@ -16,7 +16,7 @@
 
         {%- if settings.cart_show_free_shipping_threshold -%}
           {%- assign threshold_in_cents = settings.cart_free_shipping_threshold | times: 100 -%}
-          {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
+          {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span>{%- endcapture -%}
           <p class="empty-state__description">{{ 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount }}</p>
         {%- endif -%}
 
@@ -36,7 +36,7 @@
             {%- if cart.total_price >= threshold_in_cents -%}
               <p class="page__description">{{ 'cart.general.free_shipping' | t }}</p>
             {%- else -%}
-              {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
+              {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span>{%- endcapture -%}
               <p class="page__description">{{ 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount }}</p>
             {%- endif -%}
           {%- endif -%}
@@ -59,7 +59,7 @@
             {%- if cart.total_price >= threshold_in_cents -%}
               <p class="page__description">{{ 'cart.general.free_shipping' | t }}</p>
             {%- else -%}
-              {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>{%- endcapture -%}
+              {%- capture remaining_amount -%}<span>{{ cart.total_price | minus: threshold_in_cents | abs | money_without_trailing_zeros }}</span>{%- endcapture -%}
               <p class="page__description">{{ 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount }}</p>
             {%- endif -%}
           {%- endif -%}
@@ -174,7 +174,7 @@
                               {%- if line_item.unit_price_measurement -%}
                                 <div class="line-item__price-info">
                                   <div class="unit-price-measurement">
-                                    <span class="unit-price-measurement__price">{{ line_item.unit_price | money }}</span>
+                                    <span class="unit-price-measurement__price">{{ line_item.unit_price | money_without_trailing_zeros }}</span>
                                     <span class="unit-price-measurement__separator">/ </span>
 
                                     {%- if line_item.unit_price_measurement.reference_value != 1 -%}

@@ -132,7 +132,7 @@
           {%- if settings.discount_mode == 'percentage' -%}
             {%- assign savings = selected_variant.compare_at_price | minus: selected_variant.price | times: 100.0 | divided_by: selected_variant.compare_at_price | round | append: '%' -%}
           {%- else -%}
-            {%- capture savings -%}<span>{{ selected_variant.compare_at_price | minus: selected_variant.price | money }}</span>{%- endcapture -%}
+            {%- capture savings -%}<span>{{ selected_variant.compare_at_price | minus: selected_variant.price | money_without_trailing_zeros }}</span>{%- endcapture -%}
           {%- endif -%}
 
           <span class="product-label product-label--on-sale" {% unless selected_variant.price < selected_variant.compare_at_price %}style="display: none"{% endunless %}>{{ 'collection.product.discount_html' | t: savings: savings }}</span>
@@ -358,14 +358,14 @@
  {%- if selected_variant.compare_at_price > selected_variant.price -%}
               <span style="top: -5px; font-size: 14px; position: relative; color: var(--product-cor-do-preco-riscado);">DE </span><span class="price price--compare">
                   <span class="visually-hidden">{{ 'product.general.regular_price' | t }}</span>
-                  {{- selected_variant.compare_at_price | money -}}
+                  {{- selected_variant.compare_at_price | money_without_trailing_zeros -}}
                 </span>  
               <br>
 
          <div class="align-price-discount">
                 <span class="price price--highlight">
                   <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
-                  {{- selected_variant.price | money -}}
+                  {{- selected_variant.price | money_without_trailing_zeros -}}
                 </span>
 				{%- assign savings = selected_variant.compare_at_price | minus: selected_variant.price | times: 100.0 | divided_by: selected_variant.compare_at_price | round | append: '%' -%}
 				
@@ -381,7 +381,7 @@
          </div>
    
               {%- else -%}
-                <span class="price--highlight price-without-discount">{{ selected_variant.price | money }}</span>
+                <span class="price--highlight price-without-discount">{{ selected_variant.price | money_without_trailing_zeros }}</span>
            {%- endif -%}
              {% assign divididopor = settings.qty_vezes %}
              {% assign percentual = settings.porcentagem_de_juros %} 
@@ -390,7 +390,7 @@
             {%- if selected_variant.compare_at_price > selected_variant.price -%}
               <div class="product-meta__label-list">
             <span style="margin-top: 2px; margin-bottom: 0px; font-size: 12px; font-weight:bold;" class="product-label product-label--on-sale">
-              {{ product.compare_at_price | minus: product.price | money }} de descuento
+              {{ product.compare_at_price | minus: product.price | money_without_trailing_zeros }} de descuento
                 </span></div>{%- endif -%}
                 
            </div>
@@ -406,7 +406,7 @@
     
             <div class="product-form__price-info" style="display: {% if selected_variant.unit_price_measurement %}block{% else %}none{% endif %}">
               <div class="unit-price-measurement">
-                <span class="unit-price-measurement__price">{{ selected_variant.unit_price | money }}</span>
+                <span class="unit-price-measurement__price">{{ selected_variant.unit_price | money_without_trailing_zeros }}</span>
                 <span class="unit-price-measurement__separator">/ </span>
 
                 {%- if selected_variant.unit_price_measurement.reference_value != 1 -%}
