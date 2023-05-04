@@ -401,8 +401,8 @@
           "tab_page_1_handle": "",
           "tab_page_2_handle": "",
           "tab_page_3_handle": "",
-          "enable_reviews": true,
-          "show_reviews_badge": true,
+          "enable_reviews": false,
+          "show_reviews_badge": false,
           "trust_title": "Pago seguro",
           "show_payment_icons": true,
           "show_shipping_estimator": false,
@@ -757,31 +757,31 @@
     "blocks": {
       "2965712708760319418": {
         "type": "shopify:\/\/apps\/proof-bear-sales-popup\/blocks\/widget\/6e90b7fd-96ea-488b-9571-34f0c382838a",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "13669795325273674392": {
-        "type": "shopify:\/\/apps\/releasit-cod-form-upsells\/blocks\/app-embed\/72faf214-4174-4fec-886b-0d0e8d3af9a2",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       },
       "4214657528271059384": {
         "type": "shopify:\/\/apps\/a2reviews-product-reviews\/blocks\/app-embed\/6a88647f-451d-4142-88de-9df2dab10243",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       },
       "14159691304313693114": {
         "type": "shopify:\/\/apps\/pixel-conversions-api-facebook\/blocks\/app-embed\/e244883f-9001-4b7d-b3e2-a64012fd8879",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       },
       "855628211100114053": {
         "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "13669795325273674392": {
+        "type": "shopify:\/\/apps\/releasit-cod-form-upsells\/blocks\/app-embed\/72faf214-4174-4fec-886b-0d0e8d3af9a2",
+        "disabled": true,
         "settings": {
         }
       }
