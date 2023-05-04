@@ -53,7 +53,7 @@
     "cordabarra": "#00d864",
     "cordotexto": "#ffffff",
     "mostrar_parcelascomo": "no_info_juros",
-    "porcentagem_de_juros": "1",
+    "porcentagem_de_juros": "",
     "qty_vezes": 12,
     "mostrar_estrelas_ryviu": true,
     "mostrar_estrelas": true,
@@ -361,7 +361,7 @@
           "mostrar_devolucao": true,
           "mostrar_garantia": true,
           "mostrar_Masvendido": true,
-          "mostrar_btn_wtspp": true,
+          "mostrar_btn_wtspp": false,
           "background_whatsapp_btn": "#ffffff",
           "txt_whatsapp_btn": "#00a74e",
           "wtspp_text": "Comprar por WhatsApp",
@@ -407,7 +407,7 @@
           "show_payment_icons": true,
           "show_shipping_estimator": false,
           "shipping_estimator_default_country": "",
-          "show_refunds_policy": false
+          "show_refunds_policy": true
         }
       },
       "product-recommendations": {
