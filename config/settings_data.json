@@ -238,6 +238,7 @@
           "bbea030d-de91-4721-9ea1-9660f647bbd7": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Contra_Entrega_Marblacks.svg",
               "show_overlay": false,
               "overlay_opacity": 0,
               "text_color": "#ffffff",
