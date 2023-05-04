@@ -197,7 +197,7 @@
         ],
         "settings": {
           "mostrar_cnpj": true,
-          "cnpjaqui": "Digite seu CNPJ aqui",
+          "cnpjaqui": "Diseñado por EnlacesDigitales.com",
           "mostrar_mensagemdeaviso": true,
           "textdordp": "<p>Precios y condiciones de pago exclusivos para compras en esta web oficial, que pueden variar con el tiempo de la oferta. Evite comprar productos más baratos o productos de otras tiendas, ya que puede estar siendo engañado por un estafador. <strong>En caso de que compre los mismos productos en otras tiendas, no nos hacemos responsables de ningún problema.<\/strong><\/p>",
           "mostrar_bandeiras_rdp": true,
