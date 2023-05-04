@@ -215,13 +215,13 @@
           "background2": "#ff5f5f",
           "background3": "#9100ff",
           "background4": "#0086ff",
-          "show_social_media": false,
+          "show_social_media": true,
           "show_payment_icons": false,
           "show_locale_selector": false,
           "show_currency_selector": false,
           "show_cookie_bar": true,
-          "text": "<p>Utilizamos cookies para melhorar nosso site e sua experiência de compra. Ao continuar navegando em nosso site,<strong>você está de acordo conforme nossa política quando a utilização de cookies.<\/strong><\/p>",
-          "accept_button": "ENTENDI E FECHAR"
+          "text": "<p>Utilizamos cookies para mejorar nuestro sitio web y su experiencia de compra. Al continuar navegando por nuestro sitio,<strong> usted acepta nuestra política sobre el uso de cookies.<\/strong><\/p>",
+          "accept_button": "Aceptar y cerrar"
         }
       },
       "slideshow": {
