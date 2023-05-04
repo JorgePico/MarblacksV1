@@ -170,6 +170,7 @@
             "type": "text",
             "settings": {
               "mostrar_logotipo": true,
+              "logotipo_footer": "shopify:\/\/shop_images\/Logo_Marblacks_V2.svg",
               "logo_max_width_footer": 190,
               "title": "ATENCIÓN AL CLIENTE",
               "content": "<p><strong>E-mail: <\/strong>loja@gmail.com<br\/><strong>WhatsApp:<\/strong> +55 (99) 9 9999-9999<\/p>"
