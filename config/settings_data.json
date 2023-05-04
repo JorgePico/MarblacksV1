@@ -555,11 +555,12 @@
       "16494890143053ae61": {
         "type": "image-with-text",
         "settings": {
+          "image": "shopify:\/\/shop_images\/Diseno_sin_titulo_6.svg",
           "image_position": "left",
           "image_width": 55,
-          "title": "Pouco De Nós",
-          "content": "<p>Desenvolvidos para atender suas necessidades e prezar<br\/>pela satisfação e segurança entregando produtos da Mas<br\/>alta qualidade da melhor forma possível!<\/p><p><em><strong>Quer Saber mas sobre nosotros e nossa equipe?<\/strong><\/em><br\/>Clique no botão abaixo<\/p>",
-          "button_text": "Saber mas sobre nosotros",
+          "title": "Un poco de nosotros",
+          "content": "<p>Somos una empresa colombiana dedicada a la importacion y comercializacion de producto que cubren y solucionan diversos tipos de necesidades.<\/p><p><em><strong>Disfruta nuestros productos!<\/strong><\/em><br\/><\/p>",
+          "button_text": "",
           "button_link": "shopify:\/\/pages\/sobre-nos"
         }
       },
