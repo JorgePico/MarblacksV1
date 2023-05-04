@@ -427,11 +427,11 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "show_announcement": true,
+          "show_announcement": false,
           "background1": "#f4063b",
           "background2": "#f4063b",
           "text_color": "#ffffff",
-          "mostraricone": true,
+          "mostraricone": false,
           "text": "¡ENVÍO EXPRÉS GRATIS!",
           "show_BOLETIN": true,
           "BOLETIN_button": "",
@@ -548,17 +548,6 @@
           "upsell_heading": "Aproveite e leve também",
           "upsell_collection": "frontpage",
           "upsell_products_count": 4
-        }
-      },
-      "NEWSLETTER": {
-        "type": "NEWSLETTER",
-        "settings": {
-          "show_section": false,
-          "title": "Subscribe to our BOLETIN",
-          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
-          "subtext": "100% free, Unsubscribe any time!",
-          "background": "#1e2d7d",
-          "text": "#ffffff"
         }
       },
       "page-contact-template": {
@@ -1077,13 +1066,6 @@
             "link_title": "View all"
           }
         },
-        "1542984842027": {
-          "type": "BOLETIN",
-          "settings": {
-            "title": "BOLETIN",
-            "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
-          }
-        },
         "1542984882560": {
           "type": "blog-posts",
           "settings": {
@@ -1096,7 +1078,6 @@
         "slideshow",
         "1542984811767",
         "collection-list",
-        "1542984842027",
         "featured-product",
         "1542984882560"
       ]
