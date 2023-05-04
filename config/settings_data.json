@@ -371,7 +371,7 @@
           "pix": "",
           "mostrar_natalimg": false,
           "selector_mode_natalimg": "pos",
-          "mostrar_contador": false,
+          "mostrar_contador": true,
           "bg_contador": "#000000",
           "txt_um_contador": "#ffffff",
           "texto_contador": "¡Deprisa! La promoción termina en",
