@@ -83,7 +83,7 @@
     "social_linkedin": "",
     "social_snapchat": "",
     "social_fancy": "",
-    "favicon": "shopify:\/\/shop_images\/ICONO_MARBLACKS_EL_PAJARO_DE_LA.png",
+    "favicon": "shopify:\/\/shop_images\/Real_Estate_Agency_Logo_1.svg",
     "checkout_header_image": "",
     "checkout_logo_image": "shopify:\/\/shop_images\/logo210x_40x_6b8e4909-3fbb-4178-8775-39900114df23.png",
     "checkout_logo_position": "center",
@@ -131,6 +131,7 @@
           "show_track_order_header": true,
           "rastreiopage": "rastrear-pedido",
           "selector_style_search_icon": "style_2",
+          "logo": "shopify:\/\/shop_images\/Logo_Marblacks_V2.svg",
           "logo_max_width": 300,
           "mobile_logo_max_width": 170,
           "barraimg_top": false,
@@ -169,18 +170,10 @@
             "type": "text",
             "settings": {
               "mostrar_logotipo": true,
+              "logotipo_footer": "shopify:\/\/shop_images\/Logo_Marblacks_V2.svg",
               "logo_max_width_footer": 190,
               "title": "ATENCIÓN AL CLIENTE",
-              "content": "<p><strong>E-mail: <\/strong>loja@gmail.com<br\/><strong>WhatsApp:<\/strong> +55 (99) 9 9999-9999<\/p>"
-            }
-          },
-          "c630bd4c-dba8-4106-bde8-eb6d4028030c": {
-            "type": "text",
-            "settings": {
-              "mostrar_logotipo": false,
-              "logo_max_width_footer": 140,
-              "title": "INFORMACIÓN LEGAL",
-              "content": "<p>Razão Social: Proposito Negocios Digitais LTDA, Endereço: Seu Endereço Aqui - 3095, Cidade, Estado,<br\/>CEP: 90900000<\/p>"
+              "content": "<p><strong>E-mail: <\/strong>Soporte@marblacks.com.co<br\/><strong>WhatsApp:<\/strong> +57 (317) 218 7398<\/p>"
             }
           },
           "footer-1": {
@@ -199,7 +192,6 @@
         },
         "block_order": [
           "c9a6c378-573f-4c54-9fc6-5ca6e279f3f2",
-          "c630bd4c-dba8-4106-bde8-eb6d4028030c",
           "footer-1",
           "23b7e603-1746-4ba2-b8e6-5856acdfd7a5"
         ],
@@ -238,6 +230,7 @@
           "bbea030d-de91-4721-9ea1-9660f647bbd7": {
             "type": "image",
             "settings": {
+              "image": "shopify:\/\/shop_images\/Contra_Entrega_Marblacks.svg",
               "show_overlay": false,
               "overlay_opacity": 0,
               "text_color": "#ffffff",
@@ -427,11 +420,11 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "show_announcement": true,
+          "show_announcement": false,
           "background1": "#f4063b",
           "background2": "#f4063b",
           "text_color": "#ffffff",
-          "mostraricone": true,
+          "mostraricone": false,
           "text": "¡ENVÍO EXPRÉS GRATIS!",
           "show_BOLETIN": true,
           "BOLETIN_button": "",
@@ -550,17 +543,6 @@
           "upsell_products_count": 4
         }
       },
-      "NEWSLETTER": {
-        "type": "NEWSLETTER",
-        "settings": {
-          "show_section": false,
-          "title": "Subscribe to our BOLETIN",
-          "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>",
-          "subtext": "100% free, Unsubscribe any time!",
-          "background": "#1e2d7d",
-          "text": "#ffffff"
-        }
-      },
       "page-contact-template": {
         "type": "page-contact-template",
         "settings": {
@@ -573,11 +555,12 @@
       "16494890143053ae61": {
         "type": "image-with-text",
         "settings": {
+          "image": "shopify:\/\/shop_images\/Diseno_sin_titulo_6.svg",
           "image_position": "left",
           "image_width": 55,
-          "title": "Pouco De Nós",
-          "content": "<p>Desenvolvidos para atender suas necessidades e prezar<br\/>pela satisfação e segurança entregando produtos da Mas<br\/>alta qualidade da melhor forma possível!<\/p><p><em><strong>Quer Saber mas sobre nosotros e nossa equipe?<\/strong><\/em><br\/>Clique no botão abaixo<\/p>",
-          "button_text": "Saber mas sobre nosotros",
+          "title": "Un poco de nosotros",
+          "content": "<p>Somos una empresa colombiana dedicada a la importacion y comercialización de productos que cubren y solucionan diversos tipos de necesidades.<\/p><p><em><strong>Disfruta nuestros productos!<\/strong><\/em><br\/><\/p>",
+          "button_text": "",
           "button_link": "shopify:\/\/pages\/sobre-nos"
         }
       },
@@ -605,13 +588,13 @@
           "1649489657b78ca727-3": {
             "type": "collection",
             "settings": {
-              "collection": "fones"
+              "collection": "hogar"
             }
           },
           "1649489657b78ca727-4": {
             "type": "collection",
             "settings": {
-              "collection": "beleza-saude"
+              "collection": "tecnologia"
             }
           },
           "0c56a93b-d66f-4823-ae91-bd01bb634a00": {
@@ -623,13 +606,7 @@
           "1649489657b78ca727-5": {
             "type": "collection",
             "settings": {
-              "collection": "para-pets"
-            }
-          },
-          "d5a5159b-779d-45d2-871b-4a5e622bb3b2": {
-            "type": "collection",
-            "settings": {
-              "collection": "eletronicos"
+              "collection": "frontpage"
             }
           }
         },
@@ -640,8 +617,7 @@
           "1649489657b78ca727-3",
           "1649489657b78ca727-4",
           "0c56a93b-d66f-4823-ae91-bd01bb634a00",
-          "1649489657b78ca727-5",
-          "d5a5159b-779d-45d2-871b-4a5e622bb3b2"
+          "1649489657b78ca727-5"
         ],
         "settings": {
           "title": "",
@@ -658,6 +634,7 @@
           "1649913261818592e3-0": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/1.svg",
               "show_overlay": false,
               "overlay_opacity": 50,
               "stretch_image": false,
@@ -676,6 +653,7 @@
           "1649913261818592e3-1": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/2.svg",
               "show_overlay": false,
               "overlay_opacity": 50,
               "stretch_image": false,
@@ -694,6 +672,7 @@
           "1649913261818592e3-2": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/3.svg",
               "show_overlay": false,
               "overlay_opacity": 50,
               "stretch_image": false,
@@ -773,7 +752,39 @@
       "16153541158fc73818",
       "16494890143053ae61",
       "1649913264519d35a7"
-    ]
+    ],
+    "blocks": {
+      "2965712708760319418": {
+        "type": "shopify:\/\/apps\/proof-bear-sales-popup\/blocks\/widget\/6e90b7fd-96ea-488b-9571-34f0c382838a",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "13669795325273674392": {
+        "type": "shopify:\/\/apps\/releasit-cod-form-upsells\/blocks\/app-embed\/72faf214-4174-4fec-886b-0d0e8d3af9a2",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "4214657528271059384": {
+        "type": "shopify:\/\/apps\/a2reviews-product-reviews\/blocks\/app-embed\/6a88647f-451d-4142-88de-9df2dab10243",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14159691304313693114": {
+        "type": "shopify:\/\/apps\/pixel-conversions-api-facebook\/blocks\/app-embed\/e244883f-9001-4b7d-b3e2-a64012fd8879",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Metal": {
@@ -1077,13 +1088,6 @@
             "link_title": "View all"
           }
         },
-        "1542984842027": {
-          "type": "BOLETIN",
-          "settings": {
-            "title": "BOLETIN",
-            "content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
-          }
-        },
         "1542984882560": {
           "type": "blog-posts",
           "settings": {
@@ -1096,7 +1100,6 @@
         "slideshow",
         "1542984811767",
         "collection-list",
-        "1542984842027",
         "featured-product",
         "1542984882560"
       ]
