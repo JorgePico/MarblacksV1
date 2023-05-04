@@ -131,6 +131,7 @@
           "show_track_order_header": true,
           "rastreiopage": "rastrear-pedido",
           "selector_style_search_icon": "style_2",
+          "logo": "shopify:\/\/shop_images\/Logo_Marblacks_V2.svg",
           "logo_max_width": 300,
           "mobile_logo_max_width": 170,
           "barraimg_top": false,
@@ -648,6 +649,7 @@
           "1649913261818592e3-0": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/1.svg",
               "show_overlay": false,
               "overlay_opacity": 50,
               "stretch_image": false,
@@ -666,6 +668,7 @@
           "1649913261818592e3-1": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/2.svg",
               "show_overlay": false,
               "overlay_opacity": 50,
               "stretch_image": false,
@@ -684,6 +687,7 @@
           "1649913261818592e3-2": {
             "type": "item",
             "settings": {
+              "image": "shopify:\/\/shop_images\/3.svg",
               "show_overlay": false,
               "overlay_opacity": 50,
               "stretch_image": false,
