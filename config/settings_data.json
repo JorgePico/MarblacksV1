@@ -53,7 +53,7 @@
     "cordabarra": "#00d864",
     "cordotexto": "#ffffff",
     "mostrar_parcelascomo": "no_info_juros",
-    "porcentagem_de_juros": "",
+    "porcentagem_de_juros": "1",
     "qty_vezes": 12,
     "mostrar_estrelas_ryviu": true,
     "mostrar_estrelas": true,
