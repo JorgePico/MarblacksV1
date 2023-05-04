@@ -385,7 +385,7 @@
            {%- endif -%}
              {% assign divididopor = settings.qty_vezes %}
              {% assign percentual = settings.porcentagem_de_juros %} 
-            <p style="font-size:16px;margin-bottom: 16px;top: 8px;position: relative;">O en hasta {{ divididopor }}  de <span><b>{{ product.price |times: percentual | divided_by: divididopor | round:2 | money }}</b></span></p>
+            <p style="font-size:16px;margin-bottom: 16px;top: 8px;position: relative;">O en hasta {{ divididopor }} cuotas de <span><b>{{ product.price |times: percentual | divided_by: divididopor | round:2 | money }}</b></span></p>
               
             {%- if selected_variant.compare_at_price > selected_variant.price -%}
               <div class="product-meta__label-list">
