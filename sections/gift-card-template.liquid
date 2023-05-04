@@ -27,7 +27,7 @@
             {%- endif -%}
 
             {%- unless gift_card.expired or gift_card.enabled != true -%}
-              {%- capture formatted_balance -%}{{ gift_card.balance | money_without_trailing_zeros }}{%- endcapture -%}
+              {%- capture formatted_balance -%}{{ gift_card.balance | money }}{%- endcapture -%}
 
               {%- if gift_card.balance != gift_card.initial_value -%}
                 <p class="gift-card__amount price">{{ 'gift_card.issued.remaining_amount' | t: amount: formatted_balance }}</p>

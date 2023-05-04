@@ -17,7 +17,7 @@
 
           <div class="search-bar__item-info">
             <p class="search-bar__item-title search-agp">{{ item.title | highlight: clean_terms }}
-            <span class="search-bar__item-price">{{ item.price | money_without_trailing_zeros }}</span></p>
+            <span class="search-bar__item-price">{{ item.price | money }}</span></p>
           </div>
         </a>
       {%- endfor -%}
