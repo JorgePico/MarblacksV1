@@ -369,7 +369,7 @@
           "wtspp_text": "Comprar por WhatsApp",
           "whatsapplinknumber": "+57 317 2187398",
           "mostrar_campo_personalizado": true,
-          "mostrar_pix": true,
+          "mostrar_pix": false,
           "pix": "",
           "mostrar_natalimg": false,
           "selector_mode_natalimg": "pos",
