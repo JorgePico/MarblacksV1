@@ -769,12 +769,6 @@
         "settings": {
         }
       },
-      "2965712708760319418": {
-        "type": "shopify:\/\/apps\/proof-bear-sales-popup\/blocks\/widget\/6e90b7fd-96ea-488b-9571-34f0c382838a",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "4214657528271059384": {
         "type": "shopify:\/\/apps\/a2reviews-product-reviews\/blocks\/app-embed\/6a88647f-451d-4142-88de-9df2dab10243",
         "disabled": false,
@@ -785,6 +779,19 @@
         "type": "shopify:\/\/apps\/releasit-cod-form-upsells\/blocks\/app-embed\/72faf214-4174-4fec-886b-0d0e8d3af9a2",
         "disabled": false,
         "settings": {
+        }
+      },
+      "9010622670419788200": {
+        "type": "shopify:\/\/apps\/seo-image-optimizer-page-speed\/blocks\/avada-site-verification\/15507c6e-1aa3-45d3-b698-7e175e033440",
+        "disabled": false,
+        "settings": {
+          "google_search_console": "",
+          "bing_webmaster_tools": "",
+          "pinterest": "",
+          "yandex_webmaster_tools": "",
+          "baidu_webmaster_tools": "",
+          "alexa": "",
+          "norton": ""
         }
       }
     }
