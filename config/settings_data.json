@@ -129,7 +129,7 @@
           "enable_sticky_header": true,
           "box_shadow_header_active": true,
           "show_track_order_header": true,
-          "rastreiopage": "rastrear-pedido",
+          "rastreiopage": "parcelpanel",
           "selector_style_search_icon": "style_2",
           "logo": "shopify:\/\/shop_images\/Logo_Marblacks_V2.svg",
           "logo_max_width": 300,
@@ -779,19 +779,6 @@
         "type": "shopify:\/\/apps\/releasit-cod-form-upsells\/blocks\/app-embed\/72faf214-4174-4fec-886b-0d0e8d3af9a2",
         "disabled": false,
         "settings": {
-        }
-      },
-      "9010622670419788200": {
-        "type": "shopify:\/\/apps\/seo-image-optimizer-page-speed\/blocks\/avada-site-verification\/15507c6e-1aa3-45d3-b698-7e175e033440",
-        "disabled": false,
-        "settings": {
-          "google_search_console": "",
-          "bing_webmaster_tools": "",
-          "pinterest": "",
-          "yandex_webmaster_tools": "",
-          "baidu_webmaster_tools": "",
-          "alexa": "",
-          "norton": ""
         }
       }
     }
