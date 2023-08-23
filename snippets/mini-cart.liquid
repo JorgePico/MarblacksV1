@@ -47,11 +47,11 @@
 
                 {%- if line_item.image.aspect_ratio < 1 -%}
                   <div class="aspect-ratio aspect-ratio--square">
-                    <img src="{{ line_item.image | img_url: '180x' }}" alt="{{ line_item.image.alt | escape }}">
+                    <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" src="{{ line_item.image | img_url: '180x' }}" alt="{{ line_item.image.alt | escape }}">
                   </div>
                 {%- else -%}
                   <div class="aspect-ratio" style="padding-bottom: {{ 100.0 | divided_by: line_item.image.aspect_ratio }}%">
-                    <img src="{{ line_item.image | img_url: '180x' }}" alt="{{ line_item.image.alt | escape }}">
+                    <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" src="{{ line_item.image | img_url: '180x' }}" alt="{{ line_item.image.alt | escape }}">
                   </div>
                 {%- endif -%}
               </div>

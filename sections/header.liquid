@@ -16,11 +16,11 @@
   <div class="img-topbar topbar-flex container" style="padding: 0;">
 
     <a class="d-none imgdopc" href="{{ section.settings.linkimg }}">
-  <img src="{{ section.settings.imgpc | img_url: '1000x' }}" class="img-responsive-pc">
+  <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" src="{{ section.settings.imgpc | img_url: '1000x' }}" class="img-responsive-pc">
     </a>
     
     <a class="d-none imgdomob" href="{{ section.settings.linkimg }}">
-  <img src="{{ section.settings.imgmob | img_url: '1000x' }}" class="img-responsive-mob">
+  <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" src="{{ section.settings.imgmob | img_url: '1000x' }}" class="img-responsive-mob">
     </a>
 
   </div>
@@ -73,7 +73,7 @@
           <a href="{{ routes.root_url }}" class="header__logo-link">
             {%- if section.settings.logo != blank -%}
               {%- capture image_size -%}{{ section.settings.logo_max_width }}x{%- endcapture -%}
-              <img class="header__logo-image"
+              <img data-wpsob="1" data-wpsob-lazy="1" loading="lazy" class="header__logo-image"
                    style="max-width: {{ section.settings.logo_max_width }}px"
                    width="{{ section.settings.logo.width }}"
                    height="{{ section.settings.logo.height }}"
@@ -417,7 +417,7 @@
 
           {% if section.settings.show_track_order_header %}
           <div class="header__action-item">
-            <a class="header__action-item-link header__cart-toggle" href="/a/{{ section.settings.rastreiopage }}">
+            <a class="header__action-item-link header__cart-toggle" href="/apps/{{ section.settings.rastreiopage }}">
               <div class="header__action-item-content">
                 <div class="header-delivery-icon icon-state">
                   <span class="icon-state__primary ionic-icon-header"><ion-icon name="location-sharp"></ion-icon></span>
@@ -495,11 +495,11 @@
   <div class="img-topbar topbar-flex container" style="padding: 0;">
 
     <a class="d-none imgdopc" href="{{ section.settings.linkimg }}">
-  <img src="{{ section.settings.imgpc | img_url: '1000x' }}" class="img-responsive-pc">
+  <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" src="{{ section.settings.imgpc | img_url: '1000x' }}" class="img-responsive-pc">
     </a>
     
     <a class="d-none imgdomob" href="{{ section.settings.linkimg }}">
-  <img src="{{ section.settings.imgmob | img_url: '1000x' }}" class="img-responsive-mob">
+  <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" src="{{ section.settings.imgmob | img_url: '1000x' }}" class="img-responsive-mob">
     </a>
 
   </div>

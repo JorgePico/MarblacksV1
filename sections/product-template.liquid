@@ -310,7 +310,7 @@
                     {%- endif -%}
 
                     {%- assign badge_width = section.settings.custom_security_badge.width | at_most: 450 | append: 'x' -%}
-                    <img class="product__trust-badge" src="{{ section.settings.custom_security_badge | img_url: badge_width }}" srcset="{{ section.settings.custom_security_badge | img_url: badge_width }} 1x, {{ section.settings.custom_security_badge | img_url: badge_width, scale: 2 }} 2x" alt="{{ section.settings.custom_security_badge.alt | escape }}">
+                    <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" class="product__trust-badge" src="{{ section.settings.custom_security_badge | img_url: badge_width }}" srcset="{{ section.settings.custom_security_badge | img_url: badge_width }} 1x, {{ section.settings.custom_security_badge | img_url: badge_width, scale: 2 }} 2x" alt="{{ section.settings.custom_security_badge.alt | escape }}">
                   {%- endif -%}
                      
                   

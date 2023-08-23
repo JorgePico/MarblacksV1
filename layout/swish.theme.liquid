@@ -2,7 +2,6 @@
 <html class="no-js" lang="{{ request.locale.iso_code }}">{% render 'fk-lck' %}
 
   <head>
-  {% include 'appify-pwa-snippet' %}
 {% include 'wp-page-speed-optimization-header' %}
 <!-- Avada Boost Sales Script -->
 {% include 'avada-boost-sales' %}
@@ -59,8 +58,7 @@
     {% render 'social-meta-tags' %}
     {% render 'css-variables' %}
 
-    {% capture cfh %}{{ content_for_header }} {% endcapture %}
-{% include 'swish-loader' %}
+    {{ content_for_header }}
     {%include "setbg"%}
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
 
@@ -235,7 +233,6 @@
 <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
 <script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     
-
 {{ '//cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/booster-page-speed-optimizer.js?23' | script_tag }}
 </body>
 </html>

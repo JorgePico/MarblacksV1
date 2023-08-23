@@ -25,10 +25,10 @@
               {%- assign image_url = collection_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
               <div class="aspect-ratio" style="padding-bottom: 100%">
-                <img class="lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ collection_image.alt | escape }}">
+                <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" class="lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" alt="{{ collection_image.alt | escape }}">
 
                 <noscript>
-                  <img src="{{ collection_image | img_url: '450x' }}" alt="{{ collection_image.alt | escape }}">
+                  <img data-wpsob="1" data-wpsob-height="1" height="1" data-wpsob-width="1" width="1" data-wpsob-lazy="1" loading="lazy" src="{{ collection_image | img_url: '450x' }}" alt="{{ collection_image.alt | escape }}">
                 </noscript>
               </div>
             </div>

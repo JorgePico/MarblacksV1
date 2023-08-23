@@ -7,7 +7,7 @@
             <div class="gift-card__image">
               <div class="aspect-ratio" style="padding-bottom: 100%">
                 {%- if section.settings.gift_card_image -%}
-                  <img src="{{ section.settings.gift_card_image | img_url: '500x500', crop: 'center' }}" alt="{{ section.settings.gift_card_image.alt | escape }}">
+                  <img alt="{{ section.settings.gift_card_image.alt | escape }}" src="{{ section.settings.gift_card_image | img_url: '500x500', crop: 'center' }}">
                 {%- else -%}
                   <img src="{{ 'gift-card.jpg' | asset_img_url: '500x500', crop: 'center' }}">
                 {%- endif -%}

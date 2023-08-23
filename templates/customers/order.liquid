@@ -140,7 +140,7 @@
                       <div class="line-item__product-info-wrapper">
                         <div class="line-item__image-wrapper">
                           <div class="aspect-ratio aspect-ratio--square">
-                            <img src="{{ line_item.image | img_url: '90x90', scale: 2 }}" alt="{{ line_item.image.alt | escape }}">
+                            <img alt="{{ line_item.image.alt | escape }}" src="{{ line_item.image | img_url: '90x90', scale: 2 }}">
                           </div>
                         </div>
 
