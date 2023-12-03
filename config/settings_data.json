@@ -1,0 +1,178 @@
+{
+  "current": {
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "settings": {
+          "show_announcement": true,
+          "background1": "#1e2d7d",
+          "background2": "#1e2d7d",
+          "text_color": "#ffffff",
+          "mostraricone": true,
+          "text": "Announce something here",
+          "show_BOLETIN": true,
+          "BOLETIN_button": "Subscribe & Save",
+          "BOLETIN_title": "BOLETIN",
+          "BOLETIN_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+        }
+      },
+      "popups": {
+        "type": "popups",
+        "settings": {
+        }
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "enable_sticky_header": true,
+          "box_shadow_header_active": true,
+          "show_track_order_header": true,
+          "rastreiopage": "rastrear-pedido",
+          "selector_style_search_icon": "style_1",
+          "logo": "shopify:\/\/shop_images\/UPERMOM-21-11-2023.png",
+          "logo_max_width": 140,
+          "mobile_logo_max_width": 170,
+          "barraimg_top": false,
+          "barraimg_bottom": false,
+          "bgimg": "#1c1b1b",
+          "imgpc": "shopify:\/\/shop_images\/UPERMOM-21-11-2023.png",
+          "imgpc_max_width": 100,
+          "imgmob": "shopify:\/\/shop_images\/UPERMOM-21-11-2023.png",
+          "imgmob_max_width": 100,
+          "linkimg": "https:\/\/dropmeta.com.br\/tema",
+          "mostrar_bar_info_shipping": true,
+          "bg_bar_info_shipping": "#eeeff1",
+          "bg_bar_info_bold": "#0082ff",
+          "bg_bar_info_normal": "#515971",
+          "mostrar_barra": true,
+          "background1": "#00FF48",
+          "background2": "#01C6FF",
+          "background3": "#FFA000",
+          "background4": "#C100BE",
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "navigation_menu": "main-menu",
+          "desktop_navigation_layout": "condensed",
+          "desktop_navigation_open_trigger": "hover",
+          "show_navigation_social_media": true,
+          "navigation_phone_number": "Call us 000-000-0000",
+          "navigation_email": "info@yourwebsite.com",
+          "show_condensed_search": true,
+          "show_search_filter": true,
+          "search_menu": "",
+          "show_search_menu_title": true
+        }
+      },
+      "text-with-icons": {
+        "type": "text-with-icons",
+        "blocks": {
+          "text-with-icons-0": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-delivery",
+              "title": "Free delivery worldwide",
+              "content": "<p>Short content about your store<\/p>"
+            }
+          },
+          "text-with-icons-1": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-returns",
+              "title": "Satisfied or refunded",
+              "content": "<p>Short content about your store<\/p>"
+            }
+          },
+          "text-with-icons-2": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-customer-support",
+              "title": "Top-notch support",
+              "content": "<p>Short content about your store<\/p>"
+            }
+          },
+          "text-with-icons-3": {
+            "type": "item",
+            "settings": {
+              "icon": "bi-secure-payment",
+              "title": "Secure payments",
+              "content": "<p>Short content about your store<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "text-with-icons-0",
+          "text-with-icons-1",
+          "text-with-icons-2",
+          "text-with-icons-3"
+        ],
+        "settings": {
+          "show_section": true,
+          "stack_mobile": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "text",
+            "settings": {
+              "mostrar_logotipo": true,
+              "logo_max_width_footer": 140,
+              "title": "About our store",
+              "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.<\/p>"
+            }
+          },
+          "footer-1": {
+            "type": "links",
+            "settings": {
+              "menu": "footer"
+            }
+          },
+          "footer-2": {
+            "type": "BOLETIN",
+            "settings": {
+              "title": "BOLETIN",
+              "subheading": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "footer-1",
+          "footer-2"
+        ],
+        "settings": {
+          "mostrar_cnpj": true,
+          "cnpjaqui": "",
+          "mostrar_mensagemdeaviso": true,
+          "textdordp": "",
+          "mostrar_bandeiras_rdp": true,
+          "txt_bandeiras": "",
+          "mostrar_selospretos": true,
+          "mostrar_selosbrancos": true,
+          "mostrar_selo1": true,
+          "selo1": "LINK AQUI",
+          "mostrar_selo2": true,
+          "selo2": "LINK AQUI",
+          "mostrar_selo3": true,
+          "selo3": "LINK AQUI",
+          "mostrar_barra": true,
+          "background1": "#00FF48",
+          "background2": "#01C6FF",
+          "background3": "#FFA000",
+          "background4": "#C100BE",
+          "show_social_media": true,
+          "show_payment_icons": true,
+          "show_locale_selector": true,
+          "show_currency_selector": true,
+          "show_cookie_bar": false,
+          "text": "<p>Use this bar to show information about your cookie policy.<\/p>",
+          "accept_button": "Accept"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}
